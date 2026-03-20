@@ -169,4 +169,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c66439f3f8ac5164ab301b9e7a3df196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AstroidMovement
-  acceleration: -15
+  acceleration: 60

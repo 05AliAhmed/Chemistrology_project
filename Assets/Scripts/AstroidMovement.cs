@@ -13,12 +13,12 @@ public class AstroidMovement : MonoBehaviour
     }
 
     
-    void Update()
+    void FixedUpdate()
     {
         speed = acceleration * Time.deltaTime;
         position = speed * Time.deltaTime;
 
-        transform.position = new Vector2(transform.position.x, transform.position.y + position);
+        transform.position = new Vector2(transform.position.x, transform.position.y - position);
 
         Debug.Log(speed);
     }

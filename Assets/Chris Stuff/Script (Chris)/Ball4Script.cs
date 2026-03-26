@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class BallScript : MonoBehaviour
+public class Ball4Script : MonoBehaviour
 {
-   
-       public Rigidbody2D rb;
+
+    public Rigidbody2D rb;
 
     public TargetScript target;
     public NonozoneScript nonozone;
@@ -11,8 +11,8 @@ public class BallScript : MonoBehaviour
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Target").GetComponent<TargetScript>();
-        nonozone= GameObject.FindGameObjectWithTag("Nonozone").GetComponent<NonozoneScript>();
-       point = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();
+        nonozone = GameObject.FindGameObjectWithTag("Nonozone").GetComponent<NonozoneScript>();
+        point = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -20,12 +20,12 @@ public class BallScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.W))
         {
             rb.linearVelocity = Vector2.up * 100;
         }
 
-        
+
     }
     void OnCollisionEnter2D(Collision2D collisioninfo)
     {
@@ -42,7 +42,7 @@ public class BallScript : MonoBehaviour
 
             Destroy(gameObject);
             point.LosePoint();
-            
+
         }
     }
 }

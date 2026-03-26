@@ -4,8 +4,8 @@ public class TargetScript : MonoBehaviour
 {
     private SpriteRenderer rend;
     public Sprite TargetHit;
-    public BallScript ball;
-    public PointScript points;
+  /*  public BallScript ball;
+    public PointScript points;*/
     
     /* public Text Score;
      int PlayerScore=0;
@@ -14,8 +14,8 @@ public class TargetScript : MonoBehaviour
     void Start()
     {
         rend = GetComponent<SpriteRenderer>();  
-        ball = GameObject.FindGameObjectWithTag("Ball").GetComponent<BallScript>();
-        points = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();
+        /*ball = GameObject.FindGameObjectWithTag("Ball").GetComponent<BallScript>();
+        points = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();*/
     }
 
     // Update is called once per frame

@@ -8,6 +8,7 @@ TagManager:
   - Ball
   - Nonozone
   - Points
+  - Targets
   layers:
   - Default
   - TransparentFX

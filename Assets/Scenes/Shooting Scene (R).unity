@@ -320,6 +320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ElectronShot
       objectReference: {fileID: 0}
+    - target: {fileID: 6472636454178017965, guid: d7219c7ac2feab444aa7986674b09042, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

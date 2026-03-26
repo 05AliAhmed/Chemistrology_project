@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Ball2Script : MonoBehaviour
+public class Ball4Script : MonoBehaviour
 {
 
     public Rigidbody2D rb;
@@ -20,9 +20,9 @@ public class Ball2Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.W))
         {
-            rb.linearVelocity = Vector2.up * 10;
+            rb.linearVelocity = Vector2.up * 100;
         }
 
 

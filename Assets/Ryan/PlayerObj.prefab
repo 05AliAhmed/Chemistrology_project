@@ -104,4 +104,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090614904b174714ca03e7177dd97404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TraladeeBehaviour
-  bullet: {fileID: 6472636454178017965, guid: d7219c7ac2feab444aa7986674b09042, type: 3}
+  bullet: {fileID: 2469884587470388481, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}

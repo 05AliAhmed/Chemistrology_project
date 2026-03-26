@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: be0e0cd2e13356142a1fa17a9212c0e7
+guid: e3068a8bda72c2d4eba04da7036d6e1e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 845645310105882002
-    second: traladee_shoot_0
+      213: 6259441681922183462
+    second: GS_A_bullet_shoot_0
   - first:
-      213: -526160880768852862
-    second: traladee_shoot_1
+      213: -3312722258968576234
+    second: GS_A_bullet_shoot_1
   - first:
-      213: 3382818280632850122
-    second: traladee_shoot_2
+      213: 2300130206443740669
+    second: GS_A_bullet_shoot_2
   - first:
-      213: 3984937382696989794
-    second: traladee_shoot_3
+      213: -1639365571155849867
+    second: GS_A_bullet_shoot_3
   - first:
-      213: -782039979269007173
-    second: traladee_shoot_4
+      213: -7490805980936175283
+    second: GS_A_bullet_shoot_4
   - first:
-      213: 1820196776912227861
-    second: traladee_shoot_5
+      213: 5146661763327367800
+    second: GS_A_bullet_shoot_5
+  - first:
+      213: -5121772623284401726
+    second: GS_A_bullet_shoot_6
+  - first:
+      213: -515370827060371640
+    second: GS_A_bullet_shoot_7
+  - first:
+      213: 2760227273731790848
+    second: GS_A_bullet_shoot_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,30 +120,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: traladee_shoot_0
+      name: GS_A_bullet_shoot_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 106
-        width: 21
-        height: 69
+        x: 1
+        y: 3
+        width: 42
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 29d06dadde55cbb00800000000000000
-      internalID: 845645310105882002
+      spriteID: 621de37bb010ed650800000000000000
+      internalID: 6259441681922183462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_shoot_1
+      name: GS_A_bullet_shoot_1
       rect:
         serializedVersion: 2
-        x: 124
-        y: 105
-        width: 27
-        height: 69
+        x: 48
+        y: 3
+        width: 40
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28cd0177773b2b8f0800000000000000
-      internalID: -526160880768852862
+      spriteID: 61ff5a238a8d602d0800000000000000
+      internalID: -3312722258968576234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_shoot_2
+      name: GS_A_bullet_shoot_2
       rect:
         serializedVersion: 2
-        x: 193
-        y: 108
-        width: 10
-        height: 100
+        x: 93
+        y: 3
+        width: 40
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac691d4ad4f22fe20800000000000000
-      internalID: 3382818280632850122
+      spriteID: dfd99347c34bbef10800000000000000
+      internalID: 2300130206443740669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_shoot_3
+      name: GS_A_bullet_shoot_3
       rect:
         serializedVersion: 2
-        x: 293
-        y: 108
-        width: 11
-        height: 100
+        x: 139
+        y: 3
+        width: 38
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 26434dbbf675d4730800000000000000
-      internalID: 3984937382696989794
+      spriteID: 57d0042e2bdcf39e0800000000000000
+      internalID: -1639365571155849867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_shoot_4
+      name: GS_A_bullet_shoot_4
       rect:
         serializedVersion: 2
-        x: 360
-        y: 152
-        width: 7
-        height: 54
+        x: 184
+        y: 3
+        width: 38
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb8548348c2a525f0800000000000000
-      internalID: -782039979269007173
+      spriteID: d418de8f5af4b0890800000000000000
+      internalID: -7490805980936175283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_shoot_5
+      name: GS_A_bullet_shoot_5
       rect:
         serializedVersion: 2
-        x: 459
-        y: 151
-        width: 7
-        height: 54
+        x: 228
+        y: 3
+        width: 40
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,8 +249,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51e0a252353a24910800000000000000
-      internalID: 1820196776912227861
+      spriteID: 87a96360b9d9c6740800000000000000
+      internalID: 5146661763327367800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GS_A_bullet_shoot_6
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 3
+        width: 40
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c900d87feecbe8b0800000000000000
+      internalID: -5121772623284401726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GS_A_bullet_shoot_7
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 3
+        width: 42
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f977d96f809d8f0800000000000000
+      internalID: -515370827060371640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GS_A_bullet_shoot_8
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 3
+        width: 42
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008d026c41c4e4620800000000000000
+      internalID: 2760227273731790848
       vertices: []
       indices: 
       edges: []
@@ -273,12 +335,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      traladee_shoot_0: 845645310105882002
-      traladee_shoot_1: -526160880768852862
-      traladee_shoot_2: 3382818280632850122
-      traladee_shoot_3: 3984937382696989794
-      traladee_shoot_4: -782039979269007173
-      traladee_shoot_5: 1820196776912227861
+      GS_A_bullet_shoot_0: 6259441681922183462
+      GS_A_bullet_shoot_1: -3312722258968576234
+      GS_A_bullet_shoot_2: 2300130206443740669
+      GS_A_bullet_shoot_3: -1639365571155849867
+      GS_A_bullet_shoot_4: -7490805980936175283
+      GS_A_bullet_shoot_5: 5146661763327367800
+      GS_A_bullet_shoot_6: -5121772623284401726
+      GS_A_bullet_shoot_7: -515370827060371640
+      GS_A_bullet_shoot_8: 2760227273731790848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

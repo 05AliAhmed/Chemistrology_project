@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-guid: c2f14cfa02832c649890cb2ec467c780
+guid: a95dc4c1177fb80439e94522febdae77
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3958067120768804511
-    second: traladee_balls_0
+      213: 3550126257585468107
+    second: GS_A_traladee_shoot_0
   - first:
-      213: -111819436619164213
-    second: traladee_balls_1
+      213: 6536108649041536107
+    second: GS_A_traladee_shoot_1
   - first:
-      213: 5793779774857798346
-    second: traladee_balls_2
+      213: -3655356687139031159
+    second: GS_A_traladee_shoot_2
   - first:
-      213: -7032070048118508864
-    second: traladee_balls_3
+      213: -8904401509361259294
+    second: GS_A_traladee_shoot_3
   - first:
-      213: -5880626539040248270
-    second: traladee_balls_4
+      213: -7260155686661414576
+    second: GS_A_traladee_shoot_4
   - first:
-      213: -5527403248649965333
-    second: traladee_balls_5
-  - first:
-      213: 1108338253741014176
-    second: traladee_balls_6
+      213: -1590684517868097179
+    second: GS_A_traladee_shoot_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -114,30 +111,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: traladee_balls_0
+      name: GS_A_traladee_shoot_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 28
-        width: 78
-        height: 182
+        x: 17
+        y: 106
+        width: 21
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1691c65acee1219c0800000000000000
-      internalID: -3958067120768804511
+      spriteID: bc23b2b9505944130800000000000000
+      internalID: 3550126257585468107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_balls_1
+      name: GS_A_traladee_shoot_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 9
-        width: 78
-        height: 201
+        x: 124
+        y: 105
+        width: 27
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc5945990dcb27ef0800000000000000
-      internalID: -111819436619164213
+      spriteID: b64aa7fbf2ce4ba50800000000000000
+      internalID: 6536108649041536107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_balls_2
+      name: GS_A_traladee_shoot_2
       rect:
         serializedVersion: 2
-        x: 166
-        y: 10
-        width: 78
-        height: 202
+        x: 193
+        y: 108
+        width: 10
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac2ed3b2204a76050800000000000000
-      internalID: 5793779774857798346
+      spriteID: 987babfb570954dc0800000000000000
+      internalID: -3655356687139031159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_balls_3
+      name: GS_A_traladee_shoot_3
       rect:
         serializedVersion: 2
-        x: 247
-        y: 2
-        width: 79
-        height: 210
+        x: 293
+        y: 108
+        width: 11
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c27b3a7c81196e90800000000000000
-      internalID: -7032070048118508864
+      spriteID: 2ece11931063d6480800000000000000
+      internalID: -8904401509361259294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_balls_4
+      name: GS_A_traladee_shoot_4
       rect:
         serializedVersion: 2
-        x: 328
-        y: 8
-        width: 80
-        height: 204
+        x: 360
+        y: 152
+        width: 7
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23e65c3d151d36ea0800000000000000
-      internalID: -5880626539040248270
+      spriteID: 051a3827edebe3b90800000000000000
+      internalID: -7260155686661414576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_balls_5
+      name: GS_A_traladee_shoot_5
       rect:
         serializedVersion: 2
-        x: 411
-        y: 8
-        width: 79
-        height: 204
+        x: 459
+        y: 151
+        width: 7
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,30 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be0f0e1e708ba43b0800000000000000
-      internalID: -5527403248649965333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: traladee_balls_6
-      rect:
-        serializedVersion: 2
-        x: 494
-        y: 9
-        width: 78
-        height: 201
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0acb53105cb916f00800000000000000
-      internalID: 1108338253741014176
+      spriteID: 56132cadbd0cce9e0800000000000000
+      internalID: -1590684517868097179
       vertices: []
       indices: 
       edges: []
@@ -298,13 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      traladee_balls_0: -3958067120768804511
-      traladee_balls_1: -111819436619164213
-      traladee_balls_2: 5793779774857798346
-      traladee_balls_3: -7032070048118508864
-      traladee_balls_4: -5880626539040248270
-      traladee_balls_5: -5527403248649965333
-      traladee_balls_6: 1108338253741014176
+      GS_A_traladee_shoot_0: 3550126257585468107
+      GS_A_traladee_shoot_1: 6536108649041536107
+      GS_A_traladee_shoot_2: -3655356687139031159
+      GS_A_traladee_shoot_3: -8904401509361259294
+      GS_A_traladee_shoot_4: -7260155686661414576
+      GS_A_traladee_shoot_5: -1590684517868097179
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

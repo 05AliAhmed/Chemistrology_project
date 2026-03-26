@@ -1,61 +1,61 @@
 fileFormatVersion: 2
-guid: d96a903b5a199c74983ea256c1726630
+guid: d2c91acee52264b47b6517295b95ac2f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1140461108449792324
-    second: traladee_idle_0
+      213: 3468483202734558839
+    second: GS_A_traladee_idle_0
   - first:
-      213: -5708384602868732167
-    second: traladee_idle_1
+      213: 9196729666657265136
+    second: GS_A_traladee_idle_1
   - first:
-      213: 5431780871337071507
-    second: traladee_idle_2
+      213: -2027582660208192775
+    second: GS_A_traladee_idle_2
   - first:
-      213: 5328153814155622217
-    second: traladee_idle_3
+      213: -2857014283792187415
+    second: GS_A_traladee_idle_3
   - first:
-      213: 7245132231984724765
-    second: traladee_idle_4
+      213: 5065191890704414686
+    second: GS_A_traladee_idle_4
   - first:
-      213: -7038395248500756298
-    second: traladee_idle_5
+      213: 1742990545961822886
+    second: GS_A_traladee_idle_5
   - first:
-      213: 1847514745108530107
-    second: traladee_idle_6
+      213: 702540071778393835
+    second: GS_A_traladee_idle_6
   - first:
-      213: 55931097887915610
-    second: traladee_idle_7
+      213: 7616077106505088091
+    second: GS_A_traladee_idle_7
   - first:
-      213: -1206539955789815594
-    second: traladee_idle_8
+      213: -5437305726395334689
+    second: GS_A_traladee_idle_8
   - first:
-      213: -8985492625378284492
-    second: traladee_idle_9
+      213: 6162538635907856118
+    second: GS_A_traladee_idle_9
   - first:
-      213: 1984633235513215698
-    second: traladee_idle_10
+      213: 8366788320715654539
+    second: GS_A_traladee_idle_10
   - first:
-      213: -4550713796633722831
-    second: traladee_idle_11
+      213: 6015913556993548939
+    second: GS_A_traladee_idle_11
   - first:
-      213: -3894458315868855576
-    second: traladee_idle_12
+      213: 7100885722600337255
+    second: GS_A_traladee_idle_12
   - first:
-      213: -8812568922287625132
-    second: traladee_idle_13
+      213: -2848341726595336383
+    second: GS_A_traladee_idle_13
   - first:
-      213: -8958503207624623560
-    second: traladee_idle_14
+      213: 7588776239660402247
+    second: GS_A_traladee_idle_14
   - first:
-      213: 1621151522929174882
-    second: traladee_idle_15
+      213: 1857756532795119224
+    second: GS_A_traladee_idle_15
   - first:
-      213: -318514725108270470
-    second: traladee_idle_16
+      213: -281207317269138101
+    second: GS_A_traladee_idle_16
   - first:
-      213: 5956858692126228704
-    second: traladee_idle_17
+      213: -9220137558523700300
+    second: GS_A_traladee_idle_17
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -147,24 +147,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: traladee_idle_0
+      name: GS_A_traladee_idle_0
       rect:
         serializedVersion: 2
         x: 3
@@ -179,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbea3be0aa44c20f0800000000000000
-      internalID: -1140461108449792324
+      spriteID: 77e07689817822030800000000000000
+      internalID: 3468483202734558839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_1
+      name: GS_A_traladee_idle_1
       rect:
         serializedVersion: 2
         x: 169
@@ -201,14 +188,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9fe23b0b27eb7c0b0800000000000000
-      internalID: -5708384602868732167
+      spriteID: 0f5276cc7e851af70800000000000000
+      internalID: 9196729666657265136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_2
+      name: GS_A_traladee_idle_2
       rect:
         serializedVersion: 2
         x: 335
@@ -223,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 393dec57cef816b40800000000000000
-      internalID: 5431780871337071507
+      spriteID: 9f29c8920549cd3e0800000000000000
+      internalID: -2027582660208192775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_3
+      name: GS_A_traladee_idle_3
       rect:
         serializedVersion: 2
         x: 500
@@ -245,14 +232,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 94773690aa761f940800000000000000
-      internalID: 5328153814155622217
+      spriteID: 9ef795065a8d958d0800000000000000
+      internalID: -2857014283792187415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_4
+      name: GS_A_traladee_idle_4
       rect:
         serializedVersion: 2
         x: 666
@@ -267,14 +254,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1bbe2ee061eb8460800000000000000
-      internalID: 7245132231984724765
+      spriteID: ed730a4203d2b4640800000000000000
+      internalID: 5065191890704414686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_5
+      name: GS_A_traladee_idle_5
       rect:
         serializedVersion: 2
         x: 832
@@ -289,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b0b05000d8925e90800000000000000
-      internalID: -7038395248500756298
+      spriteID: 6aa2be2baa8503810800000000000000
+      internalID: 1742990545961822886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_6
+      name: GS_A_traladee_idle_6
       rect:
         serializedVersion: 2
         x: 998
@@ -311,14 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb38d734fd0b3a910800000000000000
-      internalID: 1847514745108530107
+      spriteID: bee14da197cefb900800000000000000
+      internalID: 702540071778393835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_7
+      name: GS_A_traladee_idle_7
       rect:
         serializedVersion: 2
         x: 1164
@@ -333,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5eb1858905b6c000800000000000000
-      internalID: 55931097887915610
+      spriteID: b5c7833d6cdb1b960800000000000000
+      internalID: 7616077106505088091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_8
+      name: GS_A_traladee_idle_8
       rect:
         serializedVersion: 2
         x: 1331
@@ -355,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d025df7d42814fe0800000000000000
-      internalID: -1206539955789815594
+      spriteID: fdf320bff3fca84b0800000000000000
+      internalID: -5437305726395334689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_9
+      name: GS_A_traladee_idle_9
       rect:
         serializedVersion: 2
         x: 1497
@@ -377,14 +364,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43c6f6c701e1d4380800000000000000
-      internalID: -8985492625378284492
+      spriteID: 6f678e32d3cb58550800000000000000
+      internalID: 6162538635907856118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_10
+      name: GS_A_traladee_idle_10
       rect:
         serializedVersion: 2
         x: 1663
@@ -399,14 +386,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2da0334a965da8b10800000000000000
-      internalID: 1984633235513215698
+      spriteID: b85c42706adcc1470800000000000000
+      internalID: 8366788320715654539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_11
+      name: GS_A_traladee_idle_11
       rect:
         serializedVersion: 2
         x: 1829
@@ -421,14 +408,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1308d25a9ed98d0c0800000000000000
-      internalID: -4550713796633722831
+      spriteID: b82ae04a181dc7350800000000000000
+      internalID: 6015913556993548939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_12
+      name: GS_A_traladee_idle_12
       rect:
         serializedVersion: 2
         x: 1994
@@ -443,14 +430,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e22212abca14f9c0800000000000000
-      internalID: -3894458315868855576
+      spriteID: 76f6c3e41f96b8260800000000000000
+      internalID: 7100885722600337255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_13
+      name: GS_A_traladee_idle_13
       rect:
         serializedVersion: 2
         x: 2160
@@ -465,14 +452,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45c2664914773b580800000000000000
-      internalID: -8812568922287625132
+      spriteID: 147bc537a48a878d0800000000000000
+      internalID: -2848341726595336383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_14
+      name: GS_A_traladee_idle_14
       rect:
         serializedVersion: 2
         x: 2326
@@ -487,14 +474,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83a365efbc00da380800000000000000
-      internalID: -8958503207624623560
+      spriteID: 74602ec68cfb05960800000000000000
+      internalID: 7588776239660402247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_15
+      name: GS_A_traladee_idle_15
       rect:
         serializedVersion: 2
         x: 2492
@@ -509,14 +496,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 269e64b88bc7f7610800000000000000
-      internalID: 1621151522929174882
+      spriteID: 8761a6849b318c910800000000000000
+      internalID: 1857756532795119224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_16
+      name: GS_A_traladee_idle_16
       rect:
         serializedVersion: 2
         x: 2658
@@ -531,14 +518,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7ab03a8b88649bf0800000000000000
-      internalID: -318514725108270470
+      spriteID: b45bee15f63f81cf0800000000000000
+      internalID: -281207317269138101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_idle_17
+      name: GS_A_traladee_idle_17
       rect:
         serializedVersion: 2
         x: 2825
@@ -553,8 +540,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e0c1617b630ba250800000000000000
-      internalID: 5956858692126228704
+      spriteID: 4bb15fbadbd7b0080800000000000000
+      internalID: -9220137558523700300
       vertices: []
       indices: 
       edges: []
@@ -573,24 +560,24 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      traladee_idle_0: -1140461108449792324
-      traladee_idle_1: -5708384602868732167
-      traladee_idle_10: 1984633235513215698
-      traladee_idle_11: -4550713796633722831
-      traladee_idle_12: -3894458315868855576
-      traladee_idle_13: -8812568922287625132
-      traladee_idle_14: -8958503207624623560
-      traladee_idle_15: 1621151522929174882
-      traladee_idle_16: -318514725108270470
-      traladee_idle_17: 5956858692126228704
-      traladee_idle_2: 5431780871337071507
-      traladee_idle_3: 5328153814155622217
-      traladee_idle_4: 7245132231984724765
-      traladee_idle_5: -7038395248500756298
-      traladee_idle_6: 1847514745108530107
-      traladee_idle_7: 55931097887915610
-      traladee_idle_8: -1206539955789815594
-      traladee_idle_9: -8985492625378284492
+      GS_A_traladee_idle_0: 3468483202734558839
+      GS_A_traladee_idle_1: 9196729666657265136
+      GS_A_traladee_idle_10: 8366788320715654539
+      GS_A_traladee_idle_11: 6015913556993548939
+      GS_A_traladee_idle_12: 7100885722600337255
+      GS_A_traladee_idle_13: -2848341726595336383
+      GS_A_traladee_idle_14: 7588776239660402247
+      GS_A_traladee_idle_15: 1857756532795119224
+      GS_A_traladee_idle_16: -281207317269138101
+      GS_A_traladee_idle_17: -9220137558523700300
+      GS_A_traladee_idle_2: -2027582660208192775
+      GS_A_traladee_idle_3: -2857014283792187415
+      GS_A_traladee_idle_4: 5065191890704414686
+      GS_A_traladee_idle_5: 1742990545961822886
+      GS_A_traladee_idle_6: 702540071778393835
+      GS_A_traladee_idle_7: 7616077106505088091
+      GS_A_traladee_idle_8: -5437305726395334689
+      GS_A_traladee_idle_9: 6162538635907856118
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -131,29 +131,14 @@ GameObject:
   - component: {fileID: 16126888}
   - component: {fileID: 16126887}
   - component: {fileID: 16126886}
-  - component: {fileID: 16126885}
+  - component: {fileID: 16126890}
   m_Layer: 0
-  m_Name: Ball (2)
+  m_Name: Ball 3
   m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &16126885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16126884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1bbc3dc2a5718f46898045c3641eeb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Ball
-  rb: {fileID: 16126886}
-  target: {fileID: 0}
-  nonozone: {fileID: 0}
 --- !u!50 &16126886
 Rigidbody2D:
   serializedVersion: 5
@@ -291,6 +276,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &16126890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16126884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059e0d2018b50e54abe6c9ad37c6536a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ball3Script
+  rb: {fileID: 16126886}
+  target: {fileID: 0}
+  nonozone: {fileID: 0}
 --- !u!1 &100595231
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,29 +650,14 @@ GameObject:
   - component: {fileID: 421398954}
   - component: {fileID: 421398953}
   - component: {fileID: 421398952}
-  - component: {fileID: 421398951}
+  - component: {fileID: 421398956}
   m_Layer: 0
-  m_Name: Ball (1)
+  m_Name: Ball 2
   m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &421398951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421398950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1bbc3dc2a5718f46898045c3641eeb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Ball
-  rb: {fileID: 421398952}
-  target: {fileID: 0}
-  nonozone: {fileID: 0}
 --- !u!50 &421398952
 Rigidbody2D:
   serializedVersion: 5
@@ -810,6 +795,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &421398956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421398950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1eb1bc21992a04e9a020ebd56d5f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ball2Script
+  rb: {fileID: 421398952}
+  target: {fileID: 0}
+  nonozone: {fileID: 0}
 --- !u!1 &919362185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df17b699be483584fb473bf5f07bad0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NonozoneScript
+  Score: {fileID: 1733428673}
 --- !u!1 &1733428671
 GameObject:
   m_ObjectHideFlags: 0

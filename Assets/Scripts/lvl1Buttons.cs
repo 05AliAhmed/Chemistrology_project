@@ -24,7 +24,7 @@ public class lvl1Buttons : MonoBehaviour
     {
         score += amendScore;
         scoreTxt.text = score.ToString();
-        highScore = score; // testing purpose not working remove highscore int and this line later.
+        // highScore = score; // testing purpose not working remove highscore int and this line later.
         if(score > PlayerPrefs.GetInt("Highscore",0))
         {
             PlayerPrefs.SetInt("Highscore", score);

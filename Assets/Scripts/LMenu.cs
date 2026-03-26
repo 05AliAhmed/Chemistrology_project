@@ -9,6 +9,10 @@ public class LMenu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void backoption()
+    {
+        SceneManager.LoadScene(1);
+    }
 
 
     void Start()

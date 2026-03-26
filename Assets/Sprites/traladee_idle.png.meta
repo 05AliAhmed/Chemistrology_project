@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: d96a903b5a199c74983ea256c1726630
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1140461108449792324
+    second: traladee_idle_0
+  - first:
+      213: -5708384602868732167
+    second: traladee_idle_1
+  - first:
+      213: 5431780871337071507
+    second: traladee_idle_2
+  - first:
+      213: 5328153814155622217
+    second: traladee_idle_3
+  - first:
+      213: 7245132231984724765
+    second: traladee_idle_4
+  - first:
+      213: -7038395248500756298
+    second: traladee_idle_5
+  - first:
+      213: 1847514745108530107
+    second: traladee_idle_6
+  - first:
+      213: 55931097887915610
+    second: traladee_idle_7
+  - first:
+      213: -1206539955789815594
+    second: traladee_idle_8
+  - first:
+      213: -8985492625378284492
+    second: traladee_idle_9
+  - first:
+      213: 1984633235513215698
+    second: traladee_idle_10
+  - first:
+      213: -4550713796633722831
+    second: traladee_idle_11
+  - first:
+      213: -3894458315868855576
+    second: traladee_idle_12
+  - first:
+      213: -8812568922287625132
+    second: traladee_idle_13
+  - first:
+      213: -8958503207624623560
+    second: traladee_idle_14
+  - first:
+      213: 1621151522929174882
+    second: traladee_idle_15
+  - first:
+      213: -318514725108270470
+    second: traladee_idle_16
+  - first:
+      213: 5956858692126228704
+    second: traladee_idle_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: traladee_idle_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1
+        width: 161
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbea3be0aa44c20f0800000000000000
+      internalID: -1140461108449792324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1
+        width: 161
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe23b0b27eb7c0b0800000000000000
+      internalID: -5708384602868732167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_2
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1
+        width: 161
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393dec57cef816b40800000000000000
+      internalID: 5431780871337071507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_3
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 164
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94773690aa761f940800000000000000
+      internalID: 5328153814155622217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_4
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 0
+        width: 164
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1bbe2ee061eb8460800000000000000
+      internalID: 7245132231984724765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_5
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 164
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0b05000d8925e90800000000000000
+      internalID: -7038395248500756298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_6
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 0
+        width: 164
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb38d734fd0b3a910800000000000000
+      internalID: 1847514745108530107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_7
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 0
+        width: 164
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5eb1858905b6c000800000000000000
+      internalID: 55931097887915610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_8
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 1
+        width: 161
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d025df7d42814fe0800000000000000
+      internalID: -1206539955789815594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_9
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1
+        width: 161
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c6f6c701e1d4380800000000000000
+      internalID: -8985492625378284492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_10
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 1
+        width: 161
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da0334a965da8b10800000000000000
+      internalID: 1984633235513215698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_11
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 1
+        width: 161
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1308d25a9ed98d0c0800000000000000
+      internalID: -4550713796633722831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_12
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 0
+        width: 164
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e22212abca14f9c0800000000000000
+      internalID: -3894458315868855576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_13
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 164
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c2664914773b580800000000000000
+      internalID: -8812568922287625132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_14
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 0
+        width: 164
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a365efbc00da380800000000000000
+      internalID: -8958503207624623560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_15
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 0
+        width: 164
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269e64b88bc7f7610800000000000000
+      internalID: 1621151522929174882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_16
+      rect:
+        serializedVersion: 2
+        x: 2658
+        y: 0
+        width: 164
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ab03a8b88649bf0800000000000000
+      internalID: -318514725108270470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traladee_idle_17
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 1
+        width: 161
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e0c1617b630ba250800000000000000
+      internalID: 5956858692126228704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      traladee_idle_0: -1140461108449792324
+      traladee_idle_1: -5708384602868732167
+      traladee_idle_10: 1984633235513215698
+      traladee_idle_11: -4550713796633722831
+      traladee_idle_12: -3894458315868855576
+      traladee_idle_13: -8812568922287625132
+      traladee_idle_14: -8958503207624623560
+      traladee_idle_15: 1621151522929174882
+      traladee_idle_16: -318514725108270470
+      traladee_idle_17: 5956858692126228704
+      traladee_idle_2: 5431780871337071507
+      traladee_idle_3: 5328153814155622217
+      traladee_idle_4: 7245132231984724765
+      traladee_idle_5: -7038395248500756298
+      traladee_idle_6: 1847514745108530107
+      traladee_idle_7: 55931097887915610
+      traladee_idle_8: -1206539955789815594
+      traladee_idle_9: -8985492625378284492
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

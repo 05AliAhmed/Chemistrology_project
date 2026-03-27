@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 70d26a032d0c2434f83f3ec7acd0b4ea
+guid: b1c68caeb698d804982578ab0442ab1e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4786114618148129894
-    second: pause_btn_pressed_0
+      213: 66964989076846505
+    second: GS_atom_structure_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pause_btn_pressed_0
+      name: GS_atom_structure_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 111
-        height: 111
+        width: 231
+        height: 239
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66c060523e1bb6240800000000000000
-      internalID: 4786114618148129894
+      spriteID: 9a730528d48ede000800000000000000
+      internalID: 66964989076846505
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pause_btn_pressed_0: 4786114618148129894
+      GS_atom_structure_0: 66964989076846505
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

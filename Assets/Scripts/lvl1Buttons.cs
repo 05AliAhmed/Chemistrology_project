@@ -36,6 +36,10 @@ public class lvl1Buttons : MonoBehaviour
     public void LoseScore()
     {
         score -= loseScore;
+        if(score < 0)
+        {
+            score = 0;
+        }
         scoreTxt.text = score.ToString();
     }
     public void BackOption() // will late be replaced with settings button | bact to main menu button 

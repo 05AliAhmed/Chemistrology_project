@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4e30fef615e2a074ba37b77ac3561508
+guid: 70d26a032d0c2434f83f3ec7acd0b4ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2971749065333254799
-    second: unfilled_electron_0
+      213: 4786114618148129894
+    second: pause_btn_pressed_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: unfilled_electron_0
+      name: pause_btn_pressed_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 71
-        height: 74
+        width: 111
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 175563758f932c6d0800000000000000
-      internalID: -2971749065333254799
+      spriteID: 66c060523e1bb6240800000000000000
+      internalID: 4786114618148129894
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      unfilled_electron_0: -2971749065333254799
+      pause_btn_pressed_0: 4786114618148129894
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

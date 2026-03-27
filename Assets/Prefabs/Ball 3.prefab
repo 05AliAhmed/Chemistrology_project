@@ -122,12 +122,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -7757165908740700983, guid: 18ffb4953f2bb1a40ad9a5473659dc9b, type: 3}
+  m_Sprite: {fileID: 5748136783241126305, guid: 6b9545c41af42cf4c8c453be2dd13b5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.09, y: 5.06}
+  m_Size: {x: 2.125, y: 2.15625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -188,6 +188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball3Script
   rb: {fileID: 0}
   target: {fileID: 2178308330013695192, guid: b08e1e25670e4314a9b5126b6ed96543, type: 3}
+  targethit: {fileID: 0}
   nonozone: {fileID: 0}
   point: {fileID: 0}
 --- !u!1 &5643862775669247696

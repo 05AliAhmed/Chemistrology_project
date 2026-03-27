@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: d76d2a6612d60cd4692747cdd26780d4
+guid: 6b9545c41af42cf4c8c453be2dd13b5a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7757165908740700983
-    second: filled_electron_0
-  - first:
-      213: -6826328132190945411
-    second: filled_electron_1
-  - first:
-      213: 4255983831809263984
-    second: filled_electron_2
+      213: 5748136783241126305
+    second: GS_electron_fill_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: filled_electron_0
+      name: GS_electron_fill_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 74
-        height: 70
+        width: 68
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c48db984b2095490800000000000000
-      internalID: -7757165908740700983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: filled_electron_1
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 38
-        width: 13
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7fb0803bb20441a0800000000000000
-      internalID: -6826328132190945411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: filled_electron_2
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 2
-        width: 13
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0790cc0feba401b30800000000000000
-      internalID: 4255983831809263984
+      spriteID: 1a1a17d03fb75cf40800000000000000
+      internalID: 5748136783241126305
       vertices: []
       indices: 
       edges: []
@@ -198,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      filled_electron_0: -7757165908740700983
-      filled_electron_1: -6826328132190945411
-      filled_electron_2: 4255983831809263984
+      GS_electron_fill_0: 5748136783241126305
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

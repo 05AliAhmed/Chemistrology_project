@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: be0e0cd2e13356142a1fa17a9212c0e7
+guid: fc492816cd88d304f8c7a29799d44b71
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 845645310105882002
-    second: traladee_shoot_0
+      213: 3550126257585468107
+    second: GS_A_traladee_shoot_0
   - first:
-      213: -526160880768852862
-    second: traladee_shoot_1
+      213: 6536108649041536107
+    second: GS_A_traladee_shoot_1
   - first:
-      213: 3382818280632850122
-    second: traladee_shoot_2
+      213: -3655356687139031159
+    second: GS_A_traladee_shoot_2
   - first:
-      213: 3984937382696989794
-    second: traladee_shoot_3
+      213: -8904401509361259294
+    second: GS_A_traladee_shoot_3
   - first:
-      213: -782039979269007173
-    second: traladee_shoot_4
+      213: -7260155686661414576
+    second: GS_A_traladee_shoot_4
   - first:
-      213: 1820196776912227861
-    second: traladee_shoot_5
+      213: -1590684517868097179
+    second: GS_A_traladee_shoot_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,7 +128,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: traladee_shoot_0
+      name: GS_A_traladee_shoot_0
       rect:
         serializedVersion: 2
         x: 17
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 29d06dadde55cbb00800000000000000
-      internalID: 845645310105882002
+      spriteID: bc23b2b9505944130800000000000000
+      internalID: 3550126257585468107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_shoot_1
+      name: GS_A_traladee_shoot_1
       rect:
         serializedVersion: 2
         x: 124
@@ -165,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28cd0177773b2b8f0800000000000000
-      internalID: -526160880768852862
+      spriteID: b64aa7fbf2ce4ba50800000000000000
+      internalID: 6536108649041536107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_shoot_2
+      name: GS_A_traladee_shoot_2
       rect:
         serializedVersion: 2
         x: 193
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac691d4ad4f22fe20800000000000000
-      internalID: 3382818280632850122
+      spriteID: 987babfb570954dc0800000000000000
+      internalID: -3655356687139031159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_shoot_3
+      name: GS_A_traladee_shoot_3
       rect:
         serializedVersion: 2
         x: 293
@@ -209,14 +209,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 26434dbbf675d4730800000000000000
-      internalID: 3984937382696989794
+      spriteID: 2ece11931063d6480800000000000000
+      internalID: -8904401509361259294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_shoot_4
+      name: GS_A_traladee_shoot_4
       rect:
         serializedVersion: 2
         x: 360
@@ -231,14 +231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb8548348c2a525f0800000000000000
-      internalID: -782039979269007173
+      spriteID: 051a3827edebe3b90800000000000000
+      internalID: -7260155686661414576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traladee_shoot_5
+      name: GS_A_traladee_shoot_5
       rect:
         serializedVersion: 2
         x: 459
@@ -253,8 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51e0a252353a24910800000000000000
-      internalID: 1820196776912227861
+      spriteID: 56132cadbd0cce9e0800000000000000
+      internalID: -1590684517868097179
       vertices: []
       indices: 
       edges: []
@@ -273,12 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      traladee_shoot_0: 845645310105882002
-      traladee_shoot_1: -526160880768852862
-      traladee_shoot_2: 3382818280632850122
-      traladee_shoot_3: 3984937382696989794
-      traladee_shoot_4: -782039979269007173
-      traladee_shoot_5: 1820196776912227861
+      GS_A_traladee_shoot_0: 3550126257585468107
+      GS_A_traladee_shoot_1: 6536108649041536107
+      GS_A_traladee_shoot_2: -3655356687139031159
+      GS_A_traladee_shoot_3: -8904401509361259294
+      GS_A_traladee_shoot_4: -7260155686661414576
+      GS_A_traladee_shoot_5: -1590684517868097179
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

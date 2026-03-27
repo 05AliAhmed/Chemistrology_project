@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e37e10389b8c0c64e930b1f6d6e546c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetScriptTwo
-  TargetHit: {fileID: -7757165908740700983, guid: 18ffb4953f2bb1a40ad9a5473659dc9b, type: 3}
+  TargetHit: {fileID: 5748136783241126305, guid: 6b9545c41af42cf4c8c453be2dd13b5a, type: 3}
 --- !u!1 &919362185
 GameObject:
   m_ObjectHideFlags: 0

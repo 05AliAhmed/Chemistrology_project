@@ -15,24 +15,31 @@ public class lvl1Buttons : MonoBehaviour
     [SerializeField] int totalTarget; // number of electron is an atom per level
     [SerializeField] int scoreToPassLOne; // testing purpose if score 500 proceed to level 2 if less display a msg after all targets been hit
     [SerializeField] TMP_Text scoreTxt;
+    [SerializeField] TMP_Text passScoreTxt;
     [SerializeField] TMP_Text highScoreTxt;
     int score; // keeping the score variable.
     int highScore;
+    int passScore;
 
 
     public void ScoreSystem() // will late be connected with shooting system to count scores | Score Button
     {
         score += amendScore;
         scoreTxt.text = score.ToString();
+        passScore = scoreToPassLOne - score;
         // highScore = score; // testing purpose not working remove highscore int and this line later.
-        if(score > PlayerPrefs.GetInt("Highscore",0))
+        if(passScore < 0)
         {
-            PlayerPrefs.SetInt("Highscore", score);
-            highScoreTxt.text = score.ToString();   
+            passScore = 0;
+        }
+        if(score > PlayerPrefs.GetInt("Highscore",0)) // if score is greater than H.S, 0 is there because at start high score is 0.
+        {
+            PlayerPrefs.SetInt("Highscore", score); // setting Highscore to be the score continously 
+            highScoreTxt.text = score.ToString();
+            passScoreTxt.text = passScore.ToString();            
         }
         Debug.Log(score);
     }
-
     public void LoseScore()
     {
         score -= loseScore;
@@ -47,6 +54,10 @@ public class lvl1Buttons : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void Proceedlvl2()
+    {
+        SceneManager.LoadScene(3);
+    }
     public void PauseButton() // is used for pasusing the game | Settings button
     {
         pausemenu.SetActive(true);
@@ -64,12 +75,13 @@ public class lvl1Buttons : MonoBehaviour
     void Start()
     {
         pausemenu.SetActive(false);
+        PlayerPrefs.SetInt("Highscore", 0); // setting highscore to zero everytime game starts or new level starts, I knwo high score is to be kept even when game has been quit for that make a new highscore variable for each level??
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
     }
 
     void Update()
     {
-        if(targetsHit == totalTarget)
+        if(targetsHit == totalTarget) // For testing purpose
         {
             //pop fact screen, display score, high score | In proper play
             if(score < scoreToPassLOne)

@@ -46,5 +46,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: LevelButtons
+    uniqueID: 2040644947
+    locked: 0
+  - name: BackGround
+    uniqueID: 2267544605
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 2733954407
+    locked: 0
   m_RenderingLayers:
   - Default

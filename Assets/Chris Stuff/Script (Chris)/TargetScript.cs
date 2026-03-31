@@ -4,9 +4,10 @@ public class TargetScript : MonoBehaviour
 {
     private SpriteRenderer rend;
     public Sprite TargetHit;
-  /*  public BallScript ball;
-    public PointScript points;*/
-    
+    public CircleCollider2D myCollider;
+    /*  public BallScript ball;
+      public PointScript points;*/
+
     /* public Text Score;
      int PlayerScore=0;
      public int point = 100;*/
@@ -22,6 +23,7 @@ public class TargetScript : MonoBehaviour
     public void changeTarget()
     {
         rend.sprite = TargetHit;
+        Destroy(myCollider);
         /*PlayerScore = PlayerScore + point;
       
         Score.text = PlayerScore.ToString();*/

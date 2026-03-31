@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetScript
   TargetHit: {fileID: 21300000, guid: 6b9545c41af42cf4c8c453be2dd13b5a, type: 3}
+  myCollider: {fileID: 7991678533421486811}
 --- !u!114 &8381969319883519115
 MonoBehaviour:
   m_ObjectHideFlags: 0

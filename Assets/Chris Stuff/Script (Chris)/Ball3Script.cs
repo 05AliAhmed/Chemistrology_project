@@ -58,7 +58,7 @@ public class Ball3Script : MonoBehaviour
     public Rigidbody2D rb;
     //[SerializeField] GameObject righttarget;
     public List<GameObject> groupOfTargets;
-    public TargetScriptTwo targethit;
+   // public TargetScriptTwo targethit;
     public NonozoneScript nonozone;
     public PointScript point;
     void Start()

@@ -88,12 +88,14 @@ public class Ball3Script : MonoBehaviour
         {
 
             Destroy(gameObject);
+            
             if(groupOfTargets.Contains(collisioninfo.gameObject))
             {
                 collisioninfo.gameObject.GetComponent<TargetScript>().changeTarget();
             }
             point.EarnPoint();
             Debug.Log("GG");
+
         }
         /*if (collisioninfo.collider.tag == "Targets")
         {

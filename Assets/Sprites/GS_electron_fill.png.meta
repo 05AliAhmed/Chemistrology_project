@@ -1,10 +1,26 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Sprites/GS_electron_fill.png.meta
 guid: 6b9545c41af42cf4c8c453be2dd13b5a
+=======
+guid: 267ffc07afb3c524695dd65ef4cd6d42
+>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 5748136783241126305
     second: GS_electron_fill_0
+<<<<<<< HEAD
+========
+guid: 7aeeed8fe30eed94caee4bcb37f9d3d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 66964989076846505
+    second: GS_atom_structure_0
+>>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee:Assets/Sprites/GS_atom_structure.png.meta
+=======
+>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +67,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,30 +112,35 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Sprites/GS_electron_fill.png.meta
       name: GS_electron_fill_0
+========
+      name: GS_atom_structure_0
+>>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee:Assets/Sprites/GS_atom_structure.png.meta
+=======
+      name: GS_electron_fill_0
+>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee
       rect:
         serializedVersion: 2
         x: 0
         y: 0
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Sprites/GS_electron_fill.png.meta
         width: 68
         height: 69
+========
+        width: 231
+        height: 239
+>>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee:Assets/Sprites/GS_atom_structure.png.meta
+=======
+        width: 68
+        height: 69
+>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +149,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Sprites/GS_electron_fill.png.meta
       spriteID: 1a1a17d03fb75cf40800000000000000
       internalID: 5748136783241126305
+========
+      spriteID: 9a730528d48ede000800000000000000
+      internalID: 66964989076846505
+>>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee:Assets/Sprites/GS_atom_structure.png.meta
+=======
+      spriteID: 1a1a17d03fb75cf40800000000000000
+      internalID: 5748136783241126305
+>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee
       vertices: []
       indices: 
       edges: []
@@ -148,7 +179,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Sprites/GS_electron_fill.png.meta
       GS_electron_fill_0: 5748136783241126305
+========
+      GS_atom_structure_0: 66964989076846505
+>>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee:Assets/Sprites/GS_atom_structure.png.meta
+=======
+      GS_electron_fill_0: 5748136783241126305
+>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -48,6 +48,8 @@
 //        }
 //    }
 //}
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Ball3Script : MonoBehaviour
@@ -55,14 +57,15 @@ public class Ball3Script : MonoBehaviour
 
     public Rigidbody2D rb;
     //[SerializeField] GameObject righttarget;
-    public TargetScript target;
+    public List<GameObject> groupOfTargets;
     public TargetScriptTwo targethit;
     public NonozoneScript nonozone;
     public PointScript point;
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Target").GetComponent<TargetScript>();
-        targethit = GameObject.FindGameObjectWithTag("Targets").GetComponent<TargetScriptTwo>();
+        groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
+            //.GetComponent<TargetScript>();
+      //  targethit = GameObject.FindGameObjectWithTag("Targets").GetComponent<TargetScriptTwo>();
         nonozone = GameObject.FindGameObjectWithTag("Nonozone").GetComponent<NonozoneScript>();
         point = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();
     }
@@ -85,18 +88,21 @@ public class Ball3Script : MonoBehaviour
         {
 
             Destroy(gameObject);
-            target.changeTarget();
+            if(groupOfTargets.Contains(collisioninfo.gameObject))
+            {
+                collisioninfo.gameObject.GetComponent<TargetScript>().changeTarget();
+            }
             point.EarnPoint();
             Debug.Log("GG");
         }
-        if (collisioninfo.collider.tag == "Targets")
+        /*if (collisioninfo.collider.tag == "Targets")
         {
 
             Destroy(gameObject);
             targethit.changeTarget();
             point.EarnPoint();
             Debug.Log("GG");
-        }
+        }*/
         if (collisioninfo.collider.tag == "Nonozone")
         {
 

@@ -122,7 +122,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5748136783241126305, guid: 6b9545c41af42cf4c8c453be2dd13b5a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b9545c41af42cf4c8c453be2dd13b5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -187,10 +187,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball3Script
   rb: {fileID: 0}
-  target: {fileID: 2178308330013695192, guid: b08e1e25670e4314a9b5126b6ed96543, type: 3}
-  targethit: {fileID: 0}
-  nonozone: {fileID: 0}
+  groupOfTargets: []
+  nonozone: {fileID: 4203497067827874643, guid: c6f0e76ffa8fa84478978284767012b6, type: 3}
   point: {fileID: 0}
+  targethit: 0
 --- !u!1 &5643862775669247696
 GameObject:
   m_ObjectHideFlags: 0

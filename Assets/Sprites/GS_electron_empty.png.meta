@@ -1,26 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Sprites/GS_electron_empty.png.meta
 guid: 92f0ab37a19497b4aadd01b53a9ecfb7
-=======
-guid: 7f8cad73e6bcda14eb4bf12d279e4b7b
->>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -8364484852259363388
-    second: GS_electron_empty_0
-<<<<<<< HEAD
-========
-guid: fdde9e4815715fc4ab75b6557a27f12b
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -8180126304885781636
-    second: GS_A_electron_fill_0
->>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee:Assets/Sprites/GS_A_electron_fill.png.meta
-=======
->>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,16 +39,16 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -82,9 +63,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
@@ -104,7 +85,20 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,62 +108,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Sprites/GS_electron_empty.png.meta
-      name: GS_electron_empty_0
-========
-      name: GS_A_electron_fill_0
->>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee:Assets/Sprites/GS_A_electron_fill.png.meta
-=======
-      name: GS_electron_empty_0
->>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Sprites/GS_electron_empty.png.meta
-        width: 65
-        height: 66
-========
-        width: 612
-        height: 69
->>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee:Assets/Sprites/GS_A_electron_fill.png.meta
-=======
-        width: 65
-        height: 66
->>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Sprites/GS_electron_empty.png.meta
-      spriteID: 4c5e1f308516beb80800000000000000
-      internalID: -8364484852259363388
-========
-      spriteID: c7b4473477a5a7e80800000000000000
-      internalID: -8180126304885781636
->>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee:Assets/Sprites/GS_A_electron_fill.png.meta
-=======
-      spriteID: 4c5e1f308516beb80800000000000000
-      internalID: -8364484852259363388
->>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -178,16 +122,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Sprites/GS_electron_empty.png.meta
-      GS_electron_empty_0: -8364484852259363388
-========
-      GS_A_electron_fill_0: -8180126304885781636
->>>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee:Assets/Sprites/GS_A_electron_fill.png.meta
-=======
-      GS_electron_empty_0: -8364484852259363388
->>>>>>> 399b36b86efe436c909cf6c4351bcf1bf01a15ee
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -61,13 +61,19 @@ public class Ball3Script : MonoBehaviour
    // public TargetScriptTwo targethit;
     public NonozoneScript nonozone;
     public PointScript point;
+
+    public bool targethit;
+
+
+    // public lvl1Buttons lvl1Script;
     void Start()
     {
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
             //.GetComponent<TargetScript>();
       //  targethit = GameObject.FindGameObjectWithTag("Targets").GetComponent<TargetScriptTwo>();
-        nonozone = GameObject.FindGameObjectWithTag("Nonozone").GetComponent<NonozoneScript>();
-        point = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();
+        // nonozone = GameObject.FindGameObjectWithTag("Nonozone").GetComponent<NonozoneScript>();
+        // point = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();
+        // lvl1Script = FindAnyObjectByType<lvl1Buttons>();//GetComponent<lvl1Buttons>(); // reference to level1script which has score and lose system init - Ali Ahmed 
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -85,16 +91,19 @@ public class Ball3Script : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collisioninfo)
     {
         if (collisioninfo.collider.tag == "Target")
-        {
-
-            Destroy(gameObject);
+        { 
             if(groupOfTargets.Contains(collisioninfo.gameObject))
             {
                 collisioninfo.gameObject.GetComponent<TargetScript>().changeTarget();
             }
-            point.EarnPoint();
+            // lvl1Script.ScoreSystem(); // accessing score system from lvl1script - Ali Ahmed
+            // point.EarnPoint();
             Debug.Log("GG");
+            Destroy(gameObject);
+            targethit = true; // checking if target's been hit if yes true - Ali Ahmed
+            
         }
+
         /*if (collisioninfo.collider.tag == "Targets")
         {
 
@@ -103,11 +112,14 @@ public class Ball3Script : MonoBehaviour
             point.EarnPoint();
             Debug.Log("GG");
         }*/
-        if (collisioninfo.collider.tag == "Nonozone")
+        else if (collisioninfo.collider.tag == "Nonozone")
         {
 
+            
+            // lvl1Script.LoseScore(); // accessing lose points system from lvl1script - Ali Ahmed
             Destroy(gameObject);
-            point.LosePoint();
+            targethit = false; //checking if target's been hit if no false - Ali Ahmed
+            // point.LosePoint();
 
         }
     }

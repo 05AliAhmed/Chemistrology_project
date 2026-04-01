@@ -187,10 +187,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball3Script
   rb: {fileID: 0}
-  target: {fileID: 2178308330013695192, guid: b08e1e25670e4314a9b5126b6ed96543, type: 3}
-  targethit: {fileID: 0}
-  nonozone: {fileID: 0}
+  groupOfTargets: []
+  nonozone: {fileID: 4203497067827874643, guid: c6f0e76ffa8fa84478978284767012b6, type: 3}
   point: {fileID: 0}
+  targethit: 0
 --- !u!1 &5643862775669247696
 GameObject:
   m_ObjectHideFlags: 0

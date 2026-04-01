@@ -17,6 +17,8 @@ public class lvl1Buttons : MonoBehaviour
     [SerializeField] TMP_Text scoreTxt;
     [SerializeField] TMP_Text passScoreTxt;
     [SerializeField] TMP_Text highScoreTxt;
+    // [SerializeField] 
+    Ball3Script electronScript; // reference
     int score; // keeping the score variable.
     int highScore;
     int passScore;
@@ -39,6 +41,7 @@ public class lvl1Buttons : MonoBehaviour
             passScoreTxt.text = passScore.ToString();            
         }
         Debug.Log(score);
+        Debug.Log("CONNECTED");
     }
     public void LoseScore()
     {
@@ -77,30 +80,43 @@ public class lvl1Buttons : MonoBehaviour
         pausemenu.SetActive(false);
         PlayerPrefs.SetInt("Highscore", 0); // setting highscore to zero everytime game starts or new level starts, I knwo high score is to be kept even when game has been quit for that make a new highscore variable for each level??
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
+        // electronScript = FindAnyObjectByType<Ball3Script>();
+        electronScript = GameObject.FindGameObjectsWithTag("Ball");
+        // electronScript = GetComponent<Ball3Script>();
     }
 
     void Update()
     {
-        if(targetsHit == totalTarget) // For testing purpose
+        if(electronScript.targethit)
         {
-            //pop fact screen, display score, high score | In proper play
-            if(score < scoreToPassLOne)
-            {
-                Debug.Log($"You need {scoreToPassLOne - score} more points to proceed");
-                Debug.Log($"{score}");
-                Debug.Log($"{highScore}");
-            }
-            else
-            {
-                Debug.Log("Here is the fact");
-                Debug.Log($"{score}");
-                Debug.Log($"{highScore}");
-                // display next button | next button.setactive(true);               
-            }
+            ScoreSystem();
+            Debug.Log("Well Connected");
         }
         else
         {
-            Debug.Log("Not yet");
+            LoseScore();
         }
+
+        // if(targetsHit == totalTarget) // For testing purpose
+        // {
+        //     //pop fact screen, display score, high score | In proper play
+        //     // if(score < scoreToPassLOne)
+        //     // {
+        //     //     Debug.Log($"You need {scoreToPassLOne - score} more points to proceed");
+        //     //     Debug.Log($"{score}");
+        //     //     Debug.Log($"{highScore}");
+        //     // }
+        //     // else
+        //     // {
+        //     //     Debug.Log("Here is the fact");
+        //     //     Debug.Log($"{score}");
+        //     //     Debug.Log($"{highScore}");
+        //         // display next button | next button.setactive(true);               
+        //     }
+        // }
+        // // else
+        // {
+        //     // Debug.Log("Not yet");
+        // }
     }
 }

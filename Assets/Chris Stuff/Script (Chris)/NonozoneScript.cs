@@ -12,7 +12,7 @@ public class NonozoneScript : MonoBehaviour
     public PointScript points;
     void Start()
     {
-        points=GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();  
+        // points=GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();  
     }
 
     // Update is called once per frame

@@ -12,6 +12,6 @@ public class CircularMovement : MonoBehaviour
     void Update()
     {
         //gameObject.transform.Rotate(0f,0f,10f*Time.deltaTime);
-        gameObject.transform.RotateAround(new Vector3(-0.1f, -0.4f, 0), Vector3.forward, 50f * Time.deltaTime);
+        gameObject.transform.RotateAround(new Vector3(0, 0, 0), Vector3.forward, 50f * Time.deltaTime);
     }
 }

@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc1f6a212825415409ce9ad8018ea647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CircularMovement
+  speed: 50
 --- !u!58 &7991678533421486811
 CircleCollider2D:
   m_ObjectHideFlags: 0

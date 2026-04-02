@@ -3773,7 +3773,6 @@ MonoBehaviour:
   scoreTxt: {fileID: 1727689545}
   passScoreTxt: {fileID: 2036591758}
   highScoreTxt: {fileID: 1487752257}
-  electronScript: {fileID: 612969316}
 --- !u!222 &1501387230
 CanvasRenderer:
   m_ObjectHideFlags: 0

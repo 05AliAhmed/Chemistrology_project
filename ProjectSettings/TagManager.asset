@@ -9,6 +9,7 @@ TagManager:
   - Nonozone
   - Points
   - Targets
+  - TargetAnim
   layers:
   - Default
   - TransparentFX

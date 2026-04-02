@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6326977188566103172}
   - component: {fileID: 762991444714459839}
   - component: {fileID: 8094489567401803156}
+  - component: {fileID: 8430294873230482949}
   m_Layer: 0
   m_Name: PlayerObj
   m_TagString: Untagged
@@ -105,3 +106,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TraladeeBehaviour
   bullet: {fileID: 2469884587470388481, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}
+--- !u!95 &8430294873230482949
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5489500304351339917}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c265554f4a8d8a841a1f04cba745e070, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

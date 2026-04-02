@@ -18,7 +18,7 @@ public class lvl1Buttons : MonoBehaviour
     [SerializeField] TMP_Text passScoreTxt;
     [SerializeField] TMP_Text highScoreTxt;
     // [SerializeField] 
-    [SerializeField] Ball3Script electronScript; // reference
+    Ball3Script electronScript; // reference
     int score; // keeping the score variable.
     int highScore;
     int passScore;
@@ -81,21 +81,35 @@ public class lvl1Buttons : MonoBehaviour
         PlayerPrefs.SetInt("Highscore", 0); // setting highscore to zero everytime game starts or new level starts, I knwo high score is to be kept even when game has been quit for that make a new highscore variable for each level??
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
         // electronScript = FindAnyObjectByType<Ball3Script>();
-        // electronScript = GameObject.FindGameObjectsWithTag("Ball");
+
+
+
+        //electronScript = GameObject.FindGameObjectsWithTag("Ball");
+
+
+
+
         // electronScript = GetComponent<Ball3Script>();
     }
 
     void Update()
     {
-        if(electronScript.targethit)
+        /*if(electronScript.targethit)
         {
             ScoreSystem();
-            Debug.Log("Well Connected"); //it is working but on manually switching the bool, it is not working ball collides with the target
-         }
+            Debug.Log("Well Connected");
+        }
         else
         {
             LoseScore();
-        }
+        }*/
+
+
+
+
+
+
+
 
         // if(targetsHit == totalTarget) // For testing purpose
         // {

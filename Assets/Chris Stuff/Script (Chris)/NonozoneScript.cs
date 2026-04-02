@@ -9,7 +9,7 @@ public class NonozoneScript : MonoBehaviour
     public Text Score;*/
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    public PointScript points;
+    // public PointScript points;
     void Start()
     {
         // points=GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();  

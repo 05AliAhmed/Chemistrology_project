@@ -64,14 +64,19 @@ public class Ball3Script : MonoBehaviour
 
     public bool targethit;
 
+    public lvl1Buttons levelmanager;
+
 
     // public lvl1Buttons lvl1Script;
     void Start()
     {
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
+        //levelmanager= GameObject.Find("LevelManager");
+        levelmanager = GameObject.Find("LevelManager").GetComponent<lvl1Buttons>();
+
             //.GetComponent<TargetScript>();
       //  targethit = GameObject.FindGameObjectWithTag("Targets").GetComponent<TargetScriptTwo>();
-        // nonozone = GameObject.FindGameObjectWithTag("Nonozone").GetComponent<NonozoneScript>();
+        nonozone = GameObject.FindGameObjectWithTag("Nonozone").GetComponent<NonozoneScript>();
         // point = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();
         // lvl1Script = FindAnyObjectByType<lvl1Buttons>();//GetComponent<lvl1Buttons>(); // reference to level1script which has score and lose system init - Ali Ahmed 
     }
@@ -92,15 +97,20 @@ public class Ball3Script : MonoBehaviour
     {
         if (collisioninfo.collider.tag == "Target")
         { 
+            //Debug.Log("hit target");
             if(groupOfTargets.Contains(collisioninfo.gameObject))
             {
+                //Debug.Log("it is found");
                 collisioninfo.gameObject.GetComponent<TargetScript>().changeTarget();
+                //targethit = true;
+                levelmanager.ScoreSystem(); // using scoresystem from levelbutton script
+                Debug.Log(targethit);
             }
+             // checking if target's been hit if yes true - Ali Ahmed
             // lvl1Script.ScoreSystem(); // accessing score system from lvl1script - Ali Ahmed
             // point.EarnPoint();
             Debug.Log("GG");
             Destroy(gameObject);
-            targethit = true; // checking if target's been hit if yes true - Ali Ahmed
             
         }
 
@@ -115,10 +125,11 @@ public class Ball3Script : MonoBehaviour
         else if (collisioninfo.collider.tag == "Nonozone")
         {
 
+            levelmanager.LoseScore(); // using losesystem from levelbutton script
             
             // lvl1Script.LoseScore(); // accessing lose points system from lvl1script - Ali Ahmed
             Destroy(gameObject);
-            targethit = false; //checking if target's been hit if no false - Ali Ahmed
+            // targethit = false; //checking if target's been hit if no false - Ali Ahmed
             // point.LosePoint();
 
         }

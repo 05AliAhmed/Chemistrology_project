@@ -18,7 +18,7 @@ public class lvl1Buttons : MonoBehaviour
     [SerializeField] TMP_Text passScoreTxt;
     [SerializeField] TMP_Text highScoreTxt;
     // [SerializeField] 
-    Ball3Script electronScript; // reference
+    [SerializeField] Ball3Script electronScript; // reference
     int score; // keeping the score variable.
     int highScore;
     int passScore;
@@ -26,6 +26,7 @@ public class lvl1Buttons : MonoBehaviour
 
     public void ScoreSystem() // will late be connected with shooting system to count scores | Score Button
     {
+        Debug.Log("score system");
         score += amendScore;
         scoreTxt.text = score.ToString();
         passScore = scoreToPassLOne - score;
@@ -94,15 +95,15 @@ public class lvl1Buttons : MonoBehaviour
 
     void Update()
     {
-        /*if(electronScript.targethit)
-        {
-            ScoreSystem();
-            Debug.Log("Well Connected");
-        }
-        else
-        {
-            LoseScore();
-        }*/
+        // if(electronScript.targethit)
+        // {
+        //     ScoreSystem();
+        //     Debug.Log("Well Connected");
+        // }
+        // else
+        // {
+        //     LoseScore();
+        // }
 
 
 

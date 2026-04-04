@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: 7eea7b14b82f0244681787aff2d04025
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6876506172029988713
+    second: W_well_done_0
+  - first:
+      213: -8605185532681471660
+    second: W_well_done_1
+  - first:
+      213: 2612359359339310152
+    second: W_well_done_2
+  - first:
+      213: 1365396671325905172
+    second: W_well_done_3
+  - first:
+      213: -532380947620259896
+    second: W_well_done_4
+  - first:
+      213: -325047210271131534
+    second: W_well_done_5
+  - first:
+      213: 4006016479387975617
+    second: W_well_done_6
+  - first:
+      213: -3842038023418935250
+    second: W_well_done_7
+  - first:
+      213: 4432709664837190027
+    second: W_well_done_8
+  - first:
+      213: 5156227539258934314
+    second: W_well_done_9
+  - first:
+      213: -7589509192576804745
+    second: W_well_done_10
+  - first:
+      213: -2556012651145384812
+    second: W_well_done_11
+  - first:
+      213: -6174931716144034155
+    second: W_well_done_12
+  - first:
+      213: 7600117193097092962
+    second: W_well_done_13
+  - first:
+      213: -7137387049644180246
+    second: W_well_done_14
+  - first:
+      213: -5875758709077740885
+    second: W_well_done_15
+  - first:
+      213: -3311204315508985614
+    second: W_well_done_16
+  - first:
+      213: -4693854975712713577
+    second: W_well_done_17
+  - first:
+      213: 5332081116356864923
+    second: W_well_done_18
+  - first:
+      213: -5561835010818305222
+    second: W_well_done_19
+  - first:
+      213: 1286592758810559962
+    second: W_well_done_20
+  - first:
+      213: -6516860300060720368
+    second: W_well_done_21
+  - first:
+      213: 5277805185276600444
+    second: W_well_done_22
+  - first:
+      213: -8691801985992897598
+    second: W_well_done_23
+  - first:
+      213: -7143358866154226046
+    second: W_well_done_24
+  - first:
+      213: 1767352705166020726
+    second: W_well_done_25
+  - first:
+      213: -7680763957059029209
+    second: W_well_done_26
+  - first:
+      213: 1312285681331129227
+    second: W_well_done_27
+  - first:
+      213: -193500259382923743
+    second: W_well_done_28
+  - first:
+      213: 8397175225133336806
+    second: W_well_done_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: W_well_done_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 12
+        width: 130
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fe0af1ee14e6f50800000000000000
+      internalID: 6876506172029988713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 11
+        width: 81
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459b03aa95d349880800000000000000
+      internalID: -8605185532681471660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_2
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 10
+        width: 99
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c26171ff6f04420800000000000000
+      internalID: 2612359359339310152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_3
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 9
+        width: 94
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 411a1e3d90dd2f210800000000000000
+      internalID: 1365396671325905172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_4
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 7
+        width: 106
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c798eb495a9c98f0800000000000000
+      internalID: -532380947620259896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_5
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 7
+        width: 85
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278be80d8433d7bf0800000000000000
+      internalID: -325047210271131534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_6
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 8
+        width: 97
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cff74263ca389730800000000000000
+      internalID: 4006016479387975617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_7
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 12
+        width: 82
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28029016c65eaac0800000000000000
+      internalID: -3842038023418935250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_8
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 53
+        width: 31
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81cf0564f5248d30800000000000000
+      internalID: 4432709664837190027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_9
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 13
+        width: 129
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a248d9ac0a99e8740800000000000000
+      internalID: 5156227539258934314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_10
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 11
+        width: 80
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778d5eca995aca690800000000000000
+      internalID: -7589509192576804745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_11
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 9
+        width: 97
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c231f3908378cd0800000000000000
+      internalID: -2556012651145384812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_12
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 9
+        width: 97
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e01f2025c3e4aa0800000000000000
+      internalID: -6174931716144034155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_13
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 5
+        width: 107
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f14e9e15a097960800000000000000
+      internalID: 7600117193097092962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_14
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 9
+        width: 88
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec3c793b48e2fc90800000000000000
+      internalID: -7137387049644180246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_15
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 8
+        width: 105
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2738fc59c157ea0800000000000000
+      internalID: -5875758709077740885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_16
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 11
+        width: 77
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0b853f73d3c02d0800000000000000
+      internalID: -3311204315508985614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_17
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 53
+        width: 28
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794a179c4c31cdeb0800000000000000
+      internalID: -4693854975712713577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_18
+      rect:
+        serializedVersion: 2
+        x: 2026
+        y: 9
+        width: 129
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9be406568b5ff940800000000000000
+      internalID: 5332081116356864923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_19
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 10
+        width: 80
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3318d8868460d2b0800000000000000
+      internalID: -5561835010818305222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_20
+      rect:
+        serializedVersion: 2
+        x: 2247
+        y: 8
+        width: 98
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad54e772c45ead110800000000000000
+      internalID: 1286592758810559962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_21
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 7
+        width: 99
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013090cb5167f85a0800000000000000
+      internalID: -6516860300060720368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_22
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 6
+        width: 106
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70602e5ad78e3940800000000000000
+      internalID: 5277805185276600444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_23
+      rect:
+        serializedVersion: 2
+        x: 2629
+        y: 8
+        width: 88
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cbcbd61524806780800000000000000
+      internalID: -8691801985992897598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_24
+      rect:
+        serializedVersion: 2
+        x: 2725
+        y: 4
+        width: 101
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e7db755f0bddc90800000000000000
+      internalID: -7143358866154226046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_25
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 11
+        width: 81
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6701f38ebe5e68810800000000000000
+      internalID: 1767352705166020726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_26
+      rect:
+        serializedVersion: 2
+        x: 2994
+        y: 53
+        width: 31
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7277fdf10e1786590800000000000000
+      internalID: -7680763957059029209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_27
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 6
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8bc297dfdc263210800000000000000
+      internalID: 1312285681331129227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_28
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 5
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ee88f0a8c805df0800000000000000
+      internalID: -193500259382923743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_well_done_29
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 6
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e888ca8062c88470800000000000000
+      internalID: 8397175225133336806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      W_well_done_0: 6876506172029988713
+      W_well_done_1: -8605185532681471660
+      W_well_done_10: -7589509192576804745
+      W_well_done_11: -2556012651145384812
+      W_well_done_12: -6174931716144034155
+      W_well_done_13: 7600117193097092962
+      W_well_done_14: -7137387049644180246
+      W_well_done_15: -5875758709077740885
+      W_well_done_16: -3311204315508985614
+      W_well_done_17: -4693854975712713577
+      W_well_done_18: 5332081116356864923
+      W_well_done_19: -5561835010818305222
+      W_well_done_2: 2612359359339310152
+      W_well_done_20: 1286592758810559962
+      W_well_done_21: -6516860300060720368
+      W_well_done_22: 5277805185276600444
+      W_well_done_23: -8691801985992897598
+      W_well_done_24: -7143358866154226046
+      W_well_done_25: 1767352705166020726
+      W_well_done_26: -7680763957059029209
+      W_well_done_27: 1312285681331129227
+      W_well_done_28: -193500259382923743
+      W_well_done_29: 8397175225133336806
+      W_well_done_3: 1365396671325905172
+      W_well_done_4: -532380947620259896
+      W_well_done_5: -325047210271131534
+      W_well_done_6: 4006016479387975617
+      W_well_done_7: -3842038023418935250
+      W_well_done_8: 4432709664837190027
+      W_well_done_9: 5156227539258934314
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,6 +9,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class lvl1Buttons : MonoBehaviour
 {
     [SerializeField] GameObject pausemenu; // reference to pausemenu panel
+    [SerializeField] GameObject factScreen; // reference to fact screen panel
     [SerializeField] int amendScore = 10; // in inspector can change the value
     [SerializeField] int loseScore = 50; // in inspector can change the value
     [SerializeField] int targetsHit; // mannualy hitting and checking checking if all targets been hit | Number of electron in atom
@@ -19,6 +20,7 @@ public class lvl1Buttons : MonoBehaviour
     [SerializeField] TMP_Text highScoreTxt;
     // [SerializeField] 
     [SerializeField] Ball3Script electronScript; // reference
+    public bool gameEnd;
     int score; // keeping the score variable.
     int highScore;
     int passScore;
@@ -53,11 +55,15 @@ public class lvl1Buttons : MonoBehaviour
         }
         scoreTxt.text = score.ToString();
     }
-    public void BackOption() // will late be replaced with settings button | bact to main menu button 
+    public void Retry() // Retry level 1 
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void BackMainMenu()
     {
         SceneManager.LoadScene(0);
     }
-
     public void Proceedlvl2()
     {
         SceneManager.LoadScene(3);
@@ -76,9 +82,18 @@ public class lvl1Buttons : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+
+    void FactScreen()
+    {
+        if(gameEnd == true)
+        {
+            factScreen.SetActive(true);
+        }
+    }
     void Start()
     {
         pausemenu.SetActive(false);
+        factScreen.SetActive(false);
         PlayerPrefs.SetInt("Highscore", 0); // setting highscore to zero everytime game starts or new level starts, I knwo high score is to be kept even when game has been quit for that make a new highscore variable for each level??
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
         // electronScript = FindAnyObjectByType<Ball3Script>();
@@ -104,13 +119,6 @@ public class lvl1Buttons : MonoBehaviour
         // {
         //     LoseScore();
         // }
-
-
-
-
-
-
-
 
         // if(targetsHit == totalTarget) // For testing purpose
         // {

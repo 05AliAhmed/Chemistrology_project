@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PhysicScript : MonoBehaviour
@@ -13,8 +14,7 @@ public class PhysicScript : MonoBehaviour
     public PointScript point;
 
     public bool targethit;
-
-   
+    
 
 
     // public lvl1Buttons lvl1Script;
@@ -43,6 +43,7 @@ public class PhysicScript : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collisioninfo)
     {
+        
         if (collisioninfo.collider.tag == "Target")
         {
             //Debug.Log("hit target");
@@ -64,8 +65,21 @@ public class PhysicScript : MonoBehaviour
         }
         else if (collisioninfo.collider.tag == "Obstacle")
         {
+          
+
+            float rand= Random.Range(1, 7); 
+            if (rand < 3)
+            {
+                Debug.Log("hit target");
+            }
+            else if (rand >= 3)
+            {
+                Debug.Log("hit");
+            }
             //Debug.Log("hit target");
-            rb.linearVelocity = Vector2.down * 100;
+            rb.linearVelocity = new Vector2(-1, -1).normalized * 100;
+           /* rb.linearVelocity = Vector2.down * 100;
+            rb.linearVelocity = Vector2.left* 100;*/
             Debug.Log("G");
          
 

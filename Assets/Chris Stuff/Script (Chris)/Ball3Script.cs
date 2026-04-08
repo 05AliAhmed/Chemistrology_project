@@ -85,12 +85,12 @@ public class Ball3Script : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {/*
         if (Input.GetKey(KeyCode.Space))
         {
             rb.linearVelocity = Vector2.up * 100;
         }
-
+        */
 
     }
     void OnCollisionEnter2D(Collision2D collisioninfo)

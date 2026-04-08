@@ -10,6 +10,7 @@ TagManager:
   - Points
   - Targets
   - TargetAnim
+  - Obstacle
   layers:
   - Default
   - TransparentFX

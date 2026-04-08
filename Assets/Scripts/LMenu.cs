@@ -6,6 +6,7 @@ public class LMenu : MonoBehaviour
 
     public void LevelOne() // takes to level 1
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(1);
     }
 

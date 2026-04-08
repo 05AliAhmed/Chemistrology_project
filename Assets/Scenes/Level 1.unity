@@ -1528,8 +1528,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.032, y: 3.73}
-  m_SizeDelta: {x: 50.71, y: 2.315}
+  m_AnchoredPosition: {x: 7.0268, y: 3.7271}
+  m_SizeDelta: {x: 51.039, y: 2.5335}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &221623458
 MonoBehaviour:
@@ -1551,14 +1551,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5596470566450516591, guid: a4c3e219fe41fd74aa10436a96bc02cc, type: 3}
+  m_Sprite: {fileID: -4837564764579901069, guid: 96531e68c6ce4d641be0940080981580, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 1
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &221623459
@@ -1652,7 +1652,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &242501293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5719,7 +5719,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4837564764579901069, guid: 96531e68c6ce4d641be0940080981580, type: 3}
+  m_Sprite: {fileID: 5596470566450516591, guid: a4c3e219fe41fd74aa10436a96bc02cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6399,7 +6399,7 @@ MonoBehaviour:
   nxtLvlBtn: {fileID: 54543748}
   amendScore: 100
   loseScore: 50
-  scoreToPassLOne: 200
+  scoreToPassLOne: 400
   scoreTxt: {fileID: 1727689545}
   passScoreTxt: {fileID: 2036591758}
   highScoreTxt: {fileID: 1487752257}

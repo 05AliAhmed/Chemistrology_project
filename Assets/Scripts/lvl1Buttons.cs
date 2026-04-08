@@ -114,7 +114,7 @@ public class lvl1Buttons : MonoBehaviour
         Debug.Log(gameEnd);
         PlayerPrefs.SetInt("Highscore", 0); // setting highscore to zero everytime game starts or new level starts, I knwo high score is to be kept even when game has been quit for that make a new highscore variable for each level??
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
-        progressBar.fillAmount = 0;
+        progressBar.fillAmount = 1;
         // electronScript = FindAnyObjectByType<Ball3Script>();
         //electronScript = GameObject.FindGameObjectsWithTag("Ball");
         // electronScript = GetComponent<Ball3Script>();

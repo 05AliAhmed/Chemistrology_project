@@ -78,7 +78,7 @@ public class Ball3Script : MonoBehaviour
       //  targethit = GameObject.FindGameObjectWithTag("Targets").GetComponent<TargetScriptTwo>();
         nonozone = GameObject.FindGameObjectWithTag("Nonozone").GetComponent<NonozoneScript>();
         // point = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();
-        // lvl1Script = FindAnyObjectByType<lvl1Buttons>();//GetComponent<lvl1Buttons>(); // reference to level1script which has score and lose system init - Ali Ahmed 
+        // lvl1Script = FindAnyObjectByType<lvl1Buttons>();//GetComponent<lvl1Buttons>(); // reference to level1script which has score and lose system init - Ali Ahmed     
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 

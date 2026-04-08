@@ -5,10 +5,12 @@ public class TargetScript : MonoBehaviour
     private SpriteRenderer rend;
     public Sprite TargetHit;
     public CircleCollider2D myCollider;
+    public SpriteRenderer childsr;
+    public Animator childanime;
    /* private Animator myAnim;
     private SpriteRenderer rend2;/*
-
-
+   
+    
 
 
     /*  public BallScript ball;
@@ -21,21 +23,23 @@ public class TargetScript : MonoBehaviour
     void Start()
     {
 
-        rend = GetComponent<SpriteRenderer>();  
-       // myAnim=gameObject.GetComponentInChildren<Animator>();
-       /* rend2=gameObject.GetComponentInChildren<SpriteRenderer>();
-        rend2.enabled = true;*/
-        
+        rend = GetComponent<SpriteRenderer>();
+        // myAnim=gameObject.GetComponentInChildren<Animator>();
+        /* rend2=gameObject.GetComponentInChildren<SpriteRenderer>();
+         rend2.enabled = true;*/
+
         /*ball = GameObject.FindGameObjectWithTag("Ball").GetComponent<BallScript>();
         points = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();*/
+        childsr.enabled = false;
     }
 
     // Update is called once per frame
     public void changeTarget()
     {
-        rend.sprite = TargetHit;
-
+       // rend.sprite = TargetHit;
+        Destroy(rend);
         Destroy(myCollider);
+        childsr.enabled=true;
         /*PlayerScore = PlayerScore + point;
       
         Score.text = PlayerScore.ToString();*/

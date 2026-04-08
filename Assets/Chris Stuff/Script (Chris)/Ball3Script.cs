@@ -122,6 +122,10 @@ public class Ball3Script : MonoBehaviour
             point.EarnPoint();
             Debug.Log("GG");
         }*/
+
+
+
+
         else if (collisioninfo.collider.tag == "Nonozone")
         {
 

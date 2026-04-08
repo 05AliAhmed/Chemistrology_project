@@ -36,7 +36,7 @@ public class PhysicScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.linearVelocity = Vector2.up * 10;
+            rb.linearVelocity = Vector2.up * 20;
         }
 
 
@@ -54,6 +54,7 @@ public class PhysicScript : MonoBehaviour
                // using scoresystem from levelbutton script
                 Debug.Log(targethit);
             }
+           
             // checking if target's been hit if yes true - Ali Ahmed
             // lvl1Script.ScoreSystem(); // accessing score system from lvl1script - Ali Ahmed
             // point.EarnPoint();
@@ -61,6 +62,15 @@ public class PhysicScript : MonoBehaviour
             Destroy(gameObject);
 
         }
+        else if (collisioninfo.collider.tag == "Obstacle")
+        {
+            //Debug.Log("hit target");
+            rb.linearVelocity = Vector2.down * 100;
+            Debug.Log("G");
+         
+
+        }
+
 
         /*if (collisioninfo.collider.tag == "Targets")
         {
@@ -70,16 +80,8 @@ public class PhysicScript : MonoBehaviour
             point.EarnPoint();
             Debug.Log("GG");
         }*/
-        else if (collisioninfo.collider.tag == "Nonozone")
-        {
 
-            
-
-            // lvl1Script.LoseScore(); // accessing lose points system from lvl1script - Ali Ahmed
-            Destroy(gameObject);
-            // targethit = false; //checking if target's been hit if no false - Ali Ahmed
-            // point.LosePoint();
-
-        }
     }
+
 }
+

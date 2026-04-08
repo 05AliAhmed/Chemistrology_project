@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 209919532}
   m_Layer: 0
   m_Name: Obstacles
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -458,11 +458,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 381035822445661775, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.238
+      value: -3.32
       objectReference: {fileID: 0}
     - target: {fileID: 381035822445661775, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.61
+      value: -4.95
       objectReference: {fileID: 0}
     - target: {fileID: 381035822445661775, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -514,11 +514,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6852187890790574083, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}
       propertyPath: m_Radius
-      value: 0.48563087
+      value: 0.96656644
       objectReference: {fileID: 0}
     - target: {fileID: 6852187890790574083, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}
       propertyPath: m_Offset.x
-      value: 0.041686177
+      value: 0.104417205
       objectReference: {fileID: 0}
     - target: {fileID: 6852187890790574083, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}
       propertyPath: m_Offset.y

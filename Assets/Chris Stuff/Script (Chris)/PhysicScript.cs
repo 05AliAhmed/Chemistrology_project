@@ -14,6 +14,8 @@ public class PhysicScript : MonoBehaviour
     public PointScript point;
 
     public bool targethit;
+    public SpriteRenderer childsr;
+    public Animator childanim;
     
 
 
@@ -77,10 +79,12 @@ public class PhysicScript : MonoBehaviour
                 Debug.Log("hit");
             }
             //Debug.Log("hit target");
-            rb.linearVelocity = new Vector2(-1, -1).normalized * 100;
+            rb.linearVelocity = new Vector2(-1, -1).normalized * 10;
+            Debug.Log($"G {rb.linearVelocity}");
+            childsr.flipX = true;
+            childsr.flipY = true;
            /* rb.linearVelocity = Vector2.down * 100;
             rb.linearVelocity = Vector2.left* 100;*/
-            Debug.Log("G");
          
 
         }

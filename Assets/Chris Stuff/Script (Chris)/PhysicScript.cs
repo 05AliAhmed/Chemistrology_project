@@ -72,17 +72,23 @@ public class PhysicScript : MonoBehaviour
             float rand= Random.Range(1, 7); 
             if (rand < 3)
             {
+                rb.linearVelocity = new Vector2(-1, -1).normalized * 10;
+                childsr.flipX = true;
+            childsr.flipY = true;
                 Debug.Log("hit target");
             }
             else if (rand >= 3)
             {
+                rb.linearVelocity = Vector2.down * 10;
+                childsr.flipX = true;
+                childsr.flipY = true;
                 Debug.Log("hit");
             }
             //Debug.Log("hit target");
-            rb.linearVelocity = new Vector2(-1, -1).normalized * 10;
+            
+
             Debug.Log($"G {rb.linearVelocity}");
-            childsr.flipX = true;
-            childsr.flipY = true;
+            
            /* rb.linearVelocity = Vector2.down * 100;
             rb.linearVelocity = Vector2.left* 100;*/
          

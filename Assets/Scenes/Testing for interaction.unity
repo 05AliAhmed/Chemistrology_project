@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6327807586293609053, guid: b08e1e25670e4314a9b5126b6ed96543, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6591534857493735329, guid: b08e1e25670e4314a9b5126b6ed96543, type: 3}
       propertyPath: m_LocalPosition.x
@@ -551,6 +551,10 @@ PrefabInstance:
     - target: {fileID: 6852187890790574083, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}
       propertyPath: m_Offset.y
       value: -0.31008518
+      objectReference: {fileID: 0}
+    - target: {fileID: 8850282403510429085, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

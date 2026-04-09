@@ -3,10 +3,9 @@ using UnityEngine.UI;
 public class TargetScript : MonoBehaviour
 {
     private SpriteRenderer rend;
-    public Sprite TargetHit;
     public CircleCollider2D myCollider;
-    public SpriteRenderer childsr;
     public Animator childanime;
+
    /* private Animator myAnim;
     private SpriteRenderer rend2;/*
    
@@ -30,16 +29,18 @@ public class TargetScript : MonoBehaviour
 
         /*ball = GameObject.FindGameObjectWithTag("Ball").GetComponent<BallScript>();
         points = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();*/
-        childsr.enabled = false;
     }
 
     // Update is called once per frame
     public void changeTarget()
     {
-       // rend.sprite = TargetHit;
-        Destroy(rend);
-        Destroy(myCollider);
-        childsr.enabled=true;
+        // rend.sprite = TargetHit;
+        //Destroy(rend);
+        myCollider.enabled = false;
+        //childsr.enabled=true;
+        Debug.Log($" {gameObject.name}called");
+        //childanime.Play("TargetTrans");
+        childanime.SetBool("isAttacked", true);
         /*PlayerScore = PlayerScore + point;
       
         Score.text = PlayerScore.ToString();*/

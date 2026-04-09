@@ -10,7 +10,7 @@ public class lvl1Buttons : MonoBehaviour
 {
     [SerializeField] GameObject pausemenu; // reference to pausemenu panel
     [SerializeField] GameObject factScreen; // reference to fact screen panel
-    [SerializeField] GameObject scoreNeededLine;
+    [SerializeField] GameObject scoreNeededLine; // progressbar
     [SerializeField] GameObject nxtLvlBtn; // ref to next lvl button if score > score needed yo pass the lvl.
     [SerializeField] int amendScore = 10; // in inspector can change the value
     [SerializeField] int loseScore = 50; // in inspector can change the value
@@ -23,11 +23,13 @@ public class lvl1Buttons : MonoBehaviour
     [SerializeField] TMP_Text factScrScoreTxt; // txt ref for score text in fact screen
     [SerializeField] TMP_Text factScrScoreNeededTxt; // txt ref for score needed text in fact screen
     // [SerializeField] Ball3Script electronScript; // reference
+    Scene currentScene;
     public bool gameEnd;
     public Image progressBar;
     int score; // keeping the score variable.
     int highScore;
     float passScore;
+    int scnIndex;
 
 
     public void ScoreSystem() // will late be connected with shooting system to count scores | Score Button
@@ -109,6 +111,8 @@ public class lvl1Buttons : MonoBehaviour
     }
     void Start()
     {
+        currentScene = SceneManager.GetActiveScene();
+        scnIndex = currentScene.buildIndex;
         pausemenu.SetActive(false);
         factScreen.SetActive(false);
         Debug.Log(gameEnd);
@@ -122,7 +126,7 @@ public class lvl1Buttons : MonoBehaviour
 
     void Update()
     {
-        FactScreenLvl1();
+        FactScreenLvl1(); // can use if statement to check scn and display its fact0scr
         progressBar.fillAmount = passScore / scoreToPassLOne;
 
 
@@ -135,7 +139,6 @@ public class lvl1Buttons : MonoBehaviour
         // {
         //     LoseScore();
         // }
-
         // if(targetsHit == totalTarget) // For testing purpose
         // {
         //     //pop fact screen, display score, high score | In proper play
@@ -157,5 +160,6 @@ public class lvl1Buttons : MonoBehaviour
         // {
         //     // Debug.Log("Not yet");
         // }
+
     }
 }

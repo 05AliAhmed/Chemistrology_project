@@ -188,6 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059e0d2018b50e54abe6c9ad37c6536a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball3Script
+  comboScore: 0
   rb: {fileID: 0}
   groupOfTargets: []
   nonozone: {fileID: 4203497067827874643, guid: c6f0e76ffa8fa84478978284767012b6, type: 3}
@@ -201,7 +202,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2469884587470388481}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}

@@ -50,10 +50,12 @@
 //}
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using UnityEngine;
 
 public class Ball3Script : MonoBehaviour
 {
+    [SerializeField] int comboScore;
 
     public Rigidbody2D rb;
     //[SerializeField] GameObject righttarget;
@@ -63,9 +65,9 @@ public class Ball3Script : MonoBehaviour
     public PointScript point;
 
     public bool targethit;
+    // int targetCount; 
 
     public lvl1Buttons levelmanager;
-
 
     // public lvl1Buttons lvl1Script;
     void Start()
@@ -80,10 +82,7 @@ public class Ball3Script : MonoBehaviour
         // point = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();
         // lvl1Script = FindAnyObjectByType<lvl1Buttons>();//GetComponent<lvl1Buttons>(); // reference to level1script which has score and lose system init - Ali Ahmed     
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-
-    // Update is called once per frame
     void Update()
     {/*
         if (Input.GetKey(KeyCode.Space))
@@ -101,10 +100,13 @@ public class Ball3Script : MonoBehaviour
             if(groupOfTargets.Contains(collisioninfo.gameObject))
             {
                 //Debug.Log("it is found");
-                collisioninfo.gameObject.GetComponent<TargetScript>().changeTarget();
+                collisioninfo.gameObject.GetComponent<TargetScript>().changeTarget(); // chnaging sprite
                 //targethit = true;
                 levelmanager.ScoreSystem(); // using scoresystem from levelbutton script
-                Debug.Log(targethit);
+                levelmanager.ComboSystem(); // everytime targets been hit targetcount will increase by 1 if more than 2 awards comboscore - Ali Ahmed
+                // ComboPoints(); // checking for combo condition
+                Debug.Log(levelmanager.targetCount); //testing
+                Debug.Log(targethit); //testing
             }
              // checking if target's been hit if yes true - Ali Ahmed
             // lvl1Script.ScoreSystem(); // accessing score system from lvl1script - Ali Ahmed
@@ -114,23 +116,11 @@ public class Ball3Script : MonoBehaviour
             
         }
 
-        /*if (collisioninfo.collider.tag == "Targets")
-        {
-
-            Destroy(gameObject);
-            targethit.changeTarget();
-            point.EarnPoint();
-            Debug.Log("GG");
-        }*/
-
-
-
-
         else if (collisioninfo.collider.tag == "Nonozone")
         {
 
             levelmanager.LoseScore(); // using losesystem from levelbutton script
-            
+            levelmanager.targetCount = 0; // if ball goes into nono zone sets target count to 0 hence no more combo - Ali Ahmed
             // lvl1Script.LoseScore(); // accessing lose points system from lvl1script - Ali Ahmed
             Destroy(gameObject);
             // targethit = false; //checking if target's been hit if no false - Ali Ahmed
@@ -138,4 +128,6 @@ public class Ball3Script : MonoBehaviour
 
         }
     }
+
+
 }

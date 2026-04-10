@@ -14,6 +14,7 @@ public class lvl1Buttons : MonoBehaviour
     [SerializeField] GameObject nxtLvlBtn; // ref to next lvl button if score > score needed yo pass the lvl.
     [SerializeField] int amendScore = 10; // in inspector can change the value
     [SerializeField] int loseScore = 50; // in inspector can change the value
+    [SerializeField] int comboScore;
     // [SerializeField] int targetsHit; // mannualy hitting and checking checking if all targets been hit | Number of electron in atom
     // [SerializeField] int totalTarget; // number of electron is an atom per level
     [SerializeField] float scoreToPassLOne; // testing purpose if score 500 proceed to level 2 if less display a msg after all targets been hit
@@ -26,12 +27,22 @@ public class lvl1Buttons : MonoBehaviour
     Scene currentScene;
     public bool gameEnd;
     public Image progressBar;
-    int score; // keeping the score variable.
+    public int score; // keeping the score variable.
     int highScore;
     float passScore;
     int scnIndex;
+    public int targetCount;
 
-
+    public void ComboSystem() // awarding combo points
+    {
+        targetCount++;
+        if(targetCount > 2) // checking if target hit are grater than 2
+        {
+            score += comboScore;  // then score plus comboscore
+            scoreTxt.text = score.ToString();
+            Debug.Log(score); // testing
+        }
+    }
     public void ScoreSystem() // will late be connected with shooting system to count scores | Score Button
     {
         Debug.Log("score system");
@@ -109,6 +120,7 @@ public class lvl1Buttons : MonoBehaviour
             }
         }        
     }
+
     void Start()
     {
         currentScene = SceneManager.GetActiveScene();

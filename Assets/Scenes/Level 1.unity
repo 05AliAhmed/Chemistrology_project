@@ -6596,7 +6596,8 @@ MonoBehaviour:
   nxtLvlBtn: {fileID: 54543748}
   amendScore: 100
   loseScore: 50
-  scoreToPassLOne: 200
+  comboScore: 20
+  scoreToPassLOne: 500
   scoreTxt: {fileID: 1727689545}
   passScoreTxt: {fileID: 2036591758}
   highScoreTxt: {fileID: 1487752257}
@@ -6604,6 +6605,8 @@ MonoBehaviour:
   factScrScoreNeededTxt: {fileID: 1005329336}
   gameEnd: 0
   progressBar: {fileID: 221623458}
+  score: 0
+  targetCount: 0
 --- !u!222 &1501387230
 CanvasRenderer:
   m_ObjectHideFlags: 0

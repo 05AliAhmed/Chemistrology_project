@@ -5,7 +5,7 @@ public class ShootableElectronScript : MonoBehaviour
     public float speed = 5;
     public float halfScreenHeight = 6;
     public float halfScreenWidth = 10;
-
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

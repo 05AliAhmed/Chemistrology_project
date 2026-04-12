@@ -106,6 +106,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TraladeeBehaviour
   bullet: {fileID: 2469884587470388481, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}
+  cooldownDuration: 0.5
+  shootingTimer: 0
 --- !u!95 &8430294873230482949
 Animator:
   serializedVersion: 7

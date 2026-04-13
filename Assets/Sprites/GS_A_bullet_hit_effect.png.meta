@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: cc77a7af04ff99842ae7fd9b218d5d8d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8134657107908661936
+    second: GS_A_bullet_hit_effect_0
+  - first:
+      213: -5045349860325970627
+    second: GS_A_bullet_hit_effect_1
+  - first:
+      213: -1637089305512932103
+    second: GS_A_bullet_hit_effect_2
+  - first:
+      213: -3189928984271074577
+    second: GS_A_bullet_hit_effect_3
+  - first:
+      213: 7145769378240748578
+    second: GS_A_bullet_hit_effect_4
+  - first:
+      213: -5469422830771341200
+    second: GS_A_bullet_hit_effect_5
+  - first:
+      213: -397350024336624090
+    second: GS_A_bullet_hit_effect_6
+  - first:
+      213: -5662089922322533103
+    second: GS_A_bullet_hit_effect_7
+  - first:
+      213: 1812546662766332926
+    second: GS_A_bullet_hit_effect_8
+  - first:
+      213: 1739675829739948235
+    second: GS_A_bullet_hit_effect_9
+  - first:
+      213: 8966616893624722684
+    second: GS_A_bullet_hit_effect_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GS_A_bullet_hit_effect_0
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 3
+        width: 51
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b290865a8b14e070800000000000000
+      internalID: 8134657107908661936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GS_A_bullet_hit_effect_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 66
+        width: 112
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d24bf88015bf9b0800000000000000
+      internalID: -5045349860325970627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GS_A_bullet_hit_effect_2
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 113
+        width: 139
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc8f4743f3e749e0800000000000000
+      internalID: -1637089305512932103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GS_A_bullet_hit_effect_3
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 105
+        width: 80
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feaccc16d781bb3d0800000000000000
+      internalID: -3189928984271074577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GS_A_bullet_hit_effect_4
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 98
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c57ecb36fda2360800000000000000
+      internalID: 7145769378240748578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GS_A_bullet_hit_effect_5
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 103
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0787675e9e4b814b0800000000000000
+      internalID: -5469422830771341200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GS_A_bullet_hit_effect_6
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 95
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6263ce312445c7af0800000000000000
+      internalID: -397350024336624090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GS_A_bullet_hit_effect_7
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 94
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11575a5f6373c61b0800000000000000
+      internalID: -5662089922322533103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GS_A_bullet_hit_effect_8
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 98
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbc1052695772910800000000000000
+      internalID: 1812546662766332926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GS_A_bullet_hit_effect_9
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 97
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc88bff23f1942810800000000000000
+      internalID: 1739675829739948235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GS_A_bullet_hit_effect_10
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 89
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4a48dbe82df6c70800000000000000
+      internalID: 8966616893624722684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GS_A_bullet_hit_effect_0: 8134657107908661936
+      GS_A_bullet_hit_effect_1: -5045349860325970627
+      GS_A_bullet_hit_effect_10: 8966616893624722684
+      GS_A_bullet_hit_effect_2: -1637089305512932103
+      GS_A_bullet_hit_effect_3: -3189928984271074577
+      GS_A_bullet_hit_effect_4: 7145769378240748578
+      GS_A_bullet_hit_effect_5: -5469422830771341200
+      GS_A_bullet_hit_effect_6: -397350024336624090
+      GS_A_bullet_hit_effect_7: -5662089922322533103
+      GS_A_bullet_hit_effect_8: 1812546662766332926
+      GS_A_bullet_hit_effect_9: 1739675829739948235
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

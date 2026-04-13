@@ -3,11 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class LMenu : MonoBehaviour
 {
-
+   // [SerializeField] Animator transitionAnim;
     public void LevelOne() // takes to level 1
     {
+        //transitionAnim.SetTrigger("End");
+       
         // Time.timeScale = 1f;
         SceneManager.LoadScene(1);
+        //transitionAnim.SetTrigger()
     }
 
     public void LevelTwo() // takes to level 1

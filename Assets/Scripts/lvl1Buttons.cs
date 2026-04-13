@@ -1,7 +1,9 @@
 
+using System.Collections.Generic;
+using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 using UnityEngine.UI;
 
 
@@ -32,6 +34,13 @@ public class lvl1Buttons : MonoBehaviour
     float passScore;
     int scnIndex;
     public int targetCount;
+
+
+
+
+
+
+    public List<GameObject> groupOfTargets;
 
     public void ComboSystem() // awarding combo points
     {
@@ -131,6 +140,10 @@ public class lvl1Buttons : MonoBehaviour
         PlayerPrefs.SetInt("Highscore", 0); // setting highscore to zero everytime game starts or new level starts, I knwo high score is to be kept even when game has been quit for that make a new highscore variable for each level??
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
         progressBar.fillAmount = 1;
+
+
+
+        groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
         // electronScript = FindAnyObjectByType<Ball3Script>();
         //electronScript = GameObject.FindGameObjectsWithTag("Ball");
         // electronScript = GetComponent<Ball3Script>();

@@ -5,7 +5,7 @@ public class TargetScript : MonoBehaviour
     private SpriteRenderer rend;
     public CircleCollider2D myCollider;
     public Animator childanime;
-
+    public bool filled;
    /* private Animator myAnim;
     private SpriteRenderer rend2;/*
    
@@ -44,6 +44,7 @@ public class TargetScript : MonoBehaviour
         /*PlayerScore = PlayerScore + point;
       
         Score.text = PlayerScore.ToString();*/
+        filled = true;
     }
     void Update()
     {

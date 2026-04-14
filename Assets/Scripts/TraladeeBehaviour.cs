@@ -6,11 +6,15 @@ public class TraladeeBehaviour : MonoBehaviour
     public float cooldownDuration = 2; //this is how long it takes for the the player to be able to shoot again (it's in seconds, obviously).
     public float shootingTimer = 0; //this counts up to allow the player to shoot.
 
+    lvl1Buttons levelManager;
+
     //IT BELONGS TO THE SHOOTING CODE
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        levelManager = FindAnyObjectByType<lvl1Buttons>();
+        // levelManager = GetComponent<lvl1Buttons>(); // ref to lvl1 script bool var to pause movement on pause and resume on resume
         Debug.Log("I am here");
     }
 
@@ -28,29 +32,32 @@ public class TraladeeBehaviour : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            //AIMING CODE
-            Vector3 mousePosition = Input.mousePosition;
-            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-
-            Vector2 direction = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
-
-            transform.up = direction;
-
-            //SHOOTING CODE
-            //this creates the electron and rotates it in the player's position and rotation respectively.
-
-            
-
-            if (shootingTimer >= cooldownDuration)
+            if(levelManager.pauseInputs == false)
             {
+                //AIMING CODE
+                Vector3 mousePosition = Input.mousePosition;
+                mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
-                Debug.Log("*spit!*");
-                Instantiate(bullet, transform.position, transform.rotation);
-                shootingTimer = 0;
+                Vector2 direction = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
 
-            } else
-            {
-                Debug.Log("wait for it... ");
+                transform.up = direction;
+
+                //SHOOTING CODE
+                //this creates the electron and rotates it in the player's position and rotation respectively.
+
+                
+
+                if (shootingTimer >= cooldownDuration)
+                {
+
+                    Debug.Log("*spit!*");
+                    Instantiate(bullet, transform.position, transform.rotation);
+                    shootingTimer = 0;
+
+                } else
+                {
+                    Debug.Log("wait for it... ");
+                }
             }
 
         }

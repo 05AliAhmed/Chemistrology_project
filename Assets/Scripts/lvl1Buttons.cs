@@ -35,6 +35,7 @@ public class lvl1Buttons : MonoBehaviour
     int scnIndex;
     public int targetCount;
 
+    public bool pauseInputs;
 
 
 
@@ -105,6 +106,7 @@ public class lvl1Buttons : MonoBehaviour
     }
     public void PauseButton() // is used for pasusing the game | Settings button
     {
+        pauseInputs = true;
         pausemenu.SetActive(true);
         Time.timeScale = 0f;
     }
@@ -112,6 +114,7 @@ public class lvl1Buttons : MonoBehaviour
     {
         pausemenu.SetActive(false);
         Time.timeScale = 1f;
+        pauseInputs = false;
     }
     public void LevelMenu() // to level menu
     {

@@ -1009,8 +1009,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 65, y: -66}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 47.6, y: -58.2}
+  m_SizeDelta: {x: 141.666, y: 29.475}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &109112927
 MonoBehaviour:
@@ -1995,8 +1995,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -66}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: -58.2}
+  m_SizeDelta: {x: 141.666, y: 29.475}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &291618072
 MonoBehaviour:
@@ -2149,7 +2149,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MAag is useful useful is mag and useful is usless, unless its useful :)
+  m_text: MAag is useful useful is mag and useful is useless, unless its useful :)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5301e1d911daffa4f80182e702f84034, type: 2}
   m_sharedMaterial: {fileID: -2271954774608238029, guid: 5301e1d911daffa4f80182e702f84034, type: 2}
@@ -2726,8 +2726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -126, y: 69}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -131.4, y: 66}
+  m_SizeDelta: {x: 121, y: 23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &468598691
 MonoBehaviour:
@@ -4251,7 +4251,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &861468018
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6015,7 +6015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1347408840
 Transform:
   m_ObjectHideFlags: 0
@@ -6833,6 +6833,7 @@ MonoBehaviour:
   progressBar: {fileID: 221623458}
   score: 0
   targetCount: 0
+  pauseInputs: 0
   groupOfTargets: []
 --- !u!222 &1501387230
 CanvasRenderer:
@@ -7507,7 +7508,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1696033291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7818,14 +7819,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1501387229}
         m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
-        m_MethodName: Retry
-        m_Mode: 1
+        m_MethodName: ChangeScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1781410105
@@ -8192,8 +8193,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.168}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -62, y: -65}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -47.6, y: -58.2}
+  m_SizeDelta: {x: 141.666, y: 29.475}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1903908057
 MonoBehaviour:
@@ -8627,7 +8628,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2036591757
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9038,7 +9039,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2146176737
 RectTransform:
   m_ObjectHideFlags: 0

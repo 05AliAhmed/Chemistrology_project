@@ -6,23 +6,24 @@ public class TargetScript : MonoBehaviour
     public CircleCollider2D myCollider;
     public Animator childanime;
     public bool filled;
-   /* private Animator myAnim;
-    private SpriteRenderer rend2;/*
-   
-    
+    /* private Animator myAnim;
+     private SpriteRenderer rend2;/
 
-
-    /*  public BallScript ball;
-      public PointScript points;*/
+     /*  public BallScript ball;
+       public PointScript points;*/
 
     /* public Text Score;
      int PlayerScore=0;
      public int point = 100;*/
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+
+    public GameEndScript GameEnd;
     void Start()
     {
 
         rend = GetComponent<SpriteRenderer>();
+       // GameEnd=GameObject.FindGameObjectWithTag("GameEnd").GetComponent<GameEndScript>();
         // myAnim=gameObject.GetComponentInChildren<Animator>();
         /* rend2=gameObject.GetComponentInChildren<SpriteRenderer>();
          rend2.enabled = true;*/
@@ -34,6 +35,7 @@ public class TargetScript : MonoBehaviour
     // Update is called once per frame
     public void changeTarget()
     {
+        //GameEnd.GEndscore = GameEnd.GEndscore + 1;
         // rend.sprite = TargetHit;
         //Destroy(rend);
         myCollider.enabled = false;
@@ -45,6 +47,8 @@ public class TargetScript : MonoBehaviour
       
         Score.text = PlayerScore.ToString();*/
         filled = true;
+
+       
     }
     void Update()
     {

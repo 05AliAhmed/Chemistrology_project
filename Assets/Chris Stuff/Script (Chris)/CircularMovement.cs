@@ -6,7 +6,7 @@ public class CircularMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log("rotating");
+        //Debug.Log("rotating");
     }
 
     // Update is called once per frame

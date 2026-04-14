@@ -12,6 +12,7 @@ TagManager:
   - TargetAnim
   - Obstacle
   - GameEnd
+  - LevelManager
   layers:
   - Default
   - TransparentFX

@@ -1058,14 +1058,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1501387229}
         m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
-        m_MethodName: LevelMenu
-        m_Mode: 1
+        m_MethodName: ChangeScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Main Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &109112928
@@ -1446,7 +1446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 192170932}
-  - component: {fileID: 192170931}
+  - component: {fileID: 192170933}
   m_Layer: 0
   m_Name: GameEndManager
   m_TagString: GameEnd
@@ -1454,18 +1454,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &192170931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 192170930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 638c7ba5bc79a70499cecca1446491d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEnd
 --- !u!4 &192170932
 Transform:
   m_ObjectHideFlags: 0
@@ -1481,6 +1469,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &192170933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192170930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b690ca78d6a156449aa475ef2eb2c8e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEndScript
+  GEndscore: 0
+  lvlManager: {fileID: 0}
 --- !u!1 &201248034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1872,7 +1874,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &242501293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2042,14 +2044,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1501387229}
         m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
-        m_MethodName: Retry
-        m_Mode: 1
+        m_MethodName: ChangeScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &291618073
@@ -6778,7 +6780,7 @@ GameObject:
   - component: {fileID: 1501387230}
   m_Layer: 5
   m_Name: LevelManager
-  m_TagString: Untagged
+  m_TagString: LevelManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

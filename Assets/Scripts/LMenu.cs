@@ -8,7 +8,7 @@ public class LMenu : MonoBehaviour
     {
         //transitionAnim.SetTrigger("End");
        
-        // Time.timeScale = 1f;
+        Time.timeScale = 1f;
         SceneManager.LoadScene(1);
         //transitionAnim.SetTrigger()
     }

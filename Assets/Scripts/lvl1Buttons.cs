@@ -84,8 +84,15 @@ public class lvl1Buttons : MonoBehaviour
         }
         scoreTxt.text = score.ToString();
     }
+
+    public void ChangeScene(string _sceneName)
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(_sceneName);
+    }
     public void Retry() // Retry level 1 
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(1);
     }
     public void BackMainMenu()

@@ -23,7 +23,7 @@ public class TargetScript : MonoBehaviour
     {
 
         rend = GetComponent<SpriteRenderer>();
-       // GameEnd=GameObject.FindGameObjectWithTag("GameEnd").GetComponent<GameEndScript>();
+       GameEnd=GameObject.FindGameObjectWithTag("GameEnd").GetComponent<GameEndScript>();
         // myAnim=gameObject.GetComponentInChildren<Animator>();
         /* rend2=gameObject.GetComponentInChildren<SpriteRenderer>();
          rend2.enabled = true;*/
@@ -35,7 +35,7 @@ public class TargetScript : MonoBehaviour
     // Update is called once per frame
     public void changeTarget()
     {
-        //GameEnd.GEndscore = GameEnd.GEndscore + 1;
+        GameEnd.GEndscore = GameEnd.GEndscore + 1;
         // rend.sprite = TargetHit;
         //Destroy(rend);
         myCollider.enabled = false;

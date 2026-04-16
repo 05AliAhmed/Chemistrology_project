@@ -1,4 +1,3 @@
-
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -29,7 +28,14 @@ public class lvl1Buttons : MonoBehaviour
     // [SerializeField] Ball3Script electronScript; // reference
     Scene currentScene;
     public bool gameEnd;
+    bool factScreenShown = false;
     public Image progressBar;
+    public Image star1;
+    public Image star2;
+    public Image star3;
+    public int pnt1;
+    public int pnt2;
+    public int pnt3;
     public int score; // keeping the score variable.
     int highScore;
     float passScore;
@@ -87,15 +93,50 @@ public class lvl1Buttons : MonoBehaviour
         scoreTxt.text = score.ToString();
     }
 
+    void DisplayStars()
+    {
+        if(score >= pnt1 && score < pnt2)
+        {
+            // Debug.Log("star 1");
+            // hearts[i].enabled = true;
+            star1.enabled = true;
+        }
+        else if(score >= pnt2 && score < pnt3)
+        {
+            // Debug.Log("star 1 and 2");
+            star1.enabled = true;
+            star2.enabled = true;
+            // hearts[i].enabled = true;
+        }
+        else if(score >= pnt3)
+        {
+            // Debug.Log("star 1,2,3");
+            star1.enabled = true;
+            star2.enabled = true;
+            star3.enabled = true;
+            // hearts[i].enabled = true;
+        }
+        else
+        {
+            star1.enabled = false;
+            star2.enabled = false;
+            star3.enabled = false;
+            // hearts[i].enabled = false;
+        }
+        
+    }
+
     public void ChangeScene(string _sceneName)
     {
-        Time.timeScale = 1;
         SceneManager.LoadScene(_sceneName);
+        Time.timeScale = 1f;
+        Debug.Log("changescr working");
     }
     public void Retry() // Retry level 1 
     {
-        Time.timeScale = 1f;
         SceneManager.LoadScene(1);
+        Time.timeScale = 1f;
+        Debug.Log("retry working");
     }
     public void BackMainMenu()
     {
@@ -123,9 +164,10 @@ public class lvl1Buttons : MonoBehaviour
     }
     public void FactScreenLvl1()
     {
-        if(gameEnd == true)
+        if(gameEnd == true && !factScreenShown)
         {
-            Debug.Log("Game end is true");
+            factScreenShown = true;
+            // Debug.Log("Game end is true");
             factScreen.SetActive(true);
             Time.timeScale = 0f;
             if(score < scoreToPassLOne)
@@ -142,6 +184,7 @@ public class lvl1Buttons : MonoBehaviour
                 nxtLvlBtn.SetActive(true);
                 scoreNeededLine.SetActive(false);
             }
+            DisplayStars();
         }        
     }
 
@@ -155,7 +198,9 @@ public class lvl1Buttons : MonoBehaviour
         PlayerPrefs.SetInt("Highscore", 0); // setting highscore to zero everytime game starts or new level starts, I knwo high score is to be kept even when game has been quit for that make a new highscore variable for each level??
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
         progressBar.fillAmount = 1;
-
+        star1.enabled = false;
+        star2.enabled = false;
+        star3.enabled = false;
 
 
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();

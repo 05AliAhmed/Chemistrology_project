@@ -4192,6 +4192,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6443366828940691059, guid: c34ae4a606e205d44b34f92f81ca2028, type: 3}
   m_PrefabInstance: {fileID: 1191287391}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &822099388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 822099390}
+  - component: {fileID: 822099389}
+  m_Layer: 0
+  m_Name: LevelMenuScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &822099389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822099388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7b973fb37a21734581f1119f973572f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LMenu
+  lvl1: {fileID: 0}
+  lvl2: {fileID: 0}
+  lvl3: {fileID: 0}
+  lvl4: {fileID: 0}
+  lvl5: {fileID: 0}
+  lvl6: {fileID: 0}
+--- !u!4 &822099390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822099388}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.47884, y: -0.44173, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &846797128
 GameObject:
   m_ObjectHideFlags: 0
@@ -6820,6 +6870,7 @@ MonoBehaviour:
   factScreen: {fileID: 664902729}
   scoreNeededLine: {fileID: 788357570}
   nxtLvlBtn: {fileID: 54543748}
+  levelMenuScript: {fileID: 822099389}
   amendScore: 100
   loseScore: 50
   comboScore: 20
@@ -9296,3 +9347,4 @@ SceneRoots:
   - {fileID: 227894975}
   - {fileID: 705022766}
   - {fileID: 192170932}
+  - {fileID: 822099390}

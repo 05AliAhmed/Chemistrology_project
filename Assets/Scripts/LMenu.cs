@@ -1,8 +1,16 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LMenu : MonoBehaviour
 {
+    public GameObject lvl1;
+    public GameObject lvl2;
+    public GameObject lvl3;
+    public GameObject lvl4;
+    public GameObject lvl5;
+    public GameObject lvl6;
+
    // [SerializeField] Animator transitionAnim;
     public void LevelOne() // takes to level 1
     {
@@ -41,13 +49,33 @@ public class LMenu : MonoBehaviour
 
     public void backoption()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
 
     void Start()
     {
-        
+        if (!GameManager.instance.level2Unlocked)
+        {
+            lvl2.SetActive(false); // disabling the level 2 button
+        }
+        if (!GameManager.instance.level3Unlocked)
+        {
+            lvl3.SetActive(false); // disabling the level 2 button
+        }
+        if (!GameManager.instance.level4Unlocked)
+        {
+            lvl4.SetActive(false); // disabling the level 2 button
+        }
+        if (!GameManager.instance.level5Unlocked)
+        {
+            lvl5.SetActive(false); // disabling the level 2 button
+        }
+        if (!GameManager.instance.level6Unlocked)
+        {
+            lvl6.SetActive(false); // disabling the level 2 button
+        }
+
     }
 
   

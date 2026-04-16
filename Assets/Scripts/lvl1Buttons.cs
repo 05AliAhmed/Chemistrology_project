@@ -14,6 +14,7 @@ public class lvl1Buttons : MonoBehaviour
     [SerializeField] GameObject factScreen; // reference to fact screen panel
     [SerializeField] GameObject scoreNeededLine; // progressbar
     [SerializeField] GameObject nxtLvlBtn; // ref to next lvl button if score > score needed yo pass the lvl.
+    // [SerializeField] LMenu levelMenuScript;
     [SerializeField] int amendScore = 10; // in inspector can change the value
     [SerializeField] int loseScore = 50; // in inspector can change the value
     [SerializeField] int comboScore;
@@ -129,11 +130,15 @@ public class lvl1Buttons : MonoBehaviour
             Time.timeScale = 0f;
             if(score < scoreToPassLOne)
             {
+                // levelMenuScript.lvl2.SetActive(false);
+                GameManager.instance.level2Unlocked = false;
                 nxtLvlBtn.SetActive(false);
                 scoreNeededLine.SetActive(true);
             }
             else
             {
+                // levelMenuScript.lvl2.SetActive(true);
+                GameManager.instance.level2Unlocked = true;
                 nxtLvlBtn.SetActive(true);
                 scoreNeededLine.SetActive(false);
             }

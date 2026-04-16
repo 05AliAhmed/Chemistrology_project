@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 792dee36517fd714b99fa86112587e16
+guid: 608d5c56aef026e46907e3e8d7b88e1c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8264806710730654376
-    second: LS_Mg_to_Al_0
+      213: -2628670713117030438
+    second: WS_star_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 135
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LS_Mg_to_Al_0
+      name: WS_star_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 506
-        height: 364
+        width: 123
+        height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 85d72add5128d4d80800000000000000
-      internalID: -8264806710730654376
+      spriteID: ad7cf29e9e5158bd0800000000000000
+      internalID: -2628670713117030438
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LS_Mg_to_Al_0: -8264806710730654376
+      WS_star_0: -2628670713117030438
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

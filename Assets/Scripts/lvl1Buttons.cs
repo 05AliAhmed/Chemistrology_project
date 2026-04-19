@@ -95,21 +95,26 @@ public class lvl1Buttons : MonoBehaviour
         {
             Debug.Log("star 1");
             // hearts[i].enabled = true;
-            star1.enabled = true;
+            star1.gameObject.SetActive(true);
         }
         else if(score >= pnt2 && score < pnt3)
         {
             Debug.Log("star 1 and 2");
-            star1.enabled = true;
-            star2.enabled = true;
+            // star1.enabled = true;
+            // star2.enabled = true;
+            star1.gameObject.SetActive(true);
+            star2.gameObject.SetActive(true);
             // hearts[i].enabled = true;
         }
         else if(score >= pnt3)
         {
             Debug.Log("star 1,2,3");
-            star1.enabled = true;
-            star2.enabled = true;
-            star3.enabled = true;
+            // star1.enabled = true;
+            // star2.enabled = true;
+            // star3.enabled = true;
+            star1.gameObject.SetActive(true);
+            star2.gameObject.SetActive(true);
+            star3.gameObject.SetActive(true);
             // hearts[i].enabled = true;
         }
         else

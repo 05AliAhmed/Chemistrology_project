@@ -44,10 +44,6 @@ public class lvl1Buttons : MonoBehaviour
 
     public bool pauseInputs;
 
-
-
-
-
     public List<GameObject> groupOfTargets;
 
     public void ComboSystem() // awarding combo points
@@ -97,20 +93,20 @@ public class lvl1Buttons : MonoBehaviour
     {
         if(score >= pnt1 && score < pnt2)
         {
-            // Debug.Log("star 1");
+            Debug.Log("star 1");
             // hearts[i].enabled = true;
             star1.enabled = true;
         }
         else if(score >= pnt2 && score < pnt3)
         {
-            // Debug.Log("star 1 and 2");
+            Debug.Log("star 1 and 2");
             star1.enabled = true;
             star2.enabled = true;
             // hearts[i].enabled = true;
         }
         else if(score >= pnt3)
         {
-            // Debug.Log("star 1,2,3");
+            Debug.Log("star 1,2,3");
             star1.enabled = true;
             star2.enabled = true;
             star3.enabled = true;
@@ -197,7 +193,7 @@ public class lvl1Buttons : MonoBehaviour
         Debug.Log(gameEnd);
         PlayerPrefs.SetInt("Highscore", 0); // setting highscore to zero everytime game starts or new level starts, I knwo high score is to be kept even when game has been quit for that make a new highscore variable for each level??
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
-        progressBar.fillAmount = 1;
+        // progressBar.fillAmount = 1;
         star1.enabled = false;
         star2.enabled = false;
         star3.enabled = false;
@@ -212,7 +208,7 @@ public class lvl1Buttons : MonoBehaviour
     void Update()
     {
         FactScreenLvl1(); // can use if statement to check scn and display its fact0scr
-        progressBar.fillAmount = passScore / scoreToPassLOne;
+        // progressBar.fillAmount = passScore / scoreToPassLOne;
 
 
         // if(electronScript.targethit)

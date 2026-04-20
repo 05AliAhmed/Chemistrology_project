@@ -202,6 +202,7 @@ public class lvl1Buttons : MonoBehaviour
         star1.enabled = false;
         star2.enabled = false;
         star3.enabled = false;
+        Time.timeScale = 1f;
 
 
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();

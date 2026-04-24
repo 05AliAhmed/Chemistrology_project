@@ -1320,8 +1320,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 360969575}
-  - component: {fileID: 360969573}
   - component: {fileID: 360969574}
+  - component: {fileID: 360969576}
   m_Layer: 5
   m_Name: LevelManager
   m_TagString: LevelManager
@@ -1329,43 +1329,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &360969573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360969572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26be8e499b694e34a87a8159c6a766ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::lvl1Buttons
-  pausemenu: {fileID: 2075729756}
-  factScreen: {fileID: 1837449665}
-  scoreNeededLine: {fileID: 2137621684}
-  nxtLvlBtn: {fileID: 1518359909}
-  amendScore: 100
-  loseScore: 50
-  comboScore: 20
-  scoreToPassLOne: 500
-  scoreTxt: {fileID: 1289471167}
-  passScoreTxt: {fileID: 1204482722}
-  highScoreTxt: {fileID: 26608202}
-  factScrScoreTxt: {fileID: 828808234}
-  factScrScoreNeededTxt: {fileID: 1535062518}
-  gameEnd: 0
-  progressBar: {fileID: 1416317628}
-  star1: {fileID: 390267909}
-  star2: {fileID: 377343698}
-  star3: {fileID: 408717605}
-  pnt1: 150
-  pnt2: 300
-  pnt3: 500
-  score: 0
-  targetCount: 0
-  pauseInputs: 0
-  groupOfTargets: []
 --- !u!222 &360969574
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1393,6 +1356,41 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &360969576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360969572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a627a85949e9c774594d5c43bb363dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::lvl2
+  pausemenu: {fileID: 2075729756}
+  factScreen: {fileID: 1837449665}
+  scoreNeededLine: {fileID: 2137621684}
+  nxtLvlBtn: {fileID: 1518359909}
+  amendScore: 10
+  loseScore: 50
+  comboScore: 0
+  scoreToPass: 0
+  scoreTxt: {fileID: 1289471167}
+  highScoreTxt: {fileID: 26608202}
+  factScrScoreTxt: {fileID: 828808234}
+  factScrScoreNeededTxt: {fileID: 1535062518}
+  gameEnd: 0
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
+  pnt1: 0
+  pnt2: 0
+  pnt3: 0
+  score: 0
+  targetCount: 0
+  pauseInputs: 0
+  groupOfTargets: []
 --- !u!1 &364166796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2103,8 +2101,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 360969573}
-        m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
+      - m_Target: {fileID: 360969576}
+        m_TargetAssemblyTypeName: lvl2, Assembly-CSharp
         m_MethodName: ResumeButton
         m_Mode: 1
         m_Arguments:
@@ -2373,7 +2371,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 360969573}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
         m_MethodName: LoseScore
         m_Mode: 1
@@ -2643,14 +2641,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 360969573}
-        m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
-        m_MethodName: Retry
-        m_Mode: 1
+      - m_Target: {fileID: 360969576}
+        m_TargetAssemblyTypeName: lvl2, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: Level 1
           m_BoolArgument: 0
@@ -3558,7 +3556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameEndScript
   GEndscore: 0
-  lvlManager: {fileID: 360969573}
+  lvlManager: {fileID: 0}
 --- !u!4 &724970863
 Transform:
   m_ObjectHideFlags: 0
@@ -4035,8 +4033,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 360969573}
-        m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
+      - m_Target: {fileID: 360969576}
+        m_TargetAssemblyTypeName: lvl2, Assembly-CSharp
         m_MethodName: PauseButton
         m_Mode: 1
         m_Arguments:
@@ -5115,7 +5113,7 @@ GameObject:
   - component: {fileID: 959747102}
   - component: {fileID: 959747101}
   m_Layer: 5
-  m_Name: LEvel.M
+  m_Name: retry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5185,14 +5183,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 360969573}
-        m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
+      - m_Target: {fileID: 360969576}
+        m_TargetAssemblyTypeName: lvl2, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: Level 1
           m_BoolArgument: 0
@@ -5454,7 +5452,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 360969573}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
         m_MethodName: Proceedlvl2
         m_Mode: 1
@@ -5987,7 +5985,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 360969573}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
         m_MethodName: ScoreSystem
         m_Mode: 1
@@ -7011,14 +7009,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 360969573}
-        m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
-        m_MethodName: Proceedlvl2
-        m_Mode: 1
+      - m_Target: {fileID: 360969576}
+        m_TargetAssemblyTypeName: lvl2, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8654,10 +8652,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 360969573}
-        m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
-        m_MethodName: BackMainMenu
-        m_Mode: 1
+      - m_Target: {fileID: 360969576}
+        m_TargetAssemblyTypeName: lvl2, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9121,10 +9119,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 360969573}
-        m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
+      - m_Target: {fileID: 360969576}
+        m_TargetAssemblyTypeName: lvl2, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -19,7 +19,7 @@ public class lvl1Buttons : MonoBehaviour
     [SerializeField] int comboScore;
     // [SerializeField] int targetsHit; // mannualy hitting and checking checking if all targets been hit | Number of electron in atom
     // [SerializeField] int totalTarget; // number of electron is an atom per level
-    [SerializeField] float scoreToPassLOne; // testing purpose if score 500 proceed to level 2 if less display a msg after all targets been hit
+    [SerializeField] float scoreToPass; // testing purpose if score 500 proceed to level 2 if less display a msg after all targets been hit
     [SerializeField] TMP_Text scoreTxt; // txt ref for score text in lvl 
     [SerializeField] TMP_Text passScoreTxt; // txt ref for score needed to pass the lvl shown while playing 
     [SerializeField] TMP_Text highScoreTxt; // txt ref for high score text in fact screen
@@ -62,7 +62,7 @@ public class lvl1Buttons : MonoBehaviour
         score += amendScore;
         scoreTxt.text = score.ToString();
         factScrScoreTxt.text = score.ToString();
-        passScore = scoreToPassLOne - score; 
+        passScore = scoreToPass - score; 
         // highScore = score; // testing purpose not working remove highscore int and this line later.
         if(passScore < 0)
         {
@@ -127,26 +127,26 @@ public class lvl1Buttons : MonoBehaviour
         
     }
 
-    public void ChangeScene(string _sceneName)
+    public void ChangeScene(int _sceneindex)
     {
-        SceneManager.LoadScene(_sceneName);
+        SceneManager.LoadScene(_sceneindex);
         Time.timeScale = 1f;
-        Debug.Log("changescr working");
+        // Debug.Log("changescr working");
     }
-    public void Retry() // Retry level 1 
-    {
-        SceneManager.LoadScene(1);
-        Time.timeScale = 1f;
-        Debug.Log("retry working");
-    }
-    public void BackMainMenu()
-    {
-        SceneManager.LoadScene(0);
-    }
-    public void Proceedlvl2()
-    {
-        SceneManager.LoadScene(3);
-    }
+    // public void Retry() // Retry level 1 
+    // {
+    //     SceneManager.LoadScene(1);
+    //     Time.timeScale = 1f;
+    //     // Debug.Log("retry working");
+    // }
+    // public void BackMainMenu()
+    // {
+    //     SceneManager.LoadScene(0);
+    // }
+    // public void Proceedlvl2()
+    // {
+    //     SceneManager.LoadScene(3);
+    // }
     public void PauseButton() // is used for pasusing the game | Settings button
     {
         pauseInputs = true;
@@ -159,10 +159,10 @@ public class lvl1Buttons : MonoBehaviour
         Time.timeScale = 1f;
         pauseInputs = false;
     }
-    public void LevelMenu() // to level menu
-    {
-        SceneManager.LoadScene(2);
-    }
+    // public void LevelMenu() // to level menu
+    // {
+    //     SceneManager.LoadScene(2);
+    // }
     public void FactScreenLvl1()
     {
         if(gameEnd == true)
@@ -171,8 +171,7 @@ public class lvl1Buttons : MonoBehaviour
             // Debug.Log("Game end is true");
             factScreen.SetActive(true);
             Time.timeScale = 0f;
-            DisplayStars();
-            if(score < scoreToPassLOne)
+            if(score < scoreToPass)
             {
                 // levelMenuScript.lvl2.SetActive(false);
                 GameManager.instance.level2Unlocked = false;
@@ -186,7 +185,7 @@ public class lvl1Buttons : MonoBehaviour
                 nxtLvlBtn.SetActive(true);
                 scoreNeededLine.SetActive(false);
             }
-            
+            DisplayStars();
         }        
     }
 
@@ -196,6 +195,9 @@ public class lvl1Buttons : MonoBehaviour
         // scnIndex = currentScene.buildIndex;
         pausemenu.SetActive(false);
         factScreen.SetActive(false);
+        star1.gameObject.SetActive(false);
+        star2.gameObject.SetActive(false);
+        star3.gameObject.SetActive(false);
         // Debug.Log(gameEnd);
         // PlayerPrefs.SetInt("Highscore", 0); // setting highscore to zero everytime game starts or new level starts, I knwo high score is to be kept even when game has been quit for that make a new highscore variable for each level??
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();

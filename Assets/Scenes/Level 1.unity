@@ -637,12 +637,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1501387229}
         m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
-        m_MethodName: Proceedlvl2
-        m_Mode: 1
+        m_MethodName: ChangeScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1059,7 +1059,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1501387229}
         m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1907,7 +1907,7 @@ GameObject:
   - component: {fileID: 291618073}
   - component: {fileID: 291618072}
   m_Layer: 5
-  m_Name: LEvel.M
+  m_Name: retry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1980,11 +1980,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1501387229}
         m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: Level 1
           m_BoolArgument: 0
@@ -3382,8 +3382,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1501387229}
         m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
-        m_MethodName: BackMainMenu
-        m_Mode: 1
+        m_MethodName: ChangeScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5168,7 +5168,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2749768756081476806, guid: 7623c2b43630a5b41a82918c547ca64a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6960,14 +6960,13 @@ MonoBehaviour:
   amendScore: 100
   loseScore: 50
   comboScore: 20
-  scoreToPassLOne: 500
+  scoreToPass: 0
   scoreTxt: {fileID: 1727689545}
   passScoreTxt: {fileID: 2036591758}
   highScoreTxt: {fileID: 1487752257}
   factScrScoreTxt: {fileID: 1534697797}
   factScrScoreNeededTxt: {fileID: 1005329336}
   gameEnd: 0
-  progressBar: {fileID: 221623458}
   star1: {fileID: 1194017736}
   star2: {fileID: 2039450695}
   star3: {fileID: 623837664}
@@ -7962,12 +7961,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1501387229}
         m_TargetAssemblyTypeName: lvl1Buttons, Assembly-CSharp
-        m_MethodName: Retry
-        m_Mode: 1
+        m_MethodName: ChangeScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: Level 1
           m_BoolArgument: 0

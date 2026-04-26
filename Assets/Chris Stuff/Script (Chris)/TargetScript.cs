@@ -23,7 +23,7 @@ public class TargetScript : MonoBehaviour
     {
 
         rend = GetComponent<SpriteRenderer>();
-       GameEnd=GameObject.FindGameObjectWithTag("GameEnd").GetComponent<GameEndScript>();
+        GameEnd=GameObject.FindGameObjectWithTag("GameEnd").GetComponent<GameEndScript>();
         // myAnim=gameObject.GetComponentInChildren<Animator>();
         /* rend2=gameObject.GetComponentInChildren<SpriteRenderer>();
          rend2.enabled = true;*/

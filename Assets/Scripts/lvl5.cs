@@ -130,14 +130,14 @@ public class lvl5 : MonoBehaviour
             if(score < scoreToPass)
             {
                 // levelMenuScript.lvl2.SetActive(false);
-                GameManager.instance.level2Unlocked = false;
+                GameManager.instance.level6Unlocked = false;
                 nxtLvlBtn.SetActive(false);
                 scoreNeededLine.SetActive(true);
             }
             else
             {
                 // levelMenuScript.lvl2.SetActive(true);
-                GameManager.instance.level2Unlocked = true;
+                GameManager.instance.level6Unlocked = true;
                 nxtLvlBtn.SetActive(true);
                 scoreNeededLine.SetActive(false);
             }

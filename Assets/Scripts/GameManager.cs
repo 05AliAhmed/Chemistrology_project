@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public bool level4Unlocked = false; //set true in level 3 script if conditions meet
     public bool level5Unlocked = false; //set true in level 4 script if conditions meet
     public bool level6Unlocked = false; //set true in level 5 script if conditions meet
+    public bool pauseInputs = false;
     
 
     void Awake()

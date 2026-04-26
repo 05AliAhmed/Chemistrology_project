@@ -13,9 +13,11 @@ public class TraladeeBehaviour : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        levelManager = FindAnyObjectByType<lvl1Buttons>();
+        // levelManager = FindAnyObjectByType<lvl1Buttons>();
         // levelManager = GetComponent<lvl1Buttons>(); // ref to lvl1 script bool var to pause movement on pause and resume on resume
-        Debug.Log("I am here");
+        // Debug.Log("I am here");
+        // levelManager.pauseInputs = true;
+        GameManager.instance.pauseInputs = false;
     }
 
     // Update is called once per frame
@@ -32,7 +34,7 @@ public class TraladeeBehaviour : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if(levelManager.pauseInputs == false)
+            if(GameManager.instance.pauseInputs == false)
             {
                 //AIMING CODE
                 Vector3 mousePosition = Input.mousePosition;
@@ -50,13 +52,13 @@ public class TraladeeBehaviour : MonoBehaviour
                 if (shootingTimer >= cooldownDuration)
                 {
 
-                    Debug.Log("*spit!*");
+                    // Debug.Log("*spit!*");
                     Instantiate(bullet, transform.position, transform.rotation);
                     shootingTimer = 0;
 
                 } else
                 {
-                    Debug.Log("wait for it... ");
+                    // Debug.Log("wait for it... ");
                 }
             }
 

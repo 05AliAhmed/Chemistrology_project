@@ -17,7 +17,7 @@ public class LMenu : MonoBehaviour
         //transitionAnim.SetTrigger("End");
        
         Time.timeScale = 1f;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
         //transitionAnim.SetTrigger()
     }
 

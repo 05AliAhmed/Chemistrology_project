@@ -42,7 +42,7 @@ public class lvl1Buttons : MonoBehaviour
     // int scnIndex;
     public int targetCount;
 
-    public bool pauseInputs;
+    // public bool pauseInputs;
 
     public List<GameObject> groupOfTargets;
 
@@ -149,7 +149,8 @@ public class lvl1Buttons : MonoBehaviour
     // }
     public void PauseButton() // is used for pasusing the game | Settings button
     {
-        pauseInputs = true;
+        // pauseInputs = true;
+        GameManager.instance.pauseInputs = true;
         pausemenu.SetActive(true);
         Time.timeScale = 0f;
     }
@@ -157,7 +158,8 @@ public class lvl1Buttons : MonoBehaviour
     {
         pausemenu.SetActive(false);
         Time.timeScale = 1f;
-        pauseInputs = false;
+        // pauseInputs = false;
+        GameManager.instance.pauseInputs = false;
     }
     // public void LevelMenu() // to level menu
     // {

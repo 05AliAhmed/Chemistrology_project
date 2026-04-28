@@ -13,7 +13,7 @@ public class ShootableElectronScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         transform.Translate(Vector2.up * Time.deltaTime * speed);

@@ -21,7 +21,7 @@ public class TraladeeBehaviour : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         if (shootingTimer < cooldownDuration)
@@ -66,6 +66,5 @@ public class TraladeeBehaviour : MonoBehaviour
         //test code to move the object; this was to see if bullets really spawned but just didn't move in early coding
         //transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
     }
-
 
 }

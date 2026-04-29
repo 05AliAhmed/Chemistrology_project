@@ -12,7 +12,8 @@ public class lvl1Buttons : MonoBehaviour
     [SerializeField] GameObject pausemenu; // reference to pausemenu panel
     [SerializeField] GameObject factScreen; // reference to fact screen panel
     [SerializeField] GameObject scoreNeededLine; // progressbar
-    [SerializeField] GameObject nxtLvlBtn; // ref to next lvl button if score > score needed yo pass the lvl.
+    [SerializeField] GameObject nxtLvlBtn; 
+    [SerializeField] GameObject vignette; // ref to next lvl button if score > score needed yo pass the lvl.
     // [SerializeField] LMenu levelMenuScript;
     [SerializeField] int amendScore = 10; // in inspector can change the value
     [SerializeField] int loseScore = 50; // in inspector can change the value
@@ -25,6 +26,7 @@ public class lvl1Buttons : MonoBehaviour
     [SerializeField] TMP_Text highScoreTxt; // txt ref for high score text in fact screen
     [SerializeField] TMP_Text factScrScoreTxt; // txt ref for score text in fact screen
     [SerializeField] TMP_Text factScrScoreNeededTxt; // txt ref for score needed text in fact screen
+    [SerializeField] Camera cam;
     // [SerializeField] Ball3Script electronScript; // reference
     // Scene currentScene;
     public bool gameEnd;
@@ -170,12 +172,17 @@ public class lvl1Buttons : MonoBehaviour
         if(gameEnd == true)
         {
            
-            if (cooldown > 0f)
+            if (cooldown > 0f)// this is for the victory effect- Chris
             {
+                vignette.SetActive(true);
                 cooldown -= Time.deltaTime;
+                cam.orthographicSize -= Time.deltaTime;
                 Time.timeScale = 0.5f;
+                
             }
               if (cooldown < 0f){
+                cam.orthographicSize = 5f;
+                vignette.SetActive(false);
                 factScreen.SetActive(true);
                 Time.timeScale = 0f;
             }
@@ -209,6 +216,7 @@ public class lvl1Buttons : MonoBehaviour
         star1.gameObject.SetActive(false);
         star2.gameObject.SetActive(false);
         star3.gameObject.SetActive(false);
+        vignette.gameObject.SetActive(false);
         // Debug.Log(gameEnd);
         // PlayerPrefs.SetInt("Highscore", 0); // setting highscore to zero everytime game starts or new level starts, I knwo high score is to be kept even when game has been quit for that make a new highscore variable for each level??
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();

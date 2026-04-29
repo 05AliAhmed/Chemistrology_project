@@ -17,11 +17,11 @@ public class TraladeeBehaviour : MonoBehaviour
         // levelManager = GetComponent<lvl1Buttons>(); // ref to lvl1 script bool var to pause movement on pause and resume on resume
         // Debug.Log("I am here");
         // levelManager.pauseInputs = true;
-        GameManager.instance.pauseInputs = false;
+       GameManager.instance.pauseInputs = false;
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
 
         if (shootingTimer < cooldownDuration)

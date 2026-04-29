@@ -41,11 +41,11 @@ public class lvl1Buttons : MonoBehaviour
     float passScore;
     // int scnIndex;
     public int targetCount;
-
+    public float cooldown=2f;
     // public bool pauseInputs;
 
     public List<GameObject> groupOfTargets;
-
+    
     public void ComboSystem() // awarding combo points
     {
         targetCount++;
@@ -169,10 +169,19 @@ public class lvl1Buttons : MonoBehaviour
     {
         if(gameEnd == true)
         {
+           
+            if (cooldown > 0f)
+            {
+                cooldown -= Time.deltaTime;
+                Time.timeScale = 0.5f;
+            }
+              if (cooldown < 0f){
+                factScreen.SetActive(true);
+                Time.timeScale = 0f;
+            }
             // factScreenShown = true;
             // Debug.Log("Game end is true");
-            factScreen.SetActive(true);
-            Time.timeScale = 0f;
+           
             if(score < scoreToPass)
             {
                 // levelMenuScript.lvl2.SetActive(false);

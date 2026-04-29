@@ -17,7 +17,7 @@ public class TraladeeBehaviour : MonoBehaviour
         // levelManager = GetComponent<lvl1Buttons>(); // ref to lvl1 script bool var to pause movement on pause and resume on resume
         // Debug.Log("I am here");
         // levelManager.pauseInputs = true;
-        GameManager.instance.pauseInputs = false;
+       GameManager.instance.pauseInputs = false;
     }
 
     // Update is called once per frame
@@ -66,6 +66,5 @@ public class TraladeeBehaviour : MonoBehaviour
         //test code to move the object; this was to see if bullets really spawned but just didn't move in early coding
         //transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
     }
-
 
 }

@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -129,19 +128,12 @@ public class lvl1Buttons : MonoBehaviour
         }
         
     }
-    public void ChangeScene(int _sceneindex) { 
-    /*{
-        StartCoroutine(LoadSceneWithDelay(_sceneindex));
-    }
 
-    IEnumerator LoadSceneWithDelay(int _sceneindex)
+    public void ChangeScene(int _sceneindex)
     {
-        SceneManager.LoadScene(9); // loading screen
-
-        yield return new WaitForSeconds(2f); // your cooldown time*/
-
         SceneManager.LoadScene(_sceneindex);
         Time.timeScale = 1f;
+        // Debug.Log("changescr working");
     }
     // public void Retry() // Retry level 1 
     // {

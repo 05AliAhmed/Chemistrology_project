@@ -32,9 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 0 (Tutorial).unity
     guid: 935f8ced942872b4c8c2c21ee861b8f3
-  - enabled: 1
-    path: Assets/Chris Stuff/LoadingScreen.unity
-    guid: 471a9aee9be810e4e83078a9e8ec96fc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

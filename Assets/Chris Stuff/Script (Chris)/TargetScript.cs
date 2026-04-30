@@ -40,7 +40,7 @@ public class TargetScript : MonoBehaviour
         //Destroy(rend);
         myCollider.enabled = false;
         //childsr.enabled=true;
-        Debug.Log($" {gameObject.name}called");
+        // Debug.Log($" {gameObject.name}called");
         childanime.Play("TargetTrans");
         //childanime.SetBool("isAttacked", true);
         /*PlayerScore = PlayerScore + point;

@@ -19,7 +19,7 @@ public class GameEndScript : MonoBehaviour
         if (GEndscore == 11)
         {
             lvlManager.gameEnd = true;
-            Debug.Log("Game Finish");
+            // Debug.Log("Game Finish");
         }
     }
 }

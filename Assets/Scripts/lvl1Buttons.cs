@@ -45,7 +45,6 @@ public class lvl1Buttons : MonoBehaviour
     public int targetCount;
     public float cooldown=2f;
     // public bool pauseInputs;
-
     public List<GameObject> groupOfTargets;
     
     public void ComboSystem() // awarding combo points
@@ -55,7 +54,7 @@ public class lvl1Buttons : MonoBehaviour
         {
             score += comboScore;  // then score plus comboscore
             scoreTxt.text = score.ToString();
-            Debug.Log(score); // testing
+            // Debug.Log(score); // testing
         }
     }
     public void ScoreSystem() // will late be connected with shooting system to count scores | Score Button
@@ -78,8 +77,8 @@ public class lvl1Buttons : MonoBehaviour
             highScoreTxt.text = score.ToString();
             // passScoreTxt.text = passScore.ToString();            
         }
-        Debug.Log(score); // testing
-        Debug.Log("CONNECTED"); // testing
+        // Debug.Log(score); // testing
+        // Debug.Log("CONNECTED"); // testing
     }
     public void LoseScore()
     {
@@ -95,13 +94,13 @@ public class lvl1Buttons : MonoBehaviour
     {
         if(score >= pnt1 && score < pnt2)
         {
-            Debug.Log("star 1");
+            // Debug.Log("star 1");
             // hearts[i].enabled = true;
             star1.gameObject.SetActive(true);
         }
         else if(score >= pnt2 && score < pnt3)
         {
-            Debug.Log("star 1 and 2");
+            // Debug.Log("star 1 and 2");
             // star1.enabled = true;
             // star2.enabled = true;
             star1.gameObject.SetActive(true);
@@ -110,7 +109,7 @@ public class lvl1Buttons : MonoBehaviour
         }
         else if(score >= pnt3)
         {
-            Debug.Log("star 1,2,3");
+            // Debug.Log("star 1,2,3");
             // star1.enabled = true;
             // star2.enabled = true;
             // star3.enabled = true;

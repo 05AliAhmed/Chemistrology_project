@@ -52,6 +52,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ball3Script : MonoBehaviour
 {
@@ -65,22 +66,16 @@ public class Ball3Script : MonoBehaviour
     public PointScript point;
 
     public bool targethit;
-    // int targetCount; 
+    
+    int currentlvlindex;
+    public lvl1Buttons levelmanager; // ref to lvl 1 script
 
-    public lvl1Buttons levelmanager;
-
-    // public lvl1Buttons lvl1Script;
     void Start()
     {
+        currentlvlindex = SceneManager.GetActiveScene().buildIndex;
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
-        //levelmanager= GameObject.Find("LevelManager");
         levelmanager = GameObject.Find("LevelManager").GetComponent<lvl1Buttons>();
-
-            //.GetComponent<TargetScript>();
-      //  targethit = GameObject.FindGameObjectWithTag("Targets").GetComponent<TargetScriptTwo>();
         nonozone = GameObject.FindGameObjectWithTag("Nonozone").GetComponent<NonozoneScript>();
-        // point = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();
-        // lvl1Script = FindAnyObjectByType<lvl1Buttons>();//GetComponent<lvl1Buttons>(); // reference to level1script which has score and lose system init - Ali Ahmed     
     }
 
     void Update()
@@ -104,15 +99,8 @@ public class Ball3Script : MonoBehaviour
                 //targethit = true;
                 levelmanager.ScoreSystem(); // using scoresystem from levelbutton script
                 levelmanager.ComboSystem(); // everytime targets been hit targetcount will increase by 1 if more than 2 awards comboscore - Ali Ahmed
-                // ComboPoints(); // checking for combo condition
-                Debug.Log(levelmanager.targetCount); //testing
-                Debug.Log(targethit); //testing
             }
-             // checking if target's been hit if yes true - Ali Ahmed
-            // lvl1Script.ScoreSystem(); // accessing score system from lvl1script - Ali Ahmed
-            // point.EarnPoint();
-            Debug.Log("GG");
-            Destroy(gameObject);
+
             
         }
 
@@ -121,10 +109,7 @@ public class Ball3Script : MonoBehaviour
 
             levelmanager.LoseScore(); // using losesystem from levelbutton script
             levelmanager.targetCount = 0; // if ball goes into nono zone sets target count to 0 hence no more combo - Ali Ahmed
-            // lvl1Script.LoseScore(); // accessing lose points system from lvl1script - Ali Ahmed
             Destroy(gameObject);
-            // targethit = false; //checking if target's been hit if no false - Ali Ahmed
-            // point.LosePoint();
 
         }
     }

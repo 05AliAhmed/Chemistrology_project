@@ -59,7 +59,7 @@ public class lvl1Buttons : MonoBehaviour
     }
     public void ScoreSystem() // will late be connected with shooting system to count scores | Score Button
     {
-        Debug.Log("score system");
+        // Debug.Log("score system");
         score += amendScore;
         scoreTxt.text = score.ToString();
         factScrScoreTxt.text = score.ToString();

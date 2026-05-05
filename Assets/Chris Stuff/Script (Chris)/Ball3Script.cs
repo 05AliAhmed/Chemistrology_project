@@ -68,14 +68,20 @@ public class Ball3Script : MonoBehaviour
     public bool targethit;
     
     int currentlvlindex;
-    public lvl1Buttons levelmanager; // ref to lvl 1 script
+    lvlsManagerbase levelManager; // ref to lvl script
+    // lvl1Buttons lvl1Buttons;
+    // lvl2 lvl2;
 
     void Start()
     {
+        
         currentlvlindex = SceneManager.GetActiveScene().buildIndex;
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
-        levelmanager = GameObject.Find("LevelManager").GetComponent<lvl1Buttons>();
+        // lvl1Buttons = GameObject.Find("LevelManager").GetComponent<lvl1Buttons>();
+        // lvl2 = GameObject.Find("LevelManager").GetComponent<lvl2>();
         nonozone = GameObject.FindGameObjectWithTag("Nonozone").GetComponent<NonozoneScript>();
+        levelManager = GameObject.Find("LevelManager").GetComponent<lvlsManagerbase>();
+        
     }
 
     void Update()
@@ -96,9 +102,27 @@ public class Ball3Script : MonoBehaviour
             {
                 //Debug.Log("it is found");
                 collisioninfo.gameObject.GetComponent<TargetScript>().changeTarget(); // chnaging sprite
+                Debug.Log(levelManager.GetType().Name);
                 //targethit = true;
-                levelmanager.ScoreSystem(); // using scoresystem from levelbutton script
-                levelmanager.ComboSystem(); // everytime targets been hit targetcount will increase by 1 if more than 2 awards comboscore - Ali Ahmed
+                // switch (currentlvlindex)
+                // {
+                //     case 3:
+                // lvl1Buttons.ScoreSystem(); // using scoresystem from levelbutton script
+                // lvl1Buttons.ComboSystem(); // everytime targets been hit targetcount will increase by 1 if more than 2 awards comboscore - Ali Ahmed
+                
+                        // break;
+                //     case 4:
+                //         lvl2.ScoreSystem();
+                //         lvl2.ComboSystem();
+                //         break;
+                                         
+                //     default:
+                //         break;
+                // }
+                levelManager.ScoreSystem();
+                levelManager.ComboSystem();
+                Destroy(gameObject);
+            
             }
 
             
@@ -106,9 +130,26 @@ public class Ball3Script : MonoBehaviour
 
         else if (collisioninfo.collider.tag == "Nonozone")
         {
+            // switch (currentlvlindex)
+            // {
+            //     case 3:
+            //         Debug.Log("Lvel one is here");
+            // lvl1Buttons.LoseScore();
+            // lvl1Buttons.targetCount = 0;
+                //     break;
+                // case 4:
+                //     Debug.Log("Lvel two was here");
+                //     lvl2.LoseScore();
+                //     lvl2.targetCount = 0;
+            //         break;
+                                        
+            //     default:
+            //         break;
+            // }
 
-            levelmanager.LoseScore(); // using losesystem from levelbutton script
-            levelmanager.targetCount = 0; // if ball goes into nono zone sets target count to 0 hence no more combo - Ali Ahmed
+            levelManager.LoseScore(); // using losesystem from levelbutton script
+            levelManager.targetCount = 0; // if ball goes into nono zone sets target count to 0 hence no more combo - Ali Ahmed
+            
             Destroy(gameObject);
 
         }

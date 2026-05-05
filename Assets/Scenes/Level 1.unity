@@ -7141,17 +7141,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26be8e499b694e34a87a8159c6a766ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::lvl1Buttons
+  amendScore: 100
+  loseScore: 50
+  comboScore: 20
+  score: 0
+  targetCount: 0
   pausemenu: {fileID: 861468017}
   factScreen: {fileID: 664902729}
   scoreNeededLine: {fileID: 788357570}
   nxtLvlBtn: {fileID: 54543748}
   vignette: {fileID: 113296686}
-  amendScore: 100
-  loseScore: 50
-  comboScore: 20
   scoreToPass: 0
   scoreTxt: {fileID: 1727689545}
-  passScoreTxt: {fileID: 2036591758}
   highScoreTxt: {fileID: 1487752257}
   factScrScoreTxt: {fileID: 1534697797}
   factScrScoreNeededTxt: {fileID: 1005329336}
@@ -7163,8 +7164,6 @@ MonoBehaviour:
   pnt1: 150
   pnt2: 300
   pnt3: 500
-  score: 0
-  targetCount: 0
   cooldown: 2
   groupOfTargets: []
 --- !u!222 &1501387230

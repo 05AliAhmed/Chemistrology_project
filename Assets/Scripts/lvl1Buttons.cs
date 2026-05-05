@@ -7,22 +7,19 @@ using UnityEngine.UI;
 
 
 
-public class lvl1Buttons : MonoBehaviour
+public class lvl1Buttons : lvlsManagerbase
 {
     [SerializeField] GameObject pausemenu; // reference to pausemenu panel
     [SerializeField] GameObject factScreen; // reference to fact screen panel
     [SerializeField] GameObject scoreNeededLine; // progressbar
     [SerializeField] GameObject nxtLvlBtn; 
     [SerializeField] GameObject vignette; // ref to next lvl button if score > score needed yo pass the lvl.
-    // [SerializeField] LMenu levelMenuScript;
-    [SerializeField] int amendScore = 10; // in inspector can change the value
-    [SerializeField] int loseScore = 50; // in inspector can change the value
-    [SerializeField] int comboScore;
-    // [SerializeField] int targetsHit; // mannualy hitting and checking checking if all targets been hit | Number of electron in atom
-    // [SerializeField] int totalTarget; // number of electron is an atom per level
+    // [SerializeField] int amendScore; // in inspector can change the value
+    // [SerializeField] int loseScore; // in inspector can change the value
+    // [SerializeField] int comboScore;
     [SerializeField] float scoreToPass; // testing purpose if score 500 proceed to level 2 if less display a msg after all targets been hit
     [SerializeField] TMP_Text scoreTxt; // txt ref for score text in lvl 
-    [SerializeField] TMP_Text passScoreTxt; // txt ref for score needed to pass the lvl shown while playing 
+    // [SerializeField] TMP_Text passScoreTxt; // txt ref for score needed to pass the lvl shown while playing 
     [SerializeField] TMP_Text highScoreTxt; // txt ref for high score text in fact screen
     [SerializeField] TMP_Text factScrScoreTxt; // txt ref for score text in fact screen
     [SerializeField] TMP_Text factScrScoreNeededTxt; // txt ref for score needed text in fact screen
@@ -38,29 +35,33 @@ public class lvl1Buttons : MonoBehaviour
     public int pnt1;
     public int pnt2;
     public int pnt3;
-    public int score; // keeping the score variable.
+    // public int score; // keeping the score variable.
     // int highScore;
     float passScore;
     // int scnIndex;
-    public int targetCount;
+    // public int targetCount;
     public float cooldown=2f;
     // public bool pauseInputs;
     public List<GameObject> groupOfTargets;
     
-    public void ComboSystem() // awarding combo points
+    public override void ComboSystem() // awarding combo points
     {
-        targetCount++;
-        if(targetCount > 2) // checking if target hit are grater than 2
-        {
-            score += comboScore;  // then score plus comboscore
+        base.ComboSystem();
+        Debug.Log("lvl 1 combosytem called");
+        // targetCount++;
+        // if(targetCount > 2) // checking if target hit are grater than 2
+        // {
+        //     score += comboScore;  // then score plus comboscore
             scoreTxt.text = score.ToString();
             // Debug.Log(score); // testing
-        }
+        // }
     }
-    public void ScoreSystem() // will late be connected with shooting system to count scores | Score Button
+    public override void ScoreSystem() // will late be connected with shooting system to count scores | Score Button
     {
         // Debug.Log("score system");
-        score += amendScore;
+        // score += amendScore;
+        base.ScoreSystem();
+        Debug.Log("lvl 1 scoresytem called");
         scoreTxt.text = score.ToString();
         factScrScoreTxt.text = score.ToString();
         passScore = scoreToPass - score; 
@@ -69,7 +70,7 @@ public class lvl1Buttons : MonoBehaviour
         {
             passScore = 0;
         }
-        passScoreTxt.text = passScore.ToString();
+        // passScoreTxt.text = passScore.ToString();
         factScrScoreNeededTxt.text = passScore.ToString();
         if(score > PlayerPrefs.GetInt("Highscore",0)) // if score is greater than H.S, 0 is there because at start high score is 0.
         {
@@ -77,16 +78,12 @@ public class lvl1Buttons : MonoBehaviour
             highScoreTxt.text = score.ToString();
             // passScoreTxt.text = passScore.ToString();            
         }
-        // Debug.Log(score); // testing
-        // Debug.Log("CONNECTED"); // testing
     }
-    public void LoseScore()
+    public override void LoseScore()
     {
-        score -= loseScore;
-        if(score < 0)
-        {
-            score = 0;
-        }
+        base.LoseScore();
+        Debug.Log("lvl 1 losescore called");
+        // score -= loseScore;
         scoreTxt.text = score.ToString();
     }
 
@@ -94,25 +91,16 @@ public class lvl1Buttons : MonoBehaviour
     {
         if(score >= pnt1 && score < pnt2)
         {
-            // Debug.Log("star 1");
-            // hearts[i].enabled = true;
             star1.gameObject.SetActive(true);
         }
         else if(score >= pnt2 && score < pnt3)
         {
-            // Debug.Log("star 1 and 2");
-            // star1.enabled = true;
-            // star2.enabled = true;
             star1.gameObject.SetActive(true);
             star2.gameObject.SetActive(true);
             // hearts[i].enabled = true;
         }
         else if(score >= pnt3)
         {
-            // Debug.Log("star 1,2,3");
-            // star1.enabled = true;
-            // star2.enabled = true;
-            // star3.enabled = true;
             star1.gameObject.SetActive(true);
             star2.gameObject.SetActive(true);
             star3.gameObject.SetActive(true);
@@ -123,7 +111,6 @@ public class lvl1Buttons : MonoBehaviour
             star1.enabled = false;
             star2.enabled = false;
             star3.enabled = false;
-            // hearts[i].enabled = false;
         }
         
     }
@@ -134,20 +121,7 @@ public class lvl1Buttons : MonoBehaviour
         Time.timeScale = 1f;
         // Debug.Log("changescr working");
     }
-    // public void Retry() // Retry level 1 
-    // {
-    //     SceneManager.LoadScene(1);
-    //     Time.timeScale = 1f;
-    //     // Debug.Log("retry working");
-    // }
-    // public void BackMainMenu()
-    // {
-    //     SceneManager.LoadScene(0);
-    // }
-    // public void Proceedlvl2()
-    // {
-    //     SceneManager.LoadScene(3);
-    // }
+
     public void PauseButton() // is used for pasusing the game | Settings button
     {
         // pauseInputs = true;
@@ -162,52 +136,46 @@ public class lvl1Buttons : MonoBehaviour
         // pauseInputs = false;
         GameManager.instance.pauseInputs = false;
     }
-    // public void LevelMenu() // to level menu
-    // {
-    //     SceneManager.LoadScene(2);
-    // }
+
     public void FactScreenLvl1()
-    {
-        if(gameEnd == true)
+    {      
+        if (cooldown > 0f)// this is for the victory effect- Chris
         {
-           
-            if (cooldown > 0f)// this is for the victory effect- Chris
-            {
-                vignette.SetActive(true);
-                cooldown -= Time.deltaTime;
-                cam.orthographicSize -= Time.deltaTime;
-                Time.timeScale = 0.5f;
-                
-            }
-              if (cooldown < 0f){
-                cam.orthographicSize = 5f;
-                vignette.SetActive(false);
-                factScreen.SetActive(true);
-                Time.timeScale = 0f;
-            }
-            // factScreenShown = true;
-            // Debug.Log("Game end is true");
-           
-            if(score < scoreToPass)
-            {
-                // levelMenuScript.lvl2.SetActive(false);
-                GameManager.instance.level2Unlocked = false;
-                nxtLvlBtn.SetActive(false);
-                scoreNeededLine.SetActive(true);
-            }
-            else
-            {
-                // levelMenuScript.lvl2.SetActive(true);
-                GameManager.instance.level2Unlocked = true;
-                nxtLvlBtn.SetActive(true);
-                scoreNeededLine.SetActive(false);
-            }
-            DisplayStars();
-        }        
+            vignette.SetActive(true);
+            cooldown -= Time.deltaTime;
+            cam.orthographicSize -= Time.deltaTime;
+            Time.timeScale = 0.5f;
+            
+        }
+            if (cooldown < 0f){
+            cam.orthographicSize = 5f;
+            vignette.SetActive(false);
+            factScreen.SetActive(true);
+            Time.timeScale = 0f;
+        }
+        // factScreenShown = true;
+        // Debug.Log("Game end is true");
+        
+        if(score < scoreToPass)
+        {
+            // levelMenuScript.lvl2.SetActive(false);
+            GameManager.instance.level2Unlocked = false;
+            nxtLvlBtn.SetActive(false);
+            scoreNeededLine.SetActive(true);
+        }
+        else
+        {
+            // levelMenuScript.lvl2.SetActive(true);
+            GameManager.instance.level2Unlocked = true;
+            nxtLvlBtn.SetActive(true);
+            scoreNeededLine.SetActive(false);
+        }
+        DisplayStars();      
     }
 
     void Start()
     {
+
         // currentScene = SceneManager.GetActiveScene();
         // scnIndex = currentScene.buildIndex;
         pausemenu.SetActive(false);
@@ -234,40 +202,10 @@ public class lvl1Buttons : MonoBehaviour
 
     void Update()
     {
-        FactScreenLvl1(); // can use if statement to check scn and display its fact0scr
-        // progressBar.fillAmount = passScore / scoreToPassLOne;
-
-
-        // if(electronScript.targethit)
-        // {
-        //     ScoreSystem();
-        //     Debug.Log("Well Connected");
-        // }
-        // else
-        // {
-        //     LoseScore();
-        // }
-        // if(targetsHit == totalTarget) // For testing purpose
-        // {
-        //     //pop fact screen, display score, high score | In proper play
-        //     // if(score < scoreToPassLOne)
-        //     // {
-        //     //     Debug.Log($"You need {scoreToPassLOne - score} more points to proceed");
-        //     //     Debug.Log($"{score}");
-        //     //     Debug.Log($"{highScore}");
-        //     // }
-        //     // else
-        //     // {
-        //     //     Debug.Log("Here is the fact");
-        //     //     Debug.Log($"{score}");
-        //     //     Debug.Log($"{highScore}");
-        //         // display next button | next button.setactive(true);               
-        //     }
-        // }
-        // // else
-        // {
-        //     // Debug.Log("Not yet");
-        // }
-
+        if(gameEnd == true)
+        {
+            FactScreenLvl1();     
+        }
+        
     }
 }

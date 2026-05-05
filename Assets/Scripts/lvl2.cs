@@ -35,11 +35,12 @@ public class lvl2 : lvlsManagerbase
 
     public override void ComboSystem() // awarding combo points
     {
+        base.ComboSystem();
         // targetCount++;
         // if(targetCount > 2) // checking if target hit are grater than 2
         // {
         //     score += comboScore;  // then score plus comboscore
-            scoreTxt.text = score.ToString();
+        scoreTxt.text = score.ToString();
             // Debug.Log(score); // testing
         // }
     }
@@ -166,7 +167,7 @@ public class lvl2 : lvlsManagerbase
         star1.gameObject.SetActive(false);
         star2.gameObject.SetActive(false);
         star3.gameObject.SetActive(false);
-        // highScoreTxt.text = PlayerPrefs.GetInt("Highscore2", 0).ToString();
+        highScoreTxt.text = PlayerPrefs.GetInt("Highscore2", 0).ToString();
         Time.timeScale = 1f;
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
     }

@@ -67,7 +67,7 @@ public class Ball3Script : MonoBehaviour
 
     public bool targethit;
     
-    int currentlvlindex;
+    // int currentlvlindex;
     lvlsManagerbase levelManager; // ref to lvl script
     // lvl1Buttons lvl1Buttons;
     // lvl2 lvl2;
@@ -75,7 +75,7 @@ public class Ball3Script : MonoBehaviour
     void Start()
     {
         
-        currentlvlindex = SceneManager.GetActiveScene().buildIndex;
+        // currentlvlindex = SceneManager.GetActiveScene().buildIndex;
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
         // lvl1Buttons = GameObject.Find("LevelManager").GetComponent<lvl1Buttons>();
         // lvl2 = GameObject.Find("LevelManager").GetComponent<lvl2>();

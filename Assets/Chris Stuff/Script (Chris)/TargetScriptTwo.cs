@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class TargetScriptTwo : MonoBehaviour
 {
+    // NOT IN USE
     private SpriteRenderer rend;
     public Sprite TargetHit;
     /*  public BallScript ball;

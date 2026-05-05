@@ -5,15 +5,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class lvl4 : MonoBehaviour
+public class lvl4 : lvlsManagerbase
 {
     [SerializeField] GameObject pausemenu; // reference to pausemenu panel
     [SerializeField] GameObject factScreen; // reference to fact screen panel
     [SerializeField] GameObject scoreNeededLine; // progressbar
     [SerializeField] GameObject nxtLvlBtn; // ref to next lvl button if score > score needed yo pass the lvl.
-    [SerializeField] int amendScore = 10; // in inspector can change the value
-    [SerializeField] int loseScore = 50; // in inspector can change the value
-    [SerializeField] int comboScore;
+    // [SerializeField] int amendScore = 10; // in inspector can change the value
+    // [SerializeField] int loseScore = 50; // in inspector can change the value
+    // [SerializeField] int comboScore;
     [SerializeField] float scoreToPass; // testing purpose if score 500 proceed to level 2 if less display a msg after all targets been hit
     [SerializeField] TMP_Text scoreTxt; // txt ref for score text in lvl 
     // [SerializeField] TMP_Text passScoreTxt; // txt ref for score needed to pass the lvl shown while playing 
@@ -30,29 +30,31 @@ public class lvl4 : MonoBehaviour
     public int pnt1;
     public int pnt2;
     public int pnt3;
-    public int score; // keeping the score variable.
+    // public int score; // keeping the score variable.
     // int highScore;
     float passScore;
     // int scnIndex;
-    public int targetCount;
+    // public int targetCount;
 
     public bool pauseInputs;
 
     public List<GameObject> groupOfTargets;
 
-    public void ComboSystem() // awarding combo points
+    public override void ComboSystem() // awarding combo points
     {
-        targetCount++;
-        if(targetCount > 2) // checking if target hit are grater than 2
-        {
-            score += comboScore;  // then score plus comboscore
+        base.ComboSystem();
+        // targetCount++;
+        // if(targetCount > 2) // checking if target hit are grater than 2
+        // {
+        //     score += comboScore;  // then score plus comboscore
             scoreTxt.text = score.ToString();
-        }
+        // }
     }
-    public void ScoreSystem() // will late be connected with shooting system to count scores | Score Button
+    public override void ScoreSystem() // will late be connected with shooting system to count scores | Score Button
     {
-        Debug.Log("score system");
-        score += amendScore;
+        base.ScoreSystem();
+        // Debug.Log("score system");
+        // score += amendScore;
         scoreTxt.text = score.ToString();
         factScrScoreTxt.text = score.ToString();
         passScore = scoreToPass - score; 
@@ -67,13 +69,14 @@ public class lvl4 : MonoBehaviour
             highScoreTxt.text = score.ToString();            
         }
     }
-    public void LoseScore()
+    public override void LoseScore()
     {
-        score -= loseScore;
-        if(score < 0)
-        {
-            score = 0;
-        }
+        base.LoseScore();
+        // score -= loseScore;
+        // if(score < 0)
+        // {
+        //     score = 0;
+        // }
         scoreTxt.text = score.ToString();
     }
     void DisplayStars()
@@ -122,28 +125,26 @@ public class lvl4 : MonoBehaviour
     }
     public void FactScreenLvl1()
     {
-        if(gameEnd == true)
+        // factScreenShown = true;
+        // Debug.Log("Game end is true");
+        factScreen.SetActive(true);
+        Time.timeScale = 0f;
+        if(score < scoreToPass)
         {
-            // factScreenShown = true;
-            // Debug.Log("Game end is true");
-            factScreen.SetActive(true);
-            Time.timeScale = 0f;
-            if(score < scoreToPass)
-            {
-                // levelMenuScript.lvl2.SetActive(false);
-                GameManager.instance.level5Unlocked = false;
-                nxtLvlBtn.SetActive(false);
-                scoreNeededLine.SetActive(true);
-            }
-            else
-            {
-                // levelMenuScript.lvl2.SetActive(true);
-                GameManager.instance.level5Unlocked = true;
-                nxtLvlBtn.SetActive(true);
-                scoreNeededLine.SetActive(false);
-            }
-            DisplayStars();
-        }        
+            // levelMenuScript.lvl2.SetActive(false);
+            GameManager.instance.level5Unlocked = false;
+            nxtLvlBtn.SetActive(false);
+            scoreNeededLine.SetActive(true);
+        }
+        else
+        {
+            // levelMenuScript.lvl2.SetActive(true);
+            GameManager.instance.level5Unlocked = true;
+            nxtLvlBtn.SetActive(true);
+            scoreNeededLine.SetActive(false);
+        }
+        DisplayStars();
+                
     }
 
     void Start()
@@ -160,7 +161,9 @@ public class lvl4 : MonoBehaviour
 
     void Update()
     {
-        FactScreenLvl1(); // can use if statement to check scn and display its fact0scr
-
+        if(gameEnd == true)
+        {
+            FactScreenLvl1(); // can use if statement to check scn and display its fact0scr
+        }
     }
 }

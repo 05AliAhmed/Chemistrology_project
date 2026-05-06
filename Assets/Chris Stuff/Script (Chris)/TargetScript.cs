@@ -27,6 +27,7 @@ public class TargetScript : MonoBehaviour
         rend = GetComponent<SpriteRenderer>();
         GameEnd=GameObject.FindGameObjectWithTag("GameEnd").GetComponent<GameEndScript>();
         penaltydetect.enabled = false;
+       
         // myAnim=gameObject.GetComponentInChildren<Animator>();
         /* rend2=gameObject.GetComponentInChildren<SpriteRenderer>();
          rend2.enabled = true;*/
@@ -45,7 +46,8 @@ public class TargetScript : MonoBehaviour
         penaltydetect.enabled = true;
         //childsr.enabled=true;
         // Debug.Log($" {gameObject.name}called");
-        childanime.Play("TargetTrans");
+       // childanime.speed = 1f;
+        childanime.SetBool("Triggered", true);
         //childanime.SetBool("isAttacked", true);
         /*PlayerScore = PlayerScore + point;
       
@@ -63,6 +65,9 @@ public class TargetScript : MonoBehaviour
             //Destroy(rend);
             myCollider.enabled = true;
             penaltydetect.enabled = false;
+            childanime.SetBool("Triggered", false);
+            //  childanime.speed = -1f;
+            // childanime.Play("TargetTrans");
             filled = false;
             
 

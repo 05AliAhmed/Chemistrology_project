@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 public class ObstacleScript : MonoBehaviour
@@ -7,8 +8,8 @@ public class ObstacleScript : MonoBehaviour
     public SpriteRenderer penalhit;
     public CircleCollider2D myCollider;
     public BoxCollider2D PenaltyCollider;
-    public float cooldown=2f;
-    private int speed=50;
+    public float cooldown = 2f;
+    private int speed = 50;
     /* private Animator myAnim;
      private SpriteRenderer rend2;/
 
@@ -21,7 +22,7 @@ public class ObstacleScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
 
-   
+
     void Start()
     {
 
@@ -35,7 +36,7 @@ public class ObstacleScript : MonoBehaviour
         /*ball = GameObject.FindGameObjectWithTag("Ball").GetComponent<BallScript>();
         points = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();*/
         PenaltyCollider.enabled = false;
-       
+
     }
     private void FixedUpdate()
     {
@@ -50,10 +51,17 @@ public class ObstacleScript : MonoBehaviour
         PenaltyCollider.enabled = true;
         rendpenal.enabled = false;
         penalhit.enabled = true;
-        
-      
+
+
         Debug.Log("working");
     }
-    
-  
+   /* void OnCollisionEnter2D(Collision2D collisioninfo)
+    {
+        if (collisioninfo.collider.tag == "Penalty")
+        {
+            Debug.Log("ggggggggg");
+
+        }
+
+    }*/
 }

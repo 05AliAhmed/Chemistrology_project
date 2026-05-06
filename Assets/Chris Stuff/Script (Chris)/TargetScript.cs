@@ -53,25 +53,23 @@ public class TargetScript : MonoBehaviour
         filled = true;
     }
 
-    void OnCollisionEnter2D(Collision2D collisioninfo)
+    void OnTriggerEnter2D(Collider2D  collisioninfo)
     {
-        if (collisioninfo.collider.tag == "Obstacle" && filled==true)
+        if (collisioninfo.tag == "Obstacle" && filled==true)
         {
-
+            Debug.Log("help me xv");
             GameEnd.GEndscore = GameEnd.GEndscore - 1;
             // rend.sprite = TargetHit;
             //Destroy(rend);
             myCollider.enabled = true;
             penaltydetect.enabled = false;
-            childanime.Rebind();
-            childanime.Update(0f);
+            filled = false;
+            
 
         }
 
 
     }
-
-        
     void Update()
     {
         

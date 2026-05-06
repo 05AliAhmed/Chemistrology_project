@@ -160,25 +160,9 @@ public class Ball3Script : MonoBehaviour
             //Debug.Log("hit target");
             if (groupOfObstacles.Contains(collisioninfo.gameObject))
             {
-                //Debug.Log("it is found");
-                collisioninfo.gameObject.GetComponent<ObstacleScript>().obstaclePenalty(); // chnaging sprite
+               
+                collisioninfo.gameObject.GetComponent<ObstacleScript>().penaltyhit=true; // chnaging sprite
 
-                //targethit = true;
-                // switch (currentlvlindex)
-                // {
-                //     case 3:
-                // lvl1Buttons.ScoreSystem(); // using scoresystem from levelbutton script
-                // lvl1Buttons.ComboSystem(); // everytime targets been hit targetcount will increase by 1 if more than 2 awards comboscore - Ali Ahmed
-
-                // break;
-                //     case 4:
-                //         lvl2.ScoreSystem();
-                //         lvl2.ComboSystem();
-                //         break;
-
-                //     default:
-                //         break;
-                // }
                 Debug.Log("obstacle hit");
                 Destroy(gameObject);
             }

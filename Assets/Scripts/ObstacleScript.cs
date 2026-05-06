@@ -10,6 +10,7 @@ public class ObstacleScript : MonoBehaviour
     public BoxCollider2D PenaltyCollider;
     public float cooldown = 2f;
     private int speed = 50;
+   public bool penaltyhit;
     /* private Animator myAnim;
      private SpriteRenderer rend2;/
 
@@ -43,6 +44,7 @@ public class ObstacleScript : MonoBehaviour
         gameObject.transform.RotateAround(new Vector3(0, 0, 0), Vector3.forward, speed * Time.deltaTime);
     }
 
+
     // Update is called once per frame
     public void obstaclePenalty()
     {
@@ -52,7 +54,18 @@ public class ObstacleScript : MonoBehaviour
         rendpenal.enabled = false;
         penalhit.enabled = true;
 
+        if (cooldown > 0f)// this is for the victory effect- Chris
+        {
+            
+            cooldown -= Time.deltaTime;
+            
+          
 
+        }
+        if (cooldown <= 0f)
+        {
+            Destroy(gameObject);
+        }
         Debug.Log("working");
     }
    /* void OnCollisionEnter2D(Collision2D collisioninfo)
@@ -64,4 +77,11 @@ public class ObstacleScript : MonoBehaviour
         }
 
     }*/
+   void Update()
+    {
+        if(penaltyhit==true)
+        {
+            obstaclePenalty();
+        }
+    }
 }

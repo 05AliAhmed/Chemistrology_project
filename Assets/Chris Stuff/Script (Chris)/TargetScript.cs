@@ -52,6 +52,26 @@ public class TargetScript : MonoBehaviour
         Score.text = PlayerScore.ToString();*/
         filled = true;
     }
+
+    void OnCollisionEnter2D(Collision2D collisioninfo)
+    {
+        if (collisioninfo.collider.tag == "Obstacle" && filled==true)
+        {
+
+            GameEnd.GEndscore = GameEnd.GEndscore - 1;
+            // rend.sprite = TargetHit;
+            //Destroy(rend);
+            myCollider.enabled = true;
+            penaltydetect.enabled = false;
+            childanime.Rebind();
+            childanime.Update(0f);
+
+        }
+
+
+    }
+
+        
     void Update()
     {
         

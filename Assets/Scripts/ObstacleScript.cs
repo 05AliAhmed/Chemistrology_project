@@ -1,11 +1,13 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 public class ObstacleScript : MonoBehaviour
 {
     public SpriteRenderer rendpenal;
-    public Sprite penalhit;
+    public SpriteRenderer penalhit;
     public CircleCollider2D myCollider;
     public BoxCollider2D PenaltyCollider;
+    public float cooldown=2f;
     private int speed=50;
     /* private Animator myAnim;
      private SpriteRenderer rend2;/
@@ -24,6 +26,7 @@ public class ObstacleScript : MonoBehaviour
     {
 
         rendpenal = GetComponent<SpriteRenderer>();
+        penalhit.enabled = false;
 
         // myAnim=gameObject.GetComponentInChildren<Animator>();
         /* rend2=gameObject.GetComponentInChildren<SpriteRenderer>();
@@ -45,8 +48,12 @@ public class ObstacleScript : MonoBehaviour
         speed = 0;
         myCollider.enabled = false;
         PenaltyCollider.enabled = true;
-        rendpenal.sprite = penalhit;
+        rendpenal.enabled = false;
+        penalhit.enabled = true;
+        
+      
         Debug.Log("working");
     }
+    
   
 }

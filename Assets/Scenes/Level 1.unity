@@ -210,6 +210,55 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &30815333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 30815335}
+  - component: {fileID: 30815334}
+  m_Layer: 0
+  m_Name: ObstacleSpawner2
+  m_TagString: Obspawner
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &30815334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30815333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c22ddbff95f1547a74286286d9830d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawner
+  obstacle: {fileID: 8773559000451553859, guid: 74e846ed78fae3040bbd2a2ffd01dbc0, type: 3}
+  angleRad: 0
+  angleDeg: 0
+  degree: 0
+  speed: 25
+--- !u!4 &30815335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30815333}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.63, y: -0.79, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2022327364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &34409926
 GameObject:
   m_ObjectHideFlags: 0
@@ -4388,6 +4437,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788357570}
   m_CullTransparentMesh: 1
+--- !u!1 &797092204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 797092206}
+  - component: {fileID: 797092205}
+  m_Layer: 0
+  m_Name: ObstacleSpawner3
+  m_TagString: Obspawner
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &797092205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797092204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c22ddbff95f1547a74286286d9830d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawner
+  obstacle: {fileID: 8773559000451553859, guid: 74e846ed78fae3040bbd2a2ffd01dbc0, type: 3}
+  angleRad: 0
+  angleDeg: 0
+  degree: 0
+  speed: 25
+--- !u!4 &797092206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797092204}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.51, y: 1.22, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2022327364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &797724701 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6443366828940691059, guid: c34ae4a606e205d44b34f92f81ca2028, type: 3}
@@ -5299,7 +5397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1052107564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5316,7 +5414,7 @@ MonoBehaviour:
   penalhit: {fileID: 2134783893}
   myCollider: {fileID: 1052107565}
   PenaltyCollider: {fileID: 2134783891}
-  cooldown: 2
+  cooldown: 0.5
   destroycooldown: 3
   penaltyhit: 0
 --- !u!58 &1052107565
@@ -6399,8 +6497,8 @@ GameObject:
   - component: {fileID: 1335047328}
   - component: {fileID: 1335047327}
   m_Layer: 0
-  m_Name: ObstacleSpawner
-  m_TagString: Untagged
+  m_Name: ObstacleSpawner1
+  m_TagString: Obspawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6421,6 +6519,7 @@ MonoBehaviour:
   angleRad: 0
   angleDeg: 0
   degree: 0
+  speed: 25
 --- !u!4 &1335047328
 Transform:
   m_ObjectHideFlags: 0
@@ -6429,12 +6528,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335047326}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.59, y: -2.19, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.6479197, y: -4.1802, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2022327364}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1337779617
 GameObject:
@@ -8975,6 +9074,60 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &2022327362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2022327364}
+  - component: {fileID: 2022327363}
+  m_Layer: 0
+  m_Name: ObstacleSpawnerSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2022327363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022327362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d6293b6318cfc46b75f2abbc17bad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  spawner1: {fileID: 1335047326}
+  spawner2: {fileID: 30815333}
+  spawner3: {fileID: 797092204}
+  number: 0
+  Timer: 8
+  check: 0
+  groupOfObspawner: []
+--- !u!4 &2022327364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022327362}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.05792, y: 1.9902, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1335047328}
+  - {fileID: 30815335}
+  - {fileID: 797092206}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2033960203
 GameObject:
   m_ObjectHideFlags: 0
@@ -10104,4 +10257,4 @@ SceneRoots:
   - {fileID: 822099390}
   - {fileID: 609740016}
   - {fileID: 1052107567}
-  - {fileID: 1335047328}
+  - {fileID: 2022327364}

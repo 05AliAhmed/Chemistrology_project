@@ -8,7 +8,7 @@ public class ObstacleSpawner : MonoBehaviour
     public float angleRad;
     public float angleDeg;
     public float degree;
-
+    public float speed=25;
    public void angleCalculator()
     {
         angleRad= Mathf.Atan2(transform.position.y,transform.position.x);
@@ -30,8 +30,8 @@ public class ObstacleSpawner : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        gameObject.transform.RotateAround(new Vector3(0, 0, 0), Vector3.forward, speed * Time.deltaTime);
     }
 }

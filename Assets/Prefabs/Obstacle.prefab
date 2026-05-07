@@ -284,5 +284,6 @@ MonoBehaviour:
   penalhit: {fileID: 7885165936058778757}
   myCollider: {fileID: 8453950711598957894}
   PenaltyCollider: {fileID: 2813611856336234572}
-  cooldown: 2
+  cooldown: 0.5
+  destroycooldown: 3
   penaltyhit: 0

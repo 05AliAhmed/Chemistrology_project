@@ -26,9 +26,12 @@ public class ObstacleSpawner : MonoBehaviour
     void Start()
     {
        
-        Instantiate(obstacle, new Vector3(transform.position.x,transform.position.y, 0), Quaternion.Euler(0, 0,degree));
+       // Instantiate(obstacle, new Vector3(transform.position.x,transform.position.y, 0), Quaternion.Euler(0, 0,degree));
     }
-
+   public void spawn()
+    {
+        Instantiate(obstacle, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.Euler(0, 0, degree));
+    }
     // Update is called once per frame
     void FixedUpdate()
     {

@@ -14,6 +14,7 @@ TagManager:
   - GameEnd
   - LevelManager
   - Penalty
+  - Obspawner
   layers:
   - Default
   - TransparentFX

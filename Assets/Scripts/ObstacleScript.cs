@@ -9,13 +9,12 @@ public class ObstacleScript : MonoBehaviour
     public SpriteRenderer penalhit;
     public CircleCollider2D myCollider;
     public BoxCollider2D PenaltyCollider;
-    public float cooldown = 2f;
+    public float cooldown = 0.5f;
     public float destroycooldown = 3f;
     private int speed = 50;
    public bool penaltyhit;
 
-    public ObstacleSystem system;
-    
+   
     /* private Animator myAnim;
      private SpriteRenderer rend2;/
 
@@ -43,7 +42,7 @@ public class ObstacleScript : MonoBehaviour
         points = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();*/
         PenaltyCollider.enabled = false;
         penaltyhit = false;
-        system =  GameObject.FindGameObjectWithTag("System").GetComponent<ObstacleSystem>();
+     
 
 
     }
@@ -73,7 +72,7 @@ public class ObstacleScript : MonoBehaviour
         if (cooldown <= 0f)
         {
             Destroy(gameObject);
-            system.check=false;
+           
         }
        
     }
@@ -101,7 +100,7 @@ public class ObstacleScript : MonoBehaviour
         {
             
             Destroy(gameObject);
-            system.check = false;
+            
         }
         if (penaltyhit==true)
         {

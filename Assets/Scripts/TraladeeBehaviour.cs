@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 public class TraladeeBehaviour : MonoBehaviour
@@ -6,8 +7,12 @@ public class TraladeeBehaviour : MonoBehaviour
     public float cooldownDuration = 2; //this is how long it takes for the the player to be able to shoot again (it's in seconds, obviously).
     public float shootingTimer = 0; //this counts up to allow the player to shoot.
 
+    private AudioSource audioSource;
+    public BulletPooling poolingScript;
+
     lvl1Buttons levelManager;
 
+    [SerializeField] private GameObject ClickEffectPrefab;
     //IT BELONGS TO THE SHOOTING CODE
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -18,6 +23,8 @@ public class TraladeeBehaviour : MonoBehaviour
         // Debug.Log("I am here");
         // levelManager.pauseInputs = true;
        //GameManager.instance.pauseInputs = false;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -44,6 +51,11 @@ public class TraladeeBehaviour : MonoBehaviour
 
                 transform.up = direction;
 
+                mousePosition.z = 10f;
+                Vector3 worldPositon = Camera.main.ScreenToWorldPoint(mousePosition);
+
+                Instantiate(ClickEffectPrefab, mousePosition, Quaternion.identity);
+
                 //SHOOTING CODE
                 //this creates the electron and rotates it in the player's position and rotation respectively.
 
@@ -53,7 +65,12 @@ public class TraladeeBehaviour : MonoBehaviour
                 {
 
                     // Debug.Log("*spit!*");
-                    Instantiate(bullet, transform.position, transform.rotation);
+                    audioSource.Play();
+                    //Instantiate(bullet, transform.position, transform.rotation);
+                    ShootableElectronScript TMP = poolingScript.Get();
+                    TMP.setbulletPooling(poolingScript);
+                    TMP.transform.position = transform.position;
+                    TMP.transform.rotation = transform.rotation;
                     shootingTimer = 0;
 
                 } else

@@ -91,6 +91,11 @@ public class LMenu : MonoBehaviour
         }
 
         HS1.text = PlayerPrefs.GetInt("Highscore",0).ToString();
+        HS2.text = PlayerPrefs.GetInt("Highscore2", 0).ToString();
+        HS3.text = PlayerPrefs.GetInt("Highscore3", 0).ToString();
+        HS4.text = PlayerPrefs.GetInt("Highscore4", 0).ToString();
+        HS5.text = PlayerPrefs.GetInt("Highscore5", 0).ToString();
+        HS6.text = PlayerPrefs.GetInt("Highscore6", 0).ToString();
 
     }
 

@@ -8,7 +8,7 @@ public class ObstacleScript : MonoBehaviour
     public SpriteRenderer penalhit;
     public CircleCollider2D myCollider;
     public BoxCollider2D PenaltyCollider;
-    public float cooldown = 2f;
+    public float cooldown = 0.5f;
     private int speed = 50;
    public bool penaltyhit;
     /* private Animator myAnim;

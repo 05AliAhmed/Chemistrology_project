@@ -124,6 +124,7 @@ public class Ball3Script : MonoBehaviour
                 levelManager.ScoreSystem();
                 levelManager.ComboSystem();
                 Destroy(gameObject);
+                //bulletPool.Return(this);
 
             }
 

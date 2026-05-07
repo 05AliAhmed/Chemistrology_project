@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class TargetScript : MonoBehaviour
 {
+    
     private SpriteRenderer rend;
     public CircleCollider2D myCollider;
     public CircleCollider2D penaltydetect;
@@ -39,6 +40,7 @@ public class TargetScript : MonoBehaviour
     // Update is called once per frame
     public void changeTarget()
     {
+        
         GameEnd.GEndscore = GameEnd.GEndscore + 1;
         // rend.sprite = TargetHit;
         //Destroy(rend);
@@ -53,12 +55,15 @@ public class TargetScript : MonoBehaviour
       
         Score.text = PlayerScore.ToString();*/
         filled = true;
+
     }
 
     void OnTriggerEnter2D(Collider2D  collisioninfo)
     {
+        
         if (collisioninfo.tag == "Obstacle" && filled==true)
         {
+            
             Debug.Log("help me xv");
             GameEnd.GEndscore = GameEnd.GEndscore - 1;
             // rend.sprite = TargetHit;
@@ -70,9 +75,7 @@ public class TargetScript : MonoBehaviour
             // childanime.Play("TargetTrans");
             filled = false;
             
-
         }
-
 
     }
     void Update()

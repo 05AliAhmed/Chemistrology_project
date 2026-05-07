@@ -1,9 +1,11 @@
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 using UnityEngine.UI;
 public class TargetScript : MonoBehaviour
 {
     private SpriteRenderer rend;
     public CircleCollider2D myCollider;
+    public CircleCollider2D penaltydetect;
     public Animator childanime;
     public bool filled;
     /* private Animator myAnim;
@@ -24,6 +26,8 @@ public class TargetScript : MonoBehaviour
 
         rend = GetComponent<SpriteRenderer>();
         GameEnd=GameObject.FindGameObjectWithTag("GameEnd").GetComponent<GameEndScript>();
+        penaltydetect.enabled = false;
+       
         // myAnim=gameObject.GetComponentInChildren<Animator>();
         /* rend2=gameObject.GetComponentInChildren<SpriteRenderer>();
          rend2.enabled = true;*/
@@ -39,16 +43,37 @@ public class TargetScript : MonoBehaviour
         // rend.sprite = TargetHit;
         //Destroy(rend);
         myCollider.enabled = false;
+        penaltydetect.enabled = true;
         //childsr.enabled=true;
         // Debug.Log($" {gameObject.name}called");
-        childanime.Play("TargetTrans");
+       // childanime.speed = 1f;
+        childanime.SetBool("Triggered", true);
         //childanime.SetBool("isAttacked", true);
         /*PlayerScore = PlayerScore + point;
       
         Score.text = PlayerScore.ToString();*/
         filled = true;
+    }
 
-       
+    void OnTriggerEnter2D(Collider2D  collisioninfo)
+    {
+        if (collisioninfo.tag == "Obstacle" && filled==true)
+        {
+            Debug.Log("help me xv");
+            GameEnd.GEndscore = GameEnd.GEndscore - 1;
+            // rend.sprite = TargetHit;
+            //Destroy(rend);
+            myCollider.enabled = true;
+            penaltydetect.enabled = false;
+            childanime.SetBool("Triggered", false);
+            //  childanime.speed = -1f;
+            // childanime.Play("TargetTrans");
+            filled = false;
+            
+
+        }
+
+
     }
     void Update()
     {

@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
@@ -8,9 +9,13 @@ public class ObstacleScript : MonoBehaviour
     public SpriteRenderer penalhit;
     public CircleCollider2D myCollider;
     public BoxCollider2D PenaltyCollider;
-    public float cooldown = 0.5f;
+    public float cooldown = 2f;
+    public float destroycooldown = 3f;
     private int speed = 50;
    public bool penaltyhit;
+
+    public ObstacleSystem system;
+    
     /* private Animator myAnim;
      private SpriteRenderer rend2;/
 
@@ -37,6 +42,9 @@ public class ObstacleScript : MonoBehaviour
         /*ball = GameObject.FindGameObjectWithTag("Ball").GetComponent<BallScript>();
         points = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();*/
         PenaltyCollider.enabled = false;
+        penaltyhit = false;
+        system =  GameObject.FindGameObjectWithTag("System").GetComponent<ObstacleSystem>();
+
 
     }
     private void FixedUpdate()
@@ -53,7 +61,7 @@ public class ObstacleScript : MonoBehaviour
         PenaltyCollider.enabled = true;
         rendpenal.enabled = false;
         penalhit.enabled = true;
-
+        //destroycooldown = 5f;
         if (cooldown > 0f)// this is for the victory effect- Chris
         {
             
@@ -65,8 +73,9 @@ public class ObstacleScript : MonoBehaviour
         if (cooldown <= 0f)
         {
             Destroy(gameObject);
+            system.check=false;
         }
-        Debug.Log("working");
+       
     }
    /* void OnCollisionEnter2D(Collision2D collisioninfo)
     {
@@ -79,7 +88,22 @@ public class ObstacleScript : MonoBehaviour
     }*/
    void Update()
     {
-        if(penaltyhit==true)
+
+        if (destroycooldown > 0f&&penaltyhit==false)// this is for the victory effect- Chris
+        {
+
+            destroycooldown -= Time.deltaTime;
+
+
+
+        }
+        if (destroycooldown <= 0f && penaltyhit == false)
+        {
+            
+            Destroy(gameObject);
+            system.check = false;
+        }
+        if (penaltyhit==true)
         {
             obstaclePenalty();
         }

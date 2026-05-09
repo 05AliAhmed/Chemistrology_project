@@ -243,5 +243,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96119d264f203314eb9237bc1f145ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletPooling
-  prefab: {fileID: 0}
+  prefab: {fileID: 5158800428106681228, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}
   initialSize: 32

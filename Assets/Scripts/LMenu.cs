@@ -24,43 +24,6 @@ public class LMenu : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(levelindx);
     }
-
-   // [SerializeField] Animator transitionAnim;
-    // public void LevelOne() // takes to level 1
-    // {
-    //     //transitionAnim.SetTrigger("End");
-       
-    //     Time.timeScale = 1f;
-    //     SceneManager.LoadScene(2);
-    //     //transitionAnim.SetTrigger()
-    // }
-
-    // public void LevelTwo() // takes to level 1
-    // {
-    //     // Time.timeScale = 1f;
-    //     SceneManager.LoadScene(3);
-    // }
-    // public void LevelThree() // takes to level 1
-    // {
-    //     // Time.timeScale = 1f;
-    //     SceneManager.LoadScene(4);
-    // }
-    // public void LevelFour() // takes to level 1
-    // {
-    //     // Time.timeScale = 1f;
-    //     SceneManager.LoadScene(5);
-    // }
-    // public void LevelFive() // takes to level 1
-    // {
-    //     // Time.timeScale = 1f;
-    //     SceneManager.LoadScene(6);
-    // }
-    // public void LevelSix() // takes to level 1
-    // {
-    //     // Time.timeScale = 1f;
-    //     SceneManager.LoadScene(7);
-    // }
-
     public void backoption()
     {
         SceneManager.LoadScene(0);
@@ -97,11 +60,5 @@ public class LMenu : MonoBehaviour
         HS5.text = PlayerPrefs.GetInt("Highscore5", 0).ToString();
         HS6.text = PlayerPrefs.GetInt("Highscore6", 0).ToString();
 
-    }
-
-  
-    void Update()
-    {
-        
     }
 }

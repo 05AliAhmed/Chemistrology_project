@@ -39,7 +39,8 @@ public class TargetScript : MonoBehaviour
     // Update is called once per frame
     public void changeTarget()
     {
-        GameEnd.GEndscore = GameEnd.GEndscore + 1;
+        // GameEnd.GEndscore = GameEnd.GEndscore + 1;
+        GameEnd.GEndscore += 1;
         // rend.sprite = TargetHit;
         //Destroy(rend);
         myCollider.enabled = false;

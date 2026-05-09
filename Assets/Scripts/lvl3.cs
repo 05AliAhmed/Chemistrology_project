@@ -11,30 +11,23 @@ public class lvl3 : lvlsManagerbase
     [SerializeField] GameObject factScreen; // reference to fact screen panel
     [SerializeField] GameObject scoreNeededLine; // progressbar
     [SerializeField] GameObject nxtLvlBtn; // ref to next lvl button if score > score needed yo pass the lvl.
-    // [SerializeField] int amendScore = 10; // in inspector can change the value
-    // [SerializeField] int loseScore = 50; // in inspector can change the value
-    // [SerializeField] int comboScore;
-    [SerializeField] float scoreToPass; // testing purpose if score 500 proceed to level 2 if less display a msg after all targets been hit
+    [SerializeField] float scoreToPass; // testing purpose if score 500 proceed to level 2 if less display a msg 
+                                        // after all targets been hit
     [SerializeField] TMP_Text scoreTxt; // txt ref for score text in lvl 
-    // [SerializeField] TMP_Text passScoreTxt; // txt ref for score needed to pass the lvl shown while playing 
     [SerializeField] TMP_Text highScoreTxt; // txt ref for high score text in fact screen
     [SerializeField] TMP_Text factScrScoreTxt; // txt ref for score text in fact screen
     [SerializeField] TMP_Text factScrScoreNeededTxt; // txt ref for score needed text in fact screen
     // Scene currentScene;
     public bool gameEnd;
-    // bool factScreenShown = false;
-    // public Image progressBar;
     public Image star1;
     public Image star2;
     public Image star3;
     public int pnt1;
     public int pnt2;
     public int pnt3;
-    // public int score; // keeping the score variable.
-    // int highScore;
+
     float passScore;
-    // int scnIndex;
-    // public int targetCount;
+
 
     public bool pauseInputs;
 
@@ -43,19 +36,11 @@ public class lvl3 : lvlsManagerbase
     public override void ComboSystem() // awarding combo points
     {
         base.ComboSystem();
-        // targetCount++;
-        // if(targetCount > 2) // checking if target hit are grater than 2
-        // {
-        //     score += comboScore;  // then score plus comboscore
-            scoreTxt.text = score.ToString();
-        //     Debug.Log(score); // testing
-        // }
+        scoreTxt.text = score.ToString();
     }
     public override void ScoreSystem() // will late be connected with shooting system to count scores | Score Button
     {
         base.ScoreSystem();
-        // Debug.Log("score system");
-        // score += amendScore;
         scoreTxt.text = score.ToString();
         factScrScoreTxt.text = score.ToString();
         passScore = scoreToPass - score; 
@@ -73,11 +58,6 @@ public class lvl3 : lvlsManagerbase
     public override void LoseScore()
     {
         base.LoseScore();
-        // score -= loseScore;
-        // if(score < 0)
-        // {
-        //     score = 0;
-        // }
         scoreTxt.text = score.ToString();
     }
     void DisplayStars()
@@ -126,20 +106,16 @@ public class lvl3 : lvlsManagerbase
     }
     public void FactScreenLvl1()
     {
-        // factScreenShown = true;
-        // Debug.Log("Game end is true");
         factScreen.SetActive(true);
         Time.timeScale = 0f;
         if(score < scoreToPass)
         {
-            // levelMenuScript.lvl2.SetActive(false);
             GameManager.instance.level4Unlocked = false;
             nxtLvlBtn.SetActive(false);
             scoreNeededLine.SetActive(true);
         }
         else
         {
-            // levelMenuScript.lvl2.SetActive(true);
             GameManager.instance.level4Unlocked = true;
             nxtLvlBtn.SetActive(true);
             scoreNeededLine.SetActive(false);
@@ -163,9 +139,7 @@ public class lvl3 : lvlsManagerbase
     {
         if(gameEnd == true)
         {
-            FactScreenLvl1(); // can use if statement to check scn and display its fact0scr    
+            FactScreenLvl1(); 
         }
-        
-
     }
 }

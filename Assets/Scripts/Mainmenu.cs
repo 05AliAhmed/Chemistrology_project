@@ -7,7 +7,6 @@ public class Mainmenu : MonoBehaviour
     {
         SceneManager.LoadScene(1); // to level 1
     }
-
     public void Tutorial()
     {
         SceneManager.LoadScene(8);
@@ -17,17 +16,6 @@ public class Mainmenu : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("QUit is working");
-    }
-
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-        
     }
 }
 

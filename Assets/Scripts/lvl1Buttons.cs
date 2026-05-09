@@ -14,32 +14,14 @@ public class lvl1Buttons : lvlsManagerbase
     [SerializeField] GameObject scoreNeededLine; // progressbar
     [SerializeField] GameObject nxtLvlBtn; 
     [SerializeField] GameObject vignette; // ref to next lvl button if score > score needed yo pass the lvl.
-    // [SerializeField] int amendScore; // in inspector can change the value
-    // [SerializeField] int loseScore; // in inspector can change the value
-    // [SerializeField] int comboScore;
     [SerializeField] float scoreToPass; // testing purpose if score 500 proceed to level 2 if less display a msg after all targets been hit
-    [SerializeField] TMP_Text scoreTxt; // txt ref for score text in lvl 
-    // [SerializeField] TMP_Text passScoreTxt; // txt ref for score needed to pass the lvl shown while playing 
+    [SerializeField] TMP_Text scoreTxt; // txt ref for score text in lvl  
     [SerializeField] TMP_Text highScoreTxt; // txt ref for high score text in fact screen
     [SerializeField] TMP_Text factScrScoreTxt; // txt ref for score text in fact screen
     [SerializeField] TMP_Text factScrScoreNeededTxt; // txt ref for score needed text in fact screen
     [SerializeField] Camera cam;
-    // [SerializeField] Ball3Script electronScript; // reference
-    // Scene currentScene;
     public bool gameEnd;
-    // bool factScreenShown = false;
-    // public Image progressBar;
-    public Image star1;
-    public Image star2;
-    public Image star3;
-    public int pnt1;
-    public int pnt2;
-    public int pnt3;
-    // public int score; // keeping the score variable.
-    // int highScore;
     float passScore;
-    // int scnIndex;
-    // public int targetCount;
     public float cooldown=2f;
     // public bool pauseInputs;
     public List<GameObject> groupOfTargets;
@@ -47,7 +29,7 @@ public class lvl1Buttons : lvlsManagerbase
     public override void ComboSystem() // awarding combo points
     {
         base.ComboSystem();
-        Debug.Log("lvl 1 combosytem called");
+        // Debug.Log("lvl 1 combosytem called");
         // targetCount++;
         // if(targetCount > 2) // checking if target hit are grater than 2
         // {
@@ -61,7 +43,7 @@ public class lvl1Buttons : lvlsManagerbase
         // Debug.Log("score system");
         // score += amendScore;
         base.ScoreSystem();
-        Debug.Log("lvl 1 scoresytem called");
+        // Debug.Log("lvl 1 scoresytem called");
         scoreTxt.text = score.ToString();
         factScrScoreTxt.text = score.ToString();
         passScore = scoreToPass - score; 
@@ -82,38 +64,38 @@ public class lvl1Buttons : lvlsManagerbase
     public override void LoseScore()
     {
         base.LoseScore();
-        Debug.Log("lvl 1 losescore called");
+        // Debug.Log("lvl 1 losescore called");
         // score -= loseScore;
         scoreTxt.text = score.ToString();
     }
 
-    void DisplayStars()
-    {
-        if(score >= pnt1 && score < pnt2)
-        {
-            star1.gameObject.SetActive(true);
-        }
-        else if(score >= pnt2 && score < pnt3)
-        {
-            star1.gameObject.SetActive(true);
-            star2.gameObject.SetActive(true);
-            // hearts[i].enabled = true;
-        }
-        else if(score >= pnt3)
-        {
-            star1.gameObject.SetActive(true);
-            star2.gameObject.SetActive(true);
-            star3.gameObject.SetActive(true);
-            // hearts[i].enabled = true;
-        }
-        else
-        {
-            star1.enabled = false;
-            star2.enabled = false;
-            star3.enabled = false;
-        }
+    // void DisplayStars()
+    // {
+    //     if(score >= pnt1 && score < pnt2)
+    //     {
+    //         star1.gameObject.SetActive(true);
+    //     }
+    //     else if(score >= pnt2 && score < pnt3)
+    //     {
+    //         star1.gameObject.SetActive(true);
+    //         star2.gameObject.SetActive(true);
+    //         // hearts[i].enabled = true;
+    //     }
+    //     else if(score >= pnt3)
+    //     {
+    //         star1.gameObject.SetActive(true);
+    //         star2.gameObject.SetActive(true);
+    //         star3.gameObject.SetActive(true);
+    //         // hearts[i].enabled = true;
+    //     }
+    //     else
+    //     {
+    //         star1.enabled = false;
+    //         star2.enabled = false;
+    //         star3.enabled = false;
+    //     }
         
-    }
+    // }
 
     public void ChangeScene(int _sceneindex)
     {
@@ -153,8 +135,6 @@ public class lvl1Buttons : lvlsManagerbase
             factScreen.SetActive(true);
             Time.timeScale = 0f;
         }
-        // factScreenShown = true;
-        // Debug.Log("Game end is true");
         
         if(score < scoreToPass)
         {
@@ -173,31 +153,15 @@ public class lvl1Buttons : lvlsManagerbase
         DisplayStars();      
     }
 
-    void Start()
+    public override void Start()
     {
-
-        // currentScene = SceneManager.GetActiveScene();
-        // scnIndex = currentScene.buildIndex;
+        base.Start();
         pausemenu.SetActive(false);
         factScreen.SetActive(false);
-        star1.gameObject.SetActive(false);
-        star2.gameObject.SetActive(false);
-        star3.gameObject.SetActive(false);
         vignette.gameObject.SetActive(false);
-        // Debug.Log(gameEnd);
-        // PlayerPrefs.SetInt("Highscore", 0); // setting highscore to zero everytime game starts or new level starts, I knwo high score is to be kept even when game has been quit for that make a new highscore variable for each level??
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
-        // progressBar.fillAmount = 1;
-        // star1.enabled = false;
-        // star2.enabled = false;
-        // star3.enabled = false;
         Time.timeScale = 1f;
-
-
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
-        // electronScript = FindAnyObjectByType<Ball3Script>();
-        //electronScript = GameObject.FindGameObjectsWithTag("Ball");
-        // electronScript = GetComponent<Ball3Script>();
     }
 
     void Update()

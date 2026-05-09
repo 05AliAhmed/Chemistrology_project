@@ -19,16 +19,7 @@ public class lvl3 : lvlsManagerbase
     [SerializeField] TMP_Text factScrScoreNeededTxt; // txt ref for score needed text in fact screen
     // Scene currentScene;
     public bool gameEnd;
-    public Image star1;
-    public Image star2;
-    public Image star3;
-    public int pnt1;
-    public int pnt2;
-    public int pnt3;
-
     float passScore;
-
-
     public bool pauseInputs;
 
     public List<GameObject> groupOfTargets;
@@ -60,32 +51,32 @@ public class lvl3 : lvlsManagerbase
         base.LoseScore();
         scoreTxt.text = score.ToString();
     }
-    void DisplayStars()
-    {
-        if(score >= pnt1 && score < pnt2)
-        {
-            Debug.Log("star 1");
-            star1.gameObject.SetActive(true);
-        }
-        else if(score >= pnt2 && score < pnt3)
-        {
-            star1.gameObject.SetActive(true);
-            star2.gameObject.SetActive(true);
-        }
-        else if(score >= pnt3)
-        {
-            star1.gameObject.SetActive(true);
-            star2.gameObject.SetActive(true);
-            star3.gameObject.SetActive(true);
-        }
-        else
-        {
-            star1.enabled = false;
-            star2.enabled = false;
-            star3.enabled = false;
-        }
+    // void DisplayStars()
+    // {
+    //     if(score >= pnt1 && score < pnt2)
+    //     {
+    //         Debug.Log("star 1");
+    //         star1.gameObject.SetActive(true);
+    //     }
+    //     else if(score >= pnt2 && score < pnt3)
+    //     {
+    //         star1.gameObject.SetActive(true);
+    //         star2.gameObject.SetActive(true);
+    //     }
+    //     else if(score >= pnt3)
+    //     {
+    //         star1.gameObject.SetActive(true);
+    //         star2.gameObject.SetActive(true);
+    //         star3.gameObject.SetActive(true);
+    //     }
+    //     else
+    //     {
+    //         star1.enabled = false;
+    //         star2.enabled = false;
+    //         star3.enabled = false;
+    //     }
         
-    }
+    // }
 
     public void ChangeScene(int _sceneindex)
     {
@@ -123,13 +114,11 @@ public class lvl3 : lvlsManagerbase
         DisplayStars();        
     }
 
-    void Start()
+    public override void Start()
     {
+        base.Start();
         pausemenu.SetActive(false);
         factScreen.SetActive(false);
-        star1.gameObject.SetActive(false);
-        star2.gameObject.SetActive(false);
-        star3.gameObject.SetActive(false);
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore3", 0).ToString();
         Time.timeScale = 1f;
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();

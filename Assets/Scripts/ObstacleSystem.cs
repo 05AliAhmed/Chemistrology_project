@@ -12,13 +12,13 @@ public class ObstacleSystem : MonoBehaviour
     public int number;
     public float Timer=8f;
     public bool check;
+    public List<GameObject> groupOfObspawner;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-     
-        spawner1.SetActive(false);
-        spawner2.SetActive(false);
-        spawner3.SetActive(false);
+        groupOfObspawner = GameObject.FindGameObjectsWithTag("Obspawner").ToList();
+       
     }
     public void randnum()
     {
@@ -32,23 +32,23 @@ public class ObstacleSystem : MonoBehaviour
             Timer -= Time.deltaTime;
         }
         if (Timer <= 0f)
-        {
-            Timer = 8f;
+        {     
             randnum();
-           if (number <= 1)
+            Timer = 8f;
+            if (number <= 1)
             {
-                spawner1.SetActive(true);
-               // spawner1.SetActive(check);
+               // spawner1.GetComponent<ObstacleSpawner>().spawn();
+                // spawner1.SetActive(check);
 
             }
            else if (number == 2 || number == 3)
             {
-                spawner2.SetActive(true);
-              // spawner2.SetActive(check);
+               // spawner2.GetComponent<ObstacleSpawner>().spawn();
+                // spawner2.SetActive(check);
             }
            else if (number >= 4)
             {
-                spawner3.SetActive(true);
+                //spawner3.GetComponent<ObstacleSpawner>().spawn();
                 //spawner3.SetActive(check);
                 //system and script need some connection
             }

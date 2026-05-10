@@ -7,7 +7,7 @@ public class ObstacleScript : MonoBehaviour
 {
     public SpriteRenderer rendpenal;
     public SpriteRenderer penalhit;
-    public CircleCollider2D myCollider;
+    public BoxCollider2D myCollider;
     public BoxCollider2D PenaltyCollider;
     public float cooldown = 0.5f;
     public float destroycooldown = 3f;

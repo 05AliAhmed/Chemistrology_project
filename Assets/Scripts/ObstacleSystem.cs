@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections;
 
 public class ObstacleSystem : MonoBehaviour
 {
@@ -18,42 +19,80 @@ public class ObstacleSystem : MonoBehaviour
     private void Start()
     {
         groupOfObspawner = GameObject.FindGameObjectsWithTag("Obspawner").ToList();
-       
+        StartCoroutine(MyCoroutine());
+
     }
     public void randnum()
     {
         number = Random.Range(0, 6);
     }
-    // Update is called once per frame
-    void Update()
+
+    IEnumerator MyCoroutine()
     {
-        if (Timer > 0f)
+
+        while (true)
         {
-            Timer -= Time.deltaTime;
+            yield return new WaitForSeconds(8f);
+
+            SpawnFunc();
         }
-        if (Timer <= 0f)
-        {     
+    }
+
+    public void SpawnFunc()
+    {
+        {
             randnum();
             Timer = 8f;
             if (number <= 1)
             {
-               // spawner1.GetComponent<ObstacleSpawner>().spawn();
+                 spawner1.GetComponent<ObstacleSpawner>().spawn();
                 // spawner1.SetActive(check);
 
             }
-           else if (number == 2 || number == 3)
+            else if (number == 2 || number == 3)
             {
-               // spawner2.GetComponent<ObstacleSpawner>().spawn();
+                 spawner2.GetComponent<ObstacleSpawner>().spawn();
                 // spawner2.SetActive(check);
             }
-           else if (number >= 4)
+            else if (number >= 4)
             {
-                //spawner3.GetComponent<ObstacleSpawner>().spawn();
+                spawner3.GetComponent<ObstacleSpawner>().spawn();
                 //spawner3.SetActive(check);
                 //system and script need some connection
             }
 
         }
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        /* if (Timer > 0f)
+         {
+             Timer -= Time.deltaTime;
+         }
+         if (Timer <= 0f)
+         {     
+             randnum();
+             Timer = 8f;
+             if (number <= 1)
+             {
+                // spawner1.GetComponent<ObstacleSpawner>().spawn();
+                 // spawner1.SetActive(check);
+
+             }
+            else if (number == 2 || number == 3)
+             {
+                // spawner2.GetComponent<ObstacleSpawner>().spawn();
+                 // spawner2.SetActive(check);
+             }
+            else if (number >= 4)
+             {
+                 //spawner3.GetComponent<ObstacleSpawner>().spawn();
+                 //spawner3.SetActive(check);
+                 //system and script need some connection
+             }
+
+         }*/
        
 
 

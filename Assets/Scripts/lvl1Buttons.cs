@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -99,6 +100,7 @@ public class lvl1Buttons : lvlsManagerbase
 
     public void ChangeScene(int _sceneindex)
     {
+       // StartCoroutine(LoadScene(int _sceneindex));
         SceneManager.LoadScene(_sceneindex);
         Time.timeScale = 1f;
         // Debug.Log("changescr working");
@@ -153,6 +155,14 @@ public class lvl1Buttons : lvlsManagerbase
         DisplayStars();      
     }
 
+    /*IEnumerator LoadScene(int _sceneindex)
+    {
+        SceneManager.LoadScene(9);
+
+        yield return new WaitForSeconds(3f);
+
+        SceneManager.LoadScene(_sceneindex);
+    }*/
     public override void Start()
     {
         base.Start();

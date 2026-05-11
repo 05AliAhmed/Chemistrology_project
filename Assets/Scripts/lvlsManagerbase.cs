@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEditor;
+using System.Collections;
 
 public class lvlsManagerbase : MonoBehaviour
 {
@@ -12,14 +14,18 @@ public class lvlsManagerbase : MonoBehaviour
     public TMP_Text starScore1;
     public TMP_Text starScore2;
     public TMP_Text starScore3;
+    public TMP_Text comboCountText;
     public Image star1;
     public Image star2;
     public Image star3;
+    public GameObject collectible; 
     public int pnt1;
     public int pnt2;
     public int pnt3;
     public int score;
     public int targetCount;
+    public int comboCount;
+    public float cardDisplayTimer;
 
     public virtual void ScoreSystem(){
         score += amendScore;
@@ -30,11 +36,14 @@ public class lvlsManagerbase : MonoBehaviour
         if (targetCount > 2)
         {
             score += comboScore;
+            comboCount++;
+            comboCountText.text = "x" + comboCount.ToString();
         }
         // Debug.Log(score);
     }
     public virtual void LoseScore(){
         score -= loseScore;
+        targetCount = 0;
         if(score < 0)
         {
             score = 0;
@@ -47,6 +56,9 @@ public class lvlsManagerbase : MonoBehaviour
         if(score >= pnt1 && score < pnt2)
         {
             star1.gameObject.SetActive(true);
+            // collectible.SetActive(true);
+            // startcouroutine(collectiblepopup())
+            StartCoroutine(CollectiblePopUP());
         }
         else if(score >= pnt2 && score < pnt3)
         {
@@ -70,6 +82,13 @@ public class lvlsManagerbase : MonoBehaviour
         
     }
 
+    IEnumerator CollectiblePopUP()
+    {
+        collectible.SetActive(true);
+        yield return new WaitForSeconds(cardDisplayTimer);
+        collectible.SetActive(false);
+    }
+
     public virtual void Start()
     {
         starScore1.text = pnt1.ToString();
@@ -78,5 +97,6 @@ public class lvlsManagerbase : MonoBehaviour
         star1.gameObject.SetActive(false);
         star2.gameObject.SetActive(false);
         star3.gameObject.SetActive(false);
+        collectible.SetActive(false);
     }
 }

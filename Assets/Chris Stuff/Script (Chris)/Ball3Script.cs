@@ -151,7 +151,7 @@ public class Ball3Script : MonoBehaviour
             // }
 
             levelManager.LoseScore(); // using losesystem from levelbutton script
-            levelManager.targetCount = 0; // if ball goes into nono zone sets target count to 0 hence no more combo - Ali Ahmed
+            // levelManager.targetCount = 0; // if ball goes into nono zone sets target count to 0 hence no more combo - Ali Ahmed
 
             Destroy(gameObject);
 

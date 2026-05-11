@@ -1521,7 +1521,7 @@ MonoBehaviour:
   star1: {fileID: 390267909}
   star2: {fileID: 377343698}
   star3: {fileID: 408717605}
-  collectible: {fileID: 0}
+  collectible: {fileID: 7594980861210994810, guid: f40915655cace2b47ad43afba12bf457, type: 3}
   pnt1: 200
   pnt2: 400
   pnt3: 600

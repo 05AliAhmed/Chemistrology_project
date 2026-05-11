@@ -44,6 +44,8 @@ public class lvlsManagerbase : MonoBehaviour
     public virtual void LoseScore(){
         score -= loseScore;
         targetCount = 0;
+        comboCount = 0;
+        comboCountText.text = " "; //+ comboCount.ToString();        
         if(score < 0)
         {
             score = 0;

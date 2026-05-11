@@ -7352,7 +7352,7 @@ MonoBehaviour:
   star1: {fileID: 554932028}
   star2: {fileID: 1443705749}
   star3: {fileID: 1854034443}
-  collectible: {fileID: 0}
+  collectible: {fileID: 7451963282514845073, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
   pnt1: 0
   pnt2: 0
   pnt3: 0

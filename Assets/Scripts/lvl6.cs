@@ -97,23 +97,26 @@ public class lvl6 : lvlsManagerbase
     }
     public void FactScreenLvl1()
     {
-        factScreen.SetActive(true);
-        Time.timeScale = 0f;
-        if(score < scoreToPass)
-        {
-            // levelMenuScript.lvl2.SetActive(false);
-            GameManager.instance.level2Unlocked = false;
-            nxtLvlBtn.SetActive(false);
-            scoreNeededLine.SetActive(true);
+        if(gameEnd == true){
+            factScreen.SetActive(true);
+            Time.timeScale = 0f;
+            if(score < scoreToPass)
+            {
+                // levelMenuScript.lvl2.SetActive(false);
+                GameManager.instance.level2Unlocked = false;
+                nxtLvlBtn.SetActive(false);
+                scoreNeededLine.SetActive(true);
+            }
+            else
+            {
+                // levelMenuScript.lvl2.SetActive(true);
+                GameManager.instance.level2Unlocked = true;
+                nxtLvlBtn.SetActive(true);
+                scoreNeededLine.SetActive(false);
+            }
+            DisplayStars();            
         }
-        else
-        {
-            // levelMenuScript.lvl2.SetActive(true);
-            GameManager.instance.level2Unlocked = true;
-            nxtLvlBtn.SetActive(true);
-            scoreNeededLine.SetActive(false);
-        }
-        DisplayStars();
+        
                 
     }
 

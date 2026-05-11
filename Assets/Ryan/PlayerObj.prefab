@@ -110,7 +110,7 @@ MonoBehaviour:
   bullet: {fileID: 2469884587470388481, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}
   cooldownDuration: 0.5
   shootingTimer: 0
-  poolingScript: {fileID: 0}
+  poolingScript: {fileID: 3352452581531319179, guid: d6cd864940742bf45b8afbdb3aca64ef, type: 3}
   ClickEffectPrefab: {fileID: 7486858100760834804, guid: b103a2912dbd7804aa50e482ed6be204, type: 3}
 --- !u!95 &8430294873230482949
 Animator:

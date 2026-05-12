@@ -3415,47 +3415,47 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 190340476446660149, guid: 6132c4ca6dd82f7418fe520b2485ab4c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.697133
+      value: 1.515437
       objectReference: {fileID: 0}
     - target: {fileID: 190340476446660149, guid: 6132c4ca6dd82f7418fe520b2485ab4c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 7.357365
+      value: 1.957059
       objectReference: {fileID: 0}
     - target: {fileID: 190340476446660149, guid: 6132c4ca6dd82f7418fe520b2485ab4c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.266
       objectReference: {fileID: 0}
     - target: {fileID: 190340476446660149, guid: 6132c4ca6dd82f7418fe520b2485ab4c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.13873291
+      value: 7.71
       objectReference: {fileID: 0}
     - target: {fileID: 190340476446660149, guid: 6132c4ca6dd82f7418fe520b2485ab4c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.21325684
+      value: 3.43
       objectReference: {fileID: 0}
     - target: {fileID: 190340476446660149, guid: 6132c4ca6dd82f7418fe520b2485ab4c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.48
       objectReference: {fileID: 0}
     - target: {fileID: 190340476446660149, guid: 6132c4ca6dd82f7418fe520b2485ab4c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99583364
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 190340476446660149, guid: 6132c4ca6dd82f7418fe520b2485ab4c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.09118882
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 190340476446660149, guid: 6132c4ca6dd82f7418fe520b2485ab4c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 190340476446660149, guid: 6132c4ca6dd82f7418fe520b2485ab4c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 190340476446660149, guid: 6132c4ca6dd82f7418fe520b2485ab4c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -10.464
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 190340476446660149, guid: 6132c4ca6dd82f7418fe520b2485ab4c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -3500,7 +3500,7 @@ Animator:
   m_GameObject: {fileID: 591727647}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f665e0f5b19a7c348bc12ea3b824bb42, type: 2}
+  m_Controller: {fileID: 9100000, guid: cbac51b30bbb0104f9df843f5d5fbc36, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8019,13 +8019,15 @@ MonoBehaviour:
   star2: {fileID: 2039450695}
   star3: {fileID: 623837664}
   collectible: {fileID: 591727647}
+  cardAnimator: {fileID: 591727648}
   pnt1: 50
   pnt2: 100
   pnt3: 200
   score: 0
   targetCount: 0
   comboCount: 0
-  cardDisplayTimer: 1
+  cardDisplayTimer: 2
+  cardDisplayedonce: 0
   pausemenu: {fileID: 861468017}
   factScreen: {fileID: 664902729}
   scoreNeededLine: {fileID: 788357570}

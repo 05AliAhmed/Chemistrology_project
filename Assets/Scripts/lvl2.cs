@@ -50,6 +50,15 @@ public class lvl2 : lvlsManagerbase
         base.LoseScore();
         scoreTxt.text = score.ToString();
     }
+    // public void DisplayCard(){
+    //     if(cooldown < 0f && !cardDisplayedonce)
+    //     {
+    //         if(score > pnt1)
+    //         {
+    //             StartCoroutine(CollectiblePopUP());    
+    //         }       
+    //     }
+    // }
 
     // void DisplayStars()
     // {

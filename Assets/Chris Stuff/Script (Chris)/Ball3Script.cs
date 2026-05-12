@@ -102,7 +102,7 @@ public class Ball3Script : MonoBehaviour
             //Debug.Log("hit target");
             if (groupOfTargets.Contains(collisioninfo.gameObject))
             {
-                //Debug.Log("it is found");
+                Debug.Log("it is found");
                 collisioninfo.gameObject.GetComponent<TargetScript>().changeTarget(); // chnaging sprite
                 Debug.Log(levelManager.GetType().Name);
                 //targethit = true;
@@ -121,6 +121,7 @@ public class Ball3Script : MonoBehaviour
                 //     default:
                 //         break;
                 // }
+               // Destroy(gameObject);
                 levelManager.ScoreSystem();
                 levelManager.ComboSystem();
                 Destroy(gameObject);
@@ -167,6 +168,7 @@ public class Ball3Script : MonoBehaviour
                 Debug.Log("obstacle hit");
                 Destroy(gameObject);
             }
+           
 
 
         }

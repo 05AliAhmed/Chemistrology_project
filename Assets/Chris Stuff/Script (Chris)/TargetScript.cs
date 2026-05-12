@@ -58,7 +58,7 @@ public class TargetScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D  collisioninfo)
     {
-        if (collisioninfo.tag == "Obstacle" && filled==true)
+        if (collisioninfo.tag == "Penalty" && filled==true)
         {
             Debug.Log("help me xv");
             GameEnd.GEndscore = GameEnd.GEndscore - 1;

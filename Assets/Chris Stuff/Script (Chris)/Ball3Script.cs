@@ -95,44 +95,43 @@ public class Ball3Script : MonoBehaviour
         */
 
     }
-    void OnCollisionEnter2D(Collision2D collisioninfo)
+    void OnTriggerEnter2D(Collider2D collisioninfo)
     {
-        if (collisioninfo.collider.tag == "Target")
+        if (collisioninfo.tag == "Target")
         {
-            //Debug.Log("hit target");
             if (groupOfTargets.Contains(collisioninfo.gameObject))
             {
                 Debug.Log("it is found");
-                collisioninfo.gameObject.GetComponent<TargetScript>().changeTarget(); // chnaging sprite
-                Debug.Log(levelManager.GetType().Name);
-                //targethit = true;
-                // switch (currentlvlindex)
-                // {
-                //     case 3:
-                // lvl1Buttons.ScoreSystem(); // using scoresystem from levelbutton script
-                // lvl1Buttons.ComboSystem(); // everytime targets been hit targetcount will increase by 1 if more than 2 awards comboscore - Ali Ahmed
 
-                // break;
-                //     case 4:
-                //         lvl2.ScoreSystem();
-                //         lvl2.ComboSystem();
-                //         break;
+                collisioninfo.GetComponent<TargetScript>().changeTarget();
 
-                //     default:
-                //         break;
-                // }
-               // Destroy(gameObject);
                 levelManager.ScoreSystem();
                 levelManager.ComboSystem();
+
                 Destroy(gameObject);
-                //bulletPool.Return(this);
-
             }
-
-
         }
 
-        else if (collisioninfo.collider.tag == "Nonozone")
+        else if (collisioninfo.tag == "Nonozone")
+        {
+            levelManager.LoseScore();
+            Destroy(gameObject);
+        }
+
+        else if (collisioninfo.tag == "Obstacle")
+        {
+            if (groupOfObstacles.Contains(collisioninfo.gameObject))
+            {
+                collisioninfo.GetComponent<ObstacleScript>().penaltyhit = true;
+                Debug.Log("obstacle hit");
+
+                Destroy(gameObject);
+            }
+        }
+    }
+    void OnCollisionEnter2D(Collision2D collisioninfo)
+    {
+        if (collisioninfo.collider.tag == "Nonozone")
         {
             // switch (currentlvlindex)
             // {
@@ -162,18 +161,93 @@ public class Ball3Script : MonoBehaviour
             //Debug.Log("hit target");
             if (groupOfObstacles.Contains(collisioninfo.gameObject))
             {
-               
-                collisioninfo.gameObject.GetComponent<ObstacleScript>().penaltyhit=true; // chnaging sprite
+
+                collisioninfo.gameObject.GetComponent<ObstacleScript>().penaltyhit = true; // chnaging sprite
 
                 Debug.Log("obstacle hit");
                 Destroy(gameObject);
             }
-           
-
-
         }
+        /*void OnCollisionEnter2D(Collision2D collisioninfo)
+        {
+            if (collisioninfo.collider.tag == "Target")
+            {
+                //Debug.Log("hit target");
+                if (groupOfTargets.Contains(collisioninfo.gameObject))
+                {
+                    Debug.Log("it is found");
+                    collisioninfo.gameObject.GetComponent<TargetScript>().changeTarget(); // chnaging sprite
+                    Debug.Log(levelManager.GetType().Name);
+                    //targethit = true;
+                    // switch (currentlvlindex)
+                    // {
+                    //     case 3:
+                    // lvl1Buttons.ScoreSystem(); // using scoresystem from levelbutton script
+                    // lvl1Buttons.ComboSystem(); // everytime targets been hit targetcount will increase by 1 if more than 2 awards comboscore - Ali Ahmed
+
+                    // break;
+                    //     case 4:
+                    //         lvl2.ScoreSystem();
+                    //         lvl2.ComboSystem();
+                    //         break;
+
+                    //     default:
+                    //         break;
+                    // }
+                   // Destroy(gameObject);
+                    levelManager.ScoreSystem();
+                    levelManager.ComboSystem();
+                    Destroy(gameObject);
+                    //bulletPool.Return(this);
+
+                }
+
+
+            }
+
+            else if (collisioninfo.collider.tag == "Nonozone")
+            {
+                // switch (currentlvlindex)
+                // {
+                //     case 3:
+                //         Debug.Log("Lvel one is here");
+                // lvl1Buttons.LoseScore();
+                // lvl1Buttons.targetCount = 0;
+                //     break;
+                // case 4:
+                //     Debug.Log("Lvel two was here");
+                //     lvl2.LoseScore();
+                //     lvl2.targetCount = 0;
+                //         break;
+
+                //     default:
+                //         break;
+                // }
+
+                levelManager.LoseScore(); // using losesystem from levelbutton script
+                // levelManager.targetCount = 0; // if ball goes into nono zone sets target count to 0 hence no more combo - Ali Ahmed
+
+                Destroy(gameObject);
+
+            }
+            if (collisioninfo.collider.tag == "Obstacle")
+            {
+                //Debug.Log("hit target");
+                if (groupOfObstacles.Contains(collisioninfo.gameObject))
+                {
+
+                    collisioninfo.gameObject.GetComponent<ObstacleScript>().penaltyhit=true; // chnaging sprite
+
+                    Debug.Log("obstacle hit");
+                    Destroy(gameObject);
+                }
+
+
+
+            }
+        }
+        */
+
+
     }
-
-
-
 }

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -12,11 +13,13 @@ public class lvl3 : lvlsManagerbase
     [SerializeField] GameObject scoreNeededLine; // progressbar
     [SerializeField] GameObject nxtLvlBtn; // ref to next lvl button if score > score needed yo pass the lvl.
     [SerializeField] float scoreToPass; // testing purpose if score 500 proceed to level 2 if less display a msg 
-                                        // after all targets been hit
+    [SerializeField] GameObject vignette;                   // after all targets been hit
     [SerializeField] TMP_Text scoreTxt; // txt ref for score text in lvl 
     [SerializeField] TMP_Text highScoreTxt; // txt ref for high score text in fact screen
     [SerializeField] TMP_Text factScrScoreTxt; // txt ref for score text in fact screen
     [SerializeField] TMP_Text factScrScoreNeededTxt; // txt ref for score needed text in fact screen
+    [SerializeField] Camera cam;
+    public float cooldown = 2f;
     // Scene currentScene;
     public bool gameEnd;
     float passScore;
@@ -97,21 +100,44 @@ public class lvl3 : lvlsManagerbase
     }
     public void FactScreenLvl1()
     {
-        factScreen.SetActive(true);
-        Time.timeScale = 0f;
-        if(score < scoreToPass)
+        if (gameEnd == true)
         {
-            GameManager.instance.level4Unlocked = false;
-            nxtLvlBtn.SetActive(false);
-            scoreNeededLine.SetActive(true);
+            if (cooldown > 0f)// this is for the victory effect- Chris
+            {
+                vignette.SetActive(true);
+                cooldown -= Time.deltaTime;
+                cam.orthographicSize -= Time.deltaTime;
+                Time.timeScale = 0.5f;
+
+            }
+            if (cooldown < 0f)
+            {
+                cam.orthographicSize = 5f;
+                vignette.SetActive(false);
+                factScreen.SetActive(true);
+                // if(score > pnt1){
+                //     // collectible.SetActive(true);
+                //     // cardAnimator.SetBool("winscr", true);   
+                //     // StartCoroutine(CollectiblePopUP()); 
+                // }
+
+                GameManager.instance.pauseInputs = true;
+                // Time.timeScale = 0f;
+            }
+            if (score < scoreToPass)
+            {
+                GameManager.instance.level4Unlocked = false;
+                nxtLvlBtn.SetActive(false);
+                scoreNeededLine.SetActive(true);
+            }
+            else
+            {
+                GameManager.instance.level4Unlocked = true;
+                nxtLvlBtn.SetActive(true);
+                scoreNeededLine.SetActive(false);
+            }
+            DisplayStars();
         }
-        else
-        {
-            GameManager.instance.level4Unlocked = true;
-            nxtLvlBtn.SetActive(true);
-            scoreNeededLine.SetActive(false);
-        }
-        DisplayStars();        
     }
 
     public override void Start()

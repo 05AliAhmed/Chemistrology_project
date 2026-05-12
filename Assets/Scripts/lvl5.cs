@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class lvl5 : lvlsManagerbase
@@ -16,6 +17,9 @@ public class lvl5 : lvlsManagerbase
     [SerializeField] TMP_Text highScoreTxt; // txt ref for high score text in fact screen
     [SerializeField] TMP_Text factScrScoreTxt; // txt ref for score text in fact screen
     [SerializeField] TMP_Text factScrScoreNeededTxt; // txt ref for score needed text in fact screen
+    [SerializeField] Camera cam;
+    [SerializeField] GameObject vignette;
+    public float cooldown = 2f;
     public bool gameEnd;
     float passScore;
     public bool pauseInputs;
@@ -95,9 +99,29 @@ public class lvl5 : lvlsManagerbase
     {
         if(gameEnd == true)
         {
-            factScreen.SetActive(true);
-            Time.timeScale = 0f;
-            if(score < scoreToPass)
+            if (cooldown > 0f)// this is for the victory effect- Chris
+            {
+                vignette.SetActive(true);
+                cooldown -= Time.deltaTime;
+                cam.orthographicSize -= Time.deltaTime;
+                Time.timeScale = 0.5f;
+
+            }
+            if (cooldown < 0f)
+            {
+                cam.orthographicSize = 5f;
+                vignette.SetActive(false);
+                factScreen.SetActive(true);
+                // if(score > pnt1){
+                //     // collectible.SetActive(true);
+                //     // cardAnimator.SetBool("winscr", true);   
+                //     // StartCoroutine(CollectiblePopUP()); 
+                // }
+
+                GameManager.instance.pauseInputs = true;
+                // Time.timeScale = 0f;
+            }
+            if (score < scoreToPass)
             {
                 // levelMenuScript.lvl2.SetActive(false);
                 GameManager.instance.level6Unlocked = false;

@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 
 
 
@@ -120,6 +121,15 @@ public class lvl1Buttons : lvlsManagerbase
         // pauseInputs = false;
         GameManager.instance.pauseInputs = false;
     }
+    public void DisplayCard(){
+        if(cooldown < 0f && !cardDisplayedonce)
+        {
+            if(score > pnt1)
+            {
+                StartCoroutine(CollectiblePopUP());    
+            }       
+        }
+    }
 
     public void FactScreenLvl1()
     {      
@@ -135,7 +145,14 @@ public class lvl1Buttons : lvlsManagerbase
             cam.orthographicSize = 5f;
             vignette.SetActive(false);
             factScreen.SetActive(true);
-            Time.timeScale = 0f;
+            // if(score > pnt1){
+            //     // collectible.SetActive(true);
+            //     // cardAnimator.SetBool("winscr", true);   
+            //     // StartCoroutine(CollectiblePopUP()); 
+            // }
+            
+            GameManager.instance.pauseInputs = true;
+            // Time.timeScale = 0f;
         }
         
         if(score < scoreToPass)
@@ -152,7 +169,8 @@ public class lvl1Buttons : lvlsManagerbase
             nxtLvlBtn.SetActive(true);
             scoreNeededLine.SetActive(false);
         }
-        DisplayStars();      
+        DisplayStars();
+        DisplayCard();      
     }
 
     /*IEnumerator LoadScene(int _sceneindex)
@@ -172,13 +190,14 @@ public class lvl1Buttons : lvlsManagerbase
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
         Time.timeScale = 1f;
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
+        // cardAnimator = GetComponent<Animator>();
     }
 
     void Update()
     {
         if(gameEnd == true)
         {
-            FactScreenLvl1();     
+            FactScreenLvl1();   
         }
         
     }

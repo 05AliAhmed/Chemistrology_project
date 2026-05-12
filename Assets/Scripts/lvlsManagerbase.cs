@@ -19,6 +19,7 @@ public class lvlsManagerbase : MonoBehaviour
     public Image star2;
     public Image star3;
     public GameObject collectible; 
+    [SerializeField] Animator cardAnimator;
     public int pnt1;
     public int pnt2;
     public int pnt3;
@@ -26,6 +27,7 @@ public class lvlsManagerbase : MonoBehaviour
     public int targetCount;
     public int comboCount;
     public float cardDisplayTimer;
+    public bool cardDisplayedonce;
 
     public virtual void ScoreSystem(){
         score += amendScore;
@@ -59,8 +61,8 @@ public class lvlsManagerbase : MonoBehaviour
         {
             star1.gameObject.SetActive(true);
             // collectible.SetActive(true);
-            // startcouroutine(collectiblepopup())
-            StartCoroutine(CollectiblePopUP());
+            // StartCoroutine(CollectiblePopUP());
+            // collectible.SetActive(true);
         }
         else if(score >= pnt2 && score < pnt3)
         {
@@ -84,15 +86,21 @@ public class lvlsManagerbase : MonoBehaviour
         
     }
 
-    IEnumerator CollectiblePopUP()
+    public IEnumerator CollectiblePopUP()
     {
+        Debug.Log("couroutine is working");
         collectible.SetActive(true);
+        cardAnimator.SetBool("winScr",true);
         yield return new WaitForSeconds(cardDisplayTimer);
-        collectible.SetActive(false);
+        Debug.Log("timer is working");
+        cardAnimator.SetBool("winScr", false);
+        cardDisplayedonce = true;
+        // collectible.SetActive(false);
     }
 
     public virtual void Start()
     {
+        GameManager.instance.pauseInputs = false;
         starScore1.text = pnt1.ToString();
         starScore2.text = pnt2.ToString();
         starScore3.text = pnt3.ToString();
@@ -100,5 +108,6 @@ public class lvlsManagerbase : MonoBehaviour
         star2.gameObject.SetActive(false);
         star3.gameObject.SetActive(false);
         collectible.SetActive(false);
+        cardDisplayedonce = false;
     }
 }

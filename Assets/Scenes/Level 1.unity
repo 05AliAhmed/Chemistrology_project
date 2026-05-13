@@ -1358,7 +1358,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9002582600686539585, guid: 46c517e5ed611c84eb101f4a94a09d25, type: 3}
+  m_Sprite: {fileID: 2781243720749577743, guid: 96f5608f39476cc4e9ed4fdc20ff713c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1366,7 +1366,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!4 &113296688
 Transform:
@@ -5960,6 +5960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   rendpenal: {fileID: 1052107566}
   penalhit: {fileID: 2134783893}
+  explodeeffect: {fileID: 0}
   myCollider: {fileID: 1052107565}
   PenaltyCollider: {fileID: 2134783891}
   cooldown: 0.5

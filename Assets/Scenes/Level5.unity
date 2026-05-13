@@ -505,7 +505,7 @@ MonoBehaviour:
   starScore1: {fileID: 744588330}
   starScore2: {fileID: 1859245373}
   starScore3: {fileID: 554659073}
-  comboCountText: {fileID: 0}
+  comboCountText: {fileID: 788786078}
   star1: {fileID: 1714588296}
   star2: {fileID: 1398490141}
   star3: {fileID: 487734785}
@@ -3521,7 +3521,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: combotxt
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

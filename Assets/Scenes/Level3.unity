@@ -895,7 +895,7 @@ MonoBehaviour:
   starScore1: {fileID: 68248874}
   starScore2: {fileID: 2003060724}
   starScore3: {fileID: 1657884910}
-  comboCountText: {fileID: 0}
+  comboCountText: {fileID: 823858809}
   star1: {fileID: 1172936538}
   star2: {fileID: 927286724}
   star3: {fileID: 999346531}

@@ -131,7 +131,7 @@ public class Ball3Script : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collisioninfo)
     {
-        if (collisioninfo.collider.tag == "Nonozone")
+        if (collisioninfo.collider.tag == "Nonozone" || collisioninfo.collider.tag == "Obstacle")
         {
             // switch (currentlvlindex)
             // {

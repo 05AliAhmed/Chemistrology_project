@@ -99,6 +99,16 @@ public class lvl6 : lvlsManagerbase
         Time.timeScale = 1f;
         pauseInputs = false;
     }
+
+    // public void DisplayCard(){
+    //     if(cooldown < 0f && !cardDisplayedonce)
+    //     {
+    //         if(score > pnt1)
+    //         {
+    //             StartCoroutine(CollectiblePopUP());    
+    //         }       
+    //     }
+    // }
     public void FactScreenLvl1()
     {
         if(gameEnd == true){

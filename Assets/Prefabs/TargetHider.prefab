@@ -244,6 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6decd13283df2494e9b80970ecb7945d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AsteroidShowAndHide
+  targetBehaviour: {fileID: 6666331433964088547}
   hiddenDuration: 2
 --- !u!1 &6722140468245024908
 GameObject:

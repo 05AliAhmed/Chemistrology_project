@@ -7,6 +7,7 @@ public class ObstacleScript : MonoBehaviour
 {
     public SpriteRenderer rendpenal;
     public SpriteRenderer penalhit;
+    public GameObject explodeeffect;
     public BoxCollider2D myCollider;
     public BoxCollider2D PenaltyCollider;
     public float cooldown = 0.5f;
@@ -58,8 +59,9 @@ public class ObstacleScript : MonoBehaviour
         speed = 0;
         myCollider.enabled = false;
         PenaltyCollider.enabled = true;
+        Instantiate(explodeeffect,transform.position, Quaternion.identity);
         rendpenal.enabled = false;
-        penalhit.enabled = true;
+       // penalhit.enabled = true;
         //destroycooldown = 5f;
         if (cooldown > 0f)// this is for the victory effect- Chris
         {

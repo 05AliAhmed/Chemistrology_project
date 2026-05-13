@@ -4905,6 +4905,68 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1153016659
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6056239346886356596, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056239346886356596, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056239346886356596, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056239346886356596, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056239346886356596, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056239346886356596, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056239346886356596, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056239346886356596, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056239346886356596, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056239346886356596, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451963282514845073, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+      propertyPath: m_Name
+      value: card_to_use6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+--- !u!95 &1153016661 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2036405483438488492, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+  m_PrefabInstance: {fileID: 1153016659}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1175977715
 GameObject:
   m_ObjectHideFlags: 0
@@ -7596,14 +7658,14 @@ MonoBehaviour:
   star2: {fileID: 1443705749}
   star3: {fileID: 1854034443}
   collectible: {fileID: 7451963282514845073, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
-  cardAnimator: {fileID: 0}
+  cardAnimator: {fileID: 1153016661}
   pnt1: 0
   pnt2: 0
   pnt3: 0
   score: 0
   targetCount: 0
   comboCount: 0
-  cardDisplayTimer: 0
+  cardDisplayTimer: 2
   cardDisplayedonce: 0
   pausemenu: {fileID: 809721146}
   factScreen: {fileID: 1801923048}
@@ -10494,3 +10556,4 @@ SceneRoots:
   - {fileID: 1175977717}
   - {fileID: 1733006961}
   - {fileID: 870154565}
+  - {fileID: 1153016659}

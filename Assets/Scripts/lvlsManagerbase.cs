@@ -88,11 +88,11 @@ public class lvlsManagerbase : MonoBehaviour
 
     public IEnumerator CollectiblePopUP()
     {
-        Debug.Log("couroutine is working");
+        // Debug.Log("couroutine is working");
         collectible.SetActive(true);
         cardAnimator.SetBool("winScr",true);
         yield return new WaitForSeconds(cardDisplayTimer);
-        Debug.Log("timer is working");
+        // Debug.Log("timer is working");
         cardAnimator.SetBool("winScr", false);
         cardDisplayedonce = true;
         // collectible.SetActive(false);

@@ -2,7 +2,7 @@
 // Cartoon FX
 // (c) 2012-2025 Jean Moreno
 //--------------------------------------------------------------------------------------------------------------------------------
-
+//585
 
 //--------------------------------------------------------------------------------------------------------------------------------
 
@@ -582,8 +582,17 @@ namespace CartoonFX
 					{
 						if (clearBehavior == ClearBehavior.Destroy)
 						{
+
 							GameObject.Destroy(this.gameObject);
-						}
+							if (transform.parent != null)
+							{
+								// Store reference before destroying
+								GameObject parentObj = transform.parent.gameObject;
+
+								// Destroy the parent GameObject
+								Destroy(parentObj);
+							}
+                            }
 						else
 						{
 							this.gameObject.SetActive(false);

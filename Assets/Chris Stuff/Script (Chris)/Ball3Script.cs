@@ -131,7 +131,7 @@ public class Ball3Script : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collisioninfo)
     {
-        if (collisioninfo.collider.tag == "Nonozone")
+        if (collisioninfo.collider.tag == "Nonozone" )
         {
             // switch (currentlvlindex)
             // {
@@ -163,8 +163,8 @@ public class Ball3Script : MonoBehaviour
             {
 
                 collisioninfo.gameObject.GetComponent<ObstacleScript>().penaltyhit = true; // chnaging sprite
-                levelManager.LoseScore();
-                // Debug.Log("obstacle hit");
+
+                Debug.Log("obstacle hit");
                 Destroy(gameObject);
             }
         }

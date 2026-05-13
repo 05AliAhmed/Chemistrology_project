@@ -509,7 +509,7 @@ MonoBehaviour:
   star1: {fileID: 1714588296}
   star2: {fileID: 1398490141}
   star3: {fileID: 487734785}
-  collectible: {fileID: 3235063590953365454, guid: ea1a37a7563715d4981f8e8dde04c5e5, type: 3}
+  collectible: {fileID: 2039791932}
   cardAnimator: {fileID: 2039791933}
   pnt1: 0
   pnt2: 0
@@ -10224,11 +10224,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8734224015161728960, guid: ea1a37a7563715d4981f8e8dde04c5e5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea1a37a7563715d4981f8e8dde04c5e5, type: 3}
+--- !u!1 &2039791932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3235063590953365454, guid: ea1a37a7563715d4981f8e8dde04c5e5, type: 3}
+  m_PrefabInstance: {fileID: 2039791931}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &2039791933 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1207851827002274808, guid: ea1a37a7563715d4981f8e8dde04c5e5, type: 3}

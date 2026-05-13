@@ -1517,7 +1517,7 @@ MonoBehaviour:
   star1: {fileID: 390267909}
   star2: {fileID: 377343698}
   star3: {fileID: 408717605}
-  collectible: {fileID: 7594980861210994810, guid: f40915655cace2b47ad43afba12bf457, type: 3}
+  collectible: {fileID: 1838175935}
   cardAnimator: {fileID: 1838175936}
   pnt1: 200
   pnt2: 400
@@ -8661,11 +8661,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: card_to_use2
       objectReference: {fileID: 0}
+    - target: {fileID: 7594980861210994810, guid: f40915655cace2b47ad43afba12bf457, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751116824577564110, guid: f40915655cace2b47ad43afba12bf457, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f40915655cace2b47ad43afba12bf457, type: 3}
+--- !u!1 &1838175935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7594980861210994810, guid: f40915655cace2b47ad43afba12bf457, type: 3}
+  m_PrefabInstance: {fileID: 1838175934}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1838175936 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5592492907637075438, guid: f40915655cace2b47ad43afba12bf457, type: 3}

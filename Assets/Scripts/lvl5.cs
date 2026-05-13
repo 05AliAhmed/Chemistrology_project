@@ -130,6 +130,7 @@ public class lvl5 : lvlsManagerbase
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore5", 0).ToString();
         Time.timeScale = 1f;
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
+        cooldown = 2f;
     }
 
     void Update()

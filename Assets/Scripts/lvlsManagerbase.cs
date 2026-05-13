@@ -88,11 +88,11 @@ public class lvlsManagerbase : MonoBehaviour
 
     public IEnumerator CollectiblePopUP()
     {
-        // Debug.Log("couroutine is working");
+        Debug.Log("couroutine is working");
         collectible.SetActive(true);
         cardAnimator.SetBool("winScr",true);
         yield return new WaitForSeconds(cardDisplayTimer);
-        // Debug.Log("timer is working");
+        Debug.Log("timer is working");
         cardAnimator.SetBool("winScr", false);
         cardDisplayedonce = true;
         // collectible.SetActive(false);
@@ -103,11 +103,13 @@ public class lvlsManagerbase : MonoBehaviour
         GameManager.instance.pauseInputs = false;
         starScore1.text = pnt1.ToString();
         starScore2.text = pnt2.ToString();
+        Debug.Log("workingngngngngngng");
         starScore3.text = pnt3.ToString();
         star1.gameObject.SetActive(false);
         star2.gameObject.SetActive(false);
         star3.gameObject.SetActive(false);
         collectible.SetActive(false);
+        Debug.Log("set it to false");
         cardDisplayedonce = false;
     }
 }

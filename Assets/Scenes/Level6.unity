@@ -4069,7 +4069,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &886297575
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4990,11 +4990,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: card_to_use6
       objectReference: {fileID: 0}
+    - target: {fileID: 8302118863109355388, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+--- !u!1 &1153016660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7451963282514845073, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+  m_PrefabInstance: {fileID: 1153016659}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1153016661 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2036405483438488492, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
@@ -7843,7 +7852,7 @@ MonoBehaviour:
   star1: {fileID: 554932028}
   star2: {fileID: 1443705749}
   star3: {fileID: 1854034443}
-  collectible: {fileID: 7451963282514845073, guid: 751fff68c4350cf42aec636baadf03b9, type: 3}
+  collectible: {fileID: 1153016660}
   cardAnimator: {fileID: 1153016661}
   pnt1: 0
   pnt2: 0

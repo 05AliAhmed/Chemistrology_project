@@ -56,54 +56,15 @@ public class lvl2 : lvlsManagerbase
         base.LoseScore();
         scoreTxt.text = score.ToString();
     }
-    // public void DisplayCard(){
-    //     if(cooldown < 0f && !cardDisplayedonce)
-    //     {
-    //         if(score > pnt1)
-    //         {
-    //             StartCoroutine(CollectiblePopUP());    
-    //         }       
-    //     }
-    // }
-
-    // void DisplayStars()
-    // {
-    //     if(score >= pnt1 && score < pnt2)
-    //     {
-    //         Debug.Log("star 1");
-    //         // hearts[i].enabled = true;
-    //         star1.gameObject.SetActive(true);
-    //     }
-    //     else if(score >= pnt2 && score < pnt3)
-    //     {
-    //         Debug.Log("star 1 and 2");
-    //         // star1.enabled = true;
-    //         // star2.enabled = true;
-    //         star1.gameObject.SetActive(true);
-    //         star2.gameObject.SetActive(true);
-    //         // hearts[i].enabled = true;
-    //     }
-    //     else if(score >= pnt3)
-    //     {
-    //         Debug.Log("star 1,2,3");
-    //         // star1.enabled = true;
-    //         // star2.enabled = true;
-    //         // star3.enabled = true;
-    //         star1.gameObject.SetActive(true);
-    //         star2.gameObject.SetActive(true);
-    //         star3.gameObject.SetActive(true);
-    //         // hearts[i].enabled = true;
-    //     }
-    //     else
-    //     {
-    //         star1.enabled = false;
-    //         star2.enabled = false;
-    //         star3.enabled = false;
-    //         // hearts[i].enabled = false;
-    //     }
-        
-    // }
-
+    public void DisplayCard(){
+        if(cooldown < 0f && !cardDisplayedonce)
+        {
+            if(score > pnt1)
+            {
+                StartCoroutine(CollectiblePopUP());    
+            }       
+        }
+    }
     public void ChangeScene(int _sceneindex)
     {
         SceneManager.LoadScene(_sceneindex);
@@ -124,46 +85,44 @@ public class lvl2 : lvlsManagerbase
     }
     public void FactScreenLvl1()
     {
-        if (gameEnd == true)
+        if (cooldown > 0f)// this is for the victory effect- Chris
         {
-            if (cooldown > 0f)// this is for the victory effect- Chris
-            {
-                vignette.SetActive(true);
-                cooldown -= Time.deltaTime;
-                cam.orthographicSize -= Time.deltaTime;
-                Time.timeScale = 0.5f;
+            vignette.SetActive(true);
+            cooldown -= Time.deltaTime;
+            cam.orthographicSize -= Time.deltaTime;
+            Time.timeScale = 0.5f;
 
-            }
-            if (cooldown < 0f)
-            {
-                cam.orthographicSize = 5f;
-                vignette.SetActive(false);
-                factScreen.SetActive(true);
-                // if(score > pnt1){
-                //     // collectible.SetActive(true);
-                //     // cardAnimator.SetBool("winscr", true);   
-                //     // StartCoroutine(CollectiblePopUP()); 
-                // }
+        }
+        if (cooldown < 0f)
+        {
+            cam.orthographicSize = 5f;
+            vignette.SetActive(false);
+            factScreen.SetActive(true);
+            // if(score > pnt1){
+            //     // collectible.SetActive(true);
+            //     // cardAnimator.SetBool("winscr", true);   
+            //     // StartCoroutine(CollectiblePopUP()); 
+            // }
 
-                GameManager.instance.pauseInputs = true;
-                // Time.timeScale = 0f;
-            }
-            if (score < scoreToPass)
-            {
-                // levelMenuScript.lvl2.SetActive(false);
-                GameManager.instance.level3Unlocked = false;
-                nxtLvlBtn.SetActive(false);
-                scoreNeededLine.SetActive(true);
-            }
-            else
-            {
-                // levelMenuScript.lvl2.SetActive(true);
-                GameManager.instance.level3Unlocked = true;
-                nxtLvlBtn.SetActive(true);
-                scoreNeededLine.SetActive(false);
-            }
-            DisplayStars();
-        }           
+            GameManager.instance.pauseInputs = true;
+            // Time.timeScale = 0f;
+        }
+        if (score < scoreToPass)
+        {
+            // levelMenuScript.lvl2.SetActive(false);
+            GameManager.instance.level3Unlocked = false;
+            nxtLvlBtn.SetActive(false);
+            scoreNeededLine.SetActive(true);
+        }
+        else
+        {
+            // levelMenuScript.lvl2.SetActive(true);
+            GameManager.instance.level3Unlocked = true;
+            nxtLvlBtn.SetActive(true);
+            scoreNeededLine.SetActive(false);
+        }
+        DisplayStars();
+        DisplayCard();         
     }
 
     public override void Start()

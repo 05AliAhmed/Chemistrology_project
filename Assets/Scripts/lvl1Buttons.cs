@@ -71,34 +71,6 @@ public class lvl1Buttons : lvlsManagerbase
         scoreTxt.text = score.ToString();
     }
 
-    // void DisplayStars()
-    // {
-    //     if(score >= pnt1 && score < pnt2)
-    //     {
-    //         star1.gameObject.SetActive(true);
-    //     }
-    //     else if(score >= pnt2 && score < pnt3)
-    //     {
-    //         star1.gameObject.SetActive(true);
-    //         star2.gameObject.SetActive(true);
-    //         // hearts[i].enabled = true;
-    //     }
-    //     else if(score >= pnt3)
-    //     {
-    //         star1.gameObject.SetActive(true);
-    //         star2.gameObject.SetActive(true);
-    //         star3.gameObject.SetActive(true);
-    //         // hearts[i].enabled = true;
-    //     }
-    //     else
-    //     {
-    //         star1.enabled = false;
-    //         star2.enabled = false;
-    //         star3.enabled = false;
-    //     }
-        
-    // }
-
     public void ChangeScene(int _sceneindex)
     {
        // StartCoroutine(LoadScene(int _sceneindex));

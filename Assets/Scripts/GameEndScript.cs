@@ -31,7 +31,7 @@ public class GameEndScript : MonoBehaviour
                 }
                 break;
             case 3:
-                if (GEndscore == 10){
+                if (GEndscore == 12){
                    lvl2Manager.gameEnd = true;
                 }
                 break;

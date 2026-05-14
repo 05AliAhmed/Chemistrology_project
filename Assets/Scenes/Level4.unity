@@ -2209,7 +2209,7 @@ MonoBehaviour:
   angleRad: 0
   angleDeg: 0
   degree: 0
-  speed: 25
+  speed: 150
 --- !u!4 &323402755
 Transform:
   m_ObjectHideFlags: 0
@@ -2350,7 +2350,7 @@ MonoBehaviour:
   angleRad: 0
   angleDeg: 0
   degree: 0
-  speed: 25
+  speed: 150
 --- !u!4 &349277856
 Transform:
   m_ObjectHideFlags: 0
@@ -4495,7 +4495,7 @@ MonoBehaviour:
   angleRad: 0
   angleDeg: 0
   degree: 0
-  speed: 25
+  speed: 150
 --- !u!4 &805354198
 Transform:
   m_ObjectHideFlags: 0

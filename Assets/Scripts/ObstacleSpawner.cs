@@ -8,12 +8,14 @@ public class ObstacleSpawner : MonoBehaviour
     public float angleRad;
     public float angleDeg;
     public float degree;
-    public float speed=25;
-   public void angleCalculator()
+    public float speed =150;
+
+
+    public void angleCalculator()
     {
         angleRad= Mathf.Atan2(transform.position.y,transform.position.x);
         angleDeg = angleRad * Mathf.Rad2Deg;
-        degree =   angleDeg-90;
+        degree =   angleDeg-70;
        // Debug.Log(angleDeg);
       //  Debug.Log(degree);
        // Vector3 direction=(transform.position- new Vector3(0,0,0)).normalized;

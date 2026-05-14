@@ -5284,7 +5284,7 @@ MonoBehaviour:
   angleRad: 0
   angleDeg: 0
   degree: 0
-  speed: 25
+  speed: 150
 --- !u!4 &1188134017
 Transform:
   m_ObjectHideFlags: 0
@@ -6635,7 +6635,7 @@ MonoBehaviour:
   angleRad: 0
   angleDeg: 0
   degree: 0
-  speed: 25
+  speed: 150
 --- !u!4 &1426144551
 Transform:
   m_ObjectHideFlags: 0
@@ -9356,7 +9356,7 @@ MonoBehaviour:
   angleRad: 0
   angleDeg: 0
   degree: 0
-  speed: 25
+  speed: 150
 --- !u!4 &1819279650
 Transform:
   m_ObjectHideFlags: 0

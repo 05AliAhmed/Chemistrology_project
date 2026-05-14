@@ -251,7 +251,7 @@ MonoBehaviour:
   PenaltyCollider: {fileID: 2813611856336234572}
   cooldown: 0.5
   destroycooldown: 3
-  speed: 30
+  speed: 150
   penaltyhit: 0
 --- !u!61 &3221585233172012173
 BoxCollider2D:

@@ -105,6 +105,7 @@ public class Ball3Script : MonoBehaviour
 
                 collisioninfo.GetComponent<TargetScript>().changeTarget();
 
+
                 levelManager.ScoreSystem();
                 levelManager.ComboSystem();
 

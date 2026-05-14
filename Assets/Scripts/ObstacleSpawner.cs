@@ -9,13 +9,14 @@ public class ObstacleSpawner : MonoBehaviour
     public float angleDeg;
     public float degree;
     public float speed =150;
+   
 
 
     public void angleCalculator()
     {
         angleRad= Mathf.Atan2(transform.position.y,transform.position.x);
-        angleDeg = angleRad * Mathf.Rad2Deg;
-        degree =   angleDeg-70;
+       angleDeg = angleRad * Mathf.Rad2Deg;
+       degree =   angleDeg+90;
        // Debug.Log(angleDeg);
       //  Debug.Log(degree);
        // Vector3 direction=(transform.position- new Vector3(0,0,0)).normalized;
@@ -23,12 +24,12 @@ public class ObstacleSpawner : MonoBehaviour
     }
     void Awake()
     {
-        angleCalculator();
+        //angleCalculator();
+        
     }
     void Start()
     {
-       
-       // Instantiate(obstacle, new Vector3(transform.position.x,transform.position.y, 0), Quaternion.Euler(0, 0,degree));
+           // Instantiate(obstacle, new Vector3(transform.position.x,transform.position.y, 0), Quaternion.Euler(0, 0,degree));
     }
    public void spawn()
     {
@@ -38,5 +39,7 @@ public class ObstacleSpawner : MonoBehaviour
     void FixedUpdate()
     {
         gameObject.transform.RotateAround(new Vector3(0, 0, 0), Vector3.forward, speed * Time.deltaTime);
+        gameObject.transform.rotation = Quaternion.identity;
+        angleCalculator();
     }
 }

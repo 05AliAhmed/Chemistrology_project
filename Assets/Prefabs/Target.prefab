@@ -114,6 +114,7 @@ MonoBehaviour:
   penaltydetect: {fileID: 6192743940704217406}
   childanime: {fileID: 5986871646719627079}
   filled: 0
+  bulletScript: {fileID: 5158800428106681228, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}
   GameEnd: {fileID: 0}
 --- !u!114 &4939622730281744742
 MonoBehaviour:

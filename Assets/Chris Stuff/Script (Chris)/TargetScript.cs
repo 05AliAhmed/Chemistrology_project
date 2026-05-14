@@ -8,6 +8,9 @@ public class TargetScript : MonoBehaviour
     public CircleCollider2D penaltydetect;
     public Animator childanime;
     public bool filled;
+    
+
+    public ShootableElectronScript bulletScript;
     /* private Animator myAnim;
      private SpriteRenderer rend2;/
 
@@ -51,8 +54,10 @@ public class TargetScript : MonoBehaviour
         childanime.SetBool("Triggered", true);
         //childanime.SetBool("isAttacked", true);
         /*PlayerScore = PlayerScore + point;
-      
+     
         Score.text = PlayerScore.ToString();*/
+        //bulletScript.recycleBullet();
+
         filled = true;
     }
 
@@ -70,8 +75,8 @@ public class TargetScript : MonoBehaviour
             //  childanime.speed = -1f;
             // childanime.Play("TargetTrans");
             filled = false;
-            
 
+            //bulletScript.recycleBullet();
         }
 
 

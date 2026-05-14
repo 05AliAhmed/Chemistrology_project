@@ -192,10 +192,12 @@ MonoBehaviour:
   comboScore: 0
   rb: {fileID: 0}
   groupOfTargets: []
+  groupOfObstacles: []
   nonozone: {fileID: 4203497067827874643, guid: c6f0e76ffa8fa84478978284767012b6, type: 3}
   point: {fileID: 0}
+  obstacle: {fileID: 0}
   targethit: 0
-  levelmanager: {fileID: 0}
+  bulletScript: {fileID: 5158800428106681228}
 --- !u!61 &3951978801016687768
 BoxCollider2D:
   m_ObjectHideFlags: 0

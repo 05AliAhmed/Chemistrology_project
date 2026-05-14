@@ -29,8 +29,16 @@ public class lvlsManagerbase : MonoBehaviour
     public float cardDisplayTimer;
     public bool cardDisplayedonce;
 
+    public SpeedBonusCalculator speedBonusScript;
+
+
     public virtual void ScoreSystem(){
         score += amendScore;
+
+        score += speedBonusScript.SpeedBonus;
+        speedBonusScript.SpeedBonus = 50;
+        speedBonusScript.calculateSpeed();
+
         // Debug.Log(score);
     }
     public virtual void ComboSystem(){

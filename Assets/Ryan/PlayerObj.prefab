@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8430294873230482949}
   - component: {fileID: 4552064185621137695}
   - component: {fileID: 6699960331598497959}
+  - component: {fileID: -8826195205059295400}
   m_Layer: 0
   m_Name: PlayerObj
   m_TagString: Untagged
@@ -245,3 +246,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BulletPooling
   prefab: {fileID: 5158800428106681228, guid: e74d9e20aa63782488fac22247e3c85f, type: 3}
   initialSize: 32
+--- !u!114 &-8826195205059295400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5489500304351339917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c593aeaf23577e4992bd0a22b53256d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedBonusCalculator
+  SpeedBonus: 50
+  playerInstance: {fileID: 5489500304351339917}

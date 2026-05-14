@@ -6,6 +6,7 @@ public class AsteroidShowAndHide : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private Collider2D col;
+    public TargetScript targetScript;
 
     [SerializeField] private float hiddenDuration = 2.0f;
 
@@ -22,23 +23,43 @@ public class AsteroidShowAndHide : MonoBehaviour
 
     IEnumerator HideRoutine()
     {
+        while (targetScript.filled != true)
+        {
+            
+            yield return new WaitForSeconds(hiddenDuration * 1.5f);
 
-        spriteRenderer.enabled = false;
-        col.enabled = false;
+            if (targetScript.filled != true)
+            {
+                spriteRenderer.enabled = false;
+                col.enabled = false;
+            }
 
-        yield return new WaitForSeconds(hiddenDuration);
+            yield return new WaitForSeconds(hiddenDuration);
 
-        spriteRenderer.enabled = true;
-        col.enabled = true;
+            if (targetScript.filled != true)
+            {
+                spriteRenderer.enabled = true;
+                col.enabled = true;
+            }
 
-        yield return new WaitForSeconds(hiddenDuration);
+            //yield return new WaitForSeconds(hiddenDuration);
 
-        hideMe();
+            hideMe();
+
+        } 
+        
     }
 
     void Start()
     {
         hideMe();
+
+        /*
+        if (targetScript.filled != true) 
+        {
+            hideMe();
+        }
+        */
     }
 
     // Update is called once per frame

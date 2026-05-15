@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
+using System.Collections;
 public class ObstacleScript : MonoBehaviour
 {
     public SpriteRenderer rendpenal;
@@ -100,8 +101,8 @@ public class ObstacleScript : MonoBehaviour
         }
         if (destroycooldown <= 0f && penaltyhit == false)
         {
-            
-            Destroy(gameObject);
+            StartCoroutine(FadeSprite());
+            //Destroy(gameObject);
             
         }
         if (penaltyhit==true)
@@ -109,4 +110,37 @@ public class ObstacleScript : MonoBehaviour
             obstaclePenalty();
         }
     }
+    IEnumerator FadeSprite()
+    {
+        float duration = 0.5f; // fade time
+        float time = 0;
+
+        Color startColor = rendpenal.color;
+
+        while (time < duration)
+        {
+            float alpha = Mathf.Lerp(1f, 0f, time / duration);
+
+            rendpenal.color = new Color(
+                startColor.r,
+                startColor.g,
+                startColor.b,
+                alpha
+            );
+
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        // fully invisible
+        rendpenal.color = new Color(
+            startColor.r,
+            startColor.g,
+            startColor.b,
+            0f
+        );
+
+        Destroy(gameObject); // optional
+    }
+
 }

@@ -85,7 +85,7 @@ public class AsteroidShowAndHide : MonoBehaviour
     }
     IEnumerator FadeIN()
     {
-        float duration = 0.5f; // fade time
+        float duration = 0.5f; 
         float time = 0;
 
         Color startColor = spriteRenderer.color;

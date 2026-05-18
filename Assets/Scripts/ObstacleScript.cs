@@ -141,6 +141,7 @@ public class ObstacleScript : MonoBehaviour
         );
 
         Destroy(gameObject); // optional
+     
     }
 
 }

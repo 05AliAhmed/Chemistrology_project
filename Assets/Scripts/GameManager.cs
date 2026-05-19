@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,5 +25,19 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public IEnumerator LoadScene(int _sceneindex)
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(9);
+        yield return new WaitForSeconds(3f);
+
+        SceneManager.LoadScene(_sceneindex);
+    }
+
+    public void GMLoadScene(int _sceneindex)
+    {
+        StartCoroutine(LoadScene(_sceneindex));
     }
 }

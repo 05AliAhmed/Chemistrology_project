@@ -57,9 +57,9 @@ public class lvl3 : lvlsManagerbase
 
     public void ChangeScene(int _sceneindex)
     {
-        SceneManager.LoadScene(_sceneindex);
-        Time.timeScale = 1f;
+        GameManager.instance.GMLoadScene(_sceneindex);
     }
+
     public void PauseButton() // is used for pasusing the game | Settings button
     {
         pauseInputs = true;

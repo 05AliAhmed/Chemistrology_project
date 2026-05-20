@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawner
   obstacle: {fileID: 8773559000451553859, guid: 74e846ed78fae3040bbd2a2ffd01dbc0, type: 3}
+  effect: {fileID: 6800478997914712767, guid: 8636994c61fe77a40a41b4cd871cc239, type: 3}
   angleRad: 0
   angleDeg: 0
   degree: 0

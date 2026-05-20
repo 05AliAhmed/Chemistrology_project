@@ -73,11 +73,7 @@ public class lvl1Buttons : lvlsManagerbase
 
     public void ChangeScene(int _sceneindex)
     {
-        //DontDestroyOnLoad(gameObject);
-        //StartCoroutine(LoadScene( _sceneindex));
-        SceneManager.LoadScene(_sceneindex);
-        Time.timeScale = 1f;
-        // Debug.Log("changescr working");
+        GameManager.instance.GMLoadScene( _sceneindex);
     }
 
     public void PauseButton() // is used for pasusing the game | Settings button
@@ -150,17 +146,7 @@ public class lvl1Buttons : lvlsManagerbase
         }
     }
 
-    /*IEnumerator LoadScene(int _sceneindex)
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(9);
-      
-
-        yield return new WaitForSecondsRealtime(3f);
-
-        SceneManager.LoadScene(_sceneindex);
-        Time.timeScale = 1f;
-    }*/
+   
     public override void Start()
     {
         base.Start();

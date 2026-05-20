@@ -4,7 +4,7 @@ public class ObstacleSpawner : MonoBehaviour
 {
     public GameObject obstacle;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-
+    public GameObject effect;
     public float angleRad;
     public float angleDeg;
     public float degree;
@@ -33,6 +33,7 @@ public class ObstacleSpawner : MonoBehaviour
     }
    public void spawn()
     {
+        Instantiate(effect, transform.position, Quaternion.identity);
         Instantiate(obstacle, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.Euler(0, 0, degree));
     }
     // Update is called once per frame

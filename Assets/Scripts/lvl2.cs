@@ -67,10 +67,9 @@ public class lvl2 : lvlsManagerbase
     }
     public void ChangeScene(int _sceneindex)
     {
-        SceneManager.LoadScene(_sceneindex);
-        Time.timeScale = 1f;
-        // Debug.Log("changescr working");
+        GameManager.instance.GMLoadScene(_sceneindex);
     }
+
     public void PauseButton() // is used for pasusing the game | Settings button
     {
         pauseInputs = true;

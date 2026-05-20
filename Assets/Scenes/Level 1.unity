@@ -1308,7 +1308,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &113296687
 SpriteRenderer:
   serializedVersion: 2
@@ -1872,7 +1872,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &205500979
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1966,8 +1966,8 @@ Camera:
   m_GameObject: {fileID: 212267584}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 4
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3814,7 +3814,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -960, y: -540}
-  m_SizeDelta: {x: -1619.5999, y: -911}
+  m_SizeDelta: {x: -1569.4403, y: -906.905}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &664902731
 MonoBehaviour:
@@ -5094,7 +5094,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -960, y: -540}
-  m_SizeDelta: {x: -1619.6, y: -911}
+  m_SizeDelta: {x: -1569.4404, y: -907.9282}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &861468019
 MonoBehaviour:
@@ -5329,7 +5329,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200.40002, y: 69}
+  m_SizeDelta: {x: 253.631, y: 69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &890412087
 MonoBehaviour:
@@ -8049,7 +8049,6 @@ MonoBehaviour:
   comboCount: 0
   cardDisplayTimer: 2
   cardDisplayedonce: 0
-  speedBonusScript: {fileID: 1628153546}
   pausemenu: {fileID: 861468017}
   factScreen: {fileID: 664902729}
   scoreNeededLine: {fileID: 788357570}
@@ -8386,17 +8385,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 260c09334a182ed49a35fca8e3400c8b, type: 3}
---- !u!114 &1628153546 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -8826195205059295400, guid: 260c09334a182ed49a35fca8e3400c8b, type: 3}
-  m_PrefabInstance: {fileID: 1628153545}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c593aeaf23577e4992bd0a22b53256d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpeedBonusCalculator
 --- !u!1 &1634262934
 GameObject:
   m_ObjectHideFlags: 0

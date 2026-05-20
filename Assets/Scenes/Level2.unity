@@ -205,7 +205,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.021, y: 0.1258, z: 0}
-  m_LocalScale: {x: 0.9454624, y: 0.9456285, z: 1}
+  m_LocalScale: {x: 1.0748017, y: 0.97371376, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1414,7 +1414,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200.40002, y: 69}
+  m_SizeDelta: {x: 251.583, y: 75.142}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &335899493
 MonoBehaviour:
@@ -1531,7 +1531,6 @@ MonoBehaviour:
   comboCount: 0
   cardDisplayTimer: 2
   cardDisplayedonce: 0
-  speedBonusScript: {fileID: 1013658056}
   pausemenu: {fileID: 2075729756}
   factScreen: {fileID: 2024584256}
   scoreNeededLine: {fileID: 1936763822}
@@ -4945,17 +4944,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 260c09334a182ed49a35fca8e3400c8b, type: 3}
---- !u!114 &1013658056 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -8826195205059295400, guid: 260c09334a182ed49a35fca8e3400c8b, type: 3}
-  m_PrefabInstance: {fileID: 1013658055}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c593aeaf23577e4992bd0a22b53256d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpeedBonusCalculator
 --- !u!1001 &1034391103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7942,7 +7930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1736869926
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9072,8 +9060,8 @@ Camera:
   m_GameObject: {fileID: 1930623514}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -10015,7 +10003,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -960, y: -540}
-  m_SizeDelta: {x: -1619.5999, y: -911}
+  m_SizeDelta: {x: -1564.3206, y: -905.8816}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2024584258
 MonoBehaviour:
@@ -10095,7 +10083,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -960, y: -540}
-  m_SizeDelta: {x: -1619.6, y: -911}
+  m_SizeDelta: {x: -1568.4172, y: -900.7634}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075729758
 MonoBehaviour:

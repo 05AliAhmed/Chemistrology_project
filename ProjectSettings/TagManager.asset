@@ -15,6 +15,7 @@ TagManager:
   - LevelManager
   - Penalty
   - Obspawner
+  - Phase1
   layers:
   - Default
   - TransparentFX

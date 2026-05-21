@@ -1391,8 +1391,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 23.5, y: 23.5, z: 23.5}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 1863364294}
+  m_Children: []
   m_Father: {fileID: 20246924}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &334075439
@@ -2565,10 +2564,11 @@ Transform:
   m_GameObject: {fileID: 535627180}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 111.371, y: -48.672, z: -1521}
-  m_LocalScale: {x: 8.15256, y: 8.15256, z: 8.15256}
+  m_LocalPosition: {x: -130.1, y: -54.224, z: -1314.477}
+  m_LocalScale: {x: 7.0422955, y: 7.0422955, z: 7.0422955}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1863364294}
   m_Father: {fileID: 20246924}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &536860844
@@ -3309,7 +3309,7 @@ Transform:
   m_GameObject: {fileID: 702738129}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -129.80037, y: -60.721077, z: -1521}
+  m_LocalPosition: {x: -177.4, y: -47.7, z: -1521}
   m_LocalScale: {x: 16.9, y: 16.9, z: 16.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6176,14 +6176,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264111660}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9999989, w: -0.0014630588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.19, y: 0.81, z: 0.43000004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1643122104}
   m_Father: {fileID: 1148554460}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.168}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -47.6, y: -58.2}
@@ -6219,7 +6219,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: 6fae7f12a578e9f40bb817357fc45c3c, type: 3}
+    m_PressedSprite: {fileID: 2564277610596983201, guid: f1207ef686876ce4cb96ab6800663df6, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -6265,7 +6265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dad9afc669e90074d88de754e81467d2, type: 3}
+  m_Sprite: {fileID: 2564277610596983201, guid: d56fe5b1e9e4e6e4fb3bc3933664bb42, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9353,7 +9353,7 @@ GameObject:
   - component: {fileID: 1863364296}
   - component: {fileID: 1863364295}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Atom name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9366,17 +9366,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863364293}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 186.4445}
+  m_LocalScale: {x: 0.28825304, y: 0.28825304, z: 0.28825304}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 334075438}
+  m_Father: {fileID: 535627182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.43, y: -3.39}
-  m_SizeDelta: {x: 32.7165, y: 16.8666}
+  m_AnchoredPosition: {x: 3.01, y: -2.8163784}
+  m_SizeDelta: {x: 26.625, y: 10.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1863364295
 MonoBehaviour:
@@ -9398,7 +9398,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SODIUM ATOM
+  m_text: Aluminium Atom
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 238519a73819bfa488043c216328fa6f, type: 2}
   m_sharedMaterial: {fileID: -5182108537591398905, guid: 238519a73819bfa488043c216328fa6f, type: 2}
@@ -9431,7 +9431,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535

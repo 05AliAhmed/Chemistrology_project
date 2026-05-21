@@ -47,7 +47,7 @@ public class lvlsManagerbase : MonoBehaviour
         {
             score += comboScore;
             comboCount++;
-            comboCountText.text = "x" + comboCount.ToString();
+            comboCountText.text = comboCount.ToString() + "x HITS\n +20points";
         }
         // Debug.Log(score);
     }

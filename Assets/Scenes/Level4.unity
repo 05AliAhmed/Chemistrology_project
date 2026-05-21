@@ -618,10 +618,11 @@ Transform:
   m_GameObject: {fileID: 107958409}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 111.371, y: -48.672, z: -1521}
-  m_LocalScale: {x: 8.15256, y: 8.15256, z: 8.15256}
+  m_LocalPosition: {x: -129.5, y: -56.5, z: -1260.103}
+  m_LocalScale: {x: 6.75032, y: 6.75032, z: 6.75032}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 140514801}
   m_Father: {fileID: 994456126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &138652737
@@ -806,17 +807,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140514800}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 186.4445}
+  m_LocalScale: {x: 0.28825304, y: 0.28825304, z: 0.28825304}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 2034369523}
+  m_Father: {fileID: 107958411}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.43, y: -3.39}
-  m_SizeDelta: {x: 32.7165, y: 16.8666}
+  m_AnchoredPosition: {x: 2.87, y: -2.76}
+  m_SizeDelta: {x: 20.533, y: 9.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &140514802
 MonoBehaviour:
@@ -838,7 +839,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SODIUM ATOM
+  m_text: Silicon Atom
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 238519a73819bfa488043c216328fa6f, type: 2}
   m_sharedMaterial: {fileID: -5182108537591398905, guid: 238519a73819bfa488043c216328fa6f, type: 2}
@@ -871,7 +872,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -904,7 +905,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -16.017939, y: 0, z: 0, w: 0}
+  m_margin: {x: -16.017939, y: 0, z: 0.6351576, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3275,7 +3276,7 @@ Transform:
   m_GameObject: {fileID: 513155961}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -129.80037, y: -60.721077, z: -1521}
+  m_LocalPosition: {x: -71.1, y: -91, z: -1521}
   m_LocalScale: {x: 16.9, y: 16.9, z: 16.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4482,14 +4483,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772370001}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9999989, w: -0.0014630588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.19, y: 0.81, z: 0.43000004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 485023659}
   m_Father: {fileID: 43950255}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.168}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -47.6, y: -58.2}
@@ -4525,7 +4526,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: 6fae7f12a578e9f40bb817357fc45c3c, type: 3}
+    m_PressedSprite: {fileID: 2564277610596983201, guid: f1207ef686876ce4cb96ab6800663df6, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -4571,7 +4572,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dad9afc669e90074d88de754e81467d2, type: 3}
+  m_Sprite: {fileID: 2564277610596983201, guid: d56fe5b1e9e4e6e4fb3bc3933664bb42, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10259,8 +10260,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 23.5, y: 23.5, z: 23.5}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 140514801}
+  m_Children: []
   m_Father: {fileID: 994456126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2034369524

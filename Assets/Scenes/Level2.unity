@@ -1981,14 +1981,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460915205}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9999989, w: -0.0014630588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.19, y: 0.81, z: 0.43000004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 441569986}
   m_Father: {fileID: 2075729757}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.168}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -47.6, y: -58.2}
@@ -2024,7 +2024,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: 6fae7f12a578e9f40bb817357fc45c3c, type: 3}
+    m_PressedSprite: {fileID: 2564277610596983201, guid: f1207ef686876ce4cb96ab6800663df6, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -2070,7 +2070,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dad9afc669e90074d88de754e81467d2, type: 3}
+  m_Sprite: {fileID: 2564277610596983201, guid: d56fe5b1e9e4e6e4fb3bc3933664bb42, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4080,8 +4080,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.7286997, y: -3.8430874}
-  m_SizeDelta: {x: 32.7165, y: 16.8666}
+  m_AnchoredPosition: {x: 2.677, y: -3.02}
+  m_SizeDelta: {x: 24.842, y: 11.154}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &842584930
 MonoBehaviour:
@@ -4103,7 +4103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SODIUM ATOM
+  m_text: Magnesium Atom
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 238519a73819bfa488043c216328fa6f, type: 2}
   m_sharedMaterial: {fileID: -5182108537591398905, guid: 238519a73819bfa488043c216328fa6f, type: 2}
@@ -4136,7 +4136,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -7744,8 +7744,8 @@ Transform:
   m_GameObject: {fileID: 1675410306}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -112, y: 4, z: -1521}
-  m_LocalScale: {x: 8.15256, y: 8.15256, z: 8.15256}
+  m_LocalPosition: {x: -128.7, y: -55, z: -1521}
+  m_LocalScale: {x: 7.2313213, y: 7.13349, z: 8.15256}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 842584929}
@@ -8205,7 +8205,7 @@ Transform:
   m_GameObject: {fileID: 1794967869}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -129.80037, y: -60.721077, z: -1521}
+  m_LocalPosition: {x: -175.5, y: -17.4, z: -1521}
   m_LocalScale: {x: 16.9, y: 16.9, z: 16.9}
   m_ConstrainProportionsScale: 0
   m_Children: []

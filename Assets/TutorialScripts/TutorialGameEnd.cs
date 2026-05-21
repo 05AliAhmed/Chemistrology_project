@@ -12,6 +12,7 @@ public class TutorialGameEnd : MonoBehaviour
     public GameObject phase2;
     public GameObject phase3;
     public GameObject phase4;
+    public GameObject phase4txt;
     public GameObject combotxt;
     public GameObject phase5;
     public float cooldown =3f;
@@ -22,6 +23,7 @@ public class TutorialGameEnd : MonoBehaviour
     phase2.SetActive(false);
     phase3.SetActive(false);
     phase4.SetActive(false);
+        phase4txt.SetActive(false); 
     combotxt.SetActive(false);
         phase5.SetActive(false);
     }
@@ -61,6 +63,7 @@ public class TutorialGameEnd : MonoBehaviour
 
                     phase3.SetActive(false);
                     phase4.SetActive(true);
+                    phase4txt.SetActive(true);
                 }
                
             }
@@ -76,7 +79,7 @@ public class TutorialGameEnd : MonoBehaviour
             if (cooldown < 0f)
             {
             combotxt.SetActive (true);
-                phase4.SetActive(false);
+                phase4txt.SetActive(false);
                 phase5.SetActive(true);
             }
         }

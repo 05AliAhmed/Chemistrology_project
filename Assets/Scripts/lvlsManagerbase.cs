@@ -47,7 +47,8 @@ public class lvlsManagerbase : MonoBehaviour
         {
             score += comboScore;
             comboCount++;
-            comboCountText.text = comboCount.ToString() + "x HITS\n +20points";
+            // comboCountText.enabled = true;
+            comboCountText.text = comboCount.ToString() + "x<b>HITS</b>\n +<size=70%>" + comboScore + "points</size>";
         }
         // Debug.Log(score);
     }
@@ -55,7 +56,8 @@ public class lvlsManagerbase : MonoBehaviour
         score -= loseScore;
         targetCount = 0;
         comboCount = 0;
-        comboCountText.text = " "; //+ comboCount.ToString();        
+        comboCountText.text = " ";
+        // comboCountText.enabled = false; //+ comboCount.ToString();        
         if(score < 0)
         {
             score = 0;
@@ -117,6 +119,7 @@ public class lvlsManagerbase : MonoBehaviour
         star2.gameObject.SetActive(false);
         star3.gameObject.SetActive(false);
         collectible.SetActive(false);
+        // comboCountText.enabled = false;
         // Debug.Log("set it to false");
         cardDisplayedonce = false;
     }

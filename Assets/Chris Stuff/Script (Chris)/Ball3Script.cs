@@ -119,7 +119,7 @@ public class Ball3Script : MonoBehaviour
             Destroy(gameObject);
         }
 
-        else if (collisioninfo.tag == "Obstacle")
+        /*else if (collisioninfo.tag == "Obstacle")
         {
             if (groupOfObstacles.Contains(collisioninfo.gameObject))
             {
@@ -128,7 +128,7 @@ public class Ball3Script : MonoBehaviour
 
                 Destroy(gameObject);
             }
-        }
+        }*/
     }
     void OnCollisionEnter2D(Collision2D collisioninfo)
     {

@@ -15,7 +15,7 @@ public class TutorialBall : MonoBehaviour
     // public TargetScriptTwo targethit;
     public NonozoneScript nonozone;
     
-    public ObstacleScript obstacle;
+    public TutorialObstacle obstacle;
     public bool targethit;
 
     // int currentlvlindex;
@@ -47,8 +47,6 @@ public class TutorialBall : MonoBehaviour
 
                 collisioninfo.GetComponent<TutorialTarget>().changeTarget();
 
-
-
                 Destroy(gameObject);
             }
         }
@@ -63,7 +61,7 @@ public class TutorialBall : MonoBehaviour
         {
             if (groupOfObstacles.Contains(collisioninfo.gameObject))
             {
-                collisioninfo.GetComponent<ObstacleScript>().penaltyhit = true;
+                collisioninfo.GetComponent<TutorialObstacle>().penaltyhit = true;
                 Debug.Log("obstacle hit");
 
                 Destroy(gameObject);
@@ -84,7 +82,7 @@ public class TutorialBall : MonoBehaviour
             if (groupOfObstacles.Contains(collisioninfo.gameObject))
             {
 
-                collisioninfo.gameObject.GetComponent<ObstacleScript>().penaltyhit = true; // chnaging sprite
+                collisioninfo.gameObject.GetComponent<TutorialObstacle>().penaltyhit = true; // chnaging sprite
 
                 Debug.Log("obstacle hit");
                 Destroy(gameObject);

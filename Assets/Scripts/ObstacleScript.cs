@@ -16,7 +16,7 @@ public class ObstacleScript : MonoBehaviour
     public int speed = 150;
    public bool penaltyhit;
 
-   
+  
     /* private Animator myAnim;
      private SpriteRenderer rend2;/
 

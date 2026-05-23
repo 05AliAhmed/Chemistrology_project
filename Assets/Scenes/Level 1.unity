@@ -8194,7 +8194,7 @@ MonoBehaviour:
   scoreNeededLine: {fileID: 788357570}
   nxtLvlBtn: {fileID: 54543748}
   vignette: {fileID: 113296686}
-  scoreToPass: 0
+  scoreToPass: 500
   scoreTxt: {fileID: 1727689545}
   highScoreTxt: {fileID: 1487752257}
   factScrScoreTxt: {fileID: 1534697797}

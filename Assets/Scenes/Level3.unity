@@ -913,7 +913,7 @@ MonoBehaviour:
   factScreen: {fileID: 1659605412}
   scoreNeededLine: {fileID: 211774150}
   nxtLvlBtn: {fileID: 8002894}
-  scoreToPass: 1000
+  scoreToPass: 900
   vignette: {fileID: 2135401642}
   scoreTxt: {fileID: 492730500}
   highScoreTxt: {fileID: 2131188194}

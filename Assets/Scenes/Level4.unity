@@ -2433,7 +2433,7 @@ MonoBehaviour:
   factScreen: {fileID: 138652737}
   scoreNeededLine: {fileID: 160858956}
   nxtLvlBtn: {fileID: 1194702083}
-  scoreToPass: 1300
+  scoreToPass: 1200
   scoreTxt: {fileID: 390255304}
   highScoreTxt: {fileID: 2102320786}
   factScrScoreTxt: {fileID: 761595498}

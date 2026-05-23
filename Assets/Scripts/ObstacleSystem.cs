@@ -46,6 +46,7 @@ public class ObstacleSystem : MonoBehaviour
             if (number <= 1)
             {
                  spawner1.GetComponent<ObstacleSpawner>().spawn();
+               
                 // spawner1.SetActive(check);
 
             }

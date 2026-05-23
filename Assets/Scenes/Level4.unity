@@ -2409,9 +2409,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3e204c23709ada41b8960c772f58521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::lvl4
-  amendScore: 10
+  amendScore: 100
   loseScore: 50
-  comboScore: 0
+  comboScore: 20
   starScore1: {fileID: 235822366}
   starScore2: {fileID: 1202904493}
   starScore3: {fileID: 1258174373}

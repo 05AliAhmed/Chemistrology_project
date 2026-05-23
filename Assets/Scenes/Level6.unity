@@ -8222,9 +8222,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb8c5d4d6992b24cb26f8ecdd128b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::lvl6
-  amendScore: 10
+  amendScore: 100
   loseScore: 50
-  comboScore: 0
+  comboScore: 20
   starScore1: {fileID: 92595493}
   starScore2: {fileID: 1213276435}
   starScore3: {fileID: 158119821}

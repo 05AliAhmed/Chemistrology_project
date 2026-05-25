@@ -29,7 +29,10 @@ public class LMenu : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-
+    public void ChangeScene(int _sceneindex)
+    {
+        GameManager.instance.GMLoadScene(_sceneindex);
+    }
     void Start()
     {
         if (!GameManager.instance.level2Unlocked)

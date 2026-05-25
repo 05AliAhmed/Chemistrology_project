@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(9);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         SceneManager.LoadScene(_sceneindex);
     }

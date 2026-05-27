@@ -36,7 +36,7 @@ public class GameEndScript : MonoBehaviour
                 }
                 break;
             case 4:
-                if (GEndscore == 9){
+                if (GEndscore == 13){
                    lvl3Manager.gameEnd = true;
                 }
                 break;

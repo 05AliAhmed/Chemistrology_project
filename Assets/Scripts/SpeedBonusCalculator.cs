@@ -5,7 +5,7 @@ public class SpeedBonusCalculator : MonoBehaviour
 {
     //[SerializeField] private int SpeedBonus = 50;
     public int SpeedBonus;
-    public int SpeedBonusCap = 50;
+    public int SpeedBonusCap = 5000;
     //public GameObject playerInstance;
     /*
     public int GetSpeedBonus()
@@ -38,23 +38,23 @@ public class SpeedBonusCalculator : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
-        SpeedBonus = SpeedBonus - 10;
+        SpeedBonus = SpeedBonus - 1000;
 
         yield return new WaitForSeconds(1f);
 
-        SpeedBonus = SpeedBonus - 10;
+        SpeedBonus = SpeedBonus - 1000;
         
         yield return new WaitForSeconds(1f);
 
-        SpeedBonus = SpeedBonus - 10;
+        SpeedBonus = SpeedBonus - 1000;
         
         yield return new WaitForSeconds(1f);
 
-        SpeedBonus = SpeedBonus - 10;
+        SpeedBonus = SpeedBonus - 1000;
 
         yield return new WaitForSeconds(1f);
 
-        SpeedBonus = SpeedBonus - 10;
+        SpeedBonus = SpeedBonus - 1000;
         /*
         while (SpeedBonus > 0)
         {

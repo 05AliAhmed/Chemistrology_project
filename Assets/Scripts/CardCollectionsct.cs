@@ -10,6 +10,12 @@ public class CardCollectionsct : MonoBehaviour
     public GameObject cardBtn5;
     public GameObject cardBtn6;
 
+    // GameObject _cards;
+
+    public void DisplayCardCollection(GameObject _cards)
+    {
+        _cards.SetActive(true);
+    }
     public void ChangeScene(int _sceneIndex)
     {
         Time.timeScale = 1f;

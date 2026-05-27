@@ -10,18 +10,62 @@ public class CardCollectionsct : MonoBehaviour
     public GameObject cardBtn5;
     public GameObject cardBtn6;
 
+    public GameObject cardOne;
+    public GameObject cardTwo;
+    public GameObject cardThree;
+    public GameObject cardFour;
+    public GameObject cardFive;
+    public GameObject cardSix;
+
     // GameObject _cards;
 
     public void DisplayCardCollection(GameObject _cards)
     {
         _cards.SetActive(true);
+        Debug.Log("should show the card");
     }
     public void ChangeScene(int _sceneIndex)
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(_sceneIndex);
     }
-     
+
+    public void CardMenuOne()
+    {
+        // SceneManager.LoadScene(10);
+        cardOne.SetActive(false);
+    }
+
+    public void CardMenuTwo()
+    {
+        Debug.Log("working fine as hell");
+        // SceneManager.LoadScene(10);
+        cardTwo.SetActive(false);
+    }
+
+    public void CardMenuThree()
+    {
+        // SceneManager.LoadScene(10);
+        cardThree.SetActive(false);
+    }
+    public void CardMenuFour()
+    {
+        // SceneManager.LoadScene(10);
+        cardFour.SetActive(false);
+    }
+
+    public void CardMenuFive()
+    {
+        // SceneManager.LoadScene(10);
+        cardFive.SetActive(false);
+    }
+
+    public void CardMenuSix()
+    {
+        // SceneManager.LoadScene(10);
+        cardSix.SetActive(false);
+    }
+        
     void displayCollectedCards()
     {
         // switch (switch_on)
@@ -65,6 +109,14 @@ public class CardCollectionsct : MonoBehaviour
         cardBtn4.SetActive(false);
         cardBtn5.SetActive(false);
         cardBtn6.SetActive(false);
+
+        cardOne.SetActive(false);
+        cardTwo.SetActive(false);
+        cardThree.SetActive(false);
+        cardFour.SetActive(false);
+        cardFive.SetActive(false);
+        cardSix.SetActive(false);
+
     }
 
     void Update()

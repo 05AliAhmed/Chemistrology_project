@@ -3262,7 +3262,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hit 3 obstacle in a row will \ngrant you a combo advantage!!!"
+  m_text: "Hit 3 targets in a row will \ngrant you a combo advantage!!!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5301e1d911daffa4f80182e702f84034, type: 2}
   m_sharedMaterial: {fileID: -2271954774608238029, guid: 5301e1d911daffa4f80182e702f84034, type: 2}

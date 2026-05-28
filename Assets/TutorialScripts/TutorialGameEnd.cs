@@ -15,8 +15,10 @@ public class TutorialGameEnd : MonoBehaviour
     public GameObject phase4txt;
     public GameObject combotxt;
     public GameObject phase5;
+    public GameObject phase6;
     public float cooldown =3f;
     public float cooldown2=3f;
+    public float cooldown3 = 3f;
     public bool explode = false;
     void Start()
     {
@@ -26,6 +28,7 @@ public class TutorialGameEnd : MonoBehaviour
         phase4txt.SetActive(false); 
     combotxt.SetActive(false);
         phase5.SetActive(false);
+        phase6.SetActive(false);
     }
     void Update()
     {
@@ -72,7 +75,7 @@ public class TutorialGameEnd : MonoBehaviour
         if (GEndscore == 5)
         {
             combotxt.SetActive(true);
-            if (cooldown > 0f)// this is for the victory effect- Chris
+            if (cooldown > 0f)
             {
                 cooldown -= Time.deltaTime;
             }
@@ -81,6 +84,17 @@ public class TutorialGameEnd : MonoBehaviour
             combotxt.SetActive (true);
                 phase4txt.SetActive(false);
                 phase5.SetActive(true);
+                if (cooldown3 > 0f)
+                {
+                    cooldown3 -= Time.deltaTime;
+                }
+                if (cooldown3 < 0f)
+                {
+                    
+                    phase5.SetActive(false);
+                    phase6.SetActive(true);
+
+                }
             }
         }
 

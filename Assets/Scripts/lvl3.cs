@@ -78,6 +78,7 @@ public class lvl3 : lvlsManagerbase
         {
             if(score > pnt1)
             {
+                GameManager.instance.levelPassed3 = true;
                 StartCoroutine(CollectiblePopUP());    
             }       
         }

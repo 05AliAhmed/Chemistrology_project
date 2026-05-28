@@ -61,6 +61,8 @@ public class lvl2 : lvlsManagerbase
         {
             if(score > pnt1)
             {
+                Debug.Log("WORKING CARD DISPLAY level 2 SET TO TRUE");
+                GameManager.instance.levelPassed2 = true;
                 StartCoroutine(CollectiblePopUP());    
             }       
         }

@@ -22,6 +22,7 @@ public class lvl1Buttons : lvlsManagerbase
     [SerializeField] TMP_Text factScrScoreTxt; // txt ref for score text in fact screen
     [SerializeField] TMP_Text factScrScoreNeededTxt; // txt ref for score needed text in fact screen
     [SerializeField] Camera cam;
+    bool level1pass = GameManager.instance.levelPassed1;
     public bool gameEnd;
     float passScore;
     public float cooldown=2f;
@@ -95,9 +96,13 @@ public class lvl1Buttons : lvlsManagerbase
         {
             if(score > pnt1)
             {
+                Debug.Log("WORKING CARD DISPLAY SET TO TRUE");
+                GameManager.instance.levelPassed1 = true;
+                Debug.Log(GameManager.instance.levelPassed1);
                 StartCoroutine(CollectiblePopUP());    
             }       
         }
+        Debug.Log(GameManager.instance.levelPassed1);
     }
 
     public void FactScreenLvl1()

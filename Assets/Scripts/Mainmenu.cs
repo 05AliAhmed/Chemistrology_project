@@ -3,9 +3,14 @@ using UnityEngine.SceneManagement;
 public class Mainmenu : MonoBehaviour
 
 {
-    public void PlayGame()
+    public void PlayGame(int _scnIndx)
     {
-        SceneManager.LoadScene(1); // to level 1
+        SceneManager.LoadScene(_scnIndx); // to level 1
+    }
+
+    public void CardCollectionScreen(int _scnIndx)
+    {
+        SceneManager.LoadScene(_scnIndx); // to level 1
     }
     // public void Tutorial()
     // {

@@ -6,11 +6,17 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    public bool levelPassed1 = false;
     public bool level2Unlocked = false; //set true in level 1 script if conditions meet
+    public bool levelPassed2 = false;
     public bool level3Unlocked = false; //set true in level 2 script if conditions meet
+    public bool levelPassed3 = false;
     public bool level4Unlocked = false; //set true in level 3 script if conditions meet
+    public bool levelPassed4 = false;
     public bool level5Unlocked = false; //set true in level 4 script if conditions meet
+    public bool levelPassed5 = false;
     public bool level6Unlocked = false; //set true in level 5 script if conditions meet
+    public bool levelPassed6 = false;
     public bool pauseInputs = false;
     
 
@@ -31,7 +37,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(9);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         SceneManager.LoadScene(_sceneindex);
     }

@@ -41,17 +41,17 @@ public class GameEndScript : MonoBehaviour
                 }
                 break;
             case 5:
-                if (GEndscore == 8){
+                if (GEndscore == 14){
                    lvl4Manager.gameEnd = true;
                 }
                 break;
             case 6:
-                if (GEndscore == 7){
+                if (GEndscore == 15){
                    lvl5Manager.gameEnd = true;
                 }
                 break;
             case 7:
-                if (GEndscore == 6){
+                if (GEndscore == 16){
                    lvl6Manager.gameEnd = true;
                 }
                 break;            

@@ -896,7 +896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::lvl3
   amendScore: 100
   loseScore: 50
-  comboScore: 0
+  comboScore: 20
   starScore1: {fileID: 68248874}
   starScore2: {fileID: 2003060724}
   starScore3: {fileID: 1657884910}
@@ -918,7 +918,7 @@ MonoBehaviour:
   factScreen: {fileID: 1659605412}
   scoreNeededLine: {fileID: 211774150}
   nxtLvlBtn: {fileID: 8002894}
-  scoreToPass: 1000
+  scoreToPass: 900
   vignette: {fileID: 2135401642}
   scoreTxt: {fileID: 492730500}
   highScoreTxt: {fileID: 2131188194}

@@ -8222,9 +8222,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb8c5d4d6992b24cb26f8ecdd128b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::lvl6
-  amendScore: 10
+  amendScore: 100
   loseScore: 50
-  comboScore: 0
+  comboScore: 20
   starScore1: {fileID: 92595493}
   starScore2: {fileID: 1213276435}
   starScore3: {fileID: 158119821}
@@ -8246,7 +8246,7 @@ MonoBehaviour:
   factScreen: {fileID: 1801923048}
   scoreNeededLine: {fileID: 1653299272}
   nxtLvlBtn: {fileID: 376593608}
-  scoreToPass: 1900
+  scoreToPass: 1800
   scoreTxt: {fileID: 467816684}
   highScoreTxt: {fileID: 1579231612}
   factScrScoreTxt: {fileID: 1616828132}
@@ -9193,7 +9193,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You have          points left to unlock next level
+  m_text: You have          points left to unlock the END
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5301e1d911daffa4f80182e702f84034, type: 2}
   m_sharedMaterial: {fileID: -2271954774608238029, guid: 5301e1d911daffa4f80182e702f84034, type: 2}

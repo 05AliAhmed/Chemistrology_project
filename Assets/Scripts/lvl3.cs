@@ -19,6 +19,7 @@ public class lvl3 : lvlsManagerbase
     [SerializeField] TMP_Text factScrScoreTxt; // txt ref for score text in fact screen
     [SerializeField] TMP_Text factScrScoreNeededTxt; // txt ref for score needed text in fact screen
     [SerializeField] Camera cam;
+    [SerializeField] GameObject preview;
     public float cooldown = 2f;
     // Scene currentScene;
     public bool gameEnd;
@@ -134,8 +135,19 @@ public class lvl3 : lvlsManagerbase
         cooldown = 2f;
     }
 
+    void ClickCheck()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("Preview disabled");
+            preview.SetActive(false);
+            GameManager.instance.pauseInputs = false;
+        }
+    }
+
     void Update()
     {
+        ClickCheck();
         if(gameEnd == true)
         {
             FactScreenLvl1(); 

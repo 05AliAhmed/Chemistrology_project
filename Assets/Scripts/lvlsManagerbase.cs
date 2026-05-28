@@ -110,7 +110,7 @@ public class lvlsManagerbase : MonoBehaviour
 
     public virtual void Start()
     {
-        GameManager.instance.pauseInputs = false;
+        GameManager.instance.pauseInputs = true;
         starScore1.text = pnt1.ToString();
         starScore2.text = pnt2.ToString();
         // Debug.Log("workingngngngngngng");

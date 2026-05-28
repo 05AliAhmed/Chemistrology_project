@@ -1542,6 +1542,7 @@ MonoBehaviour:
   factScrScoreNeededTxt: {fileID: 713315376}
   vignette: {fileID: 45994467}
   cam: {fileID: 1930623516}
+  preview: {fileID: 0}
   cooldown: 2
   gameEnd: 0
   pauseInputs: 0

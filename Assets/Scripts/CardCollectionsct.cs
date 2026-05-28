@@ -1,4 +1,6 @@
+// using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class CardCollectionsct : MonoBehaviour
@@ -9,6 +11,10 @@ public class CardCollectionsct : MonoBehaviour
     public GameObject cardBtn4;
     public GameObject cardBtn5;
     public GameObject cardBtn6;
+
+    public Image oneCard;
+
+    public Sprite newoneCard;
 
     public GameObject cardOne;
     public GameObject cardTwo;
@@ -23,6 +29,11 @@ public class CardCollectionsct : MonoBehaviour
     {
         _cards.SetActive(true);
         Debug.Log("should show the card");
+    }
+
+    public void ChangeCardoneSprite()
+    {
+        oneCard.sprite = newoneCard;
     }
     public void ChangeScene(int _sceneIndex)
     {
@@ -76,7 +87,8 @@ public class CardCollectionsct : MonoBehaviour
 
         if(GameManager.instance.levelPassed1 == true){
             Debug.Log("Card displayed");
-            cardBtn1.SetActive(true);
+            // cardBtn1.SetActive(true);
+            oneCard.sprite = newoneCard;
         }
         if(GameManager.instance.levelPassed2 == true){
             Debug.Log("Card displayed level 2");
@@ -103,12 +115,12 @@ public class CardCollectionsct : MonoBehaviour
 
     void Awake()
     {
-        cardBtn1.SetActive(false);
-        cardBtn2.SetActive(false);
-        cardBtn3.SetActive(false);
-        cardBtn4.SetActive(false);
-        cardBtn5.SetActive(false);
-        cardBtn6.SetActive(false);
+        // cardBtn1.SetActive(false);
+        // cardBtn2.SetActive(false);
+        // cardBtn3.SetActive(false);
+        // cardBtn4.SetActive(false);
+        // cardBtn5.SetActive(false);
+        // cardBtn6.SetActive(false);
 
         cardOne.SetActive(false);
         cardTwo.SetActive(false);

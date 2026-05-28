@@ -98,6 +98,7 @@ public class lvl1Buttons : lvlsManagerbase
             {
                 Debug.Log("WORKING CARD DISPLAY SET TO TRUE");
                 GameManager.instance.levelPassed1 = true;
+                // GameManager.instance.cardUnlocked = true;
                 Debug.Log(GameManager.instance.levelPassed1);
                 StartCoroutine(CollectiblePopUP());    
             }       

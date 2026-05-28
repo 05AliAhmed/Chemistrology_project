@@ -5,17 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class CardCollectionsct : MonoBehaviour
 {
-    public GameObject cardBtn1;
-    public GameObject cardBtn2;
-    public GameObject cardBtn3;
-    public GameObject cardBtn4;
-    public GameObject cardBtn5;
-    public GameObject cardBtn6;
+    [Header("Card Buttons")]
+    public Image cardBtn1;
+    public Image cardBtn2;
+    public Image cardBtn3;
+    public Image cardBtn4;
+    public Image cardBtn5;
+    public Image cardBtn6;
 
-    public Image oneCard;
-
+    [Header("New Card Sprites")]
     public Sprite newoneCard;
+    public Sprite newtwoCard;
+    public Sprite newthreeCard;
+    public Sprite newfourCard;
+    public Sprite newfiveCard;
+    public Sprite newsixCard;
 
+    [Header("Displayed Cards")]
     public GameObject cardOne;
     public GameObject cardTwo;
     public GameObject cardThree;
@@ -23,18 +29,39 @@ public class CardCollectionsct : MonoBehaviour
     public GameObject cardFive;
     public GameObject cardSix;
 
+
     // GameObject _cards;
 
-    public void DisplayCardCollection(GameObject _cards)
+    public void DisplayOneCardCollection()
     {
-        _cards.SetActive(true);
-        Debug.Log("should show the card");
+        if(GameManager.instance.levelPassed1 == true) cardOne.SetActive(true);
     }
 
-    public void ChangeCardoneSprite()
+    public void DisplayCardTwoCollection()
     {
-        oneCard.sprite = newoneCard;
+        if(GameManager.instance.levelPassed2 == true) cardTwo.SetActive(true);
     }
+
+    public void DisplayCardThreeCollection()
+    {
+        if(GameManager.instance.levelPassed3 == true) cardThree.SetActive(true);
+    }
+
+    public void DisplayCardFourCollection()
+    {
+        if(GameManager.instance.levelPassed4 == true) cardFour.SetActive(true);
+    }
+
+    public void DisplayCardFiveCollection()
+    {
+        if(GameManager.instance.levelPassed5 == true) cardFive.SetActive(true);
+    }
+
+    public void DisplayCardSixCollection()
+    {
+        if(GameManager.instance.levelPassed6 == true) cardSix.SetActive(true);
+    }
+
     public void ChangeScene(int _sceneIndex)
     {
         Time.timeScale = 1f;
@@ -49,7 +76,7 @@ public class CardCollectionsct : MonoBehaviour
 
     public void CardMenuTwo()
     {
-        Debug.Log("working fine as hell");
+        // Debug.Log("working fine as hell");
         // SceneManager.LoadScene(10);
         cardTwo.SetActive(false);
     }
@@ -79,36 +106,36 @@ public class CardCollectionsct : MonoBehaviour
         
     void displayCollectedCards()
     {
-        // switch (switch_on)
-        // {
-            
-        //     default:
-        // }
 
         if(GameManager.instance.levelPassed1 == true){
             Debug.Log("Card displayed");
             // cardBtn1.SetActive(true);
-            oneCard.sprite = newoneCard;
+            cardBtn1.sprite = newoneCard;
         }
         if(GameManager.instance.levelPassed2 == true){
             Debug.Log("Card displayed level 2");
-            cardBtn2.SetActive(true);
+            // cardBtn2.SetActive(true);
+            cardBtn2.sprite = newtwoCard;
         }
         if(GameManager.instance.levelPassed3 == true){
             Debug.Log("Card displayed level 3");
-            cardBtn3.SetActive(true);
+            // cardBtn3.SetActive(true);
+            cardBtn3.sprite = newthreeCard;
         }
         if(GameManager.instance.levelPassed4 == true){
             Debug.Log("Card displayed level 4");
-            cardBtn4.SetActive(true);
+            // cardBtn4.SetActive(true);
+            cardBtn4.sprite = newfourCard;
         }
         if(GameManager.instance.levelPassed5 == true){
             Debug.Log("Card displayed level 5");
-            cardBtn5.SetActive(true);
+            // cardBtn5.SetActive(true);
+            cardBtn5.sprite = newfiveCard;
         }
         if(GameManager.instance.levelPassed6 == true){
             Debug.Log("Card displayed level 6");
-            cardBtn6.SetActive(true);
+            // cardBtn6.SetActive(true);
+            cardBtn6.sprite = newsixCard;
         }
 
     }

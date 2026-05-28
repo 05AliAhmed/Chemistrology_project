@@ -578,11 +578,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1994964982}
         m_TargetAssemblyTypeName: CardCollectionsct, Assembly-CSharp
-        m_MethodName: DisplayCardCollection
-        m_Mode: 2
+        m_MethodName: DisplayCardThreeCollection
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 759032184}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1004,11 +1004,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1994964982}
         m_TargetAssemblyTypeName: CardCollectionsct, Assembly-CSharp
-        m_MethodName: DisplayCardCollection
-        m_Mode: 2
+        m_MethodName: DisplayCardSixCollection
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 646805966}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1363,11 +1363,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1994964982}
         m_TargetAssemblyTypeName: CardCollectionsct, Assembly-CSharp
-        m_MethodName: DisplayCardCollection
-        m_Mode: 2
+        m_MethodName: DisplayOneCardCollection
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 693624873}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3514,11 +3514,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1994964982}
         m_TargetAssemblyTypeName: CardCollectionsct, Assembly-CSharp
-        m_MethodName: DisplayCardCollection
-        m_Mode: 2
+        m_MethodName: DisplayCardTwoCollection
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 626749073}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4631,11 +4631,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1994964982}
         m_TargetAssemblyTypeName: CardCollectionsct, Assembly-CSharp
-        m_MethodName: DisplayCardCollection
-        m_Mode: 2
+        m_MethodName: DisplayCardFourCollection
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 40154628}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4946,11 +4946,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1994964982}
         m_TargetAssemblyTypeName: CardCollectionsct, Assembly-CSharp
-        m_MethodName: DisplayCardCollection
-        m_Mode: 2
+        m_MethodName: DisplayCardFiveCollection
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 936517614}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5114,14 +5114,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96847f344603c7340bb4df50b9f6ecbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardCollectionsct
-  cardBtn1: {fileID: 380869235}
-  cardBtn2: {fileID: 1170275727}
-  cardBtn3: {fileID: 184978435}
-  cardBtn4: {fileID: 1803950163}
-  cardBtn5: {fileID: 1864675835}
-  cardBtn6: {fileID: 268434597}
-  oneCard: {fileID: 380869238}
+  cardBtn1: {fileID: 380869238}
+  cardBtn2: {fileID: 1170275731}
+  cardBtn3: {fileID: 184978439}
+  cardBtn4: {fileID: 1803950166}
+  cardBtn5: {fileID: 1864675839}
+  cardBtn6: {fileID: 268434601}
   newoneCard: {fileID: 5529886436784579953, guid: fdef45b21626efa45b24435ef46384de, type: 3}
+  newtwoCard: {fileID: 1708946660577973019, guid: 308d4690753ad1e4ea78e9284d762a11, type: 3}
+  newthreeCard: {fileID: -1954099730828481625, guid: 2a107b677befba8408bfddca0bd95b34, type: 3}
+  newfourCard: {fileID: -2497422343235424751, guid: c257ef8c4969e9f4c9036e2756adcd70, type: 3}
+  newfiveCard: {fileID: -4814591283186723625, guid: 1f90fa95ad422a941841763b743ee343, type: 3}
+  newsixCard: {fileID: -2465951786335231878, guid: fa6a7df4d498a31418c72b6bfa3438cb, type: 3}
   cardOne: {fileID: 693624873}
   cardTwo: {fileID: 626749073}
   cardThree: {fileID: 759032184}

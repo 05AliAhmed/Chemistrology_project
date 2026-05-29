@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1762343572971132929}
   - component: {fileID: 6671995955621318973}
   m_Layer: 0
-  m_Name: card_collection_2
+  m_Name: card_collection_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +61,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8893bc2f94c108d44aaccba78bce9d3b, type: 2}
+  - {fileID: 2100000, guid: 986517f4a3a041c4381490cc556a44e8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

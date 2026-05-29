@@ -25,7 +25,6 @@ public class CardPressEffect : MonoBehaviour, IPointerClickHandler
 
     private Material _material;
     private Sequence _sequence;
-    private Animator _animator;
     private Image _image;
 
     private Vector3 _originalScale;
@@ -36,7 +35,6 @@ public class CardPressEffect : MonoBehaviour, IPointerClickHandler
     private void Awake()
     {
         _material = GetComponent<Image>().material;
-        _animator = GetComponent<Animator>();
         _image = GetComponent<Image>();
 
         _originalScale = transform.localScale;
@@ -77,22 +75,13 @@ public class CardPressEffect : MonoBehaviour, IPointerClickHandler
     private void Start()
     {
         _material.SetFloat("_pressed", 0);
-
-        float playbackTime = UnityEngine.Random.Range(_startAnimationTime.x, _startAnimationTime.y);
-
-        // Get current state's hash
-        int stateHash = _animator.GetCurrentAnimatorStateInfo(0).shortNameHash;
-
-        // Play current animation at random time
-        _animator.Play(stateHash, 0, playbackTime);
-
-        // Force update immediately
-        _animator.Update(0);
     }
 
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (_pressActivated || !_pressAllowed) return;
+
         OnPress?.Invoke(this);
     }
 
@@ -120,7 +109,7 @@ public class CardPressEffect : MonoBehaviour, IPointerClickHandler
         }
         else
         {
-            UnlockedCardUnpressEffect();
+            //UnlockedCardUnpressEffect();
         }
     }
 
@@ -130,7 +119,7 @@ public class CardPressEffect : MonoBehaviour, IPointerClickHandler
         // Stop previous animation
         _sequence?.Kill();
 
-        transform.DOKill();
+        //transform.DOKill();
 
         _sequence = DOTween.Sequence();
 
@@ -153,7 +142,7 @@ public class CardPressEffect : MonoBehaviour, IPointerClickHandler
         // Stop previous animation
         _sequence?.Kill();
 
-        transform.DOKill();
+        //transform.DOKill();
 
         _sequence = DOTween.Sequence();
 
@@ -169,6 +158,8 @@ public class CardPressEffect : MonoBehaviour, IPointerClickHandler
                 _transitionTime
             ).SetEase(Ease.OutBack)
         );
+
+        _sequence.AppendInterval(_pressedDuration);
 
         // Shader OFF
         _sequence.Append(
@@ -213,7 +204,7 @@ public class CardPressEffect : MonoBehaviour, IPointerClickHandler
         OnPress?.Invoke(null);
         OnPressAllowed?.Invoke(true);
         Destroy(_cardPreview.gameObject);
-
+        _pressActivated = false;
     }
 
     #endregion

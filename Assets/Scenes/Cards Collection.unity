@@ -498,13 +498,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 184978435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e53378863601cea4a8ba1132dbc34cd2, type: 3}
+  m_Script: {fileID: 11500000, guid: 68651184955d9754ab186b62473e7c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardHoverEffect
-  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
-  duration: 0.2
-  hoverEase: 27
-  exitEase: 6
+  _pressedDuration: 2
+  _transitionTime: 1
 --- !u!1 &201307814
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,13 +801,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 268434597}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e53378863601cea4a8ba1132dbc34cd2, type: 3}
+  m_Script: {fileID: 11500000, guid: 68651184955d9754ab186b62473e7c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardHoverEffect
-  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
-  duration: 0.2
-  hoverEase: 27
-  exitEase: 6
+  _pressedDuration: 2
+  _transitionTime: 1
 --- !u!1 &297933130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,13 +1196,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 380869235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e53378863601cea4a8ba1132dbc34cd2, type: 3}
+  m_Script: {fileID: 11500000, guid: 68651184955d9754ab186b62473e7c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardHoverEffect
-  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
-  duration: 0.2
-  hoverEase: 27
-  exitEase: 6
+  _pressedDuration: 2
+  _transitionTime: 1
 --- !u!1 &386203669
 GameObject:
   m_ObjectHideFlags: 0
@@ -2934,13 +2928,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1170275727}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e53378863601cea4a8ba1132dbc34cd2, type: 3}
+  m_Script: {fileID: 11500000, guid: 68651184955d9754ab186b62473e7c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardHoverEffect
-  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
-  duration: 0.2
-  hoverEase: 27
-  exitEase: 6
+  _pressedDuration: 2
+  _transitionTime: 1
 --- !u!1 &1333875251
 GameObject:
   m_ObjectHideFlags: 0
@@ -4089,13 +4081,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1803950163}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e53378863601cea4a8ba1132dbc34cd2, type: 3}
+  m_Script: {fileID: 11500000, guid: 68651184955d9754ab186b62473e7c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardHoverEffect
-  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
-  duration: 0.2
-  hoverEase: 27
-  exitEase: 6
+  _pressedDuration: 2
+  _transitionTime: 1
 --- !u!1 &1816734127
 GameObject:
   m_ObjectHideFlags: 0
@@ -4398,13 +4388,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1864675835}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e53378863601cea4a8ba1132dbc34cd2, type: 3}
+  m_Script: {fileID: 11500000, guid: 68651184955d9754ab186b62473e7c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardHoverEffect
-  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
-  duration: 0.2
-  hoverEase: 27
-  exitEase: 6
+  _pressedDuration: 2
+  _transitionTime: 1
 --- !u!1 &1919303310
 GameObject:
   m_ObjectHideFlags: 0

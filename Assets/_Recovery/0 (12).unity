@@ -418,7 +418,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.3886792, g: 0.3886792, b: 0.3886792, a: 1}
     m_SelectedColor: {r: 0.6528301, g: 0.6528301, b: 0.6528301, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -496,13 +496,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184978435}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e53378863601cea4a8ba1132dbc34cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardHoverEffect
-  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
-  duration: 0.2
+  hoverMultiplier: 1.5
+  scaleDuration: 0.2
+  rotateAmount: 5
+  swayDuration: 0.5
+  liftAmount: 50
+  punchStrength: 0.1
   hoverEase: 27
   exitEase: 6
 --- !u!1 &201307814
@@ -723,7 +727,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.3886792, g: 0.3886792, b: 0.3886792, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -801,13 +805,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268434597}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e53378863601cea4a8ba1132dbc34cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardHoverEffect
-  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
-  duration: 0.2
+  hoverMultiplier: 1.5
+  scaleDuration: 0.2
+  rotateAmount: 5
+  swayDuration: 0.5
+  liftAmount: 50
+  punchStrength: 0.1
   hoverEase: 27
   exitEase: 6
 --- !u!1 &297933130
@@ -1098,7 +1106,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.3886792, g: 0.3886792, b: 0.3886792, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1198,13 +1206,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380869235}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e53378863601cea4a8ba1132dbc34cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardHoverEffect
-  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
-  duration: 0.2
+  hoverMultiplier: 1.5
+  scaleDuration: 0.2
+  rotateAmount: 5
+  swayDuration: 0.5
+  liftAmount: 50
+  punchStrength: 0.1
   hoverEase: 27
   exitEase: 6
 --- !u!1 &386203669
@@ -2854,7 +2866,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.3886792, g: 0.3886792, b: 0.3886792, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2932,13 +2944,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170275727}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e53378863601cea4a8ba1132dbc34cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardHoverEffect
-  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
-  duration: 0.2
+  hoverMultiplier: 1.5
+  scaleDuration: 0.2
+  rotateAmount: 5
+  swayDuration: 0.5
+  liftAmount: 50
+  punchStrength: 0.1
   hoverEase: 27
   exitEase: 6
 --- !u!1 &1333875251
@@ -3987,7 +4003,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.3886792, g: 0.3886792, b: 0.3886792, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -4087,13 +4103,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803950163}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e53378863601cea4a8ba1132dbc34cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardHoverEffect
-  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
-  duration: 0.2
+  hoverMultiplier: 1.5
+  scaleDuration: 0.2
+  rotateAmount: 5
+  swayDuration: 0.5
+  liftAmount: 50
+  punchStrength: 0.1
   hoverEase: 27
   exitEase: 6
 --- !u!1 &1816734127
@@ -4318,7 +4338,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.3886792, g: 0.3886792, b: 0.3886792, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -4396,13 +4416,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864675835}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e53378863601cea4a8ba1132dbc34cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardHoverEffect
-  hoverScale: {x: 1.08, y: 1.08, z: 1.08}
-  duration: 0.2
+  hoverMultiplier: 1.5
+  scaleDuration: 0.2
+  rotateAmount: 5
+  swayDuration: 0.5
+  liftAmount: 50
+  punchStrength: 0.1
   hoverEase: 27
   exitEase: 6
 --- !u!1 &1919303310

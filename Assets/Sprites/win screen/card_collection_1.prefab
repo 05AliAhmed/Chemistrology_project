@@ -122,8 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a5938f07ef60043ace5a32edf4ee32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardGrabRotate
-  rotationAmount: 15
-  rotationSmoothness: 10
+  rotationAmount: 30
+  rotationSmoothness: 15
 --- !u!65 &6671995955621318973
 BoxCollider:
   m_ObjectHideFlags: 0

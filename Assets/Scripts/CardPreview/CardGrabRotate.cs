@@ -16,7 +16,7 @@ public class CardGrabRotate : MonoBehaviour
     private float targetRotX;
     private float targetRotY;
 
-    private Quaternion originalRotation;
+    private Quaternion? originalRotation;
 
     private Collider col;
 
@@ -29,6 +29,7 @@ public class CardGrabRotate : MonoBehaviour
         col = GetComponent<Collider>();
 
         _cardPreview = GetComponent<CardPreview>();
+
     }
 
     private void Update()
@@ -41,11 +42,10 @@ public class CardGrabRotate : MonoBehaviour
         if (!isDragging)
             return;
 
-        //
-        // KEEP ORIGINAL ROTATION
-        //
-
-        originalRotation = transform.rotation;
+        if (!originalRotation.HasValue)
+        {
+            originalRotation = transform.rotation;
+        }
 
         Vector3 currentMousePos = Input.mousePosition;
 
@@ -54,22 +54,12 @@ public class CardGrabRotate : MonoBehaviour
         lastMousePos = currentMousePos;
 
         //
-        // Mouse Y affects X rotation
+        // ROTATION INPUT
         //
 
-        // targetRotX -= delta.y * rotationAmount * Time.deltaTime;
-
-        //
-        // Mouse X affects Y rotation
-        //
+        //targetRotX -= delta.y * rotationAmount * Time.deltaTime;
 
         targetRotY += delta.x * rotationAmount * Time.deltaTime;
-
-        Quaternion targetRotation = Quaternion.Euler(
-            targetRotX,
-            targetRotY,
-            0f
-        );
 
         Quaternion dragRotation = Quaternion.Euler(
             targetRotX,
@@ -78,7 +68,7 @@ public class CardGrabRotate : MonoBehaviour
         );
 
         Quaternion finalRotation =
-            originalRotation * dragRotation;
+            originalRotation.Value * dragRotation;
 
         transform.rotation = Quaternion.Lerp(
             transform.rotation,
@@ -100,10 +90,7 @@ public class CardGrabRotate : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit))
         {
-            //
-            // Check if THIS collider is the first hit
-            //
-
+            // Check if THIS collider was hit first
             if (hit.collider == col)
             {
                 isDragging = true;
@@ -123,5 +110,7 @@ public class CardGrabRotate : MonoBehaviour
 
             _cardPreview.ToggleCard();
         }
+
+      
     }
 }

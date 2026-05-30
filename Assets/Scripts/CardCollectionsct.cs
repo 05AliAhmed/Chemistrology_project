@@ -13,13 +13,13 @@ public class CardCollectionsct : MonoBehaviour
     public Image cardBtn5;
     public Image cardBtn6;
 
-    [Header("New Card Sprites")]
-    public Sprite newoneCard;
-    public Sprite newtwoCard;
-    public Sprite newthreeCard;
-    public Sprite newfourCard;
-    public Sprite newfiveCard;
-    public Sprite newsixCard;
+    [Header("New Card Materials")]
+    public Material newoneCard;
+    public Material newtwoCard;
+    public Material newthreeCard;
+    public Material newfourCard;
+    public Material newfiveCard;
+    public Material newsixCard;
 
     [Header("Displayed Cards")]
     public GameObject cardOne;
@@ -110,32 +110,32 @@ public class CardCollectionsct : MonoBehaviour
         if(GameManager.instance.levelPassed1 == true){
             Debug.Log("Card displayed");
             // cardBtn1.SetActive(true);
-            cardBtn1.sprite = newoneCard;
+            cardBtn1.material = newoneCard;
         }
         if(GameManager.instance.levelPassed2 == true){
             Debug.Log("Card displayed level 2");
             // cardBtn2.SetActive(true);
-            cardBtn2.sprite = newtwoCard;
+            cardBtn2.material = newtwoCard;
         }
         if(GameManager.instance.levelPassed3 == true){
             Debug.Log("Card displayed level 3");
             // cardBtn3.SetActive(true);
-            cardBtn3.sprite = newthreeCard;
+            cardBtn3.material = newthreeCard;
         }
         if(GameManager.instance.levelPassed4 == true){
             Debug.Log("Card displayed level 4");
             // cardBtn4.SetActive(true);
-            cardBtn4.sprite = newfourCard;
+            cardBtn4.material = newfourCard;
         }
         if(GameManager.instance.levelPassed5 == true){
             Debug.Log("Card displayed level 5");
             // cardBtn5.SetActive(true);
-            cardBtn5.sprite = newfiveCard;
+            cardBtn5.material = newfiveCard;
         }
         if(GameManager.instance.levelPassed6 == true){
             Debug.Log("Card displayed level 6");
             // cardBtn6.SetActive(true);
-            cardBtn6.sprite = newsixCard;
+            cardBtn6.material = newsixCard;
         }
 
     }
@@ -149,12 +149,12 @@ public class CardCollectionsct : MonoBehaviour
         // cardBtn5.SetActive(false);
         // cardBtn6.SetActive(false);
 
-        cardOne.SetActive(false);
-        cardTwo.SetActive(false);
-        cardThree.SetActive(false);
-        cardFour.SetActive(false);
-        cardFive.SetActive(false);
-        cardSix.SetActive(false);
+        // cardOne.SetActive(false);
+        // cardTwo.SetActive(false);
+        // cardThree.SetActive(false);
+        // cardFour.SetActive(false);
+        // cardFive.SetActive(false);
+        // cardSix.SetActive(false);
 
     }
 

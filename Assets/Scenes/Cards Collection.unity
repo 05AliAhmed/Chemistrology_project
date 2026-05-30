@@ -156,8 +156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -480, y: -234}
-  m_SizeDelta: {x: 137.45, y: 299.56}
+  m_AnchoredPosition: {x: -376.34998, y: -218.17998}
+  m_SizeDelta: {x: 121.17, y: 264.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &176397858
 MonoBehaviour:
@@ -191,7 +191,7 @@ MonoBehaviour:
   _startAnimationTime: {x: 0, y: 1}
   _previewBackground: {fileID: 2057222975}
   _pressScaleMultiplier: 1.25
-  _cardPf: {fileID: 7626324980837169720, guid: 137af679a7f63c54fb3831d5f2c07896, type: 3}
+  _cardPf: {fileID: 7626324980837169720, guid: 836e1495df2fd8041a38dcc0316118a6, type: 3}
   _waitDurationBeforeEnableLockedCards: 1
 --- !u!114 &176397860
 MonoBehaviour:
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: 367f06af900d37e479c1085e442add72, type: 2}
+  m_Material: {fileID: 2100000, guid: c06a5143354b57943b449171f3cf87be, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -307,7 +307,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &184978436
 RectTransform:
   m_ObjectHideFlags: 0
@@ -324,8 +324,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 479.3, y: 237.25}
-  m_SizeDelta: {x: 137.45, y: 299.56}
+  m_AnchoredPosition: {x: 469.33002, y: 197.25002}
+  m_SizeDelta: {x: 121.17, y: 264.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &184978438
 MonoBehaviour:
@@ -491,7 +491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.050903, y: 3.9685059}
+  m_AnchoredPosition: {x: -9.050903, y: 3.53}
   m_SizeDelta: {x: 45.15, y: 44.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &201307816
@@ -625,8 +625,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: -237}
-  m_SizeDelta: {x: 137.45, y: 299.56}
+  m_AnchoredPosition: {x: 51.21002, y: -220.82999}
+  m_SizeDelta: {x: 121.17, y: 264.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &216911002
 MonoBehaviour:
@@ -660,7 +660,7 @@ MonoBehaviour:
   _startAnimationTime: {x: 0, y: 1}
   _previewBackground: {fileID: 2057222975}
   _pressScaleMultiplier: 1.25
-  _cardPf: {fileID: 7626324980837169720, guid: 137af679a7f63c54fb3831d5f2c07896, type: 3}
+  _cardPf: {fileID: 7626324980837169720, guid: 0c441a677440a804cbf24141451736f1, type: 3}
   _waitDurationBeforeEnableLockedCards: 1
 --- !u!114 &216911004
 MonoBehaviour:
@@ -730,7 +730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: 7690e7e00ef43924094761a112d6efc6, type: 2}
+  m_Material: {fileID: 2100000, guid: f1a077daf9bf0994a913291989c039c7, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -776,7 +776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &268434598
 RectTransform:
   m_ObjectHideFlags: 0
@@ -793,8 +793,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 479.3, y: -236.89}
-  m_SizeDelta: {x: 137.45, y: 299.56}
+  m_AnchoredPosition: {x: 469.33002, y: -220.72998}
+  m_SizeDelta: {x: 121.17, y: 264.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &268434600
 MonoBehaviour:
@@ -1098,8 +1098,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -475.07, y: 238.1}
-  m_SizeDelta: {x: 137.45, y: 299.56}
+  m_AnchoredPosition: {x: -372, y: 198}
+  m_SizeDelta: {x: 121.17, y: 264.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &380869237
 MonoBehaviour:
@@ -1169,7 +1169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: ceee240ef29f3dc4fa38017e8ee4abb4, type: 2}
+  m_Material: {fileID: 2100000, guid: cca9c489d8b80e246a47b65f0c706f6b, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1266,8 +1266,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 483, y: -235}
-  m_SizeDelta: {x: 137.45, y: 299.56}
+  m_AnchoredPosition: {x: 472.59003, y: -219.05998}
+  m_SizeDelta: {x: 121.17, y: 264.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &395498444
 MonoBehaviour:
@@ -1301,7 +1301,7 @@ MonoBehaviour:
   _startAnimationTime: {x: 0, y: 1}
   _previewBackground: {fileID: 2057222975}
   _pressScaleMultiplier: 1.25
-  _cardPf: {fileID: 7626324980837169720, guid: 137af679a7f63c54fb3831d5f2c07896, type: 3}
+  _cardPf: {fileID: 7626324980837169720, guid: 32f8fb6a36d7d59428baadede7c358c7, type: 3}
   _waitDurationBeforeEnableLockedCards: 1
 --- !u!114 &395498446
 MonoBehaviour:
@@ -1371,7 +1371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: f26a4fd37cc424749aa6683b69e1664e, type: 2}
+  m_Material: {fileID: 2100000, guid: 4eb62c0e3025c5c4cac123c460f1b33b, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1634,7 +1634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1087157539
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1680,7 +1680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1170275728
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1697,8 +1697,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.23, y: 237.25}
-  m_SizeDelta: {x: 137.45, y: 299.56}
+  m_AnchoredPosition: {x: 50.530018, y: 197.25002}
+  m_SizeDelta: {x: 121.17, y: 264.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1170275730
 MonoBehaviour:
@@ -1848,7 +1848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1357190033
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1865,8 +1865,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -477.89, y: 237.25}
-  m_SizeDelta: {x: 137.45, y: 299.56}
+  m_AnchoredPosition: {x: -374.48996, y: 197.25002}
+  m_SizeDelta: {x: 121.17, y: 264.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1357190034
 MonoBehaviour:
@@ -2112,8 +2112,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 483, y: 238.1}
-  m_SizeDelta: {x: 137.45, y: 299.56}
+  m_AnchoredPosition: {x: 472.59003, y: 198.00002}
+  m_SizeDelta: {x: 121.17, y: 264.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1637459454
 MonoBehaviour:
@@ -2147,7 +2147,7 @@ MonoBehaviour:
   _startAnimationTime: {x: 0, y: 1}
   _previewBackground: {fileID: 2057222975}
   _pressScaleMultiplier: 1.25
-  _cardPf: {fileID: 7626324980837169720, guid: 137af679a7f63c54fb3831d5f2c07896, type: 3}
+  _cardPf: {fileID: 7626324980837169720, guid: 71c71f54f06c2b24cb6877c25f2f08a4, type: 3}
   _waitDurationBeforeEnableLockedCards: 1
 --- !u!114 &1637459456
 MonoBehaviour:
@@ -2217,7 +2217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: b330e40a601808b40813016e0240f76c, type: 2}
+  m_Material: {fileID: 2100000, guid: 7fb34eff9d4122645a73a53991e67c66, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2329,7 +2329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1803950164
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2346,8 +2346,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -479.3, y: -236.89}
-  m_SizeDelta: {x: 137.45, y: 299.56}
+  m_AnchoredPosition: {x: -375.72998, y: -220.72998}
+  m_SizeDelta: {x: 121.17, y: 264.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1803950165
 MonoBehaviour:
@@ -2634,7 +2634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1864675836
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2651,8 +2651,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.23, y: -236.89}
-  m_SizeDelta: {x: 137.45, y: 299.56}
+  m_AnchoredPosition: {x: 50.530018, y: -220.72998}
+  m_SizeDelta: {x: 121.17, y: 264.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1864675838
 MonoBehaviour:
@@ -2827,18 +2827,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96847f344603c7340bb4df50b9f6ecbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardCollectionsct
-  cardBtn1: {fileID: 380869238}
+  cardBtn1: {fileID: 1357190037}
   cardBtn2: {fileID: 1170275731}
   cardBtn3: {fileID: 184978439}
   cardBtn4: {fileID: 1803950166}
   cardBtn5: {fileID: 1864675839}
   cardBtn6: {fileID: 268434601}
-  newoneCard: {fileID: 5529886436784579953, guid: fdef45b21626efa45b24435ef46384de, type: 3}
-  newtwoCard: {fileID: 1708946660577973019, guid: 308d4690753ad1e4ea78e9284d762a11, type: 3}
-  newthreeCard: {fileID: -1954099730828481625, guid: 2a107b677befba8408bfddca0bd95b34, type: 3}
-  newfourCard: {fileID: -2497422343235424751, guid: c257ef8c4969e9f4c9036e2756adcd70, type: 3}
-  newfiveCard: {fileID: -4814591283186723625, guid: 1f90fa95ad422a941841763b743ee343, type: 3}
-  newsixCard: {fileID: -2465951786335231878, guid: fa6a7df4d498a31418c72b6bfa3438cb, type: 3}
+  newoneCard: {fileID: 2100000, guid: ceee240ef29f3dc4fa38017e8ee4abb4, type: 2}
+  newtwoCard: {fileID: 2100000, guid: 21537412adc7f1549b068cb5d51330ed, type: 2}
+  newthreeCard: {fileID: 2100000, guid: b330e40a601808b40813016e0240f76c, type: 2}
+  newfourCard: {fileID: 2100000, guid: 367f06af900d37e479c1085e442add72, type: 2}
+  newfiveCard: {fileID: 2100000, guid: 7690e7e00ef43924094761a112d6efc6, type: 2}
+  newsixCard: {fileID: 2100000, guid: f26a4fd37cc424749aa6683b69e1664e, type: 2}
   cardOne: {fileID: 0}
   cardTwo: {fileID: 0}
   cardThree: {fileID: 0}
@@ -2972,8 +2972,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 238.1}
-  m_SizeDelta: {x: 137.45, y: 299.56}
+  m_AnchoredPosition: {x: 51.21002, y: 198.00002}
+  m_SizeDelta: {x: 121.17, y: 264.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2116766267
 MonoBehaviour:
@@ -3077,7 +3077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: 21537412adc7f1549b068cb5d51330ed, type: 2}
+  m_Material: {fileID: 2100000, guid: a27358b80347e994eb8c6c11beab11dc, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}

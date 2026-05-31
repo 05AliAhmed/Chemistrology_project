@@ -24,13 +24,13 @@ public class CircularMovement : MonoBehaviour
         }
         if (!GameManager.instance.pauseInputs && currentscnIndx == 3)
         {
-            // gameObject.transform.RotateAround(new Vector3(0, 0, 0), Vector3.forward, increaseSpeed * Time.deltaTime);    
-            Debug.Log("IT IS WORKING ELECTRONS CAN SPEED UP");
+            gameObject.transform.RotateAround(new Vector3(0, 0, 0), Vector3.forward, increaseSpeed * Time.deltaTime);    
+            // Debug.Log("IT IS WORKING ELECTRONS CAN SPEED UP");
         }
         if (!GameManager.instance.pauseInputs && currentscnIndx == 7)
         {
-            // gameObject.transform.RotateAround(new Vector3(0, 0, 0), Vector3.forward, increaseSpeed * Time.deltaTime); 
-            Debug.Log("IT IS WORKING ELECTRONS CAN SPEED UP 6");   
+            gameObject.transform.RotateAround(new Vector3(0, 0, 0), Vector3.forward, increaseSpeed * Time.deltaTime); 
+            // Debug.Log("IT IS WORKING ELECTRONS CAN SPEED UP 6");   
         }
         //gameObject.transform.Rotate(0f,0f,10f*Time.deltaTime);
         

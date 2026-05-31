@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: holocard1
+  m_Name: holocard1 5(2)
   m_Shader: {fileID: -6465566751694194690, guid: 60b723041fffa474e840a0f7cf312b80, type: 3}
   m_Parent: {fileID: 2100000, guid: 8893bc2f94c108d44aaccba78bce9d3b, type: 2}
   m_ModifiedSerializedProperties: 0
@@ -38,11 +38,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _back_image:
-        m_Texture: {fileID: 2800000, guid: 01c3970c3b75c004f9aadef63beee0d3, type: 3}
+        m_Texture: {fileID: 2800000, guid: bdb1ff79e5c91d8448f19edeee6043d6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _back_text:
-        m_Texture: {fileID: 2800000, guid: f1f13de5204a59240aeb233781220e3d, type: 3}
+        m_Texture: {fileID: 2800000, guid: d9f8e8fb6b0edc64cbf97b15191fa8c6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []

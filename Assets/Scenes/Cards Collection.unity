@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &176397857
 RectTransform:
   m_ObjectHideFlags: 0
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: c06a5143354b57943b449171f3cf87be, type: 2}
+  m_Material: {fileID: 2100000, guid: 367f06af900d37e479c1085e442add72, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -608,7 +608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &216911001
 RectTransform:
   m_ObjectHideFlags: 0
@@ -730,7 +730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: f1a077daf9bf0994a913291989c039c7, type: 2}
+  m_Material: {fileID: 2100000, guid: 7690e7e00ef43924094761a112d6efc6, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1169,7 +1169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: cca9c489d8b80e246a47b65f0c706f6b, type: 2}
+  m_Material: {fileID: 2100000, guid: ceee240ef29f3dc4fa38017e8ee4abb4, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1249,7 +1249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &395498443
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1371,7 +1371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: 4eb62c0e3025c5c4cac123c460f1b33b, type: 2}
+  m_Material: {fileID: 2100000, guid: f26a4fd37cc424749aa6683b69e1664e, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1609,8 +1609,8 @@ RectTransform:
   m_Children:
   - {fileID: 723969830}
   - {fileID: 1994964981}
-  - {fileID: 686081637}
   - {fileID: 1087157539}
+  - {fileID: 686081637}
   - {fileID: 2057222972}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1634,7 +1634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1087157539
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1848,7 +1848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1357190033
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2095,7 +2095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1637459453
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2217,7 +2217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: 7fb34eff9d4122645a73a53991e67c66, type: 2}
+  m_Material: {fileID: 2100000, guid: b330e40a601808b40813016e0240f76c, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2827,24 +2827,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96847f344603c7340bb4df50b9f6ecbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardCollectionsct
-  cardBtn1: {fileID: 1357190037}
-  cardBtn2: {fileID: 1170275731}
-  cardBtn3: {fileID: 184978439}
-  cardBtn4: {fileID: 1803950166}
-  cardBtn5: {fileID: 1864675839}
-  cardBtn6: {fileID: 268434601}
+  cardBtn1: {fileID: 1357190032}
+  cardBtn2: {fileID: 1170275727}
+  cardBtn3: {fileID: 184978435}
+  cardBtn4: {fileID: 1803950163}
+  cardBtn5: {fileID: 1864675835}
+  cardBtn6: {fileID: 268434597}
   newoneCard: {fileID: 2100000, guid: ceee240ef29f3dc4fa38017e8ee4abb4, type: 2}
   newtwoCard: {fileID: 2100000, guid: 21537412adc7f1549b068cb5d51330ed, type: 2}
   newthreeCard: {fileID: 2100000, guid: b330e40a601808b40813016e0240f76c, type: 2}
   newfourCard: {fileID: 2100000, guid: 367f06af900d37e479c1085e442add72, type: 2}
   newfiveCard: {fileID: 2100000, guid: 7690e7e00ef43924094761a112d6efc6, type: 2}
   newsixCard: {fileID: 2100000, guid: f26a4fd37cc424749aa6683b69e1664e, type: 2}
-  cardOne: {fileID: 0}
-  cardTwo: {fileID: 0}
-  cardThree: {fileID: 0}
-  cardFour: {fileID: 0}
-  cardFive: {fileID: 0}
-  cardSix: {fileID: 0}
+  cardOne: {fileID: 380869235}
+  cardTwo: {fileID: 2116766265}
+  cardThree: {fileID: 1637459452}
+  cardFour: {fileID: 176397856}
+  cardFive: {fileID: 216911000}
+  cardSix: {fileID: 395498442}
 --- !u!1 &2057222971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2955,7 +2955,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2116766266
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3077,7 +3077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: a27358b80347e994eb8c6c11beab11dc, type: 2}
+  m_Material: {fileID: 2100000, guid: 21537412adc7f1549b068cb5d51330ed, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}

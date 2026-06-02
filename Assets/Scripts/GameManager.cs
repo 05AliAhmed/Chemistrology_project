@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     public bool level6Unlocked = false; //set true in level 5 script if conditions meet
     public bool levelPassed6 = false;
     public bool pauseInputs = false;
+
+    // public bool cardUnlocked = false;
     
 
     void Awake()

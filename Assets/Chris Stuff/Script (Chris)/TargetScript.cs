@@ -65,7 +65,7 @@ public class TargetScript : MonoBehaviour
     {
         if (collisioninfo.tag == "Penalty" && filled==true)
         {
-            Debug.Log("help me xv");
+            // Debug.Log("help me xv");
             GameEnd.GEndscore = GameEnd.GEndscore - 1;
             // rend.sprite = TargetHit;
             //Destroy(rend);

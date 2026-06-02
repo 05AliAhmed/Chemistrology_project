@@ -25,6 +25,7 @@ public class ObstacleSystem : MonoBehaviour
     public void randnum()
     {
         number = Random.Range(0, 6);
+       
     }
 
     IEnumerator MyCoroutine()

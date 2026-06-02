@@ -45,7 +45,7 @@ public class TraladeeBehaviour : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            //if(GameManager.instance.pauseInputs == false)
+            if(GameManager.instance.pauseInputs == false)
             {
                 //AIMING CODE
                 Vector3 mousePosition = Input.mousePosition;

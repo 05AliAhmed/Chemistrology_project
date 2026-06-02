@@ -22,6 +22,7 @@ public class lvl1Buttons : lvlsManagerbase
     [SerializeField] TMP_Text factScrScoreTxt; // txt ref for score text in fact screen
     [SerializeField] TMP_Text factScrScoreNeededTxt; // txt ref for score needed text in fact screen
     [SerializeField] Camera cam;
+    // [SerializeField] GameObject preview;
     bool level1pass = GameManager.instance.levelPassed1;
     public bool gameEnd;
     float passScore;
@@ -98,6 +99,7 @@ public class lvl1Buttons : lvlsManagerbase
             {
                 Debug.Log("WORKING CARD DISPLAY SET TO TRUE");
                 GameManager.instance.levelPassed1 = true;
+                // GameManager.instance.cardUnlocked = true;
                 Debug.Log(GameManager.instance.levelPassed1);
                 StartCoroutine(CollectiblePopUP());    
             }       
@@ -155,6 +157,7 @@ public class lvl1Buttons : lvlsManagerbase
     public override void Start()
     {
         base.Start();
+        GameManager.instance.pauseInputs = false;
         pausemenu.SetActive(false);
         factScreen.SetActive(false);
         vignette.gameObject.SetActive(false);
@@ -162,15 +165,28 @@ public class lvl1Buttons : lvlsManagerbase
         Time.timeScale = 1f;
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
         cooldown = 2f;
+        
         // cardAnimator = GetComponent<Animator>();
     }
 
+    // void ClickCheck()
+    // {
+    //     if (Input.GetMouseButtonDown(0))
+    //     {
+    //         Debug.Log("Preview disabled");
+    //         // preview.SetActive(false);
+    //         GameManager.instance.pauseInputs = false;
+    //     }
+    // }
+
     void Update()
     {
+        // ClickCheck();
         if(gameEnd == true)
         {
             FactScreenLvl1();   
         }
+
         
     }
 }

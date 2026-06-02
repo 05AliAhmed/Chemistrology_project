@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 164d62c0084edf54288ca312824f09c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5301600565073210168
+    second: locked card_1_0
+  - first:
+      213: -5124079334582351053
+    second: locked card_1_1
+  - first:
+      213: -1090517949928264663
+    second: locked card_1_2
+  - first:
+      213: -3687338248509569897
+    second: locked card_1_3
+  - first:
+      213: 6252894455662523445
+    second: locked card_1_4
+  - first:
+      213: 4935581979122208345
+    second: locked card_1_5
+  - first:
+      213: 1459964907343392502
+    second: locked card_1_6
+  - first:
+      213: -2336776318781408456
+    second: locked card_1_7
+  - first:
+      213: 9197155918127489906
+    second: locked card_1_8
+  - first:
+      213: 9221952298728435458
+    second: locked card_1_9
+  - first:
+      213: 8484596126153981969
+    second: locked card_1_10
+  - first:
+      213: -7647886683613652025
+    second: locked card_1_11
+  - first:
+      213: -2738109524160735684
+    second: locked card_1_12
+  - first:
+      213: -5632693663672212895
+    second: locked card_1_13
+  - first:
+      213: 5832120770809318304
+    second: locked card_1_14
+  - first:
+      213: 3531667891553482359
+    second: locked card_1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: locked card_1_0
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1219
+        width: 116
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83be236ff91139940800000000000000
+      internalID: 5301600565073210168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_1
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1218
+        width: 124
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b8c456efc93e8b0800000000000000
+      internalID: -5124079334582351053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_2
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1217
+        width: 115
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ca65dc3b3bdd0f0800000000000000
+      internalID: -1090517949928264663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_3
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 1217
+        width: 108
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79440ea3661f3dcc0800000000000000
+      internalID: -3687338248509569897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_4
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1221
+        width: 119
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53436cfc06eb6c650800000000000000
+      internalID: 6252894455662523445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_5
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1218
+        width: 138
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e066109a5be7440800000000000000
+      internalID: 4935581979122208345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_6
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 1220
+        width: 95
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe2db61956d24410800000000000000
+      internalID: 1459964907343392502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_7
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 1216
+        width: 127
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b3d7f915a129fd0800000000000000
+      internalID: -2336776318781408456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_8
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 961
+        width: 141
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273eed3349cd2af70800000000000000
+      internalID: 9197155918127489906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_9
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 963
+        width: 124
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f2e4571c4faff70800000000000000
+      internalID: 9221952298728435458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_10
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 962
+        width: 116
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110401239375fb570800000000000000
+      internalID: 8484596126153981969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_11
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 965
+        width: 95
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb94ccd49f3dd590800000000000000
+      internalID: -7647886683613652025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_12
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 962
+        width: 123
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c36194815e7400ad0800000000000000
+      internalID: -2738109524160735684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_13
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 965
+        width: 95
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1626938c4f6a4d1b0800000000000000
+      internalID: -5632693663672212895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_14
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 962
+        width: 115
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab444fe0fadfe050800000000000000
+      internalID: 5832120770809318304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locked card_1_15
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 971
+        width: 45
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 776b2bc5c31030130800000000000000
+      internalID: 3531667891553482359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      locked card_1_0: 5301600565073210168
+      locked card_1_1: -5124079334582351053
+      locked card_1_10: 8484596126153981969
+      locked card_1_11: -7647886683613652025
+      locked card_1_12: -2738109524160735684
+      locked card_1_13: -5632693663672212895
+      locked card_1_14: 5832120770809318304
+      locked card_1_15: 3531667891553482359
+      locked card_1_2: -1090517949928264663
+      locked card_1_3: -3687338248509569897
+      locked card_1_4: 6252894455662523445
+      locked card_1_5: 4935581979122208345
+      locked card_1_6: 1459964907343392502
+      locked card_1_7: -2336776318781408456
+      locked card_1_8: 9197155918127489906
+      locked card_1_9: 9221952298728435458
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

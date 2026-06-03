@@ -26,7 +26,8 @@ public class lvl1Buttons : lvlsManagerbase
     bool level1pass = GameManager.instance.levelPassed1;
     public bool gameEnd;
     float passScore;
-    public float cooldown=2f;
+    public float cooldown = 3.2f;
+    //public float cooldownWS = 3.2f;
     // public bool pauseInputs;
     public List<GameObject> groupOfTargets;
 
@@ -130,13 +131,13 @@ public class lvl1Buttons : lvlsManagerbase
               {
                   vignette.SetActive(true);
                   cooldown -= Time.deltaTime;
-                  cam.orthographicSize -= Time.deltaTime;
+                  //cam.orthographicSize -= Time.deltaTime;
                   Time.timeScale = 0.5f;
 
               }
               if (cooldown < 0f)
               {
-                  cam.orthographicSize = 5f;
+                 // cam.orthographicSize = 5f;
                   vignette.SetActive(false);
                   factScreen.SetActive(true);
                   GameManager.instance.pauseInputs = true;
@@ -173,7 +174,7 @@ public class lvl1Buttons : lvlsManagerbase
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
         Time.timeScale = 1f;
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
-        cooldown = 2f;
+        cooldown = 3.2f;
         
         // cardAnimator = GetComponent<Animator>();
     }

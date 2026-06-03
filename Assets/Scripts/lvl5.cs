@@ -20,7 +20,7 @@ public class lvl5 : lvlsManagerbase
     [SerializeField] Camera cam;
     [SerializeField] GameObject vignette;
     [SerializeField] GameObject preview;
-    public float cooldown = 2f;
+    public float cooldown =3.2f;
     public bool gameEnd;
     float passScore;
     public bool pauseInputs;
@@ -100,13 +100,13 @@ public class lvl5 : lvlsManagerbase
         {
             vignette.SetActive(true);
             cooldown -= Time.deltaTime;
-            cam.orthographicSize -= Time.deltaTime;
+           // cam.orthographicSize -= Time.deltaTime;
             Time.timeScale = 0.5f;
 
         }
         if (cooldown < 0f)
         {
-            cam.orthographicSize = 5f;
+           //cam.orthographicSize = 5f;
             vignette.SetActive(false);
             factScreen.SetActive(true);
             GameManager.instance.pauseInputs = true;
@@ -138,7 +138,7 @@ public class lvl5 : lvlsManagerbase
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore5", 0).ToString();
         Time.timeScale = 1f;
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
-        cooldown = 2f;
+        cooldown = 3.2f;
     }
 
     void ClickCheck()

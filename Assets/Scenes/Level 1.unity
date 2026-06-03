@@ -8461,7 +8461,7 @@ MonoBehaviour:
   factScrScoreNeededTxt: {fileID: 1005329336}
   cam: {fileID: 212267586}
   gameEnd: 0
-  cooldown: 2
+  cooldown: 3.2
   groupOfTargets: []
 --- !u!222 &1501387230
 CanvasRenderer:

@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Unity.VisualScripting;
+using UnityEngine.Video;
 
 
 
@@ -29,7 +30,10 @@ public class lvl1Buttons : lvlsManagerbase
     public float cooldown=2f;
     // public bool pauseInputs;
     public List<GameObject> groupOfTargets;
-    
+
+    public List<GameObject> thingsToDisappear;
+    public GameObject WScutscene;
+
     public override void ComboSystem() // awarding combo points
     {
         base.ComboSystem();
@@ -111,45 +115,53 @@ public class lvl1Buttons : lvlsManagerbase
     {
         if (gameEnd == true)
         {
-            if (cooldown > 0f)// this is for the victory effect- Chris
-            {
-                vignette.SetActive(true);
-                cooldown -= Time.deltaTime;
-                cam.orthographicSize -= Time.deltaTime;
-                Time.timeScale = 0.5f;
+            /*if (cooldown > 0f)// this is for the victory effect- Chris
+             {
+                 vignette.SetActive(true);
+                 cooldown -= Time.deltaTime;
+                 cam.orthographicSize -= Time.deltaTime;
+                 Time.timeScale = 0.5f;
 
-            }
-            if (cooldown < 0f)
-            {
-                cam.orthographicSize = 5f;
-                vignette.SetActive(false);
-                factScreen.SetActive(true);
-                // if(score > pnt1){
-                //     // collectible.SetActive(true);
-                //     // cardAnimator.SetBool("winscr", true);   
-                //     // StartCoroutine(CollectiblePopUP()); 
-                // }
+             }
+             if (cooldown < 0f)
+             {
+                 cam.orthographicSize = 5f;
+                 vignette.SetActive(false);
+                 factScreen.SetActive(true);
+                 // if(score > pnt1){
+                 //     // collectible.SetActive(true);
+                 //     // cardAnimator.SetBool("winscr", true);   
+                 //     // StartCoroutine(CollectiblePopUP()); 
+                 // }
 
-                GameManager.instance.pauseInputs = true;
-                // Time.timeScale = 0f;
-            }
+                 GameManager.instance.pauseInputs = true;
+                 // Time.timeScale = 0f;
+             }
+            //WScutscene.SetActive(true);
+             GameManager.instance.pauseInputs = true;
+             if (score < scoreToPass)
+             {
+                 // levelMenuScript.lvl2.SetActive(false);
+                 GameManager.instance.level2Unlocked = false;
+                 nxtLvlBtn.SetActive(false);
+                 scoreNeededLine.SetActive(true);
+             }
+             else
+             {
+                 // levelMenuScript.lvl2.SetActive(true);
+                 GameManager.instance.level2Unlocked = true;
+                 nxtLvlBtn.SetActive(true);
+                 scoreNeededLine.SetActive(false);
+             }
+             DisplayStars();
+             DisplayCard();*/
 
-            if (score < scoreToPass)
-            {
-                // levelMenuScript.lvl2.SetActive(false);
-                GameManager.instance.level2Unlocked = false;
-                nxtLvlBtn.SetActive(false);
-                scoreNeededLine.SetActive(true);
-            }
-            else
-            {
-                // levelMenuScript.lvl2.SetActive(true);
-                GameManager.instance.level2Unlocked = true;
-                nxtLvlBtn.SetActive(true);
-                scoreNeededLine.SetActive(false);
-            }
-            DisplayStars();
-            DisplayCard();
+
+
+
+
+
+            StartCoroutine(GameOverSequence());
         }
     }
 
@@ -161,6 +173,7 @@ public class lvl1Buttons : lvlsManagerbase
         pausemenu.SetActive(false);
         factScreen.SetActive(false);
         vignette.gameObject.SetActive(false);
+        //WScutscene.SetActive(false);
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
         Time.timeScale = 1f;
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
@@ -188,5 +201,41 @@ public class lvl1Buttons : lvlsManagerbase
         }
 
         
+    }
+
+    IEnumerator GameOverSequence()
+    {
+        
+        WScutscene.SetActive(true);
+        yield return new WaitForSecondsRealtime(0.2f);
+      for (int i=0; i < thingsToDisappear.Count; i++)
+        {
+           thingsToDisappear[i].gameObject.SetActive(false);
+        }
+        yield return new WaitForSecondsRealtime(1.8f);
+       // factScreen.SetActive(true);
+        // if(score > pnt1){
+        //     // collectible.SetActive(true);
+        //     // cardAnimator.SetBool("winscr", true);   
+        //     // StartCoroutine(CollectiblePopUP()); 
+        // }
+
+        GameManager.instance.pauseInputs = true;
+        if (score < scoreToPass)
+        {
+            // levelMenuScript.lvl2.SetActive(false);
+            GameManager.instance.level2Unlocked = false;
+            nxtLvlBtn.SetActive(false);
+            scoreNeededLine.SetActive(true);
+        }
+        else
+        {
+            // levelMenuScript.lvl2.SetActive(true);
+            GameManager.instance.level2Unlocked = true;
+            nxtLvlBtn.SetActive(true);
+            scoreNeededLine.SetActive(false);
+        }
+        DisplayStars();
+        DisplayCard();
     }
 }

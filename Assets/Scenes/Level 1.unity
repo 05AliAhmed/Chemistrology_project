@@ -9914,6 +9914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GS_A_transitiontoWS
       objectReference: {fileID: 0}
+    - target: {fileID: 8033825276620631666, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
+      propertyPath: _fadeInDuration
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

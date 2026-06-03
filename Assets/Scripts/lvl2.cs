@@ -29,7 +29,7 @@ public class lvl2 : lvlsManagerbase
     int passScore;
     public bool pauseInputs;
     public List<GameObject> groupOfTargets;
-
+    bool transitionScreenTriggered;
     public override void ComboSystem() // awarding combo points
     {
         base.ComboSystem();
@@ -87,6 +87,17 @@ public class lvl2 : lvlsManagerbase
     }
     public void FactScreenLvl1()
     {
+        if (!transitionScreenTriggered)
+        {
+            transitionScreenTriggered = true;
+            TransitionLoadScreen.instance.PlayTransition();
+        }
+
+        //TransitionLoadScreen.instance.PlayTransition();
+        // factScreen.SetActive(true);
+
+        // GameManager.instance.pauseInputs = true;
+
         if (cooldown > 0f)// this is for the victory effect- Chris
         {
             vignette.SetActive(true);
@@ -100,14 +111,8 @@ public class lvl2 : lvlsManagerbase
             cam.orthographicSize = 5f;
             vignette.SetActive(false);
             factScreen.SetActive(true);
-            // if(score > pnt1){
-            //     // collectible.SetActive(true);
-            //     // cardAnimator.SetBool("winscr", true);   
-            //     // StartCoroutine(CollectiblePopUP()); 
-            // }
-
             GameManager.instance.pauseInputs = true;
-            // Time.timeScale = 0f;
+
         }
         if (score < scoreToPass)
         {

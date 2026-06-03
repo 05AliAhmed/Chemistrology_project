@@ -29,7 +29,11 @@ public class lvl1Buttons : lvlsManagerbase
     public float cooldown=2f;
     // public bool pauseInputs;
     public List<GameObject> groupOfTargets;
-    
+
+
+    bool transitionScreenTriggered;
+
+
     public override void ComboSystem() // awarding combo points
     {
         base.ComboSystem();
@@ -111,29 +115,34 @@ public class lvl1Buttons : lvlsManagerbase
     {
         if (gameEnd == true)
         {
+            if (!transitionScreenTriggered)
+                    {
+                   transitionScreenTriggered = true;
+                TransitionLoadScreen.instance.PlayTransition();
+            }
+
+            //TransitionLoadScreen.instance.PlayTransition();
+           // factScreen.SetActive(true);
+
+           // GameManager.instance.pauseInputs = true;
+
             if (cooldown > 0f)// this is for the victory effect- Chris
-            {
-                vignette.SetActive(true);
-                cooldown -= Time.deltaTime;
-                cam.orthographicSize -= Time.deltaTime;
-                Time.timeScale = 0.5f;
+              {
+                  vignette.SetActive(true);
+                  cooldown -= Time.deltaTime;
+                  cam.orthographicSize -= Time.deltaTime;
+                  Time.timeScale = 0.5f;
 
-            }
-            if (cooldown < 0f)
-            {
-                cam.orthographicSize = 5f;
-                vignette.SetActive(false);
-                factScreen.SetActive(true);
-                // if(score > pnt1){
-                //     // collectible.SetActive(true);
-                //     // cardAnimator.SetBool("winscr", true);   
-                //     // StartCoroutine(CollectiblePopUP()); 
-                // }
-
-                GameManager.instance.pauseInputs = true;
-                // Time.timeScale = 0f;
-            }
-
+              }
+              if (cooldown < 0f)
+              {
+                  cam.orthographicSize = 5f;
+                  vignette.SetActive(false);
+                  factScreen.SetActive(true);
+                  GameManager.instance.pauseInputs = true;
+                 
+              }
+            
             if (score < scoreToPass)
             {
                 // levelMenuScript.lvl2.SetActive(false);

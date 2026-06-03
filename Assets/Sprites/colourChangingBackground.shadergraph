@@ -673,7 +673,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Scale",
     "m_StageCapability": 3,
-    "m_Value": 9.399999618530274,
+    "m_Value": 4.010000228881836,
     "m_DefaultValue": 500.0,
     "m_Labels": [],
     "m_LiteralMode": false
@@ -1721,7 +1721,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Scale",
     "m_StageCapability": 3,
-    "m_Value": 7.519999980926514,
+    "m_Value": 4.320000171661377,
     "m_DefaultValue": 500.0,
     "m_Labels": [],
     "m_LiteralMode": false
@@ -2258,7 +2258,7 @@
     "m_ShaderOutputName": "B",
     "m_StageCapability": 3,
     "m_Value": {
-        "e00": 0.05000000074505806,
+        "e00": 0.019999999552965165,
         "e01": 2.0,
         "e02": 2.0,
         "e03": 2.0,
@@ -2676,10 +2676,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -670.3999633789063,
-            "y": 2932.800048828125,
+            "x": -875.199951171875,
+            "y": 2647.999755859375,
             "width": 207.99993896484376,
-            "height": 334.399658203125
+            "height": 334.39990234375
         }
     },
     "m_Slots": [
@@ -2746,7 +2746,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Opacity",
     "m_StageCapability": 3,
-    "m_Value": 0.019999999552965165,
+    "m_Value": 0.05999999865889549,
     "m_DefaultValue": 1.0,
     "m_Labels": [],
     "m_LiteralMode": false
@@ -3907,8 +3907,8 @@
     "m_ShaderOutputName": "Tiling",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 2.0,
-        "y": 2.0
+        "x": 3.0,
+        "y": 3.0
     },
     "m_DefaultValue": {
         "x": 1.0,

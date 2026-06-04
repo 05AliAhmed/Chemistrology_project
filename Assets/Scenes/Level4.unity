@@ -5603,7 +5603,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Don't touch the bombs, it will explode!
+  m_text: _Electrons may disappear or  appear. Be aware!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5301e1d911daffa4f80182e702f84034, type: 2}
   m_sharedMaterial: {fileID: -2271954774608238029, guid: 5301e1d911daffa4f80182e702f84034, type: 2}
@@ -7151,6 +7151,10 @@ PrefabInstance:
     - target: {fileID: 4541762476215897873, guid: c34ae4a606e205d44b34f92f81ca2028, type: 3}
       propertyPath: m_Name
       value: Target
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939622730281744742, guid: c34ae4a606e205d44b34f92f81ca2028, type: 3}
+      propertyPath: speed
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 6443366828940691059, guid: c34ae4a606e205d44b34f92f81ca2028, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9745,18 +9749,6 @@ PrefabInstance:
       value: TargetHider (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6443366828940691059, guid: c6c4513744c5464409b9ac867346b210, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.0147059
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443366828940691059, guid: c6c4513744c5464409b9ac867346b210, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0147059
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443366828940691059, guid: c6c4513744c5464409b9ac867346b210, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.0147059
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443366828940691059, guid: c6c4513744c5464409b9ac867346b210, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.8
       objectReference: {fileID: 0}
@@ -9795,10 +9787,6 @@ PrefabInstance:
     - target: {fileID: 6443366828940691059, guid: c6c4513744c5464409b9ac867346b210, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443366828940691059, guid: c6c4513744c5464409b9ac867346b210, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

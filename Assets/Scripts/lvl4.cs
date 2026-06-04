@@ -21,12 +21,15 @@ public class lvl4 : lvlsManagerbase
     [SerializeField] Camera cam;
     [SerializeField] GameObject vignette;
     [SerializeField] GameObject preview;
-    public float cooldown = 2f;
+
+    public float cooldown = 3.2f;
     // Scene currentScene;
     public bool gameEnd;
     float passScore;
     public bool pauseInputs;
     public List<GameObject> groupOfTargets;
+
+    public bool transitionScreenTriggered;
     public override void ComboSystem() // awarding combo points
     {
         base.ComboSystem();
@@ -86,27 +89,32 @@ public class lvl4 : lvlsManagerbase
 
     public void FactScreenLvl1()
     {
+        if (!transitionScreenTriggered)
+        {
+            transitionScreenTriggered = true;
+            TransitionLoadScreen.instance.PlayTransition();
+        }
+
+        //TransitionLoadScreen.instance.PlayTransition();
+        // factScreen.SetActive(true);
+
+        // GameManager.instance.pauseInputs = true;
+
         if (cooldown > 0f)// this is for the victory effect- Chris
         {
             vignette.SetActive(true);
             cooldown -= Time.deltaTime;
-            cam.orthographicSize -= Time.deltaTime;
+            //cam.orthographicSize -= Time.deltaTime;
             Time.timeScale = 0.5f;
 
         }
         if (cooldown < 0f)
         {
-            cam.orthographicSize = 5f;
+            //cam.orthographicSize = 5f;
             vignette.SetActive(false);
             factScreen.SetActive(true);
-            // if(score > pnt1){
-            //     // collectible.SetActive(true);
-            //     // cardAnimator.SetBool("winscr", true);   
-            //     // StartCoroutine(CollectiblePopUP()); 
-            // }
-
             GameManager.instance.pauseInputs = true;
-            // Time.timeScale = 0f;
+
         }
         if (score < scoreToPass)
         {
@@ -134,7 +142,7 @@ public class lvl4 : lvlsManagerbase
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore4", 0).ToString();
         Time.timeScale = 1f;
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
-        cooldown = 2f;
+        cooldown = 3.2f;
     }
 
     void ClickCheck()

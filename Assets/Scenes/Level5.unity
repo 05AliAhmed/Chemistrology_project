@@ -535,6 +535,7 @@ MonoBehaviour:
   gameEnd: 0
   pauseInputs: 0
   groupOfTargets: []
+  transitionScreenTriggered: 0
 --- !u!1 &68458597
 GameObject:
   m_ObjectHideFlags: 0
@@ -3909,7 +3910,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -385.82}
+  m_AnchoredPosition: {x: 450, y: -527}
   m_SizeDelta: {x: 1080.83, y: 270.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &821295494
@@ -3932,7 +3933,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: _Electrons may disappear, but watch out for the bombs!
+  m_text: Electrons may disappear, but watch out for the bombs!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5301e1d911daffa4f80182e702f84034, type: 2}
   m_sharedMaterial: {fileID: -2271954774608238029, guid: 5301e1d911daffa4f80182e702f84034, type: 2}
@@ -3966,7 +3967,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3998,7 +3999,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 8.824631}
+  m_margin: {x: -900.2436, y: 0, z: 0, w: 8.824631}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5317,6 +5318,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070579335}
   m_CullTransparentMesh: 1
+--- !u!1001 &1079742569
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7813006907940508850, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813006907940508850, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813006907940508850, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813006907940508850, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813006907940508850, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813006907940508850, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813006907940508850, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813006907940508850, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813006907940508850, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813006907940508850, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954164060945952672, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
+      propertyPath: m_Name
+      value: GS_A_transitiontoWS
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
 --- !u!1 &1105299423
 GameObject:
   m_ObjectHideFlags: 0
@@ -11612,3 +11670,4 @@ SceneRoots:
   - {fileID: 1691537686}
   - {fileID: 2039791931}
   - {fileID: 851724860}
+  - {fileID: 1079742569}

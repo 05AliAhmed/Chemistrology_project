@@ -37,12 +37,16 @@ public class AsteroidShowAndHide : MonoBehaviour
 
             yield return new WaitForSeconds(hiddenDuration);
 
+            /*
             if (targetScript.filled != true)
             {
                 // spriteRenderer.enabled = true;
                 //col.enabled = true;
                 StartCoroutine(FadeIN());
             }
+            */
+
+            StartCoroutine(FadeIN());
 
             //yield return new WaitForSeconds(hiddenDuration);
 
@@ -112,7 +116,12 @@ public class AsteroidShowAndHide : MonoBehaviour
             startColor.b,
             1f
         );
-        col.enabled = true;
+
+        if (targetScript.filled != true)
+        {
+            col.enabled = true;
+        }
+        
 
 
 
@@ -132,6 +141,17 @@ public class AsteroidShowAndHide : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        /*
+        //make me visible again if you hit me while I fade out
+        if ()
+        {
+
+            if (targetScript.filled != false)
+            {
+
+            }
+
+        }
+        */
     }
 }

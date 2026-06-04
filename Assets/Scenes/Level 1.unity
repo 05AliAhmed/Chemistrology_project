@@ -8449,6 +8449,7 @@ MonoBehaviour:
   comboCount: 0
   cardDisplayTimer: 2
   cardDisplayedonce: 0
+  speedBonusScript: {fileID: -8826195205059295400, guid: 260c09334a182ed49a35fca8e3400c8b, type: 3}
   pausemenu: {fileID: 861468017}
   factScreen: {fileID: 664902729}
   scoreNeededLine: {fileID: 788357570}

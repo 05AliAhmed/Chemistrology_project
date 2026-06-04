@@ -13,10 +13,12 @@ public class TraladeeBehaviour : MonoBehaviour
     lvl1Buttons levelManager;
 
     [SerializeField] private GameObject ClickEffectPrefab;
+
+    public AudioSource collisionSound;
     //IT BELONGS TO THE SHOOTING CODE
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    
+
 
     void Start()
     {

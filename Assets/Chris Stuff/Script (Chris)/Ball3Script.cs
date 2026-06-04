@@ -67,11 +67,14 @@ public class Ball3Script : MonoBehaviour
     public PointScript point;
     public ObstacleScript obstacle;
     public bool targethit;
+    public TraladeeBehaviour playerScript;
 
     // int currentlvlindex;
     lvlsManagerbase levelManager; // ref to lvl script
     // lvl1Buttons lvl1Buttons;
     // lvl2 lvl2;
+
+    
 
     void Start()
     {
@@ -84,6 +87,7 @@ public class Ball3Script : MonoBehaviour
         nonozone = GameObject.FindGameObjectWithTag("Nonozone").GetComponent<NonozoneScript>();
         levelManager = GameObject.Find("LevelManager").GetComponent<lvlsManagerbase>();
 
+        //collisionSound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -105,6 +109,7 @@ public class Ball3Script : MonoBehaviour
 
                 collisioninfo.GetComponent<TargetScript>().changeTarget();
 
+                playerScript.collisionSound.Play();
 
                 levelManager.ScoreSystem();
                 levelManager.ComboSystem();

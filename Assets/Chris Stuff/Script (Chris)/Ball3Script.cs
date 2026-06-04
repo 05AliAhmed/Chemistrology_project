@@ -109,7 +109,8 @@ public class Ball3Script : MonoBehaviour
 
                 collisioninfo.GetComponent<TargetScript>().changeTarget();
 
-                playerScript.collisionSound.Play();
+                playerScript.IScored = true;
+                //playerScript.collisionSound.Play();
 
                 levelManager.ScoreSystem();
                 levelManager.ComboSystem();
@@ -170,6 +171,8 @@ public class Ball3Script : MonoBehaviour
             {
 
                 collisioninfo.gameObject.GetComponent<ObstacleScript>().penaltyhit = true; // chnaging sprite
+
+                playerScript.IMissed = true;
 
                 Debug.Log("obstacle hit");
                 Destroy(gameObject);

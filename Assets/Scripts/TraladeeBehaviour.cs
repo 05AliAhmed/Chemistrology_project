@@ -7,6 +7,9 @@ public class TraladeeBehaviour : MonoBehaviour
     public float cooldownDuration = 2; //this is how long it takes for the the player to be able to shoot again (it's in seconds, obviously).
     public float shootingTimer = 0; //this counts up to allow the player to shoot.
 
+    public bool IScored;
+    public bool IMissed;
+
     private AudioSource audioSource;
     public BulletPooling poolingScript;
 
@@ -14,11 +17,24 @@ public class TraladeeBehaviour : MonoBehaviour
 
     [SerializeField] private GameObject ClickEffectPrefab;
 
-    public AudioSource collisionSound;
+    //public AudioSource collisionSound;
+
+    public AudioClip vineBoom;
+    public AudioClip scoreSound;
+
     //IT BELONGS TO THE SHOOTING CODE
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
+    public void playVineBoom()
+    {
+        audioSource.PlayOneShot(vineBoom);
+    }
+
+    public void playScoreSound()
+    {
+        audioSource.PlayOneShot(scoreSound);
+    }
 
     void Start()
     {
@@ -34,6 +50,17 @@ public class TraladeeBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (IScored != false)
+        {
+            playScoreSound();
+            IScored = false;
+        }
+
+        if (IMissed != false)
+        {
+            playVineBoom();
+            IMissed = false;
+        }
 
         if (shootingTimer < cooldownDuration)
         {
@@ -88,4 +115,5 @@ public class TraladeeBehaviour : MonoBehaviour
         //transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
     }
 
+    
 }

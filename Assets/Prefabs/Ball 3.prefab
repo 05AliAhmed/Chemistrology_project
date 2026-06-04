@@ -197,6 +197,7 @@ MonoBehaviour:
   obstacle: {fileID: 0}
   targethit: 0
   playerScript: {fileID: 8094489567401803156, guid: 260c09334a182ed49a35fca8e3400c8b, type: 3}
+  soundsManagementScript: {fileID: 5493980292734071957, guid: ed87369de7647d540a7d46b6cc568733, type: 3}
 --- !u!61 &3951978801016687768
 BoxCollider2D:
   m_ObjectHideFlags: 0

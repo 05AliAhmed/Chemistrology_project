@@ -74,6 +74,8 @@ public class Ball3Script : MonoBehaviour
     // lvl1Buttons lvl1Buttons;
     // lvl2 lvl2;
 
+    public SoundsManagement soundsManagementScript;
+
     
 
     void Start()
@@ -109,7 +111,8 @@ public class Ball3Script : MonoBehaviour
 
                 collisioninfo.GetComponent<TargetScript>().changeTarget();
 
-                playerScript.collisionSound.Play();
+                //playerScript.collisionSound.Play();
+                soundsManagementScript.theScoreSound();
 
                 levelManager.ScoreSystem();
                 levelManager.ComboSystem();
@@ -121,6 +124,7 @@ public class Ball3Script : MonoBehaviour
         else if (collisioninfo.tag == "Nonozone")
         {
             levelManager.LoseScore();
+            //soundsManagementScript.vineBoomSound();
             Destroy(gameObject);
         }
 
@@ -170,6 +174,8 @@ public class Ball3Script : MonoBehaviour
             {
 
                 collisioninfo.gameObject.GetComponent<ObstacleScript>().penaltyhit = true; // chnaging sprite
+
+                soundsManagementScript.vineBoomSound();
 
                 Debug.Log("obstacle hit");
                 Destroy(gameObject);

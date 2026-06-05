@@ -25,7 +25,7 @@ TagManager:
   - UI
   - Tra Pause
   - INvisibletoCamera
-  - 
+  - previewimg
   - 
   - 
   - 
@@ -70,6 +70,9 @@ TagManager:
     locked: 0
   - name: preview
     uniqueID: 1990300729
+    locked: 0
+  - name: previewimg
+    uniqueID: 2346026727
     locked: 0
   m_RenderingLayers:
   - Default

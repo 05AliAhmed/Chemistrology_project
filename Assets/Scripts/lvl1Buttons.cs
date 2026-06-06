@@ -102,14 +102,14 @@ public class lvl1Buttons : lvlsManagerbase
         {
             if(score > pnt1)
             {
-                Debug.Log("WORKING CARD DISPLAY SET TO TRUE");
-                GameManager.instance.levelPassed1 = true;
+                // Debug.Log("WORKING CARD DISPLAY SET TO TRUE");
+                GameManager.instance.levelPassed1 = true; // setting card1 display to true if score > score 1 
                 // GameManager.instance.cardUnlocked = true;
-                Debug.Log(GameManager.instance.levelPassed1);
+                // Debug.Log(GameManager.instance.levelPassed1);
                 StartCoroutine(CollectiblePopUP());    
             }       
         }
-        Debug.Log(GameManager.instance.levelPassed1);
+        // Debug.Log(GameManager.instance.levelPassed1);
     }
 
     public void FactScreenLvl1()

@@ -62,7 +62,7 @@ public class lvl2 : lvlsManagerbase
         {
             if(score > pnt1)
             {
-                Debug.Log("WORKING CARD DISPLAY level 2 SET TO TRUE");
+                // Debug.Log("WORKING CARD DISPLAY level 2 SET TO TRUE");
                 GameManager.instance.levelPassed2 = true;
                 StartCoroutine(CollectiblePopUP());    
             }       
@@ -147,7 +147,7 @@ public class lvl2 : lvlsManagerbase
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Preview disabled");
+            // Debug.Log("Preview disabled");
             preview.SetActive(false);
             GameManager.instance.pauseInputs = false;
         }

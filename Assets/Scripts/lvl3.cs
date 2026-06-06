@@ -144,7 +144,7 @@ public class lvl3 : lvlsManagerbase
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Preview disabled");
+            // Debug.Log("Preview disabled");
             preview.SetActive(false);
             GameManager.instance.pauseInputs = false;
         }

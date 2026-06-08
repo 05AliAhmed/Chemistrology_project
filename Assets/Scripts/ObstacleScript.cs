@@ -15,7 +15,7 @@ public class ObstacleScript : MonoBehaviour
     public float destroycooldown = 3f;
     public int speed = 150;
    public bool penaltyhit;
-
+    public AudioSource explosion;
   
     /* private Animator myAnim;
      private SpriteRenderer rend2;/
@@ -44,8 +44,8 @@ public class ObstacleScript : MonoBehaviour
         points = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();*/
         PenaltyCollider.enabled = false;
         penaltyhit = false;
-     
 
+        explosion.Stop();
 
     }
     private void FixedUpdate()
@@ -57,6 +57,7 @@ public class ObstacleScript : MonoBehaviour
     // Update is called once per frame
     public void obstaclePenalty()
     {
+        explosion.Play();
         speed = 0;
         myCollider.enabled = false;
         PenaltyCollider.enabled = true;

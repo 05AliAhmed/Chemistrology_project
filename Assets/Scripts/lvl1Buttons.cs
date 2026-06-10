@@ -22,6 +22,7 @@ public class lvl1Buttons : lvlsManagerbase
     [SerializeField] TMP_Text factScrScoreTxt; // txt ref for score text in fact screen
     [SerializeField] TMP_Text factScrScoreNeededTxt; // txt ref for score needed text in fact screen
     [SerializeField] Camera cam;
+    [SerializeField] GameObject preview;
     // [SerializeField] GameObject preview;
     bool level1pass = GameManager.instance.levelPassed1;
     public bool gameEnd;
@@ -167,7 +168,7 @@ public class lvl1Buttons : lvlsManagerbase
     public override void Start()
     {
         base.Start();
-        GameManager.instance.pauseInputs = false;
+        GameManager.instance.pauseInputs = true;
         pausemenu.SetActive(false);
         factScreen.SetActive(false);
         vignette.gameObject.SetActive(false);
@@ -179,19 +180,19 @@ public class lvl1Buttons : lvlsManagerbase
         // cardAnimator = GetComponent<Animator>();
     }
 
-    // void ClickCheck()
-    // {
-    //     if (Input.GetMouseButtonDown(0))
-    //     {
-    //         Debug.Log("Preview disabled");
-    //         // preview.SetActive(false);
-    //         GameManager.instance.pauseInputs = false;
-    //     }
-    // }
+    void ClickCheck()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            // Debug.Log("Preview disabled");
+            preview.SetActive(false);
+            GameManager.instance.pauseInputs = false;
+        }
+    }
 
     void Update()
     {
-        // ClickCheck();
+        ClickCheck();
         if(gameEnd == true)
         {
             FactScreenLvl1();   

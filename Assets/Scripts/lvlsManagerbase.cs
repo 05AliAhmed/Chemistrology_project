@@ -10,6 +10,7 @@ public class lvlsManagerbase : MonoBehaviour
     // [Header("Score Settings")]
     [SerializeField] protected int amendScore;
     [SerializeField] protected int loseScore;
+    [SerializeField] protected int obsloseScore;
     [SerializeField] protected int comboScore;
     public TMP_Text starScore1;
     public TMP_Text starScore2;
@@ -63,7 +64,19 @@ public class lvlsManagerbase : MonoBehaviour
         }
         // Debug.Log(score);
     }
-
+    public virtual void ObstacleLoseScore()
+    {
+        score -= obsloseScore;
+        targetCount = 0;
+        comboCount = 0;
+        comboCountText.text = " ";
+        // comboCountText.enabled = false; //+ comboCount.ToString();        
+        if (score < 0)
+        {
+            score = 0;
+        }
+        // Debug.Log(score);
+    }
     public virtual void DisplayStars()
     {
         if(score >= pnt1 && score < pnt2)

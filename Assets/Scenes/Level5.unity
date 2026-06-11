@@ -501,6 +501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::lvl5
   amendScore: 100
   loseScore: 50
+  obsloseScore: 100
   comboScore: 20
   starScore1: {fileID: 744588330}
   starScore2: {fileID: 1859245373}

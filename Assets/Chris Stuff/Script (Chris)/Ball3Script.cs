@@ -164,6 +164,7 @@ public class Ball3Script : MonoBehaviour
         }
         if (collisioninfo.collider.tag == "Obstacle")
         {
+            //levelManager.LoseScore();
             levelManager.ObstacleLoseScore();
             //Debug.Log("hit target");
             if (groupOfObstacles.Contains(collisioninfo.gameObject))

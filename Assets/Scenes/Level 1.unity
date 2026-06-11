@@ -8753,6 +8753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::lvl1Buttons
   amendScore: 100
   loseScore: 50
+  obsloseScore: 100
   comboScore: 20
   starScore1: {fileID: 446341416}
   starScore2: {fileID: 480474447}

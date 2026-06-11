@@ -2879,6 +2879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::lvl4
   amendScore: 100
   loseScore: 50
+  obsloseScore: 50
   comboScore: 20
   starScore1: {fileID: 235822366}
   starScore2: {fileID: 1202904493}

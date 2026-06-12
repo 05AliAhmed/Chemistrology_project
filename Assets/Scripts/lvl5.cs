@@ -77,6 +77,39 @@ public class lvl5 : lvlsManagerbase
         Time.timeScale = 1f;
         pauseInputs = false;
     }
+    public void DisplayStars()
+    {
+        if (score >= pnt1 && score < pnt2)
+        {
+            star1.gameObject.SetActive(true);
+            GameManager.instance.lvl5onestarunlock = true;
+            // collectible.SetActive(true);
+            // StartCoroutine(CollectiblePopUP());
+            // collectible.SetActive(true);
+        }
+        else if (score >= pnt2 && score < pnt3)
+        {
+            star1.gameObject.SetActive(true);
+            star2.gameObject.SetActive(true);
+            GameManager.instance.lvl5twostarunlock = true;
+            // hearts[i].enabled = true;
+        }
+        else if (score >= pnt3)
+        {
+            star1.gameObject.SetActive(true);
+            star2.gameObject.SetActive(true);
+            star3.gameObject.SetActive(true);
+            GameManager.instance.lvl5threestarunlock = true;
+            // hearts[i].enabled = tue;
+        }
+        else
+        {
+            star1.enabled = false;
+            star2.enabled = false;
+            star3.enabled = false;
+        }
+
+    }
 
     public void DisplayCard(){
         if(cooldown < 0f && !cardDisplayedonce)

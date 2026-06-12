@@ -30,6 +30,7 @@ public class lvlsManagerbase : MonoBehaviour
     public float cardDisplayTimer;
     public bool cardDisplayedonce;
 
+  
     //public SpeedBonusCalculator speedBonusScript;
 
     public virtual void ScoreSystem(){
@@ -77,7 +78,7 @@ public class lvlsManagerbase : MonoBehaviour
         }
         // Debug.Log(score);
     }
-    public virtual void DisplayStars()
+   /* public virtual void DisplayStars()
     {
         if(score >= pnt1 && score < pnt2)
         {
@@ -106,7 +107,7 @@ public class lvlsManagerbase : MonoBehaviour
             star3.enabled = false;
         }
         
-    }
+    }*/
 
     public IEnumerator CollectiblePopUP()
     {

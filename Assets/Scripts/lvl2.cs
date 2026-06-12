@@ -85,6 +85,44 @@ public class lvl2 : lvlsManagerbase
         Time.timeScale = 1f;
         pauseInputs = false;
     }
+    public void DisplayStars()
+    {
+        if (score >= pnt1 && score < pnt2)
+        {
+            star1.gameObject.SetActive(true);
+            GameManager.instance.lvl2onestarunlock = true;
+          
+            // collectible.SetActive(true);
+            // StartCoroutine(CollectiblePopUP());
+            // collectible.SetActive(true);
+        }
+        else if (score >= pnt2 && score < pnt3)
+        {
+            star1.gameObject.SetActive(true);
+            star2.gameObject.SetActive(true);
+       
+            GameManager.instance.lvl2twostarunlock = true;
+            
+            // hearts[i].enabled = true;
+        }
+        else if (score >= pnt3)
+        {
+            star1.gameObject.SetActive(true);
+            star2.gameObject.SetActive(true);
+            star3.gameObject.SetActive(true);
+       
+            GameManager.instance.lvl2threestarunlock = true;
+            // hearts[i].enabled = true;
+        }
+        else
+        {
+            star1.enabled = false;
+            star2.enabled = false;
+            star3.enabled = false;
+        }
+
+    }
+
     public void FactScreenLvl1()
     {
         if (!transitionScreenTriggered)

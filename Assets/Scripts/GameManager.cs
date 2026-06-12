@@ -18,10 +18,32 @@ public class GameManager : MonoBehaviour
     public bool level6Unlocked = false; //set true in level 5 script if conditions meet
     public bool levelPassed6 = false; // bool to display cards in card menu if requirements are met
     public bool pauseInputs = false;
- 
-    // public bool cardUnlocked = false;
-    
 
+    // public bool cardUnlocked = false;
+
+    public bool lvl1onestarunlock = false;
+    public bool lvl1twostarunlock = false;
+    public bool lvl1threestarunlock = false;
+
+    public bool lvl2onestarunlock = false;
+    public bool lvl2twostarunlock = false;
+    public bool lvl2threestarunlock = false;
+
+    public bool lvl3onestarunlock = false;
+    public bool lvl3twostarunlock = false;
+    public bool lvl3threestarunlock = false;
+
+    public bool lvl4onestarunlock = false;
+    public  bool lvl4twostarunlock = false;
+    public bool lvl4threestarunlock = false;
+
+    public bool lvl5onestarunlock = false;
+    public bool lvl5twostarunlock = false;
+    public bool lvl5threestarunlock = false;
+
+    public bool lvl6onestarunlock = false;
+    public bool lvl6twostarunlock = false;
+    public bool lvl6threestarunlock = false;
     void Awake()
     {
         if (instance == null)

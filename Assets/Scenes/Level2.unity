@@ -1248,16 +1248,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LMenu
   lvl1: {fileID: 0}
+  lvl12: {fileID: 0}
+  lvl13: {fileID: 0}
   HS1: {fileID: 0}
   lvl2: {fileID: 0}
+  lvl22: {fileID: 0}
+  lvl23: {fileID: 0}
+  Text2: {fileID: 0}
   HS2: {fileID: 0}
   lvl3: {fileID: 0}
+  lvl32: {fileID: 0}
+  lvl33: {fileID: 0}
+  Text3: {fileID: 0}
   HS3: {fileID: 0}
   lvl4: {fileID: 0}
+  lvl42: {fileID: 0}
+  lvl43: {fileID: 0}
+  Text4: {fileID: 0}
   HS4: {fileID: 0}
   lvl5: {fileID: 0}
+  lvl52: {fileID: 0}
+  lvl53: {fileID: 0}
+  Text5: {fileID: 0}
   HS5: {fileID: 0}
   lvl6: {fileID: 0}
+  lvl62: {fileID: 0}
+  lvl63: {fileID: 0}
+  Text6: {fileID: 0}
   HS6: {fileID: 0}
 --- !u!4 &280312524
 Transform:
@@ -1613,7 +1630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 78d249e6bfa91774b871471a1f49b73a, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1621,7 +1638,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7443756053782179069, guid: 3814458982e6949428bffb65a6d7d2c2, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1698,6 +1715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::lvl2
   amendScore: 100
   loseScore: 50
+  obsloseScore: 0
   comboScore: 20
   starScore1: {fileID: 1857168153}
   starScore2: {fileID: 135498417}
@@ -11159,6 +11177,10 @@ PrefabInstance:
     - target: {fileID: 7954164060945952672, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
       propertyPath: m_Name
       value: GS_A_transitiontoWS
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033825276620631666, guid: d4b2662c28f6ac040adfe3ad1f3ef800, type: 3}
+      propertyPath: _fadeInDuration
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

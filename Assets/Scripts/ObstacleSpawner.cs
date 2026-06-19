@@ -17,19 +17,7 @@ public class ObstacleSpawner : MonoBehaviour
         angleRad= Mathf.Atan2(transform.position.y,transform.position.x);
        angleDeg = angleRad * Mathf.Rad2Deg;
        degree =   angleDeg+90;
-       // Debug.Log(angleDeg);
-      //  Debug.Log(degree);
-       // Vector3 direction=(transform.position- new Vector3(0,0,0)).normalized;
-       // Debug.Log(direction);
-    }
-    void Awake()
-    {
-        //angleCalculator();
-        
-    }
-    void Start()
-    {
-           // Instantiate(obstacle, new Vector3(transform.position.x,transform.position.y, 0), Quaternion.Euler(0, 0,degree));
+   
     }
    public void spawn()
     {

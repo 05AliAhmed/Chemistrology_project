@@ -35,7 +35,6 @@ As players progress, new mechanics are introduced, including faster electrons, d
 * Combo and scoring system
 * Level progression
 * Increasing difficulty
-* Asteroid obstacles
 * Faster and disappearing electrons
 * Rocket obstacles
 * Chemistry facts

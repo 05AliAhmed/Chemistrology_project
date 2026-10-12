@@ -6,7 +6,12 @@ public class ShootableElectronScript : MonoBehaviour
     public float halfScreenHeight = 6;
     public float halfScreenWidth = 10;
     private bool isAlive;
-    private BulletPooling bulletPool;
+    private BulletPooling bulletPoolingScript;
+
+    public void recycleBullet()
+    {
+        bulletPoolingScript.Return(this);
+    }
 
     public void OnSpawn()
     {
@@ -20,7 +25,7 @@ public class ShootableElectronScript : MonoBehaviour
 
     public void setbulletPooling(BulletPooling bulletPool)
     {
-        this.bulletPool = bulletPool;
+        this.bulletPoolingScript = bulletPool;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -39,16 +44,18 @@ public class ShootableElectronScript : MonoBehaviour
         if (transform.position.x < -halfScreenWidth || transform.position.x > halfScreenWidth)
         {
             //detroy the bullet/electron for optimisation purposes :)
-            Destroy(gameObject);
+            //Destroy(gameObject);
             //bulletPool.Return(this);
+            recycleBullet();
 
         }
         if (transform.position.y < -halfScreenHeight || transform.position.y > halfScreenHeight)
         {
-            //detroy the bullet/electron for optimisation purposes :)
+            //despawn the bullet/electron for optimisation purposes :)
             //Debug "";
-            Destroy(gameObject);
+            //Destroy(gameObject);
             //bulletPool.Return(this);
+            recycleBullet();
 
         }
 

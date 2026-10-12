@@ -13,9 +13,13 @@ public class TraladeeBehaviour : MonoBehaviour
     lvl1Buttons levelManager;
 
     [SerializeField] private GameObject ClickEffectPrefab;
+
+    public AudioSource collisionSound;
     //IT BELONGS TO THE SHOOTING CODE
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+
     void Start()
     {
         // levelManager = FindAnyObjectByType<lvl1Buttons>();
@@ -41,7 +45,7 @@ public class TraladeeBehaviour : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            //if(GameManager.instance.pauseInputs == false)
+            if(GameManager.instance.pauseInputs == false)
             {
                 //AIMING CODE
                 Vector3 mousePosition = Input.mousePosition;

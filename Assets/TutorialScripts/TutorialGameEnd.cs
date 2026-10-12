@@ -1,0 +1,110 @@
+using System.Collections;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
+
+public class TutorialGameEnd : MonoBehaviour
+{
+    public int GEndscore = 0; // keeping count of targets hit, when sprite changes
+    int currentlvlIndex;
+    public GameObject phase1;
+    public GameObject phase2;
+    public GameObject phase3;
+    public GameObject phase4;
+    public GameObject phase4txt;
+    public GameObject combotxt;
+    public GameObject phase5;
+    public GameObject phase6;
+    public float cooldown =3f;
+    public float cooldown2=3f;
+    public float cooldown3 = 3f;
+    public bool explode = false;
+    void Start()
+    {
+        GameManager.instance.pauseInputs = false;
+        phase2.SetActive(false);
+    phase3.SetActive(false);
+    phase4.SetActive(false);
+        phase4txt.SetActive(false); 
+    combotxt.SetActive(false);
+        phase5.SetActive(false);
+        phase6.SetActive(false);
+    }
+    void Update()
+    {
+    
+    if (GEndscore == 2)
+     {
+       //StartCoroutine(cooldown());
+       phase1.SetActive(false);
+            phase2.SetActive(true);
+                }
+    if (explode == true)
+        {
+           // GameManager.instance.pauseInputs = true;
+
+            if (cooldown > 0f)
+            {
+
+                cooldown -= Time.deltaTime;
+
+
+            }
+            if (cooldown < 0f)
+            {
+                GameManager.instance.pauseInputs = true;
+                phase2.SetActive(false);
+            phase3.SetActive(true);
+               
+                if (cooldown2 > 0f)// this is for the victory effect- Chris
+                {
+
+                    cooldown2 -= Time.deltaTime;
+
+
+                }
+                if (cooldown2 < 0f)
+                {
+                    GameManager.instance.pauseInputs = false;
+                    phase3.SetActive(false);
+                    phase4.SetActive(true);
+                    phase4txt.SetActive(true);
+                }
+               
+            }
+            //cooldown = 3f;
+        }
+        if (GEndscore == 5)
+        {
+            combotxt.SetActive(true);
+            if (cooldown > 0f)
+            {
+                cooldown -= Time.deltaTime;
+            }
+            if (cooldown < 0f)
+            {
+            combotxt.SetActive (true);
+                phase4txt.SetActive(false);
+                phase5.SetActive(true);
+                GameManager.instance.pauseInputs = true;
+                if (cooldown3 > 0f)
+                {
+                    cooldown3 -= Time.deltaTime;
+                }
+                if (cooldown3 < 0f)
+                {
+                    
+                    phase5.SetActive(false);
+                    phase6.SetActive(true);
+                    //GameManager.instance.pauseInputs = true;
+                }
+            }
+        }
+
+    
+    }
+
+
+   
+}

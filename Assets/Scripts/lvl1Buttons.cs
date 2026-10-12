@@ -22,12 +22,20 @@ public class lvl1Buttons : lvlsManagerbase
     [SerializeField] TMP_Text factScrScoreTxt; // txt ref for score text in fact screen
     [SerializeField] TMP_Text factScrScoreNeededTxt; // txt ref for score needed text in fact screen
     [SerializeField] Camera cam;
+    [SerializeField] GameObject preview;
+    // [SerializeField] GameObject preview;
+    bool level1pass = GameManager.instance.levelPassed1;
     public bool gameEnd;
     float passScore;
-    public float cooldown=2f;
+    public float cooldown = 3.2f;
+    //public float cooldownWS = 3.2f;
     // public bool pauseInputs;
     public List<GameObject> groupOfTargets;
-    
+
+
+    bool transitionScreenTriggered;
+
+
     public override void ComboSystem() // awarding combo points
     {
         base.ComboSystem();
@@ -70,13 +78,17 @@ public class lvl1Buttons : lvlsManagerbase
         // score -= loseScore;
         scoreTxt.text = score.ToString();
     }
+    public override void ObstacleLoseScore()
+    {
+        base.ObstacleLoseScore();
+        // Debug.Log("lvl 1 losescore called");
+        // score -= loseScore;
+        scoreTxt.text = score.ToString();
+    }
 
     public void ChangeScene(int _sceneindex)
     {
-       // StartCoroutine(LoadScene(int _sceneindex));
-        SceneManager.LoadScene(_sceneindex);
-        Time.timeScale = 1f;
-        // Debug.Log("changescr working");
+        GameManager.instance.GMLoadScene( _sceneindex);
     }
 
     public void PauseButton() // is used for pasusing the game | Settings button
@@ -93,43 +105,91 @@ public class lvl1Buttons : lvlsManagerbase
         // pauseInputs = false;
         GameManager.instance.pauseInputs = false;
     }
+    public void DisplayStars()
+    {
+        if (score >= pnt1 && score < pnt2)
+        {
+            star1.gameObject.SetActive(true);
+            GameManager.instance.lvl1onestarunlock = true;
+        
+            // collectible.SetActive(true);
+            // StartCoroutine(CollectiblePopUP());
+            // collectible.SetActive(true);
+        }
+        else if (score >= pnt2 && score < pnt3)
+        {
+            star1.gameObject.SetActive(true);
+            star2.gameObject.SetActive(true);
+          
+            GameManager.instance.lvl1twostarunlock = true;
+          
+            // hearts[i].enabled = true;
+        }
+        else if (score >= pnt3)
+        {
+            star1.gameObject.SetActive(true);
+            star2.gameObject.SetActive(true);
+            star3.gameObject.SetActive(true);
+       
+            GameManager.instance.lvl1threestarunlock = true;
+            // hearts[i].enabled = true;
+        }
+        else
+        {
+            star1.enabled = false;
+            star2.enabled = false;
+            star3.enabled = false;
+        }
+
+    }
+
     public void DisplayCard(){
         if(cooldown < 0f && !cardDisplayedonce)
         {
             if(score > pnt1)
             {
+                // Debug.Log("WORKING CARD DISPLAY SET TO TRUE");
+                GameManager.instance.levelPassed1 = true; // setting card1 display to true if score > score 1 
+                // GameManager.instance.cardUnlocked = true;
+                // Debug.Log(GameManager.instance.levelPassed1);
                 StartCoroutine(CollectiblePopUP());    
             }       
         }
+        // Debug.Log(GameManager.instance.levelPassed1);
     }
 
     public void FactScreenLvl1()
     {
         if (gameEnd == true)
         {
+            if (!transitionScreenTriggered)
+                    {
+                   transitionScreenTriggered = true;
+                TransitionLoadScreen.instance.PlayTransition();
+            }
+
+            //TransitionLoadScreen.instance.PlayTransition();
+           // factScreen.SetActive(true);
+
+           // GameManager.instance.pauseInputs = true;
+
             if (cooldown > 0f)// this is for the victory effect- Chris
-            {
-                vignette.SetActive(true);
-                cooldown -= Time.deltaTime;
-                cam.orthographicSize -= Time.deltaTime;
-                Time.timeScale = 0.5f;
+              {
+                  vignette.SetActive(true);
+                  cooldown -= Time.deltaTime;
+                  //cam.orthographicSize -= Time.deltaTime;
+                  Time.timeScale = 0.5f;
 
-            }
-            if (cooldown < 0f)
-            {
-                cam.orthographicSize = 5f;
-                vignette.SetActive(false);
-                factScreen.SetActive(true);
-                // if(score > pnt1){
-                //     // collectible.SetActive(true);
-                //     // cardAnimator.SetBool("winscr", true);   
-                //     // StartCoroutine(CollectiblePopUP()); 
-                // }
-
-                GameManager.instance.pauseInputs = true;
-                // Time.timeScale = 0f;
-            }
-
+              }
+              if (cooldown < 0f)
+              {
+                 // cam.orthographicSize = 5f;
+                  vignette.SetActive(false);
+                  factScreen.SetActive(true);
+                  GameManager.instance.pauseInputs = true;
+                 
+              }
+            
             if (score < scoreToPass)
             {
                 // levelMenuScript.lvl2.SetActive(false);
@@ -149,33 +209,40 @@ public class lvl1Buttons : lvlsManagerbase
         }
     }
 
-    /*IEnumerator LoadScene(int _sceneindex)
-    {
-        SceneManager.LoadScene(9);
-
-        yield return new WaitForSeconds(3f);
-
-        SceneManager.LoadScene(_sceneindex);
-    }*/
+   
     public override void Start()
     {
         base.Start();
+        GameManager.instance.pauseInputs = true;
         pausemenu.SetActive(false);
         factScreen.SetActive(false);
         vignette.gameObject.SetActive(false);
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore", 0).ToString();
         Time.timeScale = 1f;
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
-        cooldown = 2f;
+        cooldown = 3.2f;
+        
         // cardAnimator = GetComponent<Animator>();
+    }
+
+    void ClickCheck()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            // Debug.Log("Preview disabled");
+            preview.SetActive(false);
+            GameManager.instance.pauseInputs = false;
+        }
     }
 
     void Update()
     {
+        ClickCheck();
         if(gameEnd == true)
         {
             FactScreenLvl1();   
         }
+
         
     }
 }

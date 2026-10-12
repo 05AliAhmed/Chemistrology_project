@@ -10,6 +10,7 @@ public class lvlsManagerbase : MonoBehaviour
     // [Header("Score Settings")]
     [SerializeField] protected int amendScore;
     [SerializeField] protected int loseScore;
+    [SerializeField] protected int obsloseScore;
     [SerializeField] protected int comboScore;
     public TMP_Text starScore1;
     public TMP_Text starScore2;
@@ -29,9 +30,17 @@ public class lvlsManagerbase : MonoBehaviour
     public float cardDisplayTimer;
     public bool cardDisplayedonce;
 
+  
+    //public SpeedBonusCalculator speedBonusScript;
+
     public virtual void ScoreSystem(){
         score += amendScore;
-        // Debug.Log(score);
+
+        //score += speedBonusScript.SpeedBonus;
+        //speedBonusScript.SpeedBonus = 50;
+        //speedBonusScript.calculateSpeed();
+
+        //Debug.Log(score);
     }
     public virtual void ComboSystem(){
         targetCount++;
@@ -39,7 +48,8 @@ public class lvlsManagerbase : MonoBehaviour
         {
             score += comboScore;
             comboCount++;
-            comboCountText.text = "x" + comboCount.ToString();
+            // comboCountText.enabled = true;
+            comboCountText.text = comboCount.ToString() + "x<b>HITS</b>\n +<size=70%>" + comboScore + "points</size>";
         }
         // Debug.Log(score);
     }
@@ -47,15 +57,28 @@ public class lvlsManagerbase : MonoBehaviour
         score -= loseScore;
         targetCount = 0;
         comboCount = 0;
-        comboCountText.text = " "; //+ comboCount.ToString();        
+        comboCountText.text = " ";
+        // comboCountText.enabled = false; //+ comboCount.ToString();        
         if(score < 0)
         {
             score = 0;
         }
         // Debug.Log(score);
     }
-
-    public virtual void DisplayStars()
+    public virtual void ObstacleLoseScore()
+    {
+        score -= obsloseScore;
+        targetCount = 0;
+        comboCount = 0;
+        comboCountText.text = " ";
+        // comboCountText.enabled = false; //+ comboCount.ToString();        
+        if (score < 0)
+        {
+            score = 0;
+        }
+        // Debug.Log(score);
+    }
+   /* public virtual void DisplayStars()
     {
         if(score >= pnt1 && score < pnt2)
         {
@@ -84,15 +107,15 @@ public class lvlsManagerbase : MonoBehaviour
             star3.enabled = false;
         }
         
-    }
+    }*/
 
     public IEnumerator CollectiblePopUP()
     {
-        Debug.Log("couroutine is working");
+        // Debug.Log("couroutine is working");
         collectible.SetActive(true);
         cardAnimator.SetBool("winScr",true);
         yield return new WaitForSeconds(cardDisplayTimer);
-        Debug.Log("timer is working");
+        // Debug.Log("timer is working");
         cardAnimator.SetBool("winScr", false);
         cardDisplayedonce = true;
         // collectible.SetActive(false);
@@ -100,16 +123,17 @@ public class lvlsManagerbase : MonoBehaviour
 
     public virtual void Start()
     {
-        GameManager.instance.pauseInputs = false;
+        GameManager.instance.pauseInputs = true;
         starScore1.text = pnt1.ToString();
         starScore2.text = pnt2.ToString();
-        Debug.Log("workingngngngngngng");
+        // Debug.Log("workingngngngngngng");
         starScore3.text = pnt3.ToString();
         star1.gameObject.SetActive(false);
         star2.gameObject.SetActive(false);
         star3.gameObject.SetActive(false);
         collectible.SetActive(false);
-        Debug.Log("set it to false");
+        // comboCountText.enabled = false;
+        // Debug.Log("set it to false");
         cardDisplayedonce = false;
     }
 }

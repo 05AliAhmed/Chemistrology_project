@@ -3,48 +3,25 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
+using System.Collections;
 public class ObstacleScript : MonoBehaviour
 {
     public SpriteRenderer rendpenal;
-    public SpriteRenderer penalhit;
     public GameObject explodeeffect;
     public BoxCollider2D myCollider;
     public BoxCollider2D PenaltyCollider;
+    public AudioSource explosion;
     public float cooldown = 0.5f;
     public float destroycooldown = 3f;
     public int speed = 150;
-   public bool penaltyhit;
-
-   
-    /* private Animator myAnim;
-     private SpriteRenderer rend2;/
-
-     /*  public BallScript ball;
-       public PointScript points;*/
-
-    /* public Text Score;
-     int PlayerScore=0;
-     public int point = 100;*/
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
-
-
+    public bool penaltyhit;
     void Start()
     {
 
         rendpenal = GetComponent<SpriteRenderer>();
-        penalhit.enabled = false;
-
-        // myAnim=gameObject.GetComponentInChildren<Animator>();
-        /* rend2=gameObject.GetComponentInChildren<SpriteRenderer>();
-         rend2.enabled = true;*/
-
-        /*ball = GameObject.FindGameObjectWithTag("Ball").GetComponent<BallScript>();
-        points = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();*/
         PenaltyCollider.enabled = false;
         penaltyhit = false;
-     
-
+        explosion.Stop();
 
     }
     private void FixedUpdate()
@@ -56,57 +33,74 @@ public class ObstacleScript : MonoBehaviour
     // Update is called once per frame
     public void obstaclePenalty()
     {
+        explosion.Play();
         speed = 0;
         myCollider.enabled = false;
         PenaltyCollider.enabled = true;
         Instantiate(explodeeffect,transform.position, Quaternion.identity);
         rendpenal.enabled = false;
-       // penalhit.enabled = true;
-        //destroycooldown = 5f;
+
         if (cooldown > 0f)// this is for the victory effect- Chris
         {
-            
             cooldown -= Time.deltaTime;
             
-          
-
         }
         if (cooldown <= 0f)
         {
             Destroy(gameObject);
-           
         }
        
     }
-   /* void OnCollisionEnter2D(Collision2D collisioninfo)
-    {
-        if (collisioninfo.collider.tag == "Penalty")
-        {
-            Debug.Log("ggggggggg");
 
-        }
-
-    }*/
    void Update()
     {
 
         if (destroycooldown > 0f&&penaltyhit==false)// this is for the victory effect- Chris
         {
-
             destroycooldown -= Time.deltaTime;
-
-
-
         }
         if (destroycooldown <= 0f && penaltyhit == false)
         {
-            
-            Destroy(gameObject);
-            
+            StartCoroutine(FadeSprite());
+
         }
         if (penaltyhit==true)
         {
             obstaclePenalty();
         }
     }
+    IEnumerator FadeSprite()
+    {
+        float duration = 0.5f; // fade time
+        float time = 0;
+
+        Color startColor = rendpenal.color;
+
+        while (time < duration)
+        {
+            float alpha = Mathf.Lerp(1f, 0f, time / duration);
+
+            rendpenal.color = new Color(
+                startColor.r,
+                startColor.g,
+                startColor.b,
+                alpha
+            );
+
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        // fully invisible
+        rendpenal.color = new Color(
+            startColor.r,
+            startColor.g,
+            startColor.b,
+            0f
+        );
+
+        Destroy(gameObject); // optional
+     
+    }
+
 }

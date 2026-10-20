@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CircularMovement
   speed: 70
-  increaseSpeed: 75
+  increaseSpeed: 18
 --- !u!58 &8225830515437022167
 CircleCollider2D:
   m_ObjectHideFlags: 0

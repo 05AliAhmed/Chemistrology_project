@@ -47,20 +47,17 @@ public class ObstacleSystem : MonoBehaviour
             if (number <= 1)
             {
                  spawner1.GetComponent<ObstacleSpawner>().spawn();
-               
-                // spawner1.SetActive(check);
 
             }
             else if (number == 2 || number == 3)
             {
                  spawner2.GetComponent<ObstacleSpawner>().spawn();
-                // spawner2.SetActive(check);
+         
             }
             else if (number >= 4)
             {
                 spawner3.GetComponent<ObstacleSpawner>().spawn();
-                //spawner3.SetActive(check);
-                //system and script need some connection
+     
             }
 
         }

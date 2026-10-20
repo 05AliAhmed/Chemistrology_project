@@ -8,21 +8,7 @@ public class TargetScript : MonoBehaviour
     public CircleCollider2D penaltydetect;
     public Animator childanime;
     public bool filled;
-    
-
     public ShootableElectronScript bulletScript;
-    /* private Animator myAnim;
-     private SpriteRenderer rend2;/
-
-     /*  public BallScript ball;
-       public PointScript points;*/
-
-    /* public Text Score;
-     int PlayerScore=0;
-     public int point = 100;*/
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
-
     public GameEndScript GameEnd;
     void Start()
     {
@@ -31,33 +17,15 @@ public class TargetScript : MonoBehaviour
         GameEnd=GameObject.FindGameObjectWithTag("GameEnd").GetComponent<GameEndScript>();
         penaltydetect.enabled = false;
        
-        // myAnim=gameObject.GetComponentInChildren<Animator>();
-        /* rend2=gameObject.GetComponentInChildren<SpriteRenderer>();
-         rend2.enabled = true;*/
-
-        /*ball = GameObject.FindGameObjectWithTag("Ball").GetComponent<BallScript>();
-        points = GameObject.FindGameObjectWithTag("Points").GetComponent<PointScript>();*/
     }
 
-    // Update is called once per frame
+
     public void changeTarget()
     {
-        // GameEnd.GEndscore = GameEnd.GEndscore + 1;
         GameEnd.GEndscore += 1;
-        // rend.sprite = TargetHit;
-        //Destroy(rend);
         myCollider.enabled = false;
         penaltydetect.enabled = true;
-        //childsr.enabled=true;
-        // Debug.Log($" {gameObject.name}called");
-       // childanime.speed = 1f;
         childanime.SetBool("Triggered", true);
-        //childanime.SetBool("isAttacked", true);
-        /*PlayerScore = PlayerScore + point;
-     
-        Score.text = PlayerScore.ToString();*/
-        //bulletScript.recycleBullet();
-
         filled = true;
     }
 
@@ -65,24 +33,14 @@ public class TargetScript : MonoBehaviour
     {
         if (collisioninfo.tag == "Penalty" && filled==true)
         {
-            // Debug.Log("help me xv");
             GameEnd.GEndscore = GameEnd.GEndscore - 1;
-            // rend.sprite = TargetHit;
-            //Destroy(rend);
             myCollider.enabled = true;
             penaltydetect.enabled = false;
             childanime.SetBool("Triggered", false);
-            //  childanime.speed = -1f;
-            // childanime.Play("TargetTrans");
             filled = false;
-
-            //bulletScript.recycleBullet();
         }
 
 
     }
-    void Update()
-    {
-        
-    }
+
 }

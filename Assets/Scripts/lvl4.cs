@@ -21,12 +21,15 @@ public class lvl4 : lvlsManagerbase
     [SerializeField] Camera cam;
     [SerializeField] GameObject vignette;
     [SerializeField] GameObject preview;
-    public float cooldown = 2f;
+
+    public float cooldown = 3.2f;
     // Scene currentScene;
     public bool gameEnd;
     float passScore;
     public bool pauseInputs;
     public List<GameObject> groupOfTargets;
+
+    public bool transitionScreenTriggered;
     public override void ComboSystem() // awarding combo points
     {
         base.ComboSystem();
@@ -54,7 +57,13 @@ public class lvl4 : lvlsManagerbase
         base.LoseScore();
         scoreTxt.text = score.ToString();
     }
-
+    public override void ObstacleLoseScore()
+    {
+        base.ObstacleLoseScore();
+        // Debug.Log("lvl 1 losescore called");
+        // score -= loseScore;
+        scoreTxt.text = score.ToString();
+    }
     public void ChangeScene(int _sceneindex)
     {
         GameManager.instance.GMLoadScene(_sceneindex);
@@ -72,6 +81,39 @@ public class lvl4 : lvlsManagerbase
         Time.timeScale = 1f;
         pauseInputs = false;
     }
+    public void DisplayStars()
+    {
+        if (score >= pnt1 && score < pnt2)
+        {
+            star1.gameObject.SetActive(true);
+            GameManager.instance.lvl4onestarunlock = true;
+            // collectible.SetActive(true);
+            // StartCoroutine(CollectiblePopUP());
+            // collectible.SetActive(true);
+        }
+        else if (score >= pnt2 && score < pnt3)
+        {
+            star1.gameObject.SetActive(true);
+            star2.gameObject.SetActive(true);
+            GameManager.instance.lvl4twostarunlock = true;
+            // hearts[i].enabled = tue;
+        }
+        else if (score >= pnt3)
+        {
+            star1.gameObject.SetActive(true);
+            star2.gameObject.SetActive(true);
+            star3.gameObject.SetActive(true);
+            GameManager.instance.lvl4threestarunlock = true;
+            // hearts[i].enabled = true;
+        }
+        else
+        {
+            star1.enabled = false;
+            star2.enabled = false;
+            star3.enabled = false;
+        }
+
+    }
 
     public void DisplayCard(){
         if(cooldown < 0f && !cardDisplayedonce)
@@ -86,27 +128,32 @@ public class lvl4 : lvlsManagerbase
 
     public void FactScreenLvl1()
     {
+        if (!transitionScreenTriggered)
+        {
+            transitionScreenTriggered = true;
+            TransitionLoadScreen.instance.PlayTransition();
+        }
+
+        //TransitionLoadScreen.instance.PlayTransition();
+        // factScreen.SetActive(true);
+
+        // GameManager.instance.pauseInputs = true;
+
         if (cooldown > 0f)// this is for the victory effect- Chris
         {
             vignette.SetActive(true);
             cooldown -= Time.deltaTime;
-            cam.orthographicSize -= Time.deltaTime;
+            //cam.orthographicSize -= Time.deltaTime;
             Time.timeScale = 0.5f;
 
         }
         if (cooldown < 0f)
         {
-            cam.orthographicSize = 5f;
+            //cam.orthographicSize = 5f;
             vignette.SetActive(false);
             factScreen.SetActive(true);
-            // if(score > pnt1){
-            //     // collectible.SetActive(true);
-            //     // cardAnimator.SetBool("winscr", true);   
-            //     // StartCoroutine(CollectiblePopUP()); 
-            // }
-
             GameManager.instance.pauseInputs = true;
-            // Time.timeScale = 0f;
+
         }
         if (score < scoreToPass)
         {
@@ -134,7 +181,7 @@ public class lvl4 : lvlsManagerbase
         highScoreTxt.text = PlayerPrefs.GetInt("Highscore4", 0).ToString();
         Time.timeScale = 1f;
         groupOfTargets = GameObject.FindGameObjectsWithTag("Target").ToList();
-        cooldown = 2f;
+        cooldown = 3.2f;
     }
 
     void ClickCheck()

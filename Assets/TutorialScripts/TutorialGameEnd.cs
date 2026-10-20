@@ -22,7 +22,8 @@ public class TutorialGameEnd : MonoBehaviour
     public bool explode = false;
     void Start()
     {
-    phase2.SetActive(false);
+        GameManager.instance.pauseInputs = false;
+        phase2.SetActive(false);
     phase3.SetActive(false);
     phase4.SetActive(false);
         phase4txt.SetActive(false); 
@@ -41,7 +42,8 @@ public class TutorialGameEnd : MonoBehaviour
                 }
     if (explode == true)
         {
-          
+           // GameManager.instance.pauseInputs = true;
+
             if (cooldown > 0f)
             {
 
@@ -51,7 +53,8 @@ public class TutorialGameEnd : MonoBehaviour
             }
             if (cooldown < 0f)
             {
-            phase2.SetActive(false);
+                GameManager.instance.pauseInputs = true;
+                phase2.SetActive(false);
             phase3.SetActive(true);
                
                 if (cooldown2 > 0f)// this is for the victory effect- Chris
@@ -63,7 +66,7 @@ public class TutorialGameEnd : MonoBehaviour
                 }
                 if (cooldown2 < 0f)
                 {
-
+                    GameManager.instance.pauseInputs = false;
                     phase3.SetActive(false);
                     phase4.SetActive(true);
                     phase4txt.SetActive(true);
@@ -84,6 +87,7 @@ public class TutorialGameEnd : MonoBehaviour
             combotxt.SetActive (true);
                 phase4txt.SetActive(false);
                 phase5.SetActive(true);
+                GameManager.instance.pauseInputs = true;
                 if (cooldown3 > 0f)
                 {
                     cooldown3 -= Time.deltaTime;
@@ -93,7 +97,7 @@ public class TutorialGameEnd : MonoBehaviour
                     
                     phase5.SetActive(false);
                     phase6.SetActive(true);
-
+                    //GameManager.instance.pauseInputs = true;
                 }
             }
         }

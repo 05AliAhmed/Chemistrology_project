@@ -23,7 +23,7 @@ public class AsteroidShowAndHide : MonoBehaviour
 
     IEnumerator HideRoutine()
     {
-        if (targetScript.filled != true)
+        if(targetScript.filled != true)
         {
             
             yield return new WaitForSeconds(hiddenDuration * 1.5f);

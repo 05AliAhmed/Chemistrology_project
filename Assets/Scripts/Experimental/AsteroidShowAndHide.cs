@@ -10,6 +10,10 @@ public class AsteroidShowAndHide : MonoBehaviour
 
     [SerializeField] private float hiddenDuration = 2.0f;
 
+    //two bool variables to control the loop of the coroutine.
+    public bool isCouroutineActive = false;
+    public bool doCoroutine = false;
+
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -23,37 +27,25 @@ public class AsteroidShowAndHide : MonoBehaviour
 
     IEnumerator HideRoutine()
     {
-        while (targetScript.filled != true)
+        isCouroutineActive = true;
+
+        yield return new WaitForSeconds(hiddenDuration * 1.5f);
+
+        if (targetScript.filled != true)
         {
-            
-            yield return new WaitForSeconds(hiddenDuration * 1.5f);
+            //spriteRenderer.enabled = false;
+            // col.enabled = false;
+            StartCoroutine(FadeOut());
+        }
 
-            if (targetScript.filled != true)
-            {
-                //spriteRenderer.enabled = false;
-                // col.enabled = false;
-                StartCoroutine(FadeOut());
-            }
+        yield return new WaitForSeconds(hiddenDuration);
 
-            yield return new WaitForSeconds(hiddenDuration);
+        StartCoroutine(FadeIN());
 
-            /*
-            if (targetScript.filled != true)
-            {
-                // spriteRenderer.enabled = true;
-                //col.enabled = true;
-                StartCoroutine(FadeIN());
-            }
-            */
+        yield return new WaitForSeconds(1);
 
-            StartCoroutine(FadeIN());
+        isCouroutineActive = false;
 
-            //yield return new WaitForSeconds(hiddenDuration);
-
-            hideMe();
-
-        } 
-        
     }
     IEnumerator FadeOut()
     {
@@ -121,37 +113,19 @@ public class AsteroidShowAndHide : MonoBehaviour
         {
             col.enabled = true;
         }
-        
-
-
 
     }
     void Start()
     {
-        hideMe();
-
-        /*
-        if (targetScript.filled != true) 
-        {
-            hideMe();
-        }
-        */
+        //hideMe();
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*
-        //make me visible again if you hit me while I fade out
-        if ()
+        if (isCouroutineActive != true)
         {
-
-            if (targetScript.filled != false)
-            {
-
-            }
-
+            hideMe();
         }
-        */
     }
 }

@@ -47,6 +47,7 @@ public class lvl5 : lvlsManagerbase
             PlayerPrefs.SetInt("Highscore5", score); // setting Highscore to be the score continously 
             highScoreTxt.text = score.ToString();            
         }
+        ChemistrologyLeaderboard.instance.SubmitScore(score);
     }
     public override void LoseScore()
     {

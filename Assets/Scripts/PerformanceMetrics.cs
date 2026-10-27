@@ -3,88 +3,92 @@ using UnityEngine;
 
 public class PerformanceMetrics : MonoBehaviour
 {
-    // Store the duration of each frame in milliseconds.
+    // Stores each frame's duration in milliseconds.
     private readonly List<float> frameTimes = new List<float>();
-
     private bool recording = false;
+    // Target frame rate used for the budget comparison.
+    [SerializeField] private float targetFPS = 60f;
     public static PerformanceMetrics instance;
-
-    void Awake()
-    {
-        if (instance == null)
-        {
+    void Awake(){
+        if (instance == null){
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        else
-        {
+        else{
             Destroy(gameObject);
         }
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F8))
-        {
-            if (!recording)
-            {
+        if (Input.GetKeyDown(KeyCode.F8)){
+            if (!recording){
                 frameTimes.Clear();
                 recording = true;
                 Debug.Log("Performance recording started.");
             }
-            else
-            {
+            else{
                 recording = false;
                 CalculateResults();
             }
-
             return;
         }
-
-        if (recording)
-        {
-            // Record frame duration without time-scale effects.
-            frameTimes.Add(Time.unscaledDeltaTime * 1000f);
-        }
+        // Record frame duration without time-scale effects.
+        if (recording){ frameTimes.Add(Time.unscaledDeltaTime * 1000f);}
     }
 
     void CalculateResults()
     {
-        if (frameTimes.Count < 100)
-        {
-            Debug.Log("Record more frames before calculating.");
+        int count = frameTimes.Count;
+        if (count < 2){
+            Debug.LogWarning("Not enough frames recorded.");
             return;
         }
-
-        // Sort frame times from fastest to slowest.
-        List<float> sorted = new List<float>(frameTimes);
-        sorted.Sort();
-
-        // The 99th percentile frame time represents the
-        // slowest 1% boundary.
-        int index = Mathf.Clamp(
-            Mathf.CeilToInt(sorted.Count * 0.99f) - 1,
-            0,
-            sorted.Count - 1
-        );
-
-        float percentileFrameTime = sorted[index];
-
-        // Convert the 99th percentile frame time to FPS.
-        float onePercentLow = 1000f / percentileFrameTime;
-
-        // Calculate the average FPS across the recording.
+        // Calculate total frame time in seconds.
         float totalSeconds = 0f;
-        foreach (float ms in frameTimes)
-        {
-            totalSeconds += ms / 1000f;
+        foreach (float time in frameTimes){ totalSeconds += time / 1000f;}
+        // Average FPS is total frames divided by elapsed time.
+        float averageFPS = count / totalSeconds;
+        // Average duration of one frame, in milliseconds.
+        float averageFrameTime = totalSeconds * 1000f / count;
+        // Sort frame times to estimate the 1% low FPS.
+        List<float> sortedTimes = new List<float>(frameTimes);
+        sortedTimes.Sort();
+        // The 99th percentile frame time represents the
+        // boundary of the slowest 1% of frames.
+        int index = Mathf.Clamp(
+            Mathf.CeilToInt(count * 0.99f) - 1,
+            0,
+            count - 1
+        );
+        float percentileFrameTime = sortedTimes[index];
+        float onePercentLowFPS = 1000f / percentileFrameTime;
+        // Calculate average absolute difference between
+        // consecutive frame times.
+        float totalPacingDelta = 0f;
+        for (int i = 1; i < count; i++){
+            float delta = Mathf.Abs(
+                frameTimes[i] - frameTimes[i - 1]
+            );
+            totalPacingDelta += delta;
         }
+        float averageFramePacingDelta =
+            totalPacingDelta / (count - 1);
+        // Compare average frame time against the target budget.
+        float targetFrameTime = 1000f / targetFPS;
+        float frameBudgetDelta = averageFrameTime - targetFrameTime;
 
-        float averageFPS = frameTimes.Count / totalSeconds;
-
-        Debug.Log($"Frames recorded: {frameTimes.Count}");
+        // Print all performance metrics to the Unity Console.
+        Debug.Log("===== PERFORMANCE RESULTS =====");
+        Debug.Log($"Frames Recorded: {count}");
+        Debug.Log($"Recording Duration: {totalSeconds:F2} seconds");
         Debug.Log($"Average FPS: {averageFPS:F2}");
-        Debug.Log($"1% low FPS: {onePercentLow:F2}");
-        Debug.Log($"Slowest 1% boundary: {percentileFrameTime:F2} ms");
+        Debug.Log($"Average Frame Time: {averageFrameTime:F3} ms");
+        Debug.Log($"1% Low FPS: {onePercentLowFPS:F2}");
+        Debug.Log($"99th Percentile Frame Time: {percentileFrameTime:F3} ms");
+        Debug.Log($"Average Frame Pacing Delta: {averageFramePacingDelta:F3} ms");
+        Debug.Log($"Target Frame Time: {targetFrameTime:F3} ms");
+        Debug.Log($"Frame Budget Delta: {frameBudgetDelta:+0.000;-0.000;0.000} ms");
+        Debug.Log("================================");
     }
 }

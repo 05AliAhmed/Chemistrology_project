@@ -50,6 +50,7 @@ public class lvl6 : lvlsManagerbase
             PlayerPrefs.SetInt("Highscore6", score); // setting Highscore to be the score continously 
             highScoreTxt.text = score.ToString();            
         }
+        ChemistrologyLeaderboard.instance.SubmitScore(score);
     }
     public override void LoseScore()
     {
@@ -59,8 +60,6 @@ public class lvl6 : lvlsManagerbase
     public override void ObstacleLoseScore()
     {
         base.ObstacleLoseScore();
-        // Debug.Log("lvl 1 losescore called");
-        // score -= loseScore;
         scoreTxt.text = score.ToString();
     }
     public void ChangeScene(int _sceneindex)

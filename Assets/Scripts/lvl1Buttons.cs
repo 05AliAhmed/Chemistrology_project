@@ -39,50 +39,34 @@ public class lvl1Buttons : lvlsManagerbase
     public override void ComboSystem() // awarding combo points
     {
         base.ComboSystem();
-        // Debug.Log("lvl 1 combosytem called");
-        // targetCount++;
-        // if(targetCount > 2) // checking if target hit are grater than 2
-        // {
-        //     score += comboScore;  // then score plus comboscore
-            scoreTxt.text = score.ToString();
-            // Debug.Log(score); // testing
-        // }
+        scoreTxt.text = score.ToString();
     }
     public override void ScoreSystem() // will late be connected with shooting system to count scores | Score Button
     {
-        // Debug.Log("score system");
-        // score += amendScore;
         base.ScoreSystem();
-        // Debug.Log("lvl 1 scoresytem called");
         scoreTxt.text = score.ToString();
         factScrScoreTxt.text = score.ToString();
-        passScore = scoreToPass - score; 
-        // highScore = score; // testing purpose not working remove highscore int and this line later.
+        passScore = scoreToPass - score;
         if(passScore < 0)
         {
             passScore = 0;
         }
-        // passScoreTxt.text = passScore.ToString();
         factScrScoreNeededTxt.text = passScore.ToString();
         if(score > PlayerPrefs.GetInt("Highscore",0)) // if score is greater than H.S, 0 is there because at start high score is 0.
         {
             PlayerPrefs.SetInt("Highscore", score); // setting Highscore to be the score continously 
-            highScoreTxt.text = score.ToString();
-            // passScoreTxt.text = passScore.ToString();            
+            highScoreTxt.text = score.ToString();            
         }
+        ChemistrologyLeaderboard.instance.SubmitScore(score);
     }
     public override void LoseScore()
     {
         base.LoseScore();
-        // Debug.Log("lvl 1 losescore called");
-        // score -= loseScore;
         scoreTxt.text = score.ToString();
     }
     public override void ObstacleLoseScore()
     {
         base.ObstacleLoseScore();
-        // Debug.Log("lvl 1 losescore called");
-        // score -= loseScore;
         scoreTxt.text = score.ToString();
     }
 

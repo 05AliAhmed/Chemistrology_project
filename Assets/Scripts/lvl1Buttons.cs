@@ -57,7 +57,7 @@ public class lvl1Buttons : lvlsManagerbase
             PlayerPrefs.SetInt("Highscore", score); // setting Highscore to be the score continously 
             highScoreTxt.text = score.ToString();            
         }
-        ChemistrologyLeaderboard.instance.SubmitScore(score);
+        
     }
     public override void LoseScore()
     {
@@ -73,6 +73,7 @@ public class lvl1Buttons : lvlsManagerbase
     public void ChangeScene(int _sceneindex)
     {
         GameManager.instance.GMLoadScene( _sceneindex);
+        ChemistrologyLeaderboard.Instance.SubmitScore(score);
     }
 
     public void PauseButton() // is used for pasusing the game | Settings button
@@ -224,9 +225,11 @@ public class lvl1Buttons : lvlsManagerbase
         ClickCheck();
         if(gameEnd == true)
         {
-            FactScreenLvl1();   
+            FactScreenLvl1();
+            
+            //ChemistrologyLeaderboard.Instance.GetTopScores();
         }
 
-        
+
     }
 }

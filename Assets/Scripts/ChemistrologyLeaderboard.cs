@@ -4,8 +4,6 @@ using Unity.Services.Authentication;
 using Unity.Services.Core;
 using Unity.Services.Leaderboards;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
-
 public class ChemistrologyLeaderboard : MonoBehaviour
 {
     // Must match the Leaderboard ID created in the Unity Dashboard.
@@ -57,36 +55,6 @@ public class ChemistrologyLeaderboard : MonoBehaviour
         //leaderBoardUI =
     }
 
-    //public async void SetPlayerNickname(string nickname)
-    //{
-    //    if (!IsReady)
-    //    {
-    //        Debug.LogWarning("Authentication is not ready.");
-    //        return;
-    //    }
-
-    //    // Remove unnecessary spaces around the nickname.
-    //    nickname = nickname.Trim();
-
-    //    if (string.IsNullOrWhiteSpace(nickname))
-    //    {
-    //        Debug.LogWarning("Please enter a nickname.");
-    //        return;
-    //    }
-
-    //    try
-    //    {
-    //        // Save the nickname to the authenticated player's profile.
-    //        string updatedName =
-    //            await AuthenticationService.Instance.UpdatePlayerNameAsync(nickname);
-
-    //        Debug.Log("Player nickname saved: " + updatedName);
-    //    }
-    //    catch (Exception exception)
-    //    {
-    //        Debug.LogError("Could not save nickname: " + exception.Message);
-    //    }
-    //}
 
     public async void SubmitScore(int score)
     {

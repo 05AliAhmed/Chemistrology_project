@@ -1,7 +1,6 @@
 using UnityEngine;
 using TMPro;
 using System;
-using System.Threading.Tasks;
 
 public class NickNameInputUI : MonoBehaviour
 {
@@ -19,30 +18,30 @@ public class NickNameInputUI : MonoBehaviour
             await System.Threading.Tasks.Task.Yield();
         }
 
-        //try
-        //{
-        //    // Check whether this player already has a nickname.
-        //    string existingName =
-        //        await Unity.Services.Authentication.AuthenticationService
-        //            .Instance.GetPlayerNameAsync(autoGenerate: false);
+        try
+        {
+            // Check whether this player already has a nickname.
+            string existingName =
+                await Unity.Services.Authentication.AuthenticationService
+                    .Instance.GetPlayerNameAsync(autoGenerate: false);
 
-        //    if (!string.IsNullOrEmpty(existingName))
-        //    {
-        //        // A nickname already exists, so hide the nickname panel.
-        //        nicknamePanel.SetActive(false);
-        //    }
-        //    else
-        //    {
-        //        // No nickname exists, so ask the player to enter one.
-        //        nicknamePanel.SetActive(true);
-        //    }
-        //}
-        //catch (System.Exception exception)
-        //{
-        //    // If checking the nickname fails, show the input panel.
-        //    Debug.LogError("Could not check player nickname: " + exception.Message);
-        //    nicknamePanel.SetActive(true);
-        //}
+            if (!string.IsNullOrEmpty(existingName))
+            {
+                // A nickname already exists, so hide the nickname panel.
+                nicknamePanel.SetActive(false);
+            }
+            else
+            {
+                // No nickname exists, so ask the player to enter one.
+                nicknamePanel.SetActive(true);
+            }
+        }
+        catch (System.Exception exception)
+        {
+            // If checking the nickname fails, show the input panel.
+            Debug.LogError("Could not check player nickname: " + exception.Message);
+            nicknamePanel.SetActive(true);
+        }
     }
 
 

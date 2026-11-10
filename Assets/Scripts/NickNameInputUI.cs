@@ -49,7 +49,7 @@ public class NickNameInputUI : MonoBehaviour
     // Called when the player clicks the Submit button.
     public async void OnSubmitNickname()
     {
-        nicknamePanel.SetActive(false);
+
         string nickname = nicknameInputField.text.Trim();
 
         // Check whether the player entered a nickname.
@@ -97,5 +97,7 @@ public class NickNameInputUI : MonoBehaviour
 
             Debug.LogError("Nickname error: " + exception.Message);
         }
+
+        nicknamePanel.SetActive(false);
     }
 }

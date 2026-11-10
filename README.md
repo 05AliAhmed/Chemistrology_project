@@ -25,7 +25,7 @@ As players progress, new mechanics are introduced, including faster electrons, d
 ## Development
 
 * Team Project/ University Project
-* 4 months
+* 4 Months
 
 ## Features
 
@@ -40,6 +40,33 @@ As players progress, new mechanics are introduced, including faster electrons, d
 * Chemistry facts
 * Chemistry card collection
 
+## My Contributions
+
+As part of the development team, I was mainly responsible for gameplay programming and game systems, including:
+
+* Game Design
+* Level Design
+* Scoring and combo system
+* Level progression
+* Gameplay UI Implementation
+* Chemistry card system
+* Win Screen Card Animation
+
+## What I Learned
+
+Through this project, I gained hands-on experience with:
+
+* Game programming using C#
+* Unity game development
+* Gameplay mechanics
+* Collision and hit detection
+* Scoring and combo systems
+* Level progression
+* UI implementation
+* Game system design
+* Team-based game development
+* Debugging and problem solving
+
 ## Download / Play
 
-(https://jimhanboi.itch.io/chemistrology)
+https://jimhanboi.itch.io/chemistrology

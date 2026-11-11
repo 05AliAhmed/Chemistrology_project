@@ -51,8 +51,6 @@ public class ChemistrologyLeaderboard : MonoBehaviour
         {
             Debug.LogError("Leaderboard setup failed: " + exception.Message);
         }
-
-        //leaderBoardUI =
     }
 
 

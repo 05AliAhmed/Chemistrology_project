@@ -13,6 +13,7 @@ public class ChemistrologyLeaderboard : MonoBehaviour
     public bool IsReady { get; private set; }
 
     public static ChemistrologyLeaderboard Instance;
+    //public GameObject nicknamePanel;
 
 
     private void Awake()
@@ -26,7 +27,6 @@ public class ChemistrologyLeaderboard : MonoBehaviour
 
         // Store this manager as the persistent instance.
         Instance = this;
-
         // Keep this manager alive between scene changes.
         DontDestroyOnLoad(gameObject);
     }
@@ -35,24 +35,61 @@ public class ChemistrologyLeaderboard : MonoBehaviour
     {
         try
         {
-            // Initialize the Unity Gaming Services system.
+            // Initialize Unity Gaming Services.
             await UnityServices.InitializeAsync();
 
-            // Sign in the player without requiring a manual login.
+            // Attempt to sign in or recover the existing anonymous player.
             if (!AuthenticationService.Instance.IsSignedIn)
             {
-                await AuthenticationService.Instance.SignInAnonymouslyAsync();
+                try
+                {
+                    await AuthenticationService.Instance.SignInAnonymouslyAsync();
+                }
+                catch (Exception signInException)
+                {
+                    Debug.LogWarning("First sign-in attempt failed: " + signInException.Message);
+
+                    // If Unity cleared the invalid token, there is no cached
+                    // session left to recover. Try signing in as a new player.
+                    if (!AuthenticationService.Instance.SessionTokenExists)
+                    {
+                        //Debug.Log("No valid cached session. Creating a new anonymous player.");
+
+                        await AuthenticationService.Instance.SignInAnonymouslyAsync();
+                    }
+                    else
+                    {
+                        // A session still exists, so don't blindly retry.
+                        throw;
+                    }
+                }
             }
 
+            // Authentication succeeded.
             IsReady = true;
-            Debug.Log("Chemistrology leaderboard is ready.");
+
+            //Debug.Log("Authentication successful.");
+            //Debug.Log("Player ID: " + AuthenticationService.Instance.PlayerId);
+
+            // Check whether this player has a nickname.
+            string existingName = await AuthenticationService.Instance
+                .GetPlayerNameAsync(autoGenerate: false);
+
+            if (!string.IsNullOrEmpty(existingName))
+            {
+                //Debug.Log("Existing nickname: " + existingName);
+            }
+            else
+            {
+                //Debug.Log("No nickname found. Player needs to enter one.");
+            }
         }
         catch (Exception exception)
         {
-            Debug.LogError("Leaderboard setup failed: " + exception.Message);
+            IsReady = false;
+            Debug.LogError("Authentication setup failed: " + exception.Message);
         }
-
-        //leaderBoardUI =
+        
     }
 
 
@@ -73,7 +110,7 @@ public class ChemistrologyLeaderboard : MonoBehaviour
                 score
             );
 
-            Debug.Log("Score submitted: " + score);
+            //Debug.Log("Score submitted: " + score);
         }
         catch (Exception exception)
         {
@@ -150,7 +187,7 @@ public class ChemistrologyLeaderboard : MonoBehaviour
                         : entry.PlayerName;
 
                     rowUI.SetData(
-                        entry.Rank.ToString(),
+                        (entry.Rank + 1).ToString(),
                         playerName,
                         entry.Score.ToString("N0")
                     );
@@ -205,17 +242,4 @@ public class ChemistrologyLeaderboard : MonoBehaviour
         return updatedName;
     }
 
-    // Temporary test method to submit a score of 500.
-    public void TestSubmitScore()
-    {
-        SubmitScore(500);
-    }
-
-    // Temporary test method to retrieve the top scores.
-    public void TestLoadScores()
-    {
-        //GetTopScores(leaderBoardUI.content,
-        //leaderBoardUI.rowPrefab);
-        Debug.Log("Score Fetched");
-    }
 }
